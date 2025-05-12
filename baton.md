@@ -1,35 +1,25 @@
 # Baton Hand-off
 
-**Last Update:** [CURRENT_TIMESTAMP]
+**Last Update:** 2025-05-11 15:48:55
 
 ## Session Summary
 
-In this session, we significantly expanded and added granular detail to the software implementation plan for the incoming G9 NUCBox. Key accomplishments include:
+In this session, we worked on the following changes:
 
-*   Clarified that the G9 NUCBox is expected to arrive with a dual-boot configuration: Windows 11 Pro and Ubuntu.
-*   Developed a detailed "Phase 0" for initial system setup, covering critical updates, driver verification, security checks, and OS-specific configurations for both Windows 11 Pro and Ubuntu.
-*   Mapped out "Phase 1A: Core Document Management," assigning Paperless-ngx (Docker) and iCloud backups to Windows 11 Pro, and detailing Tailscale setup for both OSs.
-*   Detailed "Phase 1B: Pi-hole Ad Blocking" for Ubuntu.
-*   Expanded "Phase 2: Knowledge Base, Development Environment, & Audiobook Server" to include:
-    *   BookStack (Wiki) on Ubuntu (Docker)
-    *   code-server (Remote Development) on Ubuntu
-    *   Grocy (Home Inventory) on Ubuntu (Docker)
-    *   Audiobookshelf (Audiobook Server) on Ubuntu (Docker)
-*   Outlined "Phase 3: Additional Services (Optional)," including Duplicati (Windows), Minecraft Server (Ubuntu), Home Assistant (Ubuntu), and Home Energy Monitoring (Ubuntu/Home Assistant).
-*   Briefly scoped "Phase 4: Evaluate LLM Options (Optional)" focusing on experimentation with tools like Ollama on Ubuntu.
-*   For each service, we specified the target OS and provided granular step-by-step installation and configuration instructions.
+- Update baton handoff document - 2025-05-11 15:48:55
+- Update baton handoff document - 2025-05-10 22:24:23
+- Update baton handoff document - 2025-05-10 19:10:01
+
+These changes focused on improving project functionality and structure.
 
 ## Next Steps
 
-For the next session, the primary focus will be the actual implementation once the G9 NUCBox arrives:
+For the next session, consider the following steps:
 
-1.  **Await arrival of the G9 NUCBox.** (The 36-hour countdown is on!)
-2.  **Execute Phase 0: Initial System Setup** for both Windows 11 Pro and Ubuntu as per the detailed plan.
-3.  **Proceed with Phase 1A: Core Document Management**, setting up Paperless-ngx, iCloud backups, and Tailscale.
-4.  **Implement Phase 1B: Pi-hole Ad Blocking** on Ubuntu.
-5.  Continue systematically through **Phase 2**, then **Phase 3 (selected services)**, and finally **Phase 4 (LLM evaluation)** if desired.
-6.  Thoroughly test each service after its initial setup to ensure functionality.
-7.  Maintain clear communication and update documentation as implementation progresses.
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
 
 ## Important Files & Links
 

@@ -40,6 +40,7 @@
 - [ ] Install Tailscale on client devices (laptop, phone)
 - [ ] Test accessing Paperless-ngx remotely via its Tailscale IP address
 - [ ] Review Tailscale ACLs for access control (optional, good for security)
+- [ ] Once remote access is confirmed stable, relocate G9 to its final server position and operate headless.
 
 ## Phase 2: Additional Services
 
