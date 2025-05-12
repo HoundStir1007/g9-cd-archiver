@@ -3,27 +3,32 @@
 ## Phase 0: Initial System Setup
 
 ### Windows 11 Pro Setup (Day 1)
-- [ ] Boot into pre-installed Windows 11 Pro
-- [ ] Complete initial Windows setup:
-    - [ ] Connect to network
-    - [ ] Create Microsoft account or local account
-    - [ ] Set privacy settings
+- [x] Boot into pre-installed Windows 11 Pro
+- [x] Complete initial Windows setup:
+    - [x] Connect to network
+    - [x] Create Microsoft account or local account
+    - [x] Set privacy settings
 - [ ] Install all Windows updates:
-    - [ ] Go to Settings → Windows Update
-    - [ ] Check for and install all updates (may require multiple restarts)
-- [ ] Install/update device drivers:
-    - [ ] Check Device Manager for any devices with warnings
-    - [ ] Download and install latest drivers from manufacturer website if needed
+    - [x] Go to Settings → Windows Update
+    - [ ] Check for and install all updates (may require multiple restarts) (IN PROGRESS)
+- [x] Install/update device drivers:
+    - [x] Check Device Manager for any devices with warnings
+    - [x] Download and install latest drivers from manufacturer website if needed
 - [ ] Configure Windows security:
-    - [ ] Verify Windows Defender is active
-    - [ ] Update virus definitions
+    - [x] Verify Windows Defender is active
+    - [x] Update virus definitions
     - [ ] Run a full system scan
-    - [ ] Enable BitLocker drive encryption for system drive
-    - [ ] Check Windows Firewall settings
+    - [x] Enable BitLocker drive encryption for system drive
+    - [x] Check Windows Firewall settings
 - [ ] Create a local admin account (if using Microsoft account):
     - [ ] Open Command Prompt as Administrator
     - [ ] Run: `net user administrator /active:yes`
     - [ ] Set a strong password
+- [x] Set computer name to "HOMELAB"
+- [x] Set up temporary cloud storage for backups:
+    - [x] Install iCloud for Windows from Microsoft Store
+    - [ ] Configure iCloud for document syncing
+    - [ ] Test Microsoft OneDrive integration
 
 ### Ubuntu Setup (Day 1)
 - [ ] Reboot G9 and access boot menu (F12 or Delete key during startup)
