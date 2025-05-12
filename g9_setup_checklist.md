@@ -1,18 +1,64 @@
 # GMKtec NucBox G9 Software Setup Checklist 🚀
 
-## Phase 1: Initial Setup & Core Services
+## Phase 0: Initial System Setup
 
-### 1. Base System Setup (Day 1)
-- [ ] Choose and Install Operating System (Ubuntu Server recommended, consider dual boot with Windows if needed)
-- [ ] Configure network settings (Static IP Address for G9)
-- [ ] Create user accounts (admin and daily user)
-- [ ] Implement basic security hardening (firewall, SSH key authentication)
-- [ ] Install essential utilities:
-    - [ ] `openssh-server` (if not included by default)
-    - [ ] Docker Engine
-    - [ ] Docker Compose
+### Windows 11 Pro Setup (Day 1)
+- [ ] Boot into pre-installed Windows 11 Pro
+- [ ] Complete initial Windows setup:
+    - [ ] Connect to network
+    - [ ] Create Microsoft account or local account
+    - [ ] Set privacy settings
+- [ ] Install all Windows updates:
+    - [ ] Go to Settings → Windows Update
+    - [ ] Check for and install all updates (may require multiple restarts)
+- [ ] Install/update device drivers:
+    - [ ] Check Device Manager for any devices with warnings
+    - [ ] Download and install latest drivers from manufacturer website if needed
+- [ ] Configure Windows security:
+    - [ ] Verify Windows Defender is active
+    - [ ] Update virus definitions
+    - [ ] Run a full system scan
+    - [ ] Enable BitLocker drive encryption for system drive
+    - [ ] Check Windows Firewall settings
+- [ ] Create a local admin account (if using Microsoft account):
+    - [ ] Open Command Prompt as Administrator
+    - [ ] Run: `net user administrator /active:yes`
+    - [ ] Set a strong password
 
-### 2. Storage Configuration (Day 1-2)
+### Ubuntu Setup (Day 1)
+- [ ] Reboot G9 and access boot menu (F12 or Delete key during startup)
+- [ ] Select Ubuntu from the boot menu
+- [ ] Complete Ubuntu setup:
+    - [ ] Select language and keyboard layout
+    - [ ] Connect to network
+    - [ ] Create user account with strong password
+- [ ] Update system:
+    - [ ] Open Terminal (Ctrl+Alt+T)
+    - [ ] Run: `sudo apt update && sudo apt upgrade -y`
+- [ ] Install essential packages:
+    - [ ] Run: `sudo apt install -y curl wget git net-tools htop`
+- [ ] Configure static IP address:
+    - [ ] Edit netplan config: `sudo nano /etc/netplan/00-installer-config.yaml`
+    - [ ] Apply changes: `sudo netplan apply`
+- [ ] Install Docker and Docker Compose:
+    - [ ] Run: `curl -fsSL https://get.docker.com -o get-docker.sh`
+    - [ ] Run: `sudo sh get-docker.sh`
+    - [ ] Run: `sudo usermod -aG docker $USER`
+    - [ ] Run: `sudo apt install -y docker-compose`
+- [ ] Set up SSH key authentication:
+    - [ ] Generate SSH key on client machine if needed
+    - [ ] Copy public key to Ubuntu: `ssh-copy-id username@server-ip`
+    - [ ] Disable password authentication: `sudo nano /etc/ssh/sshd_config`
+    - [ ] Set "PasswordAuthentication no"
+    - [ ] Restart SSH: `sudo systemctl restart sshd`
+- [ ] Configure firewall:
+    - [ ] Run: `sudo apt install -y ufw`
+    - [ ] Run: `sudo ufw allow ssh`
+    - [ ] Run: `sudo ufw enable`
+
+## Phase 1: Core Services
+
+### 1. Storage Configuration (Day 1-2)
 - [ ] Verify 512GB system SSD is correctly partitioned and formatted
 - [ ] If M.2 NVMe drives added to NAS bays:
     - [ ] Initialize and format new M.2 NVMe SSDs
@@ -20,11 +66,10 @@
     - [ ] Configure RAID level if applicable (e.g., RAID 1 for redundancy if 2+ drives)
     - [ ] Create file systems on the storage pool(s)
     - [ ] Set up mount points for NAS storage
-- [ ] If using a NAS-focused OS (like TrueNAS Scale or OpenMediaVault) on the G9:
-    - [ ] Configure storage pools and datasets/shares through the NAS OS interface.
 
-### 3. Document Management (Days 2-3)
-- [ ] Create a dedicated directory for Paperless-ngx data (e.g., on your NAS storage)
+### 2. Document Management - Windows 11 Pro (Days 2-3)
+- [ ] Create a dedicated directory for Paperless-ngx data
+- [ ] Install Docker Desktop for Windows
 - [ ] Create `docker-compose.yml` file for Paperless-ngx
 - [ ] Configure Paperless-ngx environment variables (paths, user, etc.)
 - [ ] Pull and run Paperless-ngx Docker container(s) (`docker-compose up -d`)
@@ -32,11 +77,13 @@
 - [ ] Configure OCR language(s) and settings
 - [ ] Set up document correspondents, tags, and document types
 - [ ] Test document uploading, processing (OCR), and searching
+- [ ] Configure iCloud backups for document storage
 
-### 4. Remote Access (Day 3)
+### 3. Remote Access - Both OSes (Day 3)
 - [ ] Sign up for a Tailscale account (if you haven't already)
-- [ ] Install Tailscale on the G9 server
-- [ ] Authenticate and connect the G9 to your Tailscale network (`sudo tailscale up`)
+- [ ] Install Tailscale on Windows 11 Pro
+- [ ] Install Tailscale on Ubuntu (`curl -fsSL https://tailscale.com/install.sh | sh`)
+- [ ] Authenticate and connect both OSes to your Tailscale network
 - [ ] Install Tailscale on client devices (laptop, phone)
 - [ ] Test accessing Paperless-ngx remotely via its Tailscale IP address
 - [ ] Review Tailscale ACLs for access control (optional, good for security)
@@ -44,7 +91,7 @@
 
 ## Phase 2: Additional Services
 
-### 5. Network Ad Blocking (Day 4)
+### 4. Network Ad Blocking - Ubuntu (Day 4)
 - [ ] Create a dedicated directory for Pi-hole data
 - [ ] Create `docker-compose.yml` file for Pi-hole
 - [ ] Configure Pi-hole environment variables (especially `WEBPASSWORD`)
@@ -54,16 +101,15 @@
 - [ ] Test ad blocking on multiple devices
 - [ ] Add essential domains to whitelist if needed
 
-### 6. Backup System (Day 4-5)
-- [ ] Decide on backup software (e.g., Duplicati, Restic, Kopia, or NAS OS built-in tools)
-- [ ] Install and configure chosen backup software (likely in Docker if not part of OS)
-- [ ] Define backup sources (Paperless-ngx data, Pi-hole configs, other critical data)
-- [ ] Define backup destinations (e.g., iCloud via rclone, separate external drive, another NAS/server)
+### 5. Backup System - Windows 11 Pro (Day 4-5)
+- [ ] Install Duplicati backup software
+- [ ] Define backup sources (Paperless-ngx data, other critical data)
+- [ ] Define backup destinations (e.g., iCloud via rclone, separate external drive)
 - [ ] Schedule automated backups
 - [ ] Perform an initial full backup
 - [ ] Test a file/directory restoration procedure
 
-### 7. Game Emulation Share (Day 5)
+### 6. Game Emulation Share - Ubuntu (Day 5)
 - [ ] Create a dedicated directory structure for emulation files:
     - [ ] Main directory (e.g., `/data/emulation/`)
     - [ ] System subdirectories (e.g., `nes/`, `snes/`, `genesis/`, etc.)
@@ -99,15 +145,23 @@
     - [ ] Test loading a game from the share and creating a save file
     - [ ] Verify the save file is accessible from another device
 
-### 8. Personal Wiki/Knowledge Base (Optional - Day 5-6)
-- [ ] Choose wiki software (e.g., BookStack, Wiki.js, Obsidian with sync)
+### 7. Personal Wiki/Knowledge Base - Ubuntu (Day 5-6)
+- [ ] Choose wiki software (BookStack recommended)
 - [ ] Create a dedicated directory for wiki data
-- [ ] Create `docker-compose.yml` file for chosen wiki software (if using Docker)
+- [ ] Create `docker-compose.yml` file for BookStack
 - [ ] Configure and deploy the wiki application
 - [ ] Set up initial structure, user accounts, and permissions
 - [ ] Start populating with family information, guides, etc.
 
-### 9. PIA VPN Integration (Day 6)
+### 8. Development Environment - Ubuntu (Day 6)
+- [ ] Set up code-server (VS Code in browser)
+- [ ] Create `docker-compose.yml` for `code-server`
+- [ ] Configure `code-server` (password, project directories)
+- [ ] Deploy `code-server`
+- [ ] Access from browser and test development workflow
+- [ ] Set up Git integration
+
+### 9. PIA VPN Integration - Ubuntu (Day 6)
 - [ ] Create a dedicated directory for VPN configuration
 - [ ] Set up a VPN gateway container:
     - [ ] Create a `docker-compose.yml` file for the VPN container:
@@ -153,10 +207,9 @@
     - [ ] Verify the service is working and accessible
     - [ ] Confirm the service is using the VPN connection for outgoing traffic
 
-## Phase 4: Server Dashboard (Day 6-7)
-
-- [ ] Choose a server dashboard (e.g., Homer, Homarr, Dashy, Organizr) - **Decision: Homer**
-- [ ] Create a dedicated directory for Homer configuration (e.g., `/opt/homer-config` or `~/docker/homer/assets`)
+### 10. Server Dashboard - Ubuntu (Day 6-7)
+- [ ] Choose a server dashboard (Homer)
+- [ ] Create a dedicated directory for Homer configuration (e.g., `~/docker/homer/assets`)
 - [ ] Create `docker-compose.yml` file for Homer
     - ```yaml
       services:
@@ -175,9 +228,23 @@
 - [ ] Access Homer dashboard in a browser and test links
 - [ ] Customize Homer (title, theme, add more services) as desired
 
-## Phase 5: Optional Expansions
+## Phase 3: Optional Expansions
 
-### 10. Minecraft Server (When desired)
+### 11. Home Inventory Management - Ubuntu (When desired)
+- [ ] Set up Grocy for home inventory tracking
+- [ ] Create a dedicated directory for Grocy data
+- [ ] Create `docker-compose.yml` file for Grocy
+- [ ] Configure and deploy the application
+- [ ] Set up initial inventory categories and items
+
+### 12. Audiobook Server - Ubuntu (When desired)
+- [ ] Set up Audiobookshelf for audiobook management
+- [ ] Create a dedicated directory for audiobook files
+- [ ] Create `docker-compose.yml` file for Audiobookshelf
+- [ ] Configure and deploy the application
+- [ ] Add initial audiobook collection
+
+### 13. Minecraft Server - Ubuntu (When desired)
 - [ ] Create a dedicated directory for Minecraft server data
 - [ ] Choose a Minecraft server Docker image (e.g., `itzg/minecraft-server`)
 - [ ] Create `docker-compose.yml` file for the Minecraft server
@@ -186,13 +253,13 @@
 - [ ] Test connecting to the server from Minecraft clients on the local network
 - [ ] If remote access needed, configure port forwarding on router or use Tailscale/other VPN
 
-### 11. Development Environment (When needed)
-- [ ] Choose remote development solution (e.g., VS Code Server via `code-server` Docker image)
-- [ ] Create `docker-compose.yml` for `code-server`
-- [ ] Configure `code-server` (password, project directories)
-- [ ] Deploy `code-server`
-- [ ] Access from browser and test development workflow
-- [ ] Set up Git integration
+## Phase 4: LLM Evaluation (Optional)
+
+### 14. Local LLM Testing - Ubuntu (When desired)
+- [ ] Install Ollama for local LLM experimentation
+- [ ] Download smaller models to test performance (e.g., Llama-2-7b)
+- [ ] Evaluate performance and usability
+- [ ] Consider cloud-hybrid approaches if local performance is insufficient
 
 ---
 **Notes:**
@@ -200,3 +267,6 @@
 - Refer to official documentation for each software component.
 - Take notes of all configurations, passwords, and important settings!
 - Backup regularly, especially before major changes. 
+- Windows 11 Pro is used primarily for document management (Paperless-ngx) and backups.
+- Ubuntu is used for most other services (Pi-hole, wiki, development, etc.).
+- Both operating systems have Tailscale installed for seamless remote access. 
