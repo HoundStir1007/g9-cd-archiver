@@ -50,6 +50,21 @@ For the next session, consider the following steps:
   - Tailscale unattended mode enabled for persistent connection
   - OneDrive configured with HomeServer directory junction
 - All credentials stored in macOS/iOS Passwords app
+- G9 Ethernet ports troubleshooting progress:
+  - Confirmed G9 is accessible via Tailscale (100.122.141.83)
+  - Current issue: Second ethernet port not properly configured
+  - Troubleshooting steps to complete:
+    1. Configure Internet Connection Sharing on Ethernet (not Ethernet 2)
+    2. Select "Allow other network users..." and choose Ethernet 2 as home network
+    3. If ICS doesn't work, try creating a bridge:
+       - Select both ethernet adapters
+       - Right-click and choose "Bridge Connections"
+    4. For manual IP config on connected devices (if needed):
+       - IP: 192.168.137.x (where x is a unique number between 2-254)
+       - Subnet: 255.255.255.0
+       - Router/Gateway: 192.168.137.1
+       - DNS: 8.8.8.8 and 8.8.4.4
+    5. Check firewall settings if connectivity issues persist
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*

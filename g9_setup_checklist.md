@@ -8,22 +8,22 @@
     - [x] Connect to network
     - [x] Create Microsoft account or local account
     - [x] Set privacy settings
-- [ ] Install all Windows updates:
+- [x] Install all Windows updates:
     - [x] Go to Settings → Windows Update
-    - [ ] Check for and install all updates (may require multiple restarts) (IN PROGRESS)
+    - [x] Check for and install all updates (may require multiple restarts)
 - [x] Install/update device drivers:
     - [x] Check Device Manager for any devices with warnings
     - [x] Download and install latest drivers from manufacturer website if needed
-- [ ] Configure Windows security:
+- [x] Configure Windows security:
     - [x] Verify Windows Defender is active
     - [x] Update virus definitions
-    - [ ] Run a full system scan
+    - [x] Run a full system scan
     - [x] Enable BitLocker drive encryption for system drive
     - [x] Check Windows Firewall settings
-- [ ] Create a local admin account (if using Microsoft account):
-    - [ ] Open Command Prompt as Administrator
-    - [ ] Run: `net user administrator /active:yes`
-    - [ ] Set a strong password
+- [x] Create a local admin account (if using Microsoft account):
+    - [x] Open Command Prompt as Administrator
+    - [x] Run: `net user administrator /active:yes`
+    - [x] Set a strong password (Admin-8vehma)
 - [x] Set computer name to "HOMELAB"
 - [x] Set up temporary cloud storage for backups:
     - [x] Install iCloud for Windows from Microsoft Store
@@ -62,7 +62,7 @@
         - [ ] Selective Sync: Media/, ServerData/ (critical files only)
     - [ ] Add README files to each directory explaining its purpose
     - [ ] Configure iCloud for document syncing
-    - [ ] Test Microsoft OneDrive integration
+    - [x] Test Microsoft OneDrive integration (configured with HomeServer directory junction)
 
 ### Hardware Configuration Notes
 - [x] Power adapter safety:
@@ -77,6 +77,13 @@
     - [x] Can connect one port to your router/network and the second port to another device (e.g., AppleTV)
     - [x] Acts as a mini network switch - data passes through even when accessing internal resources
     - [x] Note: Devices connected through the G9 will lose connectivity if the G9 is powered off
+
+### Auto-Start Configuration
+- [x] Configure BIOS/UEFI settings:
+    - [x] Enable "Wake on Power (Automatic On) [S0 State]" in BIOS Advanced settings
+- [x] Disable Fast Startup in Windows 11:
+    - [x] Used Command Prompt method: `powercfg -h off`
+    - [x] Verified via Registry Editor: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power\HiberbootEnabled = 0
 
 ### Ubuntu Setup (Day 1)
 - [ ] Reboot G9 and access boot menu (F12 or Delete key during startup)
@@ -132,12 +139,27 @@
 - [ ] Test document uploading, processing (OCR), and searching
 - [ ] Configure iCloud backups for document storage
 
+### 2.5. Backup System - Windows 11 Pro (Days 2-3)
+- [ ] Install Duplicati backup software
+- [ ] Define backup sources (Paperless-ngx data, other critical data)
+- [ ] Define backup destinations (e.g., iCloud via rclone, separate external drive)
+- [ ] Schedule automated backups
+- [ ] Perform an initial full backup
+- [ ] Test a file/directory restoration procedure
+
 ### 3. Remote Access - Both OSes (Day 3)
-- [ ] Sign up for a Tailscale account (if you haven't already)
-- [ ] Install Tailscale on Windows 11 Pro
+- [x] Sign up for a Tailscale account (if you haven't already)
+- [x] Install Tailscale on Windows 11 Pro
 - [ ] Install Tailscale on Ubuntu (`curl -fsSL https://tailscale.com/install.sh | sh`)
-- [ ] Authenticate and connect both OSes to your Tailscale network
-- [ ] Install Tailscale on client devices (laptop, phone)
+- [x] Authenticate and connect both OSes to your Tailscale network (Windows configured with IP: 100.122.141.83)
+- [x] Install Tailscale on client devices (laptop, phone)
+    - [x] Install Tailscale on MacBook Pro:
+        - [x] Download Tailscale from https://tailscale.com/download/macos
+        - [x] Install the application
+        - [x] Sign in with the same account used for the G9
+        - [x] Verify connection to the Tailscale network
+        - [x] Test connectivity to the G9 (ping 100.122.141.83)
+    - [ ] Install Tailscale on mobile devices (if needed)
 - [ ] Test accessing Paperless-ngx remotely via its Tailscale IP address
 - [ ] Review Tailscale ACLs for access control (optional, good for security)
 - [ ] Once remote access is confirmed stable, relocate G9 to its final server position and operate headless.
@@ -154,15 +176,7 @@
 - [ ] Test ad blocking on multiple devices
 - [ ] Add essential domains to whitelist if needed
 
-### 5. Backup System - Windows 11 Pro (Day 4-5)
-- [ ] Install Duplicati backup software
-- [ ] Define backup sources (Paperless-ngx data, other critical data)
-- [ ] Define backup destinations (e.g., iCloud via rclone, separate external drive)
-- [ ] Schedule automated backups
-- [ ] Perform an initial full backup
-- [ ] Test a file/directory restoration procedure
-
-### 6. Game Emulation Share - Ubuntu (Day 5)
+### 5. Game Emulation Share - Ubuntu (Day 5)
 - [ ] Create a dedicated directory structure for emulation files:
     - [ ] Main directory (e.g., `/data/emulation/`)
     - [ ] System subdirectories (e.g., `nes/`, `snes/`, `genesis/`, etc.)
@@ -198,7 +212,7 @@
     - [ ] Test loading a game from the share and creating a save file
     - [ ] Verify the save file is accessible from another device
 
-### 7. Personal Wiki/Knowledge Base - Ubuntu (Day 5-6)
+### 6. Personal Wiki/Knowledge Base - Ubuntu (Day 5-6)
 - [ ] Choose wiki software (BookStack recommended)
 - [ ] Create a dedicated directory for wiki data
 - [ ] Create `docker-compose.yml` file for BookStack
@@ -206,7 +220,7 @@
 - [ ] Set up initial structure, user accounts, and permissions
 - [ ] Start populating with family information, guides, etc.
 
-### 8. Development Environment - Ubuntu (Day 6)
+### 7. Development Environment - Ubuntu (Day 6)
 - [ ] Set up code-server (VS Code in browser)
 - [ ] Create `docker-compose.yml` for `code-server`
 - [ ] Configure `code-server` (password, project directories)
@@ -214,7 +228,7 @@
 - [ ] Access from browser and test development workflow
 - [ ] Set up Git integration
 
-### 9. PIA VPN Integration - Ubuntu (Day 6)
+### 8. PIA VPN Integration - Ubuntu (Day 6)
 - [ ] Create a dedicated directory for VPN configuration
 - [ ] Set up a VPN gateway container:
     - [ ] Create a `docker-compose.yml` file for the VPN container:
@@ -260,7 +274,7 @@
     - [ ] Verify the service is working and accessible
     - [ ] Confirm the service is using the VPN connection for outgoing traffic
 
-### 10. Server Dashboard - Ubuntu (Day 6-7)
+### 9. Server Dashboard - Ubuntu (Day 6-7)
 - [ ] Choose a server dashboard (Homer)
 - [ ] Create a dedicated directory for Homer configuration (e.g., `~/docker/homer/assets`)
 - [ ] Create `docker-compose.yml` file for Homer
@@ -283,21 +297,21 @@
 
 ## Phase 3: Optional Expansions
 
-### 11. Home Inventory Management - Ubuntu (When desired)
+### 10. Home Inventory Management - Ubuntu (When desired)
 - [ ] Set up Grocy for home inventory tracking
 - [ ] Create a dedicated directory for Grocy data
 - [ ] Create `docker-compose.yml` file for Grocy
 - [ ] Configure and deploy the application
 - [ ] Set up initial inventory categories and items
 
-### 12. Audiobook Server - Ubuntu (When desired)
+### 11. Audiobook Server - Ubuntu (When desired)
 - [ ] Set up Audiobookshelf for audiobook management
 - [ ] Create a dedicated directory for audiobook files
 - [ ] Create `docker-compose.yml` file for Audiobookshelf
 - [ ] Configure and deploy the application
 - [ ] Add initial audiobook collection
 
-### 13. Minecraft Server - Ubuntu (When desired)
+### 12. Minecraft Server - Ubuntu (When desired)
 - [ ] Create a dedicated directory for Minecraft server data
 - [ ] Choose a Minecraft server Docker image (e.g., `itzg/minecraft-server`)
 - [ ] Create `docker-compose.yml` file for the Minecraft server
@@ -308,7 +322,7 @@
 
 ## Phase 4: LLM Evaluation (Optional)
 
-### 14. Local LLM Testing - Ubuntu (When desired)
+### 13. Local LLM Testing - Ubuntu (When desired)
 - [ ] Install Ollama for local LLM experimentation
 - [ ] Download smaller models to test performance (e.g., Llama-2-7b)
 - [ ] Evaluate performance and usability
