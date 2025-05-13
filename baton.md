@@ -15,6 +15,7 @@ In this session, we worked on the initial setup of the GMKtec NucBox G9 server:
 - Set computer name to "HOMELAB"
 - Installed iCloud for Windows for temporary document backup
 - Started exploring OneDrive integration for document storage
+- Documented important hardware notes (power adapter safety, network daisy-chaining)
 
 ## Next Steps
 
@@ -46,6 +47,8 @@ For the next session, consider the following steps:
 - BitLocker recovery key is saved to Microsoft account and as a PDF (add to documentation when available)
 - Using iCloud and OneDrive for temporary document storage until permanent NAS storage is configured
 - Will revisit storage configuration in 1-2 weeks for potential additional NVMe drives
+- IMPORTANT: The G9 power adapter has a non-standard voltage/wattage - marked with yellow flags to avoid mix-ups with other USB-C devices
+- The G9's dual ethernet ports can be used for daisy-chaining network connections (no special configuration needed)
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*
