@@ -86,17 +86,17 @@
     - [x] Verified via Registry Editor: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power\HiberbootEnabled = 0
 
 ### Ubuntu Setup (Day 1)
-- [ ] Reboot G9 and access boot menu (F12 or Delete key during startup)
-- [ ] Select Ubuntu from the boot menu
-- [ ] Complete Ubuntu setup:
-    - [ ] Select language and keyboard layout
-    - [ ] Connect to network
-    - [ ] Create user account with strong password
-- [ ] Update system:
-    - [ ] Open Terminal (Ctrl+Alt+T)
-    - [ ] Run: `sudo apt update && sudo apt upgrade -y`
-- [ ] Install essential packages:
-    - [ ] Run: `sudo apt install -y curl wget git net-tools htop`
+- [x] Reboot G9 and access boot menu (F7 key during startup)
+- [x] Select Ubuntu from the boot menu
+- [x] Complete Ubuntu setup:
+    - [x] Select language and keyboard layout
+    - [x] Connect to network
+    - [x] Create user account with strong password
+- [x] Update system:
+    - [x] Open Terminal (Ctrl+Alt+T)
+    - [x] Run: `sudo apt update && sudo apt upgrade -y`
+- [x] Install essential packages:
+    - [x] Run: `sudo apt install -y curl wget git net-tools htop`
 - [ ] Configure static IP address:
     - [ ] Edit netplan config: `sudo nano /etc/netplan/00-installer-config.yaml`
     - [ ] Apply changes: `sudo netplan apply`
@@ -150,8 +150,8 @@
 ### 3. Remote Access - Both OSes (Day 3)
 - [x] Sign up for a Tailscale account (if you haven't already)
 - [x] Install Tailscale on Windows 11 Pro
-- [ ] Install Tailscale on Ubuntu (`curl -fsSL https://tailscale.com/install.sh | sh`)
-- [x] Authenticate and connect both OSes to your Tailscale network (Windows configured with IP: 100.122.141.83)
+- [x] Install Tailscale on Ubuntu (`curl -fsSL https://tailscale.com/install.sh | sh`)
+- [x] Authenticate and connect both OSes to your Tailscale network (Windows configured with IP: 100.122.141.83, Ubuntu configured with IP: 100.91.157.19)
 - [x] Install Tailscale on client devices (laptop, phone)
     - [x] Install Tailscale on MacBook Pro:
         - [x] Download Tailscale from https://tailscale.com/download/macos
