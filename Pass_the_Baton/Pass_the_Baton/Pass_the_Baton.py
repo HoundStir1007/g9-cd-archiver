@@ -102,7 +102,7 @@ def git_operations():
     # Commit changes with OS-specific handling if needed
     if IS_WINDOWS:
         try:
-            commit_result = run_command(["git", "commit", "-m", commit_message])
+            commit_result = run_command(["git", "commit", "-m", f'"{commit_message}"'])
         except Exception:
             # Try alternative method on Windows
             commit_result = run_command(f'git commit -m "{commit_message}"')
