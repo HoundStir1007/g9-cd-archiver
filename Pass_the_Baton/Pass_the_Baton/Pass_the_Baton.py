@@ -67,8 +67,11 @@ def git_operations():
     run_command(["git", "add", "."])
     commit_result = run_command(["git", "commit", "-m", commit_message])
 
-    # Skip the push step - uncomment if you have a real remote
-    print("✅ Skipping push to remote (dummy repository configured).")
+    # Actually push to remote
+    if commit_result is not None:  # Only push if there was something to commit
+        print("🚀 Pushing changes to remote...")
+        run_command(["git", "push"])
+        print("✅ Changes pushed to remote successfully.")
     
     return True
 
