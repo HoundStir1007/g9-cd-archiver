@@ -46,11 +46,18 @@ python Pass_the_Baton/Pass_the_Baton/Pass_the_Baton.py
 
 *   The script automatically detects your operating system and adapts to platform-specific needs.
 *   It uses standard `git` commands (`add`, `commit`, `push`) with special handling for Windows when needed.
-*   It interacts with two files in your project root:
-    *   `baton.md`: The main hand-off file, updated each time the script runs.
-    *   `baton_archive.md`: Stores the history of previous `baton.md` contents.
+*   It maintains a single file in your project root:
+    *   `baton.md`: A scroll-like document where new entries are prepended at the top, with the newest entries first (like a blog or newsreel).
 *   If `baton.md` doesn't exist in your project root when the script first runs, it will be created using the `baton_template.md` from this folder.
 *   The script handles path differences between operating systems automatically.
+
+## Scroll Format (NEW)
+
+*   Each time you run the script, a new entry is added at the TOP of the baton.md file
+*   Entries are separated by horizontal lines and timestamps
+*   This creates a reverse-chronological record of all sessions
+*   No separate archive file is needed since all history is preserved in one file
+*   You can quickly see recent activity first, then scroll down for older entries
 
 ## Platform-Specific Features
 
@@ -63,5 +70,5 @@ For more detailed information about cross-platform features, see `cross_platform
 ## Important Notes
 
 *   The script assumes it's being run from the project's root directory.
-*   The updates made to `baton.md` and `baton_archive.md` during a run are **not** automatically committed by that same run. They will be included the *next* time you run the script or perform a manual commit. 
+*   The updates made to `baton.md` during a run are **not** automatically committed by that same run. They will be included the *next* time you run the script or perform a manual commit. 
 *   Each time you run the script, it will display your detected operating system information. 

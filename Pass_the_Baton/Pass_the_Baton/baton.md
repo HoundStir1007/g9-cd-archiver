@@ -1,16 +1,15 @@
 # Baton Hand-off
 
-**Last Update:** 2025-04-25 01:32:06
+**Last Update:** 2025-05-16 00:34:29
 
 ## Session Summary
 
 In this session, we worked on the following changes:
 
-- Update baton handoff document - 2025-04-25 01:32:05
-- Update baton handoff document - 2025-04-25 01:31:17
-- Update baton handoff document - 2025-04-25 01:30:08
-- Update baton handoff document - 2025-04-25 01:29:52
-- Update baton handoff document - 2025-04-25 01:28:57
+- Update baton handoff document - 2025-05-16 00:34:28
+- Update baton handoff document - 2025-05-16 00:27:05
+- Sync Mac changes - update Pass_the_Baton script to push changes
+- Update baton handoff document - 2025-05-15 19:56:18
 
 These changes focused on improving project functionality and structure.
 
@@ -25,12 +24,15 @@ For the next session, consider the following steps:
 
 ## Important Files & Links
 
+*   cross_platform_readme.md: Cross_Platform_Readme
 *   baton_template.md: Baton_Template
 *   Pass_the_Baton.py: Pass_The_ Baton
 
 ## Important Reminders
 
-*(No reminders provided)*
+• Currently running on Darwin 24.4.0
+
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*
+*Running on Darwin 24.4.0*

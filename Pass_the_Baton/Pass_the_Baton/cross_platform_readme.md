@@ -3,6 +3,15 @@
 ## Overview
 Pass_the_Baton is a utility that helps document and transition between work sessions. This cross-platform version works seamlessly across macOS, Windows, and Linux.
 
+## New Scroll Format 📜
+The baton.md file now works like a scroll, with new entries added to the top (most recent first):
+
+- Each run of the script adds a new entry at the TOP of the file
+- All previous entries are preserved in the same file
+- Entries are clearly marked with timestamps and separators
+- This creates a reverse-chronological log of all sessions
+- No separate archive file is needed
+
 ## How to Run
 
 ### On macOS/Linux:
@@ -31,6 +40,12 @@ Alternatively, you can double-click on `pass_the_baton.bat` in File Explorer.
 If you prefer to run the Python script directly:
 ```
 python Pass_the_Baton.py
+```
+
+### Universal Launcher (Recommended):
+From your project root directory, run:
+```bash
+python Pass_the_Baton/run_baton.py
 ```
 
 ## Requirements

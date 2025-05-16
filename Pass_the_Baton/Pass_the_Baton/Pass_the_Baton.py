@@ -337,7 +337,7 @@ def get_llm_generated_content():
     }
 
 def update_baton():
-    """Updates the baton.md file with AI-generated content without user input."""
+    """Updates the baton.md file by prepending new content to existing content."""
     print("\n--- Update Baton ---")
     
     # Generate content with LLM-like approach
@@ -349,9 +349,8 @@ def update_baton():
     
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    new_content = f"""# Baton Hand-off
-
-**Last Update:** {timestamp}
+    # Create new entry
+    new_content = f"""# Baton Entry - {timestamp} 📜
 
 ## Session Summary
 
@@ -369,27 +368,36 @@ def update_baton():
 
 {reminders if reminders else "*(No reminders provided)*"}
 
----
-*This file is automatically updated by the Pass_the_Baton script.*
 *Running on {platform.system()} {platform.release()}*
+
+---
+
 """
 
     try:
+        # Read existing content if file exists
+        existing_content = ""
+        if os.path.exists(BATON_FILENAME):
+            with open(BATON_FILENAME, 'r', encoding='utf-8') as baton_file:
+                existing_content = baton_file.read()
+                
+        # Combine new entry with existing content
+        combined_content = new_content + existing_content
+        
+        # Write back to the file
         with open(BATON_FILENAME, 'w', encoding='utf-8') as baton_file:
-            baton_file.write(new_content)
-        print(f"✅ '{BATON_FILENAME}' updated successfully.")
+            baton_file.write(combined_content)
+        print(f"✅ '{BATON_FILENAME}' updated successfully with new entry prepended.")
     except Exception as e:
-        print(f"❌ Error writing to '{BATON_FILENAME}': {e}", file=sys.stderr)
+        print(f"❌ Error updating '{BATON_FILENAME}': {e}", file=sys.stderr)
         sys.exit(1)
-
 
 def main():
     """Main execution flow."""
     print(f"🏃 Kicking off Pass_the_Baton on {platform.system()}! 🏃💨")
     check_git_repo()
-    ensure_baton_file() # Ensure baton exists before archiving/updating
+    ensure_baton_file() # Ensure baton exists before updating
     git_operations()
-    archive_baton()
     update_baton()
     print("\n🎉 Baton passed successfully! The next agent is ready to go! 🎉")
 

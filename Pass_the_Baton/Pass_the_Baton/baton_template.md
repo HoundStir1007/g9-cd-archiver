@@ -1,3 +1,11 @@
+# Baton Scroll 📜
+
+This file contains project handoff notes in reverse chronological order (newest at top).
+
+Each new entry is automatically prepended to this file when you run the Pass_the_Baton script.
+
+---
+
 # Baton Hand-off
 
 **Last Update:** {timestamp_placeholder}
