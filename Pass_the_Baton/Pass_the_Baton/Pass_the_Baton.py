@@ -5,27 +5,43 @@ import sys
 import shutil
 import json
 import re
+import platform
 
 # --- Configuration ---
 BATON_FILENAME = "baton.md"
 ARCHIVE_FILENAME = "baton_archive.md"
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 TEMPLATE_FILENAME = os.path.join(SCRIPT_DIR, "baton_template.md")
+
+# OS Detection
+CURRENT_OS = platform.system().lower()  # 'windows', 'darwin' (macOS), or 'linux'
+IS_WINDOWS = CURRENT_OS == 'windows'
+IS_MAC = CURRENT_OS == 'darwin'
+IS_LINUX = CURRENT_OS == 'linux'
+
+print(f"🖥️ Detected operating system: {platform.system()} ({platform.release()})")
 # --- End Configuration ---
 
 def run_command(command):
-    """Executes a shell command and returns its output."""
+    """Executes a shell command and returns its output with OS-specific handling."""
     try:
-        print(f"🏃 Running: {' '.join(command)}")
-        result = subprocess.run(command, capture_output=True, text=True, check=True, encoding='utf-8')
+        # Special handling for Windows shell commands if needed
+        if IS_WINDOWS and not isinstance(command, str) and command[0] == "git":
+            # Some Windows environments might need shell=True for git commands
+            print(f"🏃 Running: {' '.join(command)}")
+            result = subprocess.run(command, capture_output=True, text=True, check=True, encoding='utf-8', shell=True)
+        else:
+            print(f"🏃 Running: {' '.join(command) if isinstance(command, list) else command}")
+            result = subprocess.run(command, capture_output=True, text=True, check=True, encoding='utf-8')
+        
         return result.stdout.strip()
     except FileNotFoundError:
-        print(f"❌ Error: Command not found: {command[0]}. Is Git installed and in PATH?", file=sys.stderr)
+        print(f"❌ Error: Command not found: {command[0] if isinstance(command, list) else command}. Is Git installed and in PATH?", file=sys.stderr)
         sys.exit(1)
     except subprocess.CalledProcessError as e:
-        print(f"❌ Error running command: {' '.join(command)}", file=sys.stderr)
+        print(f"❌ Error running command: {' '.join(command) if isinstance(command, list) else command}", file=sys.stderr)
         # Don't exit for commit errors if there's nothing to commit
-        if not (command[1] == 'commit' and 'nothing to commit' in e.stderr):
+        if not (isinstance(command, list) and command[1] == 'commit' and 'nothing to commit' in e.stderr):
              sys.exit(1)
         else:
             print("🤷 No changes detected to commit.")
@@ -38,7 +54,16 @@ def check_git_repo():
     """Checks if the current directory is a Git repository."""
     print("🔍 Checking for Git repository...")
     try:
-        run_command(["git", "rev-parse", "--is-inside-work-tree"])
+        # Handle potential Windows-specific issues with Git
+        if IS_WINDOWS:
+            try:
+                run_command(["git", "rev-parse", "--is-inside-work-tree"])
+            except Exception:
+                # Try with shell=True as a fallback on Windows
+                run_command("git rev-parse --is-inside-work-tree")
+        else:
+            run_command(["git", "rev-parse", "--is-inside-work-tree"])
+        
         print("✅ Git repository found.")
     except Exception:
         print("❌ Error: Not a Git repository. Please run this script from the root of your project.", file=sys.stderr)
@@ -64,13 +89,37 @@ def git_operations():
     commit_message = f"Update baton handoff document - {timestamp}"
     print(f"Using commit message: {commit_message}")
 
-    run_command(["git", "add", "."])
-    commit_result = run_command(["git", "commit", "-m", commit_message])
+    # Handle OS-specific Git operations
+    if IS_WINDOWS:
+        try:
+            run_command(["git", "add", "."])
+        except Exception:
+            # Try alternative method on Windows if needed
+            run_command("git add .")
+    else:
+        run_command(["git", "add", "."])
+
+    # Commit changes with OS-specific handling if needed
+    if IS_WINDOWS:
+        try:
+            commit_result = run_command(["git", "commit", "-m", commit_message])
+        except Exception:
+            # Try alternative method on Windows
+            commit_result = run_command(f'git commit -m "{commit_message}"')
+    else:
+        commit_result = run_command(["git", "commit", "-m", commit_message])
 
     # Actually push to remote
     if commit_result is not None:  # Only push if there was something to commit
         print("🚀 Pushing changes to remote...")
-        run_command(["git", "push"])
+        if IS_WINDOWS:
+            try:
+                run_command(["git", "push"])
+            except Exception:
+                # Try alternative method on Windows
+                run_command("git push")
+        else:
+            run_command(["git", "push"])
         print("✅ Changes pushed to remote successfully.")
     
     return True
@@ -97,13 +146,26 @@ def archive_baton():
 def get_recent_git_changes():
     """Get recent git changes to help the LLM understand what was worked on."""
     try:
-        # Get commits from last 24 hours or last 10 commits, whichever is fewer
-        recent_commits = run_command(["git", "log", "--pretty=format:%s", "--since=24.hours", "-10"])
+        # OS-specific Git commands with fallbacks
+        if IS_WINDOWS:
+            try:
+                recent_commits = run_command(["git", "log", "--pretty=format:%s", "--since=24.hours", "-10"])
+            except Exception:
+                recent_commits = run_command('git log --pretty=format:"%s" --since=24.hours -10')
+        else:
+            recent_commits = run_command(["git", "log", "--pretty=format:%s", "--since=24.hours", "-10"])
         
         # Count total commits to avoid errors with HEAD~n references
         commit_count = 0
         try:
-            commit_count_output = run_command(["git", "rev-list", "--count", "HEAD"])
+            if IS_WINDOWS:
+                try:
+                    commit_count_output = run_command(["git", "rev-list", "--count", "HEAD"])
+                except Exception:
+                    commit_count_output = run_command("git rev-list --count HEAD")
+            else:
+                commit_count_output = run_command(["git", "rev-list", "--count", "HEAD"])
+            
             commit_count = int(commit_count_output.strip())
         except Exception:
             # If we can't count commits, assume there's only 1
@@ -115,15 +177,29 @@ def get_recent_git_changes():
             # If we have more than 1 commit, check files changed in last commit
             try:
                 depth = min(5, commit_count - 1)  # Don't go further back than available history
-                modified_files = run_command(["git", "diff", "--name-only", f"HEAD~{depth}", "HEAD"])
-                modified_files = modified_files.split("\n") if modified_files else []
+                if IS_WINDOWS:
+                    try:
+                        modified_files_str = run_command(["git", "diff", "--name-only", f"HEAD~{depth}", "HEAD"])
+                    except Exception:
+                        modified_files_str = run_command(f"git diff --name-only HEAD~{depth} HEAD")
+                else:
+                    modified_files_str = run_command(["git", "diff", "--name-only", f"HEAD~{depth}", "HEAD"])
+                
+                modified_files = modified_files_str.split("\n") if modified_files_str else []
             except Exception as e:
                 print(f"⚠️ Warning: Error getting modified files: {e}")
         else:
             # For new repos with only 1 commit, get all tracked files
             try:
-                modified_files = run_command(["git", "ls-tree", "-r", "HEAD", "--name-only"])
-                modified_files = modified_files.split("\n") if modified_files else []
+                if IS_WINDOWS:
+                    try:
+                        modified_files_str = run_command(["git", "ls-tree", "-r", "HEAD", "--name-only"])
+                    except Exception:
+                        modified_files_str = run_command("git ls-tree -r HEAD --name-only")
+                else:
+                    modified_files_str = run_command(["git", "ls-tree", "-r", "HEAD", "--name-only"])
+                
+                modified_files = modified_files_str.split("\n") if modified_files_str else []
             except Exception as e:
                 print(f"⚠️ Warning: Error listing tracked files: {e}")
         
@@ -141,9 +217,11 @@ def find_important_files():
     important_files = []
     
     try:
-        # Find main project files
+        # Find main project files - use OS-safe methods for file traversal
         for root, _, files in os.walk('.'):
-            if '.git' in root or 'node_modules' in root or '__pycache__' in root:
+            # Skip OS-specific directories that might cause issues
+            if any(skip_dir in root for skip_dir in ['.git', 'node_modules', '__pycache__', 
+                                                  '$RECYCLE.BIN' if IS_WINDOWS else '.Trash']):
                 continue
                 
             for file in files:
@@ -151,11 +229,23 @@ def find_important_files():
                 # Skip the baton files themselves
                 if file == BATON_FILENAME or file == ARCHIVE_FILENAME:
                     continue
+                
+                # Skip OS-specific hidden files
+                if IS_MAC and file.startswith('.'):
+                    continue
+                if IS_WINDOWS and file.startswith('~$'):  # Windows temp files
+                    continue
                     
                 if any(file.endswith(ext) for ext in important_extensions):
                     # Only include relatively small files
-                    if os.path.getsize(file_path) < 1000000:  # 1MB limit
-                        important_files.append(file_path.replace('./', '', 1))
+                    try:
+                        if os.path.getsize(file_path) < 1000000:  # 1MB limit
+                            # Normalize path separators for consistency across OS
+                            norm_path = file_path.replace('\\', '/').replace('./', '', 1) if IS_WINDOWS else file_path.replace('./', '', 1)
+                            important_files.append(norm_path)
+                    except OSError:
+                        # Skip files with permission issues or that don't exist
+                        continue
         
         # Prioritize files that seem most important
         prioritized_files = []
@@ -198,18 +288,21 @@ def get_llm_generated_content():
         next_steps += "- Add more comprehensive documentation\n"
         next_steps += "- Address any pending TODOs in the codebase"
         
-        # 3. Generate Important Files & Links
+        # 3. Generate Important Files & Links with OS-aware path formatting
         links = []
         for file_path in important_files:
+            # Ensure paths are displayed consistently regardless of OS
+            display_path = file_path.replace('\\', '/') if IS_WINDOWS else file_path
+            
             if file_path.endswith('README.md'):
-                links.append(f"{file_path}: Main project documentation")
+                links.append(f"{display_path}: Main project documentation")
             elif re.search(r'(main|index|app)\.(py|js|jsx|ts|tsx)$', file_path):
-                links.append(f"{file_path}: Core application entry point")
+                links.append(f"{display_path}: Core application entry point")
             else:
                 # Generate a simple description based on the filename
                 name = os.path.basename(file_path)
                 desc = f"{''.join(' ' + c if c.isupper() else c for c in os.path.splitext(name)[0]).strip().title()}"
-                links.append(f"{file_path}: {desc}")
+                links.append(f"{display_path}: {desc}")
         
         links_formatted = "\n".join([f"*   {link}" for link in links])
         if not links_formatted:
@@ -222,12 +315,17 @@ def get_llm_generated_content():
         next_steps += "- Review the baton handoff system and provide feedback\n"
         next_steps += "- Continue development of core project features\n"
         next_steps += "- Update this file with more specific details about the project"
-        links_formatted = "*   Pass_the_Baton/Pass_the_Baton.py: Handoff script for session transitions\n"
-        links_formatted += "*   baton.md: The handoff document being generated\n"
+        
+        # Use OS-appropriate path separators in the fallback content
+        sep = '\\' if IS_WINDOWS else '/'
+        baton_path = f"Pass_the_Baton{sep}Pass_the_Baton.py"
+        
+        links_formatted = f"*   {baton_path}: Handoff script for session transitions\n"
+        links_formatted += f"*   {BATON_FILENAME}: The handoff document being generated\n"
         links_formatted += "*   README.md: Add this file with project documentation"
     
-    # 4. Reminders - Leave blank for now, as these are usually more project-specific
-    reminders = ""
+    # 4. Reminders - Include OS-specific information
+    reminders = f"• Currently running on {platform.system()} {platform.release()}\n"
     
     print("✅ AI content generation complete!")
     
@@ -273,6 +371,7 @@ def update_baton():
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*
+*Running on {platform.system()} {platform.release()}*
 """
 
     try:
@@ -286,7 +385,7 @@ def update_baton():
 
 def main():
     """Main execution flow."""
-    print("🏃 Kicking off Pass_the_Baton! 🏃💨")
+    print(f"🏃 Kicking off Pass_the_Baton on {platform.system()}! 🏃💨")
     check_git_repo()
     ensure_baton_file() # Ensure baton exists before archiving/updating
     git_operations()
