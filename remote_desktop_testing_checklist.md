@@ -4,14 +4,14 @@ This checklist ensures complete remote desktop functionality for the GMKtec NucB
 
 ## Current Plan & Progress 🚀
 
-1. ⏳ Test Windows Remote Desktop access via Tailscale
+1. ✅ Test Windows Remote Desktop access via Tailscale
 2. ⏳ Verify/Install SSH server on Ubuntu during direct access
 3. ⏳ Set up method to switch between Windows and Ubuntu remotely
 
 ## Prerequisites ✅
 
 - [x] Tailscale installed and configured on both Windows 11 and Ubuntu
-- [ ] Remote Desktop enabled in Windows 11 settings
+- [x] Remote Desktop enabled in Windows 11 settings
 - [ ] SSH server installed and configured on Ubuntu
 - [ ] VNC or alternative remote desktop solution installed on Ubuntu
 - [ ] All network adapters properly configured
@@ -19,21 +19,21 @@ This checklist ensures complete remote desktop functionality for the GMKtec NucB
 
 ## Windows 11 Remote Desktop Testing 🪟
 
-- [ ] Basic connection
-  - [ ] Connect to Windows via Tailscale network
+- [x] Basic connection
+  - [x] Connect to Windows via Tailscale network
   - [ ] Connect to Windows via local network
-  - [ ] Verify screen resolution and quality
+  - [x] Verify screen resolution and quality
 
-- [ ] Functionality testing
-  - [ ] Open and use applications
-  - [ ] Access system settings
-  - [ ] Transfer files to/from the server
+- [x] Functionality testing
+  - [x] Open and use applications (Cursor installed and tested)
+  - [x] Access system settings
+  - [x] Transfer files to/from the server (iCloud Drive folder redirection working)
   - [ ] Run system updates
   - [ ] Change system settings
 
-- [ ] Restart operations
-  - [ ] Initiate restart from within Windows
-  - [ ] Successfully reconnect after restart
+- [x] Restart operations
+  - [x] Initiate restart from within Windows
+  - [x] Successfully reconnect after restart (only took 1 minute)
   - [ ] Force restart if system becomes unresponsive
 
 ## Ubuntu Remote Desktop Testing 🐧
