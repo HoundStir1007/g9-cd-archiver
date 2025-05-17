@@ -22,8 +22,24 @@
   - Recovery key backed up to Microsoft Account
 - [ ] Recovery Key Security
   - [ ] Store PDF in secure cloud storage
+    - Options:
+      - OneDrive (Personal Microsoft Account)
+      - iCloud Drive (if using Apple ecosystem)
+      - Ensure cloud storage is 2FA protected
   - [ ] Add recovery key to iOS/macOS Passwords app
+    - Open Passwords app
+    - Add new secure note
+    - Title: "G9 BitLocker Recovery Key"
+    - Include key ID and full recovery key
+    - Add to designated group/folder
   - [ ] Document location of all recovery key copies
+    - Create recovery key location inventory:
+      - Microsoft Account (online backup)
+      - PDF file location
+      - Cloud storage location
+      - Password manager entry
+    - Note access methods for each location
+    - Document recovery process
 
 ### Windows Defender Full Scan
 - [x] Initiate Full Scan (Started, in progress)
@@ -59,46 +75,43 @@
   - Cloud Protection: Active ✅
 
 ### Windows Update Check
-- [ ] Check Current Update Status
+- [ ] Check Current Update Status (Priority 1)
   - Open Windows Update settings
     - Press Windows key + I
-    - Navigate to Windows Update
-  - Note current Windows version
-  - Record last update check time
-  - Document any pending updates
-- [ ] Review Update History
+    - Navigate to Settings > Windows Update
+  - Document current state:
+    - Windows version: 10.0.26100
+    - Last update check: 2025-05-16 21:15
+    - Pending updates: [LIST]
+    - Update status: [STATUS]
+- [ ] Review Update History (Priority 2)
   - Open Update History
-  - Document last successful update
-  - Note any failed updates
-  - Record any update-related issues
-- [ ] Check for Updates
+  - Document recent updates:
+    - Last successful update
+    - Failed updates (if any)
+    - Pending restarts
+  - Check for patterns in failed updates
+- [ ] Check for Updates (Priority 1)
   - Click "Check for updates"
-  - Document available updates:
+  - Document found updates:
+    - Security updates
     - Feature updates
-    - Quality updates
+    - Optional updates
     - Driver updates
-    - Other updates
-- [ ] Review Update Details
-  - For each update:
-    - Note update name and KB number
-    - Record update size
-    - Document update importance
-    - Check for known issues
-- [ ] Prepare for Updates
-  - Ensure system is plugged into power
-  - Verify sufficient disk space
-  - Check for open applications
-  - Document current system state
+  - Note download sizes
+  - Document update priorities
+- [ ] Prepare System (Priority 1)
+  - Verify power connection ✓
+  - Check disk space
+  - Document open applications
+  - Save all work
+  - Note current system state
 - [ ] Install Updates
-  - Click "Install now"
-  - Document installation start time
-  - Monitor installation progress
-  - Note any restarts required
-- [ ] Post-Update Verification
-  - Verify system boots correctly
-  - Check all critical applications
-  - Document any issues encountered
-  - Record update completion time
+  - Start installation
+  - Document start time
+  - Monitor progress
+  - Note required restarts
+  - Record any errors
 
 ### Firewall Configuration ✅
 - [x] Review Windows Defender Firewall Settings
@@ -122,24 +135,68 @@
     - UDP Communication: ✅
     - No Captive Portal: ✅
     - PMP Probe: Failed (non-critical)
+    - MagicDNS: Enabled ✅
 
 ### Tailscale Security Configuration
-- [ ] Access Control
-  - [ ] Review ACL policies in Tailscale admin console
-  - [ ] Configure device groups if needed
-  - [ ] Set up node sharing permissions
-- [ ] Network Security
-  - [ ] Enable MagicDNS for secure name resolution
-  - [ ] Configure subnet routing for local network access
+- [x] Access Control (Priority 1)
+  - [x] Review ACL policies in Tailscale admin console
+    - Groups created: homeinfra (G9 devices), dev (MacBook Pro)
+    - Rules: dev can access homeinfra, homeinfra can communicate internally
+    - Policy updated and saved 2025-05-16
+  - [x] Configure device groups
+    - Home Infrastructure: nucboxg9, gmk-g9
+    - Development Devices: macbook-pro
+    - Permissions set as planned
+  - [x] Set up node sharing permissions
+    - Not needed for current setup; revisit if sharing with external users
+- [x] Network Security (Priority 2)
+  - [x] Enable MagicDNS ✅
+    - MagicDNS already enabled and configured
+    - Verified in tailscale_configuration.md
+  - [ ] Configure subnet routing
+    - Document current network layout
+    - Set up routes for local network
+    - Test connectivity
   - [ ] Review exit node settings
-- [ ] Device Management
-  - [ ] Review all connected devices
-  - [ ] Remove any unused device authorizations
-  - [ ] Document each device's purpose and access level
-- [ ] Monitoring
-  - [ ] Set up alerts for device connections/disconnections
-  - [ ] Monitor network usage and patterns
-  - [ ] Document any unusual behavior
+    - Assess need for exit nodes
+    - Configure allowed exit regions
+    - Set up access controls
+- [ ] Device Management (Priority 3)
+  - [ ] Review connected devices
+    - Current device inventory (as of 2025-05-16 21:15):
+      1. nucboxg9 (Windows)
+         - Tailscale IP: 100.122.141.83
+         - Status: Connected
+         - Purpose: Home Server
+      2. gmk-g9 (Linux)
+         - Tailscale IP: 100.91.157.19
+         - Status: Offline
+         - Purpose: Linux environment
+      3. macbook-pro (macOS)
+         - Tailscale IP: 100.73.233.88
+         - Status: Active (Direct connection)
+         - Local IP: 192.168.0.214
+         - Purpose: Development machine
+    - [ ] Verify each device's purpose
+    - [ ] Remove unused authorizations
+  - [ ] Document device inventory
+    - Device name and purpose
+    - IP addresses (Tailscale and local)
+    - Access levels and permissions
+    - Last connection date
+- [ ] Monitoring (Priority 4)
+  - [ ] Configure connection alerts
+    - Set up email notifications
+    - Define alert conditions
+    - Test alert system
+  - [ ] Monitor network usage
+    - Review current metrics
+    - Set up usage alerts
+    - Document baseline patterns
+  - [ ] Implement logging
+    - Configure log retention
+    - Set up log analysis
+    - Document review procedures
 
 ### Account Security
 - [ ] Review User Accounts
@@ -255,6 +312,8 @@
 - ICS is configured on Ethernet (sharing) to Ethernet 2
 - All credentials are stored in iOS/macOS Passwords app
 - Windows Defender enhanced security features enabled (2025-05-16)
+- PowerShell Windows Update module needs setup (attempted 2025-05-16)
+- Windows Defender full scan in progress (started 2025-05-16 21:01)
 
 ## See Also
 - [G9 Setup Checklist](g9_setup_checklist.md)
