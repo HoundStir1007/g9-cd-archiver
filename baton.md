@@ -1,3 +1,50 @@
+# Baton Entry - 2025-05-17 14:34:59 📜
+
+Version: 32a6015
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- "Update baton handoff document - 2025-05-17 14:34:56"
+- Update baton handoff document - 2025-05-17 13:29:10
+- "Update baton handoff document - 2025-05-17 00:31:35"
+- "Update baton handoff document - 2025-05-16 23:31:08"
+- "Update baton handoff document - 2025-05-16 23:30:51"
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   archive/README.md: Main project documentation
+*   README.md: Main project documentation
+*   budget.md: Budget
+*   home_server_plan.md: Home_Server_Plan
+*   network_configuration.md: Network_Configuration
+*   tailscale_configuration.md: Tailscale_Configuration
+*   windows_security_checklist.md: Windows_Security_Checklist
+*   archive/checklists/g9_setup_checklist.md: G9_Setup_Checklist
+*   archive/checklists/rdp_testing_checklist.md: Rdp_Testing_Checklist
+*   archive/checklists/remote_desktop_testing_checklist.md: Remote_Desktop_Testing_Checklist
+
+## Important Reminders
+
+• Currently running on Windows 11
+
+
+*Running on Windows 11*
+
+---
+
 # Baton Entry - 2025-05-17 14:45:00 📜
 
 Version: 56accaa
@@ -881,6 +928,47 @@ In this session, we implemented several security enhancements for the G9 server:
 *Finalized and archived: 2025-05-17*
 
 *Running on Windows 11 Pro (10.0.26100)*
+
+---
+
+# Baton Entry - 2025-05-17 15:00:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed comprehensive RDP feature testing between the MacBook (Windows App) and the G9 (Windows 11 Pro):
+
+- Verified and documented all major RDP features:
+  - Audio streaming (system, browser, media player)
+  - Printer redirection (works, no print preview)
+  - Clipboard sharing (bi-directional)
+  - File transfer (copy/paste works, no drag-and-drop)
+  - Display performance (responsive, no in-session resolution changes)
+  - Multiple monitor support (works well)
+- All features work as expected; minor limitations are documented in rdp_feature_testing.md
+- Updated and finalized RDP feature testing checklist
+- System is robust, well-documented, and ready for daily use
+
+## Next Steps
+
+- (Optional) Commit and back up updated documentation
+- (Optional) Continue with automation, Tailscale monitoring, or security enhancements
+- Take a break and enjoy your reliable remote setup!
+
+## Important Files & Links
+
+*   archive/checklists/rdp_feature_testing.md: Detailed RDP feature test results
+*   archive/checklists/remote_desktop_testing_checklist.md: General RDP testing
+*   baton.md: Session handoff log
+
+## Important Reminders
+
+• All major RDP features tested and documented
+• System is stable and ready for production use
+• Minor limitations are noted for future reference
+
+*Session completed: 2025-05-17 15:00*
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*
