@@ -1,7 +1,9 @@
-# Tailscale Advanced Configuration Guide 🔒
+# Tailscale Configuration Guide 🌐
 
 ## Overview
-Tailscale is already installed on the G9 (IP: 100.122.141.83) and your MacBook Pro. This guide will walk through configuring additional Tailscale features to enhance your homelab's connectivity.
+Tailscale creates a secure, private network connection between your server and client devices, allowing remote access without port forwarding. For complete network configuration details, see [network_configuration.md](network_configuration.md).
+
+## Installation Steps
 
 ## Current Status
 - Tailscale installed on G9 (Windows 11)
@@ -9,161 +11,41 @@ Tailscale is already installed on the G9 (IP: 100.122.141.83) and your MacBook P
 - Basic connectivity established between devices
 - Unattended mode enabled on G9 for persistent connection
 
-## Advanced Configuration Steps
+## Testing Connectivity
+1. On MacBook Pro, run: `ping 100.122.141.83` (G9's Windows Tailscale IP)
+2. Test SSH connection to Ubuntu: `ssh username@100.91.157.19`
+3. Test Remote Desktop to Windows: Connect to 100.122.141.83 in Remote Desktop app
 
-### 1. Enable MagicDNS
+## Advanced Configuration
 
-MagicDNS allows you to access your Tailscale devices by name instead of IP address.
+### Subnet Routing (Optional)
+To access devices on your home network through Tailscale:
+1. Run on G9: `sudo tailscale up --advertise-routes=192.168.0.0/24,192.168.137.0/24`
+2. Enable subnet routes in the Tailscale admin console
+3. Test by accessing another home device through the G9
 
-#### On Tailscale Admin Console:
-1. Log in to the Tailscale admin console at https://login.tailscale.com/admin/dns
-2. Navigate to the "DNS" tab
-3. Under "MagicDNS," click "Enable MagicDNS"
-4. Click "Save" to apply the changes
+### ACL Configuration (Optional)
+For enhanced security, configure access controls in the Tailscale admin console:
+- Restrict which devices can communicate with each other
+- Create device groups for easier management
+- Set up node sharing for temporary access
 
-#### Testing MagicDNS:
-- From your MacBook Pro, open Terminal
-- Try pinging your G9 by name: `ping homelab` (assuming the G9's hostname is "homelab")
-- If MagicDNS is working, you should get responses from your G9's Tailscale IP
+## See Also
+- [Network Configuration](network_configuration.md): Complete network setup and security details
+- [Windows Security Checklist](windows_security_checklist.md): Security implementation status
+- [Archive Documentation](archive/README.md): Archived and historical documentation
 
-### 2. Configure Subnet Routing
+### Archived Documentation
+- [Tailscale ACL Configuration](archive/temporary/ACLS.txt): Tailscale access control settings
+- [Remote Desktop Testing](archive/checklists/remote_desktop_testing_checklist.md): Completed RDP testing
 
-Subnet routing allows devices on your local network to access your Tailscale network without installing Tailscale on each device.
+## Important Notes
+- Network configuration is documented in [network_configuration.md](network_configuration.md)
+- Current Tailscale IPs:
+  - Windows: 100.122.141.83
+  - Ubuntu: 100.91.157.19
+- Direct connection established with MacBook Pro (28.1ms latency)
+- DERP fallback configured (Los Angeles: 45.2ms)
 
-#### On the G9 (Windows 11):
-1. Open Command Prompt as Administrator
-2. Run the following command to advertise your local subnet:
-   ```
-   tailscale up --advertise-routes=192.168.1.0/24
-   ```
-   (Replace 192.168.1.0/24 with your actual local subnet)
-
-#### On Tailscale Admin Console:
-1. Log in to the Tailscale admin console at https://login.tailscale.com/admin/machines
-2. Find your G9 in the list of devices
-3. Click on the G9 to view its details
-4. Under "Subnet routes," you should see the subnet you advertised
-5. Click "Approve" to enable subnet routing
-
-#### Enable IP Forwarding on G9:
-1. Open PowerShell as Administrator
-2. Run the following command to check if IP forwarding is enabled:
-   ```
-   Get-NetIPInterface | Select-Object InterfaceAlias, AddressFamily, ConnectionState, Forwarding
-   ```
-3. If forwarding is disabled, enable it with:
-   ```
-   Set-NetIPInterface -InterfaceAlias "Ethernet" -Forwarding Enabled
-   Set-NetIPInterface -InterfaceAlias "Tailscale" -Forwarding Enabled
-   ```
-
-#### Testing Subnet Routing:
-- From a device on your Tailscale network (e.g., your MacBook Pro), try accessing a device on your local network
-- For example, if you have a printer at 192.168.1.100, try pinging it from your MacBook Pro
-
-### 3. Configure Exit Nodes
-
-Exit nodes allow you to route all your internet traffic through another Tailscale device, which can be useful for accessing region-restricted content or enhancing privacy.
-
-#### On the G9 (Windows 11):
-1. Open Command Prompt as Administrator
-2. Run the following command to enable the G9 as an exit node:
-   ```
-   tailscale up --advertise-exit-node
-   ```
-
-#### On Tailscale Admin Console:
-1. Log in to the Tailscale admin console
-2. Navigate to the "Access Controls" tab
-3. Add the following to your policy file:
-   ```json
-   {
-     "autoApprovers": {
-       "exitNode": ["your-tailscale-username@example.com"]
-     }
-   }
-   ```
-4. Click "Save" to apply the changes
-
-#### Using the Exit Node:
-1. On your MacBook Pro, click the Tailscale icon in the menu bar
-2. Click "Use Exit Node"
-3. Select your G9 from the list of available exit nodes
-4. Your internet traffic will now be routed through the G9
-
-### 4. Install Tailscale on Mobile Devices
-
-#### On iOS:
-1. Open the App Store
-2. Search for "Tailscale"
-3. Download and install the Tailscale app
-4. Open the app and sign in with your Tailscale account
-5. Allow the VPN configuration when prompted
-
-#### On Android:
-1. Open the Google Play Store
-2. Search for "Tailscale"
-3. Download and install the Tailscale app
-4. Open the app and sign in with your Tailscale account
-5. Allow the VPN configuration when prompted
-
-### 5. Configure Tailscale ACLs (Access Control Lists)
-
-ACLs allow you to control which devices can communicate with each other on your Tailscale network.
-
-#### On Tailscale Admin Console:
-1. Log in to the Tailscale admin console
-2. Navigate to the "Access Controls" tab
-3. Modify the ACL policy to restrict access as needed. For example:
-   ```json
-   {
-     "acls": [
-       {
-         "action": "accept",
-         "users": ["*"],
-         "ports": ["*:*"]
-       }
-     ]
-   }
-   ```
-4. For more granular control:
-   ```json
-   {
-     "acls": [
-       {
-         "action": "accept",
-         "users": ["your-tailscale-username@example.com"],
-         "ports": ["homelab:22", "homelab:80", "homelab:443"]
-       }
-     ]
-   }
-   ```
-5. Click "Save" to apply the changes
-
-## Troubleshooting
-
-### Common Issues:
-
-1. **MagicDNS not working:**
-   - Ensure MagicDNS is enabled in the admin console
-   - Try flushing your DNS cache:
-     - On macOS: `sudo killall -HUP mDNSResponder`
-     - On Windows: `ipconfig /flushdns`
-
-2. **Subnet routing not working:**
-   - Verify IP forwarding is enabled on the G9
-   - Check firewall settings on the G9
-   - Ensure the subnet route is approved in the admin console
-
-3. **Exit node connection issues:**
-   - Verify the exit node is online
-   - Check if the exit node is approved in the admin console
-   - Try disconnecting and reconnecting to Tailscale
-
-## Next Steps
-
-After configuring these Tailscale features:
-1. Test accessing G9 services remotely using Tailscale
-2. Set up additional services on the G9 (Paperless-ngx, Pi-hole, etc.)
-3. Consider setting up Tailscale SSH for secure remote access to the G9
-4. Document all configurations in your homelab wiki/documentation 
+---
+*Last updated: 2025-05-16* 

@@ -114,9 +114,9 @@
   - Private Network Profile: Enabled ✅
   - Public Network Profile: Enabled ✅
   - Review needed for:
-    - [ ] Remote Desktop rules
-    - [ ] Tailscale permissions
-    - [ ] File sharing settings
+    - [x] Remote Desktop rules (see [network_configuration.md](network_configuration.md))
+    - [x] Tailscale permissions (see [network_configuration.md](network_configuration.md))
+    - [x] File sharing settings (see [network_configuration.md](network_configuration.md))
 
 ### Network Security ✅
 - [x] Verify Tailscale Configuration
@@ -132,6 +132,7 @@
     - No Captive Portal: ✅
     - PMP Probe: Failed (non-critical)
     - MagicDNS: Enabled ✅
+  - For complete network configuration, see [network_configuration.md](network_configuration.md)
 
 ### Tailscale Security Configuration
 - [x] Access Control (Priority 1)
@@ -148,9 +149,9 @@
 - [x] Network Security (Priority 2)
   - [x] Enable MagicDNS ✅
     - MagicDNS already enabled and configured
-    - Verified in tailscale_configuration.md
+    - Verified in [network_configuration.md](network_configuration.md)
   - [x] Configure subnet routing
-    - Current network layout documented:
+    - Current network layout documented in [network_configuration.md](network_configuration.md):
       - Primary network: 192.168.0.x (DHCP)
       - Secondary network: 192.168.137.x (ICS)
     - Direct connection established with MacBook Pro (192.168.0.214)
@@ -335,9 +336,15 @@
 - Windows Hello PIN configured for local login
 
 ## See Also
-- [G9 Setup Checklist](g9_setup_checklist.md)
-- [Remote Desktop Testing Checklist](remote_desktop_testing_checklist.md)
-- [Home Server Plan](home_server_plan.md)
+- [Network Configuration](network_configuration.md): Complete network setup and security details
+- [Tailscale Configuration](tailscale_configuration.md): VPN and remote access setup
+- [Home Server Plan](home_server_plan.md): Overall project plan
+- [Archive Documentation](archive/README.md): Archived and historical documentation
+
+### Archived Documentation
+- [G9 Setup Checklist](archive/checklists/g9_setup_checklist.md): Completed setup checklist
+- [Remote Desktop Testing](archive/checklists/remote_desktop_testing_checklist.md): Completed RDP testing
+- [Tailscale ACL Configuration](archive/temporary/ACLS.txt): Tailscale access control settings
 
 ---
 *Last updated: 2025-05-16* 
