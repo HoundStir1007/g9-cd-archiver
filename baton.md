@@ -15,6 +15,111 @@ This is a required part of the workflow to ensure all updates are properly commi
 
 ---
 
+# Baton Entry - 2025-05-17 16:45:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed the Ubuntu xRDP setup and documentation updates:
+
+- Successfully installed and configured XFCE4 desktop environment
+- Configured LightDM as the display manager
+- Created and verified .xsession file for xRDP
+- Verified xRDP service is running and enabled
+- Updated documentation across multiple files:
+  - Updated remote_desktop_testing_checklist.md with Ubuntu GUI access details
+  - Updated tailscale_configuration.md with current RDP status
+  - Updated baton.md with session progress
+- Current status:
+  - xRDP service: Active and running
+  - Desktop Environment: XFCE4
+  - Display Manager: LightDM
+  - Connection IPs:
+    - Tailscale: 100.91.157.19
+    - Local: [Available via hostname -I]
+  - Firewall: Port 3389 open for RDP
+
+## Next Steps
+
+1. Test RDP Connection:
+   - Connect from MacBook using Microsoft Remote Desktop
+   - Test both Tailscale and local network connections
+   - Verify desktop environment functionality
+   - Test basic features (window management, file browser, etc.)
+
+2. Post-Setup Tasks:
+   - Monitor system stability
+   - Document any issues or limitations
+   - Consider additional security measures
+   - Plan for future maintenance
+
+## Important Files & Links
+
+* scripts/setup_ubuntu_rdp.sh: xRDP setup script
+* archive/checklists/remote_desktop_testing_checklist.md: RDP testing documentation
+* tailscale_configuration.md: VPN and remote access setup
+
+## Important Reminders
+
+• Ubuntu Tailscale IP: 100.91.157.19
+• xRDP is configured to use XFCE4 desktop environment
+• LightDM is set as the display manager
+• System is ready for remote desktop testing
+
+*Running on Ubuntu*
+
+---
+
+# Baton Entry - 2025-05-17 16:30:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed the Ubuntu xRDP setup:
+
+- Successfully installed XFCE4 desktop environment
+- Configured LightDM as the display manager
+- Created .xsession file for xRDP
+- Verified xRDP service is running
+- Current status:
+  - xRDP service: Active and running
+  - Desktop Environment: XFCE4
+  - Display Manager: LightDM
+  - Connection IPs:
+    - Tailscale: 100.91.157.19
+    - Local: [Available via hostname -I]
+
+## Next Steps
+
+1. Test RDP Connection:
+   - Connect from MacBook using Microsoft Remote Desktop
+   - Test both Tailscale and local network connections
+   - Verify desktop environment functionality
+
+2. Post-Setup Documentation:
+   - Update remote desktop testing checklist
+   - Document any issues or limitations
+   - Update network configuration documentation
+
+## Important Files & Links
+
+* scripts/setup_ubuntu_rdp.sh: xRDP setup script
+* archive/checklists/remote_desktop_testing_checklist.md: RDP testing documentation
+* tailscale_configuration.md: VPN and remote access setup
+
+## Important Reminders
+
+• Ubuntu Tailscale IP: 100.91.157.19
+• xRDP is configured to use XFCE4 desktop environment
+• LightDM is set as the display manager
+• System is ready for remote desktop testing
+
+*Running on Ubuntu*
+
+---
+
 # Baton Entry - 2025-05-17 15:30:00 📜
 
 Version: [pending commit]

@@ -6,15 +6,25 @@ Tailscale creates a secure, private network connection between your server and c
 ## Installation Steps
 
 ## Current Status
-- Tailscale installed on G9 (Windows 11)
+- Tailscale installed on G9 (Windows 11 and Ubuntu)
 - Tailscale installed on MacBook Pro
 - Basic connectivity established between devices
 - Unattended mode enabled on G9 for persistent connection
+- Remote Desktop access configured:
+  - Windows 11: RDP enabled (IP: 100.122.141.83)
+  - Ubuntu: xRDP with XFCE4 (IP: 100.91.157.19)
+  - Both accessible via Microsoft Remote Desktop
 
 ## Testing Connectivity
-1. On MacBook Pro, run: `ping 100.122.141.83` (G9's Windows Tailscale IP)
-2. Test SSH connection to Ubuntu: `ssh username@100.91.157.19`
-3. Test Remote Desktop to Windows: Connect to 100.122.141.83 in Remote Desktop app
+1. On MacBook Pro, test Windows RDP:
+   - Connect to 100.122.141.83 using Microsoft Remote Desktop
+   - Verify Windows desktop access
+2. On MacBook Pro, test Ubuntu RDP:
+   - Connect to 100.91.157.19 using Microsoft Remote Desktop
+   - Verify XFCE4 desktop environment
+3. Test SSH connection to Ubuntu:
+   - `ssh username@100.91.157.19`
+   - Verify command-line access
 
 ## Advanced Configuration
 
