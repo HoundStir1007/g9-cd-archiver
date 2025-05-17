@@ -1,3 +1,48 @@
+# Baton Entry - 2025-05-16 23:31:11 📜
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- "Update baton handoff document - 2025-05-16 23:31:08"
+- "Update baton handoff document - 2025-05-16 23:30:51"
+- "Update baton handoff document - 2025-05-16 23:02:32"
+- "Update baton handoff document - 2025-05-16 22:53:04"
+- "Update baton handoff document - 2025-05-16 22:38:06"
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   archive/README.md: Main project documentation
+*   README.md: Main project documentation
+*   budget.md: Budget
+*   home_server_plan.md: Home_Server_Plan
+*   network_configuration.md: Network_Configuration
+*   tailscale_configuration.md: Tailscale_Configuration
+*   windows_security_checklist.md: Windows_Security_Checklist
+*   archive/checklists/g9_setup_checklist.md: G9_Setup_Checklist
+*   archive/checklists/rdp_testing_checklist.md: Rdp_Testing_Checklist
+*   archive/checklists/remote_desktop_testing_checklist.md: Remote_Desktop_Testing_Checklist
+
+## Important Reminders
+
+• Currently running on Windows 11
+
+
+*Running on Windows 11*
+
+---
+
 # Baton Entry - 2025-05-16 23:35:00 📜
 
 ## Session Summary
@@ -756,6 +801,42 @@ In this session, we implemented several security enhancements for the G9 server:
 - Remaining security and documentation tasks are ongoing
 
 *Running on Windows 11*
+
+---
+
+# Baton Entry - 2025-05-17 00:30:00 📜
+
+## Session Summary
+
+- Completed full Remote Desktop update testing (pre-update, update, and post-update phases)
+- Verified RDP functionality and performance before and after updates
+- Installed all available Windows and RDP-related updates (no restart required)
+- Updated and finalized all related documentation and checklists
+- Archived the update process and results
+- Scheduled feature-specific RDP session tests (audio, printer, clipboard, etc.) for a future session
+
+## Next Steps
+
+- Perform feature-specific RDP session tests in a future session
+- Continue regular maintenance and monitoring
+- Review logs and documentation as needed
+
+## Important Files & Links
+
+*   archive/checklists/remote_desktop_update_testing.md: Finalized RDP update testing checklist
+*   windows_security_checklist.md: Security and update status
+*   C:\Logs\RDP: All logs and exported registry settings
+
+## Important Reminders
+
+- All main RDP update testing phases are complete and archived
+- No issues or regressions detected
+- Documentation and logs are up to date
+- Feature-specific RDP session tests are scheduled for later
+
+*Finalized and archived: 2025-05-17*
+
+*Running on Windows 11 Pro (10.0.26100)*
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*

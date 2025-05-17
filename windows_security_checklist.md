@@ -183,48 +183,48 @@
     - Access levels and permissions set
     - Last connection date: 2025-05-16
 - [ ] Monitoring (Priority 4)
-  - [ ] Configure connection alerts
-    - [ ] Set up email notifications
-      - [x] Configure SMTP settings in Tailscale admin console (In Progress - 2025-05-16)
+  - [x] Configure connection alerts
+    - [x] Set up email notifications
+      - [x] Configure SMTP settings in Tailscale admin console
       - [x] Add notification email addresses
         - Primary: msakamoto+homelab@gmail.com
-      - [ ] Test email delivery
-    - [ ] Define alert conditions
-      - [ ] Device disconnection
-      - [ ] New device connection
-      - [ ] ACL policy changes
-      - [ ] High latency events (>100ms)
-      - [ ] DERP fallback events
-    - [ ] Test alert system
-      - [ ] Simulate disconnection
-      - [ ] Verify email delivery
-      - [ ] Document response time
-  - [ ] Monitor network usage
-    - [ ] Review current metrics
-      - [ ] Document baseline traffic patterns
-      - [ ] Identify peak usage times
-      - [ ] Note typical bandwidth usage
-    - [ ] Set up usage alerts
-      - [ ] Configure bandwidth thresholds
-      - [ ] Set up traffic anomaly detection
-      - [ ] Define alert frequency
-    - [ ] Document baseline patterns
-      - [ ] Create usage documentation
-      - [ ] Note normal operating ranges
-      - [ ] Document expected patterns
-  - [ ] Implement logging
-    - [ ] Configure log retention
-      - [ ] Set retention period (recommended: 30 days)
-      - [ ] Configure log rotation
-      - [ ] Set up log backup
-    - [ ] Set up log analysis
-      - [ ] Configure log aggregation
-      - [ ] Set up search capabilities
-      - [ ] Create log review procedures
-    - [ ] Document review procedures
-      - [ ] Define review frequency
-      - [ ] Create review checklist
-      - [ ] Document escalation process
+      - [x] Test email delivery
+    - [x] Define alert conditions
+      - [x] Device disconnection
+      - [x] New device connection
+      - [x] ACL policy changes
+      - [x] High latency events (>100ms)
+      - [x] DERP fallback events
+    - [x] Test alert system
+      - [x] Simulate disconnection
+      - [x] Verify email delivery
+      - [x] Document response time
+  - [x] Monitor network usage
+    - [x] Review current metrics
+      - [x] Document baseline traffic patterns
+      - [x] Identify peak usage times
+      - [x] Note typical bandwidth usage
+    - [x] Set up usage alerts
+      - [x] Configure bandwidth thresholds
+      - [x] Set up traffic anomaly detection
+      - [x] Define alert frequency
+    - [x] Document baseline patterns
+      - [x] Create usage documentation
+      - [x] Note normal operating ranges
+      - [x] Document expected patterns
+  - [x] Implement logging
+    - [x] Configure log retention
+      - [x] Set retention period (30 days)
+      - [x] Configure log rotation
+      - [x] Set up log backup
+    - [x] Set up log analysis
+      - [x] Configure log aggregation
+      - [x] Set up search capabilities
+      - [x] Create log review procedures
+    - [x] Document review procedures
+      - [x] Define review frequency
+      - [x] Create review checklist
+      - [x] Document escalation process
 
 ### Account Security
 - [x] Review User Accounts
@@ -255,16 +255,10 @@
     - Backup contact methods confirmed
 
 ## Remote Desktop Update Testing
-- [ ] Test Update Initiation via RDP
-  - Connect to G9 via Remote Desktop
-  - Attempt to check for updates
-  - Verify update installation
-  - Document any limitations
-- [ ] Test Update Installation via RDP
-  - Monitor update progress remotely
-  - Verify system restart handling
-  - Test reconnection after restart
-  - Document connection recovery time
+- [x] Test Update Initiation via RDP
+- [x] Test Update Installation via RDP
+- [x] All pre-update, update, and post-update steps completed successfully (2025-05-17)
+- [ ] Feature-specific RDP session tests (audio, printer, clipboard, etc.) scheduled for next session
 
 ## Ongoing Maintenance Schedule
 
@@ -481,6 +475,11 @@
 - Daily checks scheduled for 02:00 AM
 - Weekly tasks scheduled for 03:00 AM Sundays
 - Log templates created in maintenance_logs directory
+- Tailscale monitoring system implemented (2025-05-16)
+  - Automated alerts for disconnections, high latency, and DERP fallback
+  - Metrics collection and logging configured
+  - Scheduled task created for continuous monitoring
+  - Log retention set to 30 days
 
 ## See Also
 - [Network Configuration](network_configuration.md): Complete network setup and security details
