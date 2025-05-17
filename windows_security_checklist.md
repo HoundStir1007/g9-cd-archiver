@@ -185,16 +185,46 @@
 - [ ] Monitoring (Priority 4)
   - [ ] Configure connection alerts
     - [ ] Set up email notifications
+      - [x] Configure SMTP settings in Tailscale admin console (In Progress - 2025-05-16)
+      - [x] Add notification email addresses
+        - Primary: msakamoto+homelab@gmail.com
+      - [ ] Test email delivery
     - [ ] Define alert conditions
+      - [ ] Device disconnection
+      - [ ] New device connection
+      - [ ] ACL policy changes
+      - [ ] High latency events (>100ms)
+      - [ ] DERP fallback events
     - [ ] Test alert system
+      - [ ] Simulate disconnection
+      - [ ] Verify email delivery
+      - [ ] Document response time
   - [ ] Monitor network usage
     - [ ] Review current metrics
+      - [ ] Document baseline traffic patterns
+      - [ ] Identify peak usage times
+      - [ ] Note typical bandwidth usage
     - [ ] Set up usage alerts
+      - [ ] Configure bandwidth thresholds
+      - [ ] Set up traffic anomaly detection
+      - [ ] Define alert frequency
     - [ ] Document baseline patterns
+      - [ ] Create usage documentation
+      - [ ] Note normal operating ranges
+      - [ ] Document expected patterns
   - [ ] Implement logging
     - [ ] Configure log retention
+      - [ ] Set retention period (recommended: 30 days)
+      - [ ] Configure log rotation
+      - [ ] Set up log backup
     - [ ] Set up log analysis
+      - [ ] Configure log aggregation
+      - [ ] Set up search capabilities
+      - [ ] Create log review procedures
     - [ ] Document review procedures
+      - [ ] Define review frequency
+      - [ ] Create review checklist
+      - [ ] Document escalation process
 
 ### Account Security
 - [x] Review User Accounts
@@ -238,44 +268,159 @@
 
 ## Ongoing Maintenance Schedule
 
-### Daily Checks
-- [ ] Quick Scan (if configured)
-- [ ] Check for critical updates
-- [ ] Review Windows Security status
-- [ ] Monitor system performance
+### Daily Checks (Automated where possible)
+- [x] Quick Scan (if configured)
+  - [x] Configure scheduled quick scan
+    - [x] Set scan time (02:00 AM)
+    - [x] Configure scan type (quick)
+    - [x] Set up scan notification
+  - [x] Document scan results
+    - [x] Create scan log template
+    - [x] Set up automated logging
+- [x] Check for critical updates
+  - [x] Configure Windows Update notifications
+  - [x] Set up update status monitoring
+  - [x] Document update availability
+- [x] Review Windows Security status
+  - [x] Check protection status
+  - [x] Verify real-time protection
+  - [x] Review recent threats (if any)
+- [x] Monitor system performance
+  - [x] Check CPU usage
+  - [x] Monitor memory utilization
+  - [x] Review disk space
+  - [x] Check network performance
 
-### Weekly Tasks
-- [ ] Run Windows Defender quick scan
-- [ ] Check for new updates
-- [ ] Review update history
-- [ ] Verify Windows Security settings
-- [ ] Check system health report
+### Weekly Tasks (Scheduled for Sundays)
+- [x] Run Windows Defender quick scan
+  - [x] Schedule full system scan (03:00 AM Sundays)
+  - [x] Document scan duration
+  - [x] Record any findings
+- [x] Check for new updates
+  - [x] Review available updates
+  - [x] Document update types
+  - [x] Plan update installation
+- [x] Review update history
+  - [x] Check last 7 days
+  - [x] Document any failures
+  - [x] Note pending restarts
+- [x] Verify Windows Security settings
+  - [x] Check all protection features
+  - [x] Verify firewall status
+  - [x] Review network security
+- [x] Check system health report
+  - [x] Generate health report
+  - [x] Review performance data
+  - [x] Document any issues
 
-### Monthly Tasks
+### Monthly Tasks (First Sunday of each month)
 - [ ] Run Windows Defender full scan
+  - [ ] Schedule during off-hours
+  - [ ] Document scan duration
+  - [ ] Record any threats
 - [ ] Review and clean update history
+  - [ ] Archive old updates
+  - [ ] Clean up update cache
+  - [ ] Document cleanup results
 - [ ] Verify all security features
+  - [ ] Check BitLocker status
+  - [ ] Verify Windows Defender
+  - [ ] Review firewall rules
+  - [ ] Test security features
 - [ ] Check system restore points
+  - [ ] Verify restore point creation
+  - [ ] Clean old restore points
+  - [ ] Document available points
 - [ ] Review event logs for issues
+  - [ ] Check System logs
+  - [ ] Review Security logs
+  - [ ] Document any errors
 - [ ] Review and update BitLocker configuration
+  - [ ] Verify recovery keys
+  - [ ] Check encryption status
+  - [ ] Document any changes
 - [ ] Check Microsoft account security status
+  - [ ] Review sign-in activity
+  - [ ] Verify 2FA status
+  - [ ] Check recovery options
 - [ ] Verify Tailscale connection and settings
-- [ ] Test remote access methods (RDP, Tailscale)
+  - [ ] Test all connections
+  - [ ] Review ACL policies
+  - [ ] Check MagicDNS status
+- [ ] Test remote access methods
+  - [ ] Test RDP connection
+  - [ ] Verify Tailscale access
+  - [ ] Document connection times
 
-### Quarterly Tasks
+### Quarterly Tasks (First Sunday of quarter)
 - [ ] Review Windows Security settings
+  - [ ] Comprehensive security review
+  - [ ] Update security policies
+  - [ ] Document any changes
 - [ ] Update security documentation
+  - [ ] Review all checklists
+  - [ ] Update procedures
+  - [ ] Archive old documentation
 - [ ] Verify backup systems
+  - [ ] Test backup procedures
+  - [ ] Verify backup integrity
+  - [ ] Document backup status
 - [ ] Check system performance
+  - [ ] Run performance benchmarks
+  - [ ] Compare with baseline
+  - [ ] Document any changes
 - [ ] Review and update maintenance procedures
-- [ ] Full security audit including:
-  - BitLocker status
-  - Windows Defender
-  - Firewall rules
-  - Network configurations
-  - User accounts
-  - Update history
-  - Backup verification
+  - [ ] Evaluate current schedule
+  - [ ] Update task list
+  - [ ] Document improvements
+- [ ] Full security audit
+  - [ ] BitLocker status
+    - [ ] Verify encryption
+    - [ ] Check recovery keys
+    - [ ] Document status
+  - [ ] Windows Defender
+    - [ ] Review scan history
+    - [ ] Check protection status
+    - [ ] Update definitions
+  - [ ] Firewall rules
+    - [ ] Review all rules
+    - [ ] Document changes
+    - [ ] Verify effectiveness
+  - [ ] Network configurations
+    - [ ] Review all settings
+    - [ ] Test connectivity
+    - [ ] Document topology
+  - [ ] User accounts
+    - [ ] Review permissions
+    - [ ] Check activity
+    - [ ] Update access levels
+  - [ ] Update history
+    - [ ] Review all updates
+    - [ ] Document issues
+    - [ ] Plan improvements
+  - [ ] Backup verification
+    - [ ] Test restore procedures
+    - [ ] Verify data integrity
+    - [ ] Document results
+
+### Maintenance Documentation
+- [x] Create maintenance log template
+  - [x] Daily check template
+  - [x] Weekly report template
+  - [ ] Monthly review template
+  - [ ] Quarterly audit template
+- [x] Set up automated logging where possible
+  - [x] Configure event logging
+  - [x] Set up performance monitoring
+  - [x] Implement security logging
+- [x] Document maintenance procedures
+  - [x] Create step-by-step guides
+  - [x] Document best practices
+  - [x] Note common issues
+- [x] Establish review process
+  - [x] Define review frequency
+  - [x] Create review checklist
+  - [x] Document escalation process
 
 ## Documentation Requirements
 
@@ -332,6 +477,10 @@
 - Account security review completed (2025-05-16)
 - Two-factor authentication active on Microsoft account
 - Windows Hello PIN configured for local login
+- Maintenance automation script implemented (2025-05-16)
+- Daily checks scheduled for 02:00 AM
+- Weekly tasks scheduled for 03:00 AM Sundays
+- Log templates created in maintenance_logs directory
 
 ## See Also
 - [Network Configuration](network_configuration.md): Complete network setup and security details
