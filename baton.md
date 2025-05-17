@@ -1,3 +1,20 @@
+# IMPORTANT: Save and Stage Before Handoff!
+
+**Always save and stage (`git add`) baton.md (and any other documentation changes) before running pass_the_baton.sh or any handoff script.**
+
+This ensures your changes are properly staged and committed in git, and prevents loss of updates during handoff.
+
+# Standard Workflow Requirement
+
+All users and LLM agents **must**:
+1. Save all changes to baton.md and any other documentation files.
+2. Stage changes using `git add` (e.g., `git add baton.md` or `git add .`).
+3. Only then, run `pass_the_baton.sh` or any handoff script.
+
+This is a required part of the workflow to ensure all updates are properly committed and no documentation is lost during handoff.
+
+---
+
 # Baton Entry - 2025-05-16 23:31:11 📜
 
 ## Session Summary
@@ -542,11 +559,11 @@ For the next session, consider the following steps:
 
 In this session, we worked on the following changes:
 
-- "Update baton handoff document - 2025-05-16 19:41:00"
-- "Update baton handoff document - 2025-05-16 16:43:10"
-- Update baton handoff document - 2025-05-16 16:34:48
-- Update baton handoff document - 2025-05-16 00:40:40
-- Update baton handoff document - 2025-05-16 00:40:16
+- "Update baton handoff document - 19:41:00"
+- "Update baton handoff document - 16:43:10"
+- Update baton handoff document - 16:34:48
+- Update baton handoff document - 00:40:40
+- Update baton handoff document - 00:40:16
 
 These changes focused on improving project functionality and structure.
 
@@ -587,11 +604,11 @@ For the next session, consider the following steps:
 
 In this session, we worked on the following changes:
 
-- "Update baton handoff document - 2025-05-16 16:43:10"
-- Update baton handoff document - 2025-05-16 16:34:48
-- Update baton handoff document - 2025-05-16 00:40:40
-- Update baton handoff document - 2025-05-16 00:40:16
-- Update baton handoff document - 2025-05-16 00:34:28
+- "Update baton handoff document - 16:43:10"
+- Update baton handoff document - 16:34:48
+- Update baton handoff document - 00:40:40
+- Update baton handoff document - 00:40:16
+- Update baton handoff document - 00:34:28
 
 These changes focused on improving project functionality and structure.
 
@@ -837,6 +854,86 @@ In this session, we implemented several security enhancements for the G9 server:
 *Finalized and archived: 2025-05-17*
 
 *Running on Windows 11 Pro (10.0.26100)*
+
+---
+
+# Baton Entry - $(date +%Y-%m-%d' '%H:%M:%S) 📜
+
+## Session Summary
+
+- Created a new checklist for scheduling maintenance scripts on both Windows (Task Scheduler) and Ubuntu (cron).
+- The checklist includes all key steps, tips, and troubleshooting notes for automating daily, weekly, and monthly log creation.
+- Checklist file: `maintenance_logs/scheduling_checklist.md`
+
+## Next Steps
+
+- When ready, follow the checklist to implement and test scheduled automation for maintenance scripts on both OSes.
+- Update the checklist with any issues or troubleshooting steps encountered.
+
+## Important Files & Links
+
+*   maintenance_logs/scheduling_checklist.md: Scheduling checklist for maintenance scripts
+*   README.md: Main project documentation
+*   baton.md: Session handoff log
+
+## Important Reminders
+
+- Scheduling is not yet implemented—refer to the checklist when ready.
+- Scripts should be tested manually before enabling automation.
+
+*Running on $(uname -s)*
+
+---
+
+# Baton Entry - 2024-06-08 📜
+
+## Session Summary
+
+- Troubleshot remote access issues to G9 from MacBook Pro:
+  - Confirmed G9 was unreachable via Tailscale and RDP while Apple TV maintained internet access through ICS.
+  - Determined G9 was in a low-power state (S3 sleep), which disabled user-mode services (Tailscale, RDP) but kept ICS running.
+  - Verified all relevant Windows power and network adapter settings were already correct.
+  - No Modern Standby (S0ix) present; only S3 sleep supported.
+  - No hybrid sleep or hibernate enabled; Link State Power Management already off; USB selective suspend now disabled.
+  - Magic Packet/Wake-on-LAN settings confirmed correct.
+- Decided to monitor for recurrence, but will implement a heartbeat script to log Tailscale/RDP status on Windows 11 for early detection of future issues.
+
+## Next Steps
+
+- Run pass_the_baton.sh to sync session and continue work on G9 (Windows 11) in Cursor.
+- Implement and test a heartbeat script for Tailscale/RDP monitoring on Windows 11.
+- Review logs and adjust as needed based on findings.
+
+## Important Files & Links
+
+*   baton.md: Session handoff log
+*   Pass_the_Baton/Pass_the_Baton/pass_the_baton.sh: Cross-platform sync script
+
+## Important Reminders
+
+- All power/network settings are correct as of this session.
+- Heartbeat script will help catch future remote access issues early.
+
+*Running on macOS, preparing to switch to Windows 11*
+
+---
+
+# Baton Entry - 2024-06-08 (Second Entry) 📜
+
+## Session Summary
+
+- Added a prominent save reminder to the top of baton.md to ensure all users/agents save documentation before running handoff scripts.
+- Preparing to test the handoff process by running pass_the_baton.sh after confirming baton.md is saved.
+
+## Next Steps
+
+- Run pass_the_baton.sh to verify that the baton.md update is properly staged and committed.
+
+## Important Reminders
+
+- Always save documentation before running handoff scripts!
+
+*Running on macOS, testing handoff process*
 
 ---
 *This file is automatically updated by the Pass_the_Baton script.*
