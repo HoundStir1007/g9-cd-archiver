@@ -1,3 +1,47 @@
+# Baton Entry - 2025-05-17 14:45:00 📜
+
+Version: 56accaa
+
+## Session Summary
+
+In this session, we successfully troubleshooted and resolved network and remote desktop connectivity issues between the MacBook (Wi-Fi) and the G9 (Ethernet). Key progress includes:
+
+- Verified and corrected network profiles, ensuring the G9 Ethernet adapter is set to Private for proper LAN access.
+- Ensured both MacBook and G9 are on the same subnet (192.168.0.x) for seamless communication.
+- Confirmed and preserved static IP settings for AppleTV via Ethernet 2 (ICS), maintaining uninterrupted streaming and internet access.
+- Validated that Remote Desktop is enabled, firewall rules are correct, and RDP is accessible from the MacBook using the Windows App (v11.1.5).
+- Confirmed Tailscale connectivity and direct connection between MacBook and G9.
+- Documented all changes and verified that both remote desktop and AppleTV ICS are stable after network adjustments.
+
+These changes ensure robust remote access and media streaming, with all devices functioning as intended.
+
+## Next Steps
+
+- Continue monitoring network stability and RDP performance.
+- Test feature-specific RDP sessions (audio, printer, clipboard, etc.).
+- Review and update documentation as needed.
+- Plan for further automation and backup of network settings.
+
+## Important Files & Links
+
+*   network_configuration.md: Complete network and ICS setup
+*   tailscale_configuration.md: Tailscale VPN and remote access
+*   archive/checklists/remote_desktop_testing_checklist.md: RDP testing and troubleshooting
+*   archive/checklists/rdp_testing_checklist.md: RDP setup checklist
+*   windows_security_checklist.md: Security and firewall status
+*   home_server_plan.md: Project plan and goals
+
+## Important Reminders
+
+• G9 Ethernet is set to Private; ICS for AppleTV is preserved
+• MacBook and G9 are on the same subnet (192.168.0.x)
+• Remote Desktop and Tailscale are both operational
+• All changes are documented and versioned (56accaa)
+
+*Running on Windows 11 Pro (10.0.26100)*
+
+---
+
 # Baton Entry - 2025-05-16 23:31:11 📜
 
 ## Session Summary
