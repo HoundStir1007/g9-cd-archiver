@@ -1,3 +1,107 @@
+# Baton Entry - 2025-05-17 15:30:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we began setting up GUI Remote Desktop access for Ubuntu on the G9:
+
+- Created scripts for OS switching and xRDP setup:
+  - `scripts/reboot_to_ubuntu.ps1`: PowerShell script to reboot into Ubuntu via GRUB
+  - `scripts/setup_ubuntu_rdp.sh`: Shell script to configure xRDP on Ubuntu
+- Prepared for Ubuntu xRDP installation:
+  - Will install xrdp and xorgxrdp packages
+  - Will configure firewall (ufw) to allow RDP (port 3389)
+  - Will set up proper desktop environment session
+  - Will enable and start xRDP service
+- Verified Tailscale connectivity:
+  - Ubuntu Tailscale IP: 100.91.157.19
+  - Direct connection established with MacBook Pro
+
+## Next Steps
+
+1. Switch to MacBook for remote session:
+   - Connect to G9 Windows via RDP from MacBook
+   - Run reboot script to switch to Ubuntu
+   - Maintain connection through Tailscale
+
+2. Ubuntu xRDP Setup:
+   - Log in to Ubuntu after reboot
+   - Run setup script with sudo privileges
+   - Verify xRDP service status
+   - Test connection from MacBook
+
+3. Post-Setup Testing:
+   - Verify GUI access via Microsoft Remote Desktop
+   - Test desktop environment functionality
+   - Document any issues or limitations
+   - Update checklists and documentation
+
+## Important Files & Links
+
+*   scripts/reboot_to_ubuntu.ps1: Script to switch to Ubuntu
+*   scripts/setup_ubuntu_rdp.sh: xRDP setup script
+*   tailscale_configuration.md: VPN and remote access setup
+*   archive/checklists/remote_desktop_testing_checklist.md: RDP testing documentation
+
+## Important Reminders
+
+• Currently running on Windows 11 Pro (10.0.26100)
+• Ubuntu Tailscale IP: 100.91.157.19
+• Will switch to MacBook for remote session
+• Need to maintain Tailscale connection during OS switch
+
+*Running on Windows 11*
+
+---
+
+# Baton Entry - 2025-05-17 15:03:06 📜
+
+Version: 848d44e
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- "Update baton handoff document - 2025-05-17 15:03:03"
+- "Update baton handoff document - 2025-05-17 14:34:56"
+- Update baton handoff document - 2025-05-17 13:29:10
+- "Update baton handoff document - 2025-05-17 00:31:35"
+- "Update baton handoff document - 2025-05-16 23:31:08"
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   archive/README.md: Main project documentation
+*   README.md: Main project documentation
+*   budget.md: Budget
+*   home_server_plan.md: Home_Server_Plan
+*   network_configuration.md: Network_Configuration
+*   tailscale_configuration.md: Tailscale_Configuration
+*   windows_security_checklist.md: Windows_Security_Checklist
+*   archive/checklists/g9_setup_checklist.md: G9_Setup_Checklist
+*   archive/checklists/rdp_feature_testing.md: Rdp_Feature_Testing
+*   archive/checklists/rdp_testing_checklist.md: Rdp_Testing_Checklist
+
+## Important Reminders
+
+• Currently running on Windows 11
+
+
+*Running on Windows 11*
+
+---
+
 # Baton Entry - 2025-05-17 14:34:59 📜
 
 Version: 32a6015
