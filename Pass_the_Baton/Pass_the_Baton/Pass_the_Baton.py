@@ -337,7 +337,7 @@ def get_llm_generated_content():
     }
 
 def update_baton():
-    """Updates the baton.md file by prepending new content to existing content."""
+    """Updates the baton.md file by prepending new content to existing content, now including the git commit hash as a version identifier."""
     print("\n--- Update Baton ---")
     
     # Generate content with LLM-like approach
@@ -349,30 +349,14 @@ def update_baton():
     
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Create new entry
-    new_content = f"""# Baton Entry - {timestamp} 📜
+    # Get current git commit hash (short)
+    try:
+        version_hash = run_command(["git", "rev-parse", "--short", "HEAD"])
+    except Exception:
+        version_hash = "unknown"
 
-## Session Summary
-
-{summary if summary else "*(No summary provided)*"}
-
-## Next Steps
-
-{next_steps if next_steps else "*(No next steps provided)*"}
-
-## Important Files & Links
-
-{links_formatted}
-
-## Important Reminders
-
-{reminders if reminders else "*(No reminders provided)*"}
-
-*Running on {platform.system()} {platform.release()}*
-
----
-
-"""
+    # Create new entry with version
+    new_content = f"""# Baton Entry - {timestamp} 📜\n\nVersion: {version_hash}\n\n## Session Summary\n\n{summary if summary else "*(No summary provided)*"}\n\n## Next Steps\n\n{next_steps if next_steps else "*(No next steps provided)*"}\n\n## Important Files & Links\n\n{links_formatted}\n\n## Important Reminders\n\n{reminders if reminders else "*(No reminders provided)*"}\n\n*Running on {platform.system()} {platform.release()}*\n\n---\n\n"""
 
     try:
         # Read existing content if file exists
