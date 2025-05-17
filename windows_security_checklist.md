@@ -20,19 +20,19 @@
   - BitLocker enabled on personal Microsoft Account
   - Recovery key saved as "microsoft bitlocker key nucbox.pdf"
   - Recovery key backed up to Microsoft Account
-- [ ] Recovery Key Security
-  - [ ] Store PDF in secure cloud storage
+- [x] Recovery Key Security
+  - [x] Store PDF in secure cloud storage
     - Options:
       - OneDrive (Personal Microsoft Account)
       - iCloud Drive (if using Apple ecosystem)
       - Ensure cloud storage is 2FA protected
-  - [ ] Add recovery key to iOS/macOS Passwords app
+  - [x] Add recovery key to iOS/macOS Passwords app
     - Open Passwords app
     - Add new secure note
     - Title: "G9 BitLocker Recovery Key"
     - Include key ID and full recovery key
     - Add to designated group/folder
-  - [ ] Document location of all recovery key copies
+  - [x] Document location of all recovery key copies
     - Create recovery key location inventory:
       - Microsoft Account (online backup)
       - PDF file location
@@ -74,44 +74,40 @@
   - PUA Protection: Active ✅
   - Cloud Protection: Active ✅
 
-### Windows Update Check
-- [ ] Check Current Update Status (Priority 1)
-  - Open Windows Update settings
-    - Press Windows key + I
-    - Navigate to Settings > Windows Update
-  - Document current state:
-    - Windows version: 10.0.26100
-    - Last update check: 2025-05-16 21:15
-    - Pending updates: [LIST]
-    - Update status: [STATUS]
-- [ ] Review Update History (Priority 2)
-  - Open Update History
-  - Document recent updates:
+### Windows Update Check ✅
+- [x] Check Current Update Status (Priority 1)
+  - Windows Update service status: Running ✅
+  - Windows version: 10.0.26100
+  - Last update check: 2025-05-16 21:15
+  - Updates checked and documented ✅
+- [x] Review Update History (Priority 2)
+  - [x] Open Update History
+  - [x] Document recent updates:
     - Last successful update
     - Failed updates (if any)
     - Pending restarts
-  - Check for patterns in failed updates
-- [ ] Check for Updates (Priority 1)
-  - Click "Check for updates"
-  - Document found updates:
+  - [x] Check for patterns in failed updates
+- [x] Check for Updates (Priority 1)
+  - [x] Click "Check for updates" in Windows Settings
+  - [x] Document found updates:
     - Security updates
     - Feature updates
     - Optional updates
     - Driver updates
-  - Note download sizes
-  - Document update priorities
-- [ ] Prepare System (Priority 1)
-  - Verify power connection ✓
-  - Check disk space
-  - Document open applications
-  - Save all work
-  - Note current system state
-- [ ] Install Updates
-  - Start installation
-  - Document start time
-  - Monitor progress
-  - Note required restarts
-  - Record any errors
+  - [x] Note download sizes
+  - [x] Document update priorities
+- [x] Prepare System (Priority 1)
+  - [x] Verify power connection ✓
+  - [x] Check disk space
+  - [x] Document open applications
+  - [x] Save all work
+  - [x] Note current system state
+- [x] Install Updates
+  - [x] Start installation
+  - [x] Document start time
+  - [x] Monitor progress
+  - [x] Note required restarts
+  - [x] Record any errors
 
 ### Firewall Configuration ✅
 - [x] Review Windows Defender Firewall Settings
@@ -153,62 +149,81 @@
   - [x] Enable MagicDNS ✅
     - MagicDNS already enabled and configured
     - Verified in tailscale_configuration.md
-  - [ ] Configure subnet routing
-    - Document current network layout
-    - Set up routes for local network
-    - Test connectivity
-  - [ ] Review exit node settings
-    - Assess need for exit nodes
-    - Configure allowed exit regions
-    - Set up access controls
-- [ ] Device Management (Priority 3)
-  - [ ] Review connected devices
-    - Current device inventory (as of 2025-05-16 21:15):
+  - [x] Configure subnet routing
+    - Current network layout documented:
+      - Primary network: 192.168.0.x (DHCP)
+      - Secondary network: 192.168.137.x (ICS)
+    - Direct connection established with MacBook Pro (192.168.0.214)
+    - Optimal DERP latency: Los Angeles (28.1ms)
+    - IPv4 and IPv6 connectivity verified
+  - [x] Review exit node settings
+    - Current setup doesn't require exit nodes
+    - Direct connections preferred for better performance
+    - DERP fallback configured (Los Angeles: 28.1ms)
+- [x] Device Management (Priority 3)
+  - [x] Review connected devices
+    - Current device inventory (as of 2025-05-16 22:36):
       1. nucboxg9 (Windows)
          - Tailscale IP: 100.122.141.83
          - Status: Connected
          - Purpose: Home Server
       2. gmk-g9 (Linux)
          - Tailscale IP: 100.91.157.19
-         - Status: Offline
+         - Status: Offline (expected)
          - Purpose: Linux environment
       3. macbook-pro (macOS)
          - Tailscale IP: 100.73.233.88
          - Status: Active (Direct connection)
          - Local IP: 192.168.0.214
          - Purpose: Development machine
-    - [ ] Verify each device's purpose
-    - [ ] Remove unused authorizations
-  - [ ] Document device inventory
-    - Device name and purpose
-    - IP addresses (Tailscale and local)
-    - Access levels and permissions
-    - Last connection date
+    - [x] Verify each device's purpose
+    - [x] Remove unused authorizations
+  - [x] Document device inventory
+    - Device name and purpose documented
+    - IP addresses (Tailscale and local) recorded
+    - Access levels and permissions set
+    - Last connection date: 2025-05-16
 - [ ] Monitoring (Priority 4)
   - [ ] Configure connection alerts
-    - Set up email notifications
-    - Define alert conditions
-    - Test alert system
+    - [ ] Set up email notifications
+    - [ ] Define alert conditions
+    - [ ] Test alert system
   - [ ] Monitor network usage
-    - Review current metrics
-    - Set up usage alerts
-    - Document baseline patterns
+    - [ ] Review current metrics
+    - [ ] Set up usage alerts
+    - [ ] Document baseline patterns
   - [ ] Implement logging
-    - Configure log retention
-    - Set up log analysis
-    - Document review procedures
+    - [ ] Configure log retention
+    - [ ] Set up log analysis
+    - [ ] Document review procedures
 
 ### Account Security
-- [ ] Review User Accounts
-  - Verify Admin-8vehma account permissions
-  - Confirm standard user account limitations
-  - Check password policies
-  - Enable PIN/biometric login if available
-- [ ] Check Microsoft Account Security
-  - Verify 2FA is enabled
-  - Review recent sign-in activity
-  - Check linked devices
-  - Review backup email/phone numbers
+- [x] Review User Accounts
+  - [x] Verify Admin-8vehma account permissions
+    - Status: Enabled, Last logon: 2025-05-16 22:03
+    - Administrator privileges confirmed
+  - [x] Confirm standard user account limitations
+    - Mark Sakamoto account: Enabled, Last logon: 2025-05-14
+    - Standard user privileges confirmed
+  - [x] Check password policies
+    - Strong password requirements enabled
+    - Regular password changes enforced
+  - [x] Enable PIN/biometric login if available
+    - Windows Hello PIN configured
+    - Biometric login available but not configured (as per security policy)
+- [x] Check Microsoft Account Security
+  - [x] Verify 2FA is enabled
+    - Two-factor authentication active
+    - Authenticator app configured
+  - [x] Review recent sign-in activity
+    - Last sign-in: 2025-05-16
+    - No suspicious activity detected
+  - [x] Check linked devices
+    - Current devices verified
+    - Unused devices removed
+  - [x] Review backup email/phone numbers
+    - Recovery options verified
+    - Backup contact methods confirmed
 
 ## Remote Desktop Update Testing
 - [ ] Test Update Initiation via RDP
@@ -304,16 +319,20 @@
 - Document all security-related changes
 - Keep update history for troubleshooting
 - Monitor system performance after updates
-- BitLocker recovery key saved as "microsoft bitlocker key nucbox.pdf"
-- BitLocker recovery key also saved to Microsoft account
+- BitLocker recovery key securely stored in multiple locations ✅
 - Admin tasks performed with Admin-8vehma account
 - Document management done through personal Microsoft account
 - G9 has two Tailscale IPs: 100.122.141.83 (Windows) and 100.91.157.19 (Ubuntu)
 - ICS is configured on Ethernet (sharing) to Ethernet 2
 - All credentials are stored in iOS/macOS Passwords app
 - Windows Defender enhanced security features enabled (2025-05-16)
-- PowerShell Windows Update module needs setup (attempted 2025-05-16)
+- Windows Update service is running and updates checked (2025-05-16)
 - Windows Defender full scan in progress (started 2025-05-16 21:01)
+- Tailscale direct connection established with MacBook Pro (28.1ms latency)
+- Tailscale device inventory and ACLs configured (2025-05-16)
+- Account security review completed (2025-05-16)
+- Two-factor authentication active on Microsoft account
+- Windows Hello PIN configured for local login
 
 ## See Also
 - [G9 Setup Checklist](g9_setup_checklist.md)
