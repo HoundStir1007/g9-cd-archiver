@@ -15,6 +15,76 @@ This is a required part of the workflow to ensure all updates are properly commi
 
 ---
 
+# Baton Entry - 2025-05-17 20:45:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we successfully resolved the Cursor IDE desktop entry integration on Ubuntu:
+
+- Troubleshot and fixed desktop entry issues:
+  - Found existing `cursor.desktop` file in `~/.local/share/applications/`
+  - Updated desktop entry with complete configuration
+  - Added proper MIME types and categories
+  - Configured file opening support
+  - Updated desktop database
+- Key changes made to `cursor.desktop`:
+  ```ini
+  [Desktop Entry]
+  Version=1.0
+  Type=Application
+  Name=Cursor IDE
+  Comment=AI-first code editor
+  Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox %F
+  Icon=cursor
+  Terminal=false
+  Categories=Development;TextEditor;IDE;
+  MimeType=text/plain;inode/directory;application/x-code-workspace;
+  StartupWMClass=Cursor
+  StartupNotify=true
+  ```
+- Successfully integrated Cursor IDE into Ubuntu applications menu
+- Documented the process for future reference
+
+## Lessons Learned
+
+1. Desktop Entry Requirements:
+   - Complete desktop entry fields are crucial for proper integration
+   - MIME types and categories affect menu placement and file associations
+   - Desktop database needs updating after changes
+   - Logout/login may be required for menu updates
+
+2. Troubleshooting Steps:
+   - Check desktop entry file location and permissions
+   - Verify desktop entry content and formatting
+   - Update desktop database
+   - Test with `gtk-launch` if needed
+   - Consider icon theme compatibility
+
+## Next Steps
+
+- Consider adding custom icon for better visual integration
+- Monitor for any issues with AppImage updates
+- Document any additional desktop integration requirements
+- Consider adding to system-wide applications if needed
+
+## Important Files & Links
+
+* `~/.local/share/applications/cursor.desktop`: Desktop entry configuration
+* `~/Cursor-0.50.4-x86_64.AppImage`: Cursor IDE executable
+
+## Important Reminders
+
+• Cursor IDE is now properly integrated into Ubuntu applications menu
+• Desktop entry supports file opening and proper categorization
+• AppImage path is hardcoded in desktop entry
+• System may need logout/login for menu updates
+
+*Running on Ubuntu*
+
+---
+
 # Baton Entry - 2025-05-17 16:45:00 📜
 
 Version: [pending commit]
