@@ -1092,4 +1092,35 @@ In this session, we completed comprehensive RDP feature testing between the MacB
 *Session completed: 2025-05-17 15:00*
 
 ---
+
+# Baton Entry - 2025-05-17 (Cursor on Ubuntu Success!) 📜
+
+## Session Summary
+
+- Successfully set up and launched Cursor (AppImage) on Ubuntu via direct login (not RDP).
+- Downloaded Cursor AppImage to ~/Downloads and made it executable.
+- Created a .desktop file in ~/.local/share/applications for menu integration, with the Exec line:
+  - Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox
+- Troubleshot menu issues: tested with and without terminal launchers, validated permissions, and confirmed the icon appeared in the menu.
+- Final solution: direct Exec path (no terminal) in the .desktop file worked after menu cache refresh.
+- Cursor now launches from the Ubuntu applications menu as expected.
+
+## Next Steps
+- Reboot or log out/in to confirm menu entry persists and launches Cursor.
+- Optionally, set a custom icon in the .desktop file for a polished look.
+- If the AppImage is moved, update the .desktop file path accordingly.
+
+## Important Files & Commands
+- ~/Downloads/Cursor-0.50.4-x86_64.AppImage
+- ~/.local/share/applications/cursor.desktop
+- chmod +x ~/Downloads/Cursor-0.50.4-x86_64.AppImage
+- Exec line: /home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox
+
+## Important Reminders
+- Cursor AppImage does not work over xRDP due to sandboxing limitations—use direct login or SSH remote editing for remote access.
+- Menu integration may require a logout/login or reboot to refresh.
+
+*Running on Ubuntu Desktop, Cursor AppImage integrated and working!* 🎉
+
+---
 *This file is automatically updated by the Pass_the_Baton script.*
