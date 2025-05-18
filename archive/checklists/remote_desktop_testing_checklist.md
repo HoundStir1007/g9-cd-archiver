@@ -145,4 +145,40 @@ This checklist ensures complete remote desktop functionality for the GMKtec NucB
 - [ ] Review firewall settings on both OS
 - [ ] Ensure strong passwords for all remote access accounts
 - [ ] Limit RDP/SSH/VNC to Tailscale network where possible
-- [ ] Test all connections for encryption and security 
+- [ ] Test all connections for encryption and security
+
+## Ubuntu GUI Access
+
+### Server Setup
+- [x] Install xRDP: `sudo apt install xrdp`
+- [x] Install XFCE4: `sudo apt install xfce4 xfce4-goodies`
+- [x] Configure display manager (LightDM)
+- [x] Create .xsession file for XFCE4
+- [x] Enable xRDP service: `sudo systemctl enable --now xrdp`
+- [x] Allow RDP through UFW: `sudo ufw allow 3389/tcp`
+- [x] Verify xRDP service status
+- [x] Configure desktop environment (XFCE4)
+
+### MacBook Connection Tests
+- [ ] Add new connection in Microsoft Remote Desktop app
+  - [ ] Test with Tailscale IP (100.91.157.19)
+  - [ ] Test with local network IP
+- [ ] Test connection and login
+- [ ] Verify desktop environment (XFCE4)
+- [ ] Test basic functionality:
+  - [ ] Window management
+  - [ ] File browser
+  - [ ] Terminal access
+  - [ ] System settings
+- [ ] Verify performance and responsiveness
+- [ ] Test file transfer capabilities
+- [ ] Test clipboard sharing
+
+### Current Status
+- Desktop Environment: XFCE4
+- Display Manager: LightDM
+- xRDP Service: Active and running
+- Connection IPs:
+  - Tailscale: 100.91.157.19
+  - Local: [Available via hostname -I]
+- Firewall: Port 3389 open for RDP 
