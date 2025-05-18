@@ -15,6 +15,88 @@ This is a required part of the workflow to ensure all updates are properly commi
 
 ---
 
+# Baton Entry - 2025-05-17 21:30:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we implemented the Tailscale monitoring system on Windows 11:
+
+- Successfully set up Tailscale monitoring infrastructure:
+  - Created monitoring script with alert system
+  - Configured scheduled task for automated monitoring
+  - Set up log and metrics directories
+  - Implemented email alert system with Gmail SMTP
+- Key components implemented:
+  - Monitoring script (`scripts/tailscale_monitoring.ps1`):
+    - Connection status monitoring
+    - Latency tracking (threshold: 100ms)
+    - DERP usage detection
+    - Email alerts for important events
+    - Metrics collection and storage
+    - Log rotation (30-day retention)
+  - Setup script (`scripts/setup_tailscale_monitoring.ps1`):
+    - Created scheduled task for automated monitoring
+    - Set up log directory at `C:\Logs\Tailscale`
+    - Set up metrics directory at `C:\Logs\Tailscale\Metrics`
+    - Configured secure password storage
+  - Test script (`scripts/test_monitoring_new.ps1`):
+    - Script loading verification
+    - Email alert testing
+    - Metrics collection testing
+    - Log cleanup verification
+    - Scheduled task validation
+
+## Current Status
+
+- Monitoring system is installed and configured
+- Scheduled task is created and ready
+- Log and metrics directories are set up
+- Email alert system is configured with Gmail SMTP
+- Test script is available for system verification
+
+## Next Steps
+
+1. Complete Testing:
+   - Run test script to verify all components
+   - Monitor system for 24 hours to verify alerts
+   - Review metrics collection
+   - Verify scheduled task operation
+
+2. Documentation Updates:
+   - Document monitoring system setup
+   - Create maintenance procedures
+   - Update network monitoring documentation
+   - Add alert response procedures
+
+3. Future Enhancements:
+   - Consider adding web dashboard
+   - Implement historical metrics analysis
+   - Add more detailed logging
+   - Create automated reports
+
+## Important Files & Links
+
+* `scripts/tailscale_monitoring.ps1`: Main monitoring script
+* `scripts/setup_tailscale_monitoring.ps1`: Setup script
+* `scripts/test_monitoring_new.ps1`: Test script
+* `C:\Logs\Tailscale`: Log directory
+* `C:\Logs\Tailscale\Metrics`: Metrics directory
+* `C:\Secure\smtp_password.txt`: Secure password storage
+
+## Important Reminders
+
+• Monitoring system is configured to send alerts to msakamoto+homelab@gmail.com
+• Logs are retained for 30 days
+• Metrics are collected every 5 minutes
+• System requires administrator privileges for setup and testing
+• Gmail App Password is required for email alerts
+
+*Running on Windows 11*
+
+---
+
 # Baton Entry - 2025-05-17 20:45:00 📜
 
 Version: [pending commit]
