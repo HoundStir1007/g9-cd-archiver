@@ -1,3 +1,50 @@
+# Baton Entry - 2025-05-18 20:33:37 📜
+
+Version: bf057e7
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-05-18 20:33:36
+- "Update baton handoff document - 2025-05-18 01:02:12"
+- Update baton handoff document - 2025-05-17 21:24:16
+- Update baton handoff document - 2025-05-17 21:22:43
+- Resolve merge conflict in baton.md
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   archive/README.md: Main project documentation
+*   README.md: Main project documentation
+*   ubuntu_ics_setup_checklist.md: Ubuntu_Ics_Setup_Checklist
+*   network_configuration.md: Network_Configuration
+*   user_account_permissions.md: User_Account_Permissions
+*   backup_verification_log.md: Backup_Verification_Log
+*   home_server_plan.md: Home_Server_Plan
+*   windows_security_checklist.md: Windows_Security_Checklist
+*   security_audit_log.md: Security_Audit_Log
+*   credential_recovery_plan.md: Credential_Recovery_Plan
+
+## Important Reminders
+
+• Currently running on Darwin 24.4.0
+
+
+*Running on Darwin 24.4.0*
+
+---
+
 # IMPORTANT: Save and Stage Before Handoff!
 
 **Always save and stage (`git add`) baton.md (and any other documentation changes) before running pass_the_baton.sh or any handoff script.**
@@ -97,73 +144,40 @@ In this session, we implemented the Tailscale monitoring system on Windows 11:
 
 ---
 
-# Baton Entry - 2025-05-17 20:45:00 📜
+# How to Run the Tailscale Monitoring Test Script (Windows 11)
 
-Version: [pending commit]
+## Step-by-Step Instructions
 
-## Session Summary
+1. **Open PowerShell as Administrator**
+   - Click Start, type `PowerShell`, right-click Windows PowerShell, and select 'Run as administrator'.
 
-In this session, we successfully resolved the Cursor IDE desktop entry integration on Ubuntu:
+2. **Navigate to the Scripts Directory**
+   - Use `cd` to change to the folder containing your monitoring scripts. For example:
+     ```powershell
+     cd C:\Users\<YourUser>\scripts
+     ```
+   - Replace `<YourUser>` with your actual username if needed.
 
-- Troubleshot and fixed desktop entry issues:
-  - Found existing `cursor.desktop` file in `~/.local/share/applications/`
-  - Updated desktop entry with complete configuration
-  - Added proper MIME types and categories
-  - Configured file opening support
-  - Updated desktop database
-- Key changes made to `cursor.desktop`:
-  ```ini
-  [Desktop Entry]
-  Version=1.0
-  Type=Application
-  Name=Cursor IDE
-  Comment=AI-first code editor
-  Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox %F
-  Icon=cursor
-  Terminal=false
-  Categories=Development;TextEditor;IDE;
-  MimeType=text/plain;inode/directory;application/x-code-workspace;
-  StartupWMClass=Cursor
-  StartupNotify=true
-  ```
-- Successfully integrated Cursor IDE into Ubuntu applications menu
-- Documented the process for future reference
+3. **Run the Test Script**
+   - Execute the test script:
+     ```powershell
+     .\test_monitoring_new.ps1
+     ```
 
-## Lessons Learned
+## What to Check After Running the Script
 
-1. Desktop Entry Requirements:
-   - Complete desktop entry fields are crucial for proper integration
-   - MIME types and categories affect menu placement and file associations
-   - Desktop database needs updating after changes
-   - Logout/login may be required for menu updates
-
-2. Troubleshooting Steps:
-   - Check desktop entry file location and permissions
-   - Verify desktop entry content and formatting
-   - Update desktop database
-   - Test with `gtk-launch` if needed
-   - Consider icon theme compatibility
+- **PowerShell Output:**
+  - Review the console for any errors or failed tests.
+- **Email Alert:**
+  - Confirm you received a test alert at `msakamoto+homelab@gmail.com`.
+- **Logs and Metrics:**
+  - Check `C:\Logs\Tailscale` and `C:\Logs\Tailscale\Metrics` for new log and metrics entries.
+- **Task Scheduler:**
+  - Open Task Scheduler and verify the monitoring task is present and has no errors.
 
 ## Next Steps
-
-- Consider adding custom icon for better visual integration
-- Monitor for any issues with AppImage updates
-- Document any additional desktop integration requirements
-- Consider adding to system-wide applications if needed
-
-## Important Files & Links
-
-* `~/.local/share/applications/cursor.desktop`: Desktop entry configuration
-* `~/Cursor-0.50.4-x86_64.AppImage`: Cursor IDE executable
-
-## Important Reminders
-
-• Cursor IDE is now properly integrated into Ubuntu applications menu
-• Desktop entry supports file opening and proper categorization
-• AppImage path is hardcoded in desktop entry
-• System may need logout/login for menu updates
-
-*Running on Ubuntu*
+- If all checks pass, your monitoring system is working! 🎉
+- If you encounter any issues, note the error messages and review the script output for troubleshooting.
 
 ---
 
