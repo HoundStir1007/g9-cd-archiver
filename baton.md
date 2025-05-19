@@ -867,8 +867,8 @@ For the next session, consider the following steps:
 *   home_server_plan.md: Home_Server_Plan
 *   rdp_testing_checklist.md: Rdp_Testing_Checklist
 *   remote_desktop_testing_checklist.md: Remote_Desktop_Testing_Checklist
-*   tailscale_acl.md: Tailscale_Acl
 *   tailscale_config.md: Tailscale_Config
+*   tailscale_configuration.md: Tailscale_Configuration
 
 ## Important Reminders
 
@@ -1380,4 +1380,104 @@ In this session, we completed comprehensive RDP feature testing between the MacB
 *Running on Ubuntu Desktop, Cursor AppImage integrated and working!* 🎉
 
 ---
-*This file is automatically updated by the Pass_the_Baton script.*
+
+# Monitoring System Setup Documentation (Template)
+
+## Overview
+This section documents the setup and configuration of the Tailscale monitoring system on Windows 11. It is intended to provide a clear, step-by-step guide for installation, configuration, and verification.
+
+---
+
+## 1. Prerequisites
+- Windows 11 with administrator privileges
+- Tailscale installed and configured
+- Gmail App Password for SMTP alerts
+
+## 2. File Locations
+- Monitoring script: `scripts/tailscale_monitoring.ps1`
+- Setup script: `scripts/setup_tailscale_monitoring.ps1`
+- Test script: `scripts/test_monitoring_new.ps1`
+- Log directory: `C:\Logs\Tailscale`
+- Metrics directory: `C:\Logs\Tailscale\Metrics`
+- Secure password: `C:\Secure\smtp_password.txt`
+
+## 3. Setup Steps
+1. **Copy scripts to the server:**
+   - Place all scripts in the `scripts/` directory on the server.
+2. **Set up log and metrics directories:**
+   - Ensure `C:\Logs\Tailscale` and `C:\Logs\Tailscale\Metrics` exist.
+3. **Store SMTP password securely:**
+   - Save the Gmail App Password in `C:\Secure\smtp_password.txt` (restrict permissions).
+4. **Run the setup script:**
+   - Execute `scripts/setup_tailscale_monitoring.ps1` as Administrator.
+   - This creates the scheduled task and configures directories.
+5. **Verify scheduled task:**
+   - Open Task Scheduler and confirm the monitoring task is present and set to run every 5 minutes.
+6. **Test monitoring system:**
+   - Run `scripts/test_monitoring_new.ps1` to verify alerts, metrics, and log rotation.
+
+## 4. Configuration Details
+- **Alert Email:** msakamoto+homelab@gmail.com
+- **Latency Threshold:** 100ms
+- **Log Retention:** 30 days
+- **Metrics Collection Interval:** 5 minutes
+
+## 5. Verification Checklist
+- [ ] Scheduled task exists and runs every 5 minutes
+- [ ] Logs and metrics are being written
+- [ ] Email alerts are received on failure/threshold breach
+- [ ] Log rotation is working (old logs deleted after 30 days)
+
+---
+
+*Update this section as the system evolves or if any configuration changes are made.*
+
+# Monitoring System Maintenance Procedures (Template)
+
+## Overview
+This section provides a practical checklist and procedures for maintaining the Tailscale monitoring system. Follow these steps regularly to ensure the system remains healthy and responsive.
+
+---
+
+## 1. Routine Maintenance (Weekly)
+- [ ] **Review Monitoring Logs:**
+    - Check `C:\Logs\Tailscale` for recent log entries and errors.
+    - Confirm logs are being updated every 5 minutes.
+- [ ] **Check Metrics Files:**
+    - Verify new metrics are present in `C:\Logs\Tailscale\Metrics`.
+    - Look for unusual spikes or missing data.
+- [ ] **Test Email Alerts:**
+    - Simulate a failure (e.g., disconnect Tailscale briefly) to confirm alert delivery.
+    - Ensure alerts are sent to `msakamoto+homelab@gmail.com`.
+- [ ] **Verify Scheduled Task:**
+    - Open Task Scheduler and confirm the monitoring task is running as scheduled.
+    - Check for missed runs or errors in Task Scheduler history.
+
+## 2. Monthly Maintenance
+- [ ] **Log Rotation Check:**
+    - Confirm that logs older than 30 days are being deleted automatically.
+- [ ] **Metrics Retention:**
+    - Ensure metrics files are not growing excessively large.
+    - Archive or clean up as needed.
+- [ ] **Script Updates:**
+    - Review scripts for updates or improvements.
+    - Apply security patches if available.
+
+## 3. As-Needed Maintenance
+- [ ] **Respond to Alerts:**
+    - Investigate the cause of any alert emails.
+    - Document the incident and resolution steps.
+- [ ] **Manual Log Cleanup:**
+    - If disk space is low, manually delete old logs or metrics.
+- [ ] **Configuration Changes:**
+    - Update documentation if any configuration or threshold changes are made.
+
+## 4. Verification Checklist
+- [ ] All logs and metrics are current
+- [ ] No unresolved alerts or errors
+- [ ] Scheduled task is running without issues
+- [ ] Documentation is up to date
+
+---
+
+*Update this section as procedures evolve or if new maintenance tasks are added.*
