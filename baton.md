@@ -1790,3 +1790,38 @@ This section provides a practical checklist and procedures for maintaining the T
 ---
 
 *Update this section as procedures evolve or if new maintenance tasks are added.*
+
+## Tailscale Dashboard Troubleshooting & Improvement Plan
+
+### 1. Current Issues
+- Dashboard loads, but all data panels are empty or show errors.
+- Log error: `Error getting latest metrics: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)`
+- Metrics file contains error messages indicating Tailscale executable not found.
+
+### 2. Root Causes
+- Metrics file may contain invalid JSON lines.
+- Metrics collection script cannot find `tailscale.exe` at the expected path.
+
+### 3. Action Steps
+1. **Validate Metrics File**
+   - Open `C:\Logs\Tailscale\Metrics\tailscale_metrics_YYYY-MM-DD.json`.
+   - Ensure every line is valid JSON.
+   - Remove or fix any invalid lines.
+
+2. **Fix Metrics Collection Script**
+   - Locate the actual path of `tailscale.exe` on the system.
+   - Update the script to use the correct path.
+   - If Tailscale is not installed, install it and note the path.
+
+3. **Test and Monitor**
+   - Run the metrics collection script manually.
+   - Confirm that new metrics are being collected and are valid.
+   - Refresh the dashboard to verify data is displayed.
+
+4. **Document Any Changes**
+   - Record the correct path to `tailscale.exe`.
+   - Note any script changes or additional troubleshooting steps.
+
+### 4. Next Steps
+- Assign tasks (if working in a team).
+- Set a date to review progress.

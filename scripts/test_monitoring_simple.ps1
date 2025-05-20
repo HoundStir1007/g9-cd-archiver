@@ -1,4 +1,4 @@
-# Simple test script for Tailscale monitoring system
+# Test script for Tailscale monitoring system
 
 # Ensure script is run as administrator
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
@@ -6,48 +6,91 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     exit 1
 }
 
+# Import the monitoring script
+. "$PSScriptRoot\tailscale_monitoring.ps1"
+
 Write-Host "Testing Tailscale monitoring system..."
 Write-Host "----------------------------------------"
 
-# Test 1: Check if monitoring script exists
-$monitoringScript = Join-Path $PSScriptRoot "tailscale_monitoring.ps1"
-if (Test-Path $monitoringScript) {
-    Write-Host "✓ Monitoring script found at: $monitoringScript"
-} else {
-    Write-Host "✗ Monitoring script not found"
+# Test 1: Check if monitoring script can be loaded
+Write-Host "Test 1: Script Loading"
+try {
+    $status = Get-TailscaleStatus
+    Write-Host "Script loaded successfully"
+    Write-Host "Current status:"
+    Write-Host "Connected: $($status.Connected)"
+    Write-Host "Latency: $($status.Latency)ms"
+    Write-Host "Using DERP: $($status.DERP)"
+} catch {
+    Write-Host "Script loading failed: $_"
     exit 1
 }
 
-# Test 2: Check if scheduled task exists
+# Test 2: Test email alert system
+Write-Host "Test 2: Email Alert System"
+try {
+    Send-TailscaleAlert -Subject "Test Alert" -Body "This is a test alert from the Tailscale monitoring system." -Priority "Normal"
+    Write-Host "Test email sent successfully"
+    Write-Host "Please check msakamoto+homelab@gmail.com for the test email"
+} catch {
+    Write-Host "Email alert test failed: $_"
+    Write-Host "Please verify SMTP settings and password"
+    exit 1
+}
+
+# Test 3: Test metrics collection
+Write-Host "Test 3: Metrics Collection"
+try {
+    Save-TailscaleMetrics -Status $status
+    $metricsFile = Join-Path $config.MetricsPath "tailscale_metrics_$(Get-Date -Format 'yyyy-MM-dd').json"
+    if (Test-Path $metricsFile) {
+        Write-Host "Metrics saved successfully"
+        Write-Host "File: $metricsFile"
+        Get-Content $metricsFile | Write-Host
+    } else {
+        Write-Host "Metrics file not created"
+        exit 1
+    }
+} catch {
+    Write-Host "Metrics collection test failed: $_"
+    exit 1
+}
+
+# Test 4: Test log cleanup
+Write-Host "Test 4: Log Cleanup"
+try {
+    $oldLogPath = Join-Path $config.LogPath "test_old.log"
+    "Test log content" | Set-Content $oldLogPath
+    (Get-Item $oldLogPath).LastWriteTime = (Get-Date).AddDays(-($config.LogRetentionDays + 1))
+    Clear-OldLogs
+    if (-not (Test-Path $oldLogPath)) {
+        Write-Host "Log cleanup working correctly"
+    } else {
+        Write-Host "Log cleanup failed - old log still exists"
+        exit 1
+    }
+} catch {
+    Write-Host "Log cleanup test failed: $_"
+    exit 1
+}
+
+# Test 5: Test scheduled task
+Write-Host "Test 5: Scheduled Task"
 try {
     $task = Get-ScheduledTask -TaskName "TailscaleMonitoring" -ErrorAction Stop
-    Write-Host "✓ Scheduled task exists"
-    Write-Host "  Status: $($task.State)"
-    Write-Host "  Last Run: $($task.LastRunTime)"
-    Write-Host "  Next Run: $($task.NextRunTime)"
+    Write-Host "Scheduled task exists"
+    Write-Host "Status: $($task.State)"
+    Write-Host "Last Run: $($task.LastRunTime)"
+    Write-Host "Next Run: $($task.NextRunTime)"
+    Write-Host "All tests completed successfully!"
+    Write-Host "The Tailscale monitoring system is ready for use."
+    Write-Host "Next steps:"
+    Write-Host "1. Monitor the system for 24 hours to verify alerts"
+    Write-Host "2. Review the metrics file daily to ensure proper collection"
+    Write-Host "3. Check the scheduled task runs after system restart"
+    Write-Host "4. Verify email alerts are received for all conditions"
 } catch {
-    Write-Host "✗ Scheduled task not found"
+    Write-Host "Scheduled task not found"
+    Write-Host "Please run setup_tailscale_monitoring.ps1 as administrator"
     exit 1
-}
-
-# Test 3: Check if log directories exist
-$logPath = "C:\Logs\Tailscale"
-$metricsPath = "C:\Logs\Tailscale\Metrics"
-
-if (Test-Path $logPath) {
-    Write-Host "✓ Log directory exists: $logPath"
-} else {
-    Write-Host "✗ Log directory not found"
-    exit 1
-}
-
-if (Test-Path $metricsPath) {
-    Write-Host "✓ Metrics directory exists: $metricsPath"
-} else {
-    Write-Host "✗ Metrics directory not found"
-    exit 1
-}
-
-Write-Host "`nBasic tests completed successfully!"
-Write-Host "The monitoring system appears to be set up correctly."
-Write-Host "----------------------------------------" 
+} 
