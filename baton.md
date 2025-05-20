@@ -1,3 +1,93 @@
+# Baton Entry - 2025-05-19 21:00:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed the setup and verification of the Tailscale monitoring system on Windows 11:
+
+- Successfully ran the setup script as Administrator
+- Confirmed creation of the scheduled task `TailscaleMonitoring` (runs as SYSTEM, at startup and every 5 minutes)
+- Verified presence of log directory (`C:\Logs\Tailscale`) and metrics directory (`C:\Logs\Tailscale\Metrics`)
+- Confirmed secure storage of Gmail App Password in `C:\Secure\smtp_password.txt`
+- Scheduled task is visible and ready in Task Scheduler
+- Monitoring system is now fully operational and ready for ongoing use
+
+## Next Steps
+
+1. Monitor logs and metrics for regular updates (every 5 minutes)
+2. Test email alert functionality (simulate Tailscale outage if needed)
+3. Review Task Scheduler for successful task runs (Last Run Result = 0x0)
+4. Update documentation and maintenance procedures as needed
+
+## Important Files & Links
+
+* `scripts/tailscale_monitoring.ps1`: Main monitoring script
+* `scripts/setup_tailscale_monitoring.ps1`: Setup script
+* `scripts/test_monitoring_new.ps1`: Test script
+* `C:\Logs\Tailscale`: Log directory
+* `C:\Logs\Tailscale\Metrics`: Metrics directory
+* `C:\Secure\smtp_password.txt`: Secure password storage
+
+## Important Reminders
+
+• Monitoring system is configured to send alerts to msakamoto+homelab@gmail.com
+• Logs are retained for 30 days
+• Metrics are collected every 5 minutes
+• Scheduled task runs as SYSTEM and restarts on failure
+• Use `check_monitoring_status.ps1` to verify system health
+
+*Running on Windows 11 Pro (10.0.26100)*
+
+---
+
+# Baton Entry - 2025-05-18 20:50:33 📜
+
+Version: b413891
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- "Update baton handoff document - 2025-05-18 20:50:30"
+- Update baton handoff document - 2025-05-18 20:37:14
+- Update baton handoff document - 2025-05-18 20:33:36
+- "Update baton handoff document - 2025-05-18 01:02:12"
+- Update baton handoff document - 2025-05-17 21:24:16
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   archive/README.md: Main project documentation
+*   README.md: Main project documentation
+*   backup_verification_log.md: Backup_Verification_Log
+*   budget.md: Budget
+*   credential_recovery_plan.md: Credential_Recovery_Plan
+*   home_server_plan.md: Home_Server_Plan
+*   network_configuration.md: Network_Configuration
+*   security_audit_log.md: Security_Audit_Log
+*   tailscale_configuration.md: Tailscale_Configuration
+*   ubuntu_ics_setup_checklist.md: Ubuntu_Ics_Setup_Checklist
+
+## Important Reminders
+
+• Currently running on Windows 11
+
+
+*Running on Windows 11*
+
+---
+
 # Baton Entry - 2025-05-18 20:33:37 📜
 
 Version: bf057e7
