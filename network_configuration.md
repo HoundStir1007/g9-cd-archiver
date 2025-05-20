@@ -341,10 +341,40 @@ graph TD
   - **Log Location**: %SystemRoot%\System32\winevt\Logs\Microsoft-Windows-Windows Defender%4Operational.evtx
   - **Retention**: 30 days
   - **Alerts**: Enabled
+
+- **Tailscale Monitoring System**:
+  - **Scheduled Task**: "TailscaleMonitoring"
+    - Runs as SYSTEM
+    - Executes every 5 minutes
+    - Auto-restarts on failure
+    - Runs at system startup
+  - **Log Locations**:
+    - Main Logs: `C:\Logs\Tailscale`
+    - Metrics: `C:\Logs\Tailscale\Metrics`
+    - Retention: 30 days
+  - **Alert Configuration**:
+    - Email: msakamoto+homelab@gmail.com
+    - Latency Threshold: 100ms
+    - Alert Conditions:
+      - Connection loss
+      - High latency (>100ms)
+      - DERP fallback usage
+      - Service interruptions
+  - **Verification Tools**:
+    - `scripts/check_monitoring_status.ps1`: System status check
+    - `scripts/test_monitoring_new.ps1`: Test script
+    - Task Scheduler: Manual verification
+  - **Maintenance**:
+    - Daily log review
+    - Weekly metrics analysis
+    - Monthly system verification
+    - Quarterly configuration review
+
 - **Tailscale Admin Console**:
   - **URL**: https://login.tailscale.com/admin
   - **Access**: Admin-8vehma
   - **2FA**: Enabled
+
 - **Windows Event Viewer**:
   - **Logs**:
     - System
