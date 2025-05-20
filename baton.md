@@ -1,3 +1,46 @@
+# Baton Entry - 2025-05-19 21:15:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed the setup and verification of the Tailscale monitoring system on Windows 11:
+
+- Successfully ran the setup script as Administrator
+- Confirmed creation of the scheduled task `TailscaleMonitoring` (runs as SYSTEM, at startup and every 5 minutes)
+- Verified presence of log directory (`C:\Logs\Tailscale`) and metrics directory (`C:\Logs\Tailscale\Metrics`)
+- Confirmed secure storage of Gmail App Password in `C:\Secure\smtp_password.txt`
+- Scheduled task is visible and ready in Task Scheduler
+- Monitoring system is now fully operational and ready for ongoing use
+
+## Next Steps
+
+1. Monitor logs and metrics for regular updates (every 5 minutes)
+2. Test email alert functionality (simulate Tailscale outage if needed)
+3. Review Task Scheduler for successful task runs (Last Run Result = 0x0)
+4. Update documentation and maintenance procedures as needed
+
+## Important Files & Links
+
+* `scripts/tailscale_monitoring.ps1`: Main monitoring script
+* `scripts/setup_tailscale_monitoring.ps1`: Setup script
+* `scripts/test_monitoring_new.ps1`: Test script
+* `C:\Logs\Tailscale`: Log directory
+* `C:\Logs\Tailscale\Metrics`: Metrics directory
+* `C:\Secure\smtp_password.txt`: Secure password storage
+
+## Important Reminders
+
+• Monitoring system is configured to send alerts to msakamoto+homelab@gmail.com
+• Logs are retained for 30 days
+• Metrics are collected every 5 minutes
+• Scheduled task runs as SYSTEM and restarts on failure
+• Use `check_monitoring_status.ps1` to verify system health
+
+*Running on Windows 11 Pro (10.0.26100)*
+
+---
+
 # Baton Entry - 2025-05-19 21:00:00 📜
 
 Version: [pending commit]
