@@ -10,6 +10,7 @@ This file provides a clear, up-to-date breakdown of all major hardware costs for
 | **Storage Expansion** (Optional)     | M.2 NVMe SSDs for NAS bays               | $80-300              | Varies by capacity | As needed |
 | **UPS (Battery Backup)**              | Amazon Basics Standby UPS 800VA          | $76                  | [Amazon](https://www.amazon.com/Amazon-Basics-Standby-800VA-450W/dp/B07FQ4DJ7X/) | Phase 2 (Optional) |
 | **Accessories**                       | Ethernet cables, power strips, misc.     | $20                  | —            | As needed |
+| **Unmanaged Gigabit Switch (8-port)** | TP-Link/Netgear/UGREEN (Media Center) | $25–$30 | [Amazon](https://a.co/d/gJWiib8) | Purchased (2025) |
 
 |                                      |                                          |                      |              |
 | **Total Estimated Cost**              |                                          | **$306-526**         |              |
@@ -58,4 +59,6 @@ This file provides a clear, up-to-date breakdown of all major hardware costs for
 - Links are for reference; shop around for best deals!
 - This budget covers core hardware only; all software implementations utilize free/open-source options.
 - The G9 NucBox replaces both the originally planned G6 NucBox and separate Synology NAS, offering significant savings.
-- The integrated solution simplifies setup and maintenance while providing better connectivity (dual 2.5GbE ports). 
+- The integrated solution simplifies setup and maintenance while providing better connectivity (dual 2.5GbE ports).
+
+**Purchased in 2025:** Unmanaged 8-port gigabit switch for media center expansion (see [Amazon link](https://a.co/d/gJWiib8)). 

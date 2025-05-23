@@ -524,6 +524,28 @@ graph TD
 ### Archive Information
 For a complete list of archived documentation and their relationships, see the [Archive README](archive/README.md).
 
+## Media Center Network Expansion (2025 Update)
+
+To accommodate multiple wired devices in the living room/media center, an unmanaged 8-port gigabit switch will be installed. This will allow the following devices to connect via ethernet:
+- G9 (home server)
+- Smart TV
+- PS5
+- Blu-ray player
+- Occasional laptop
+- (Room for future devices)
+
+**Rationale:**
+- A single wall jack will connect to the switch, providing full-speed, reliable wired connections for all devices.
+- All devices will remain on the main network (192.168.0.x), ensuring seamless communication and access to shared resources.
+- 8-port switches are only slightly more expensive than 5-port models and provide future-proofing.
+
+**2.5G Switches:**
+- 2.5G switches are being deferred for now, as current devices and internet speeds do not require more than 1G per port.
+- The network can be upgraded to 2.5G in the future if higher speeds or new hardware make it necessary.
+
+**Summary:**
+- This setup maximizes flexibility, reliability, and ease of expansion for the home media center.
+
 ---
 *Last updated: 2025-05-16*
 *For historical system state, see [System State Snapshot](archive/snapshots/system_state_20250516.md)* 

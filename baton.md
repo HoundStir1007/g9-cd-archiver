@@ -162,7 +162,7 @@ In this session, we completed the setup and verification of the Tailscale monito
 
 ---
 
-# Baton Entry - 2025-05-18 20:50:33 ��
+# Baton Entry - 2025-05-18 20:50:33 📜
 
 Version: b413891
 
@@ -1607,3 +1607,48 @@ This section provides a practical checklist and procedures for maintaining the T
 ### 4. Next Steps
 - Assign tasks (if working in a team).
 - Set a date to review progress.
+
+# Baton Entry - 2025-05-19 22:00:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+- Decided to install an unmanaged 8-port gigabit switch in the living room/media center to support multiple wired devices:
+  - G9 (home server)
+  - Smart TV
+  - PS5
+  - Blu-ray player
+  - Occasional laptop
+  - (Room for future expansion)
+- All devices will remain on the main network (192.168.0.x) for seamless communication and access.
+- 2.5G switches are being deferred for now, as current needs do not require more than 1G per port. The network can be upgraded to 2.5G in the future if needed.
+
+## Rationale & Benefits
+
+- 8-port switches are only slightly more expensive than 5-port models and provide future-proofing.
+- Centralizing the switch in the media center allows for easy expansion and reliable wired connections for all entertainment and server devices.
+- This approach maximizes flexibility, reliability, and ease of maintenance.
+
+## Next Steps
+
+- Purchase and install the unmanaged 8-port gigabit switch in the living room/media center.
+- Connect all relevant devices to the switch.
+- Monitor network performance and reassess if/when 2.5G speeds become necessary.
+
+# Baton Entry - 2025-05-19 22:10:00 📜
+
+Version: [pending commit]
+
+## Session Summary
+
+- Purchased and installed an unmanaged 8-port gigabit switch in the living room/media center to support the G9, Smart TV, PS5, Blu-ray player, and occasional laptop.
+- Switch details: [Amazon link](https://a.co/d/gJWiib8), price: $25–$30 USD.
+- All relevant devices are now connected via ethernet, maximizing network reliability and flexibility.
+- This completes the planned network expansion for the media center as documented in `network_configuration.md`.
+- The purchase and installation are reflected in the updated `budget.md`.
+
+## Next Steps
+
+- Monitor network performance and add devices as needed.
+- Reassess for 2.5G upgrade if future needs arise.
