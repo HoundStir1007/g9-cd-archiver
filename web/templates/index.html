@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailscale Monitoring Dashboard</title>
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+            --text-color: #ecf0f1;
+            --bg-color: #1a1a1a;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .card {
+            background-color: var(--secondary-color);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+        
+        .card-header {
+            background-color: var(--primary-color);
+            border-bottom: none;
+            border-radius: 10px 10px 0 0 !important;
+            padding: 1rem;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        .metric-label {
+            color: #95a5a6;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        
+        .status-connected {
+            background-color: var(--success-color);
+        }
+        
+        .status-disconnected {
+            background-color: var(--danger-color);
+        }
+        
+        .status-warning {
+            background-color: var(--warning-color);
+        }
+        
+        .chart-container {
+            height: 300px;
+            margin-bottom: 1rem;
+        }
+        
+        .refresh-time {
+            color: #95a5a6;
+            font-size: 0.8rem;
+            text-align: right;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .metric-value {
+                font-size: 1.5rem;
+            }
+            
+            .chart-container {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class='bx bx-network-chart'></i>
+                Tailscale Monitoring
+            </a>
+            <div class="d-flex">
+                <span class="navbar-text me-3">
+                    <i class='bx bx-refresh'></i>
+                    <span id="last-update">Updating...</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <!-- Current Status -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-link'></i>
+                            Connection Status
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="connection-status" class="metric-value">
+                            <span class="status-indicator"></span>
+                            Checking...
+                        </div>
+                        <div class="metric-label">Tailscale Connection</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-tachometer'></i>
+                            Latency
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="latency" class="metric-value">--</div>
+                        <div class="metric-label">Current Latency (ms)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-server'></i>
+                            DERP Status
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="derp-status" class="metric-value">--</div>
+                        <div class="metric-label">DERP Usage</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-error-circle'></i>
+                            Last Error
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="last-error" class="metric-value">None</div>
+                        <div class="metric-label">Recent Errors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Metrics -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-chip'></i>
+                            CPU Usage
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="cpu-usage" class="metric-value">--</div>
+                        <div class="metric-label">CPU Utilization</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-memory-card'></i>
+                            Memory Usage
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="memory-usage" class="metric-value">--</div>
+                        <div class="metric-label">Memory Utilization</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-hdd'></i>
+                            Disk Usage
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="disk-usage" class="metric-value">--</div>
+                        <div class="metric-label">Disk Utilization</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-memory'></i>
+                            Available Memory
+                        </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <div id="memory-available" class="metric-value">--</div>
+                        <div class="metric-label">Free Memory (GB)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-line-chart'></i>
+                            Latency History
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="latency-chart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class='bx bx-pulse'></i>
+                            Connection Status History
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="status-chart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        // Configuration
+        const config = {
+            refreshInterval: {{ refresh_interval }},
+            latencyThreshold: {{ latency_threshold }},
+            charts: {
+                latency: null,
+                status: null,
+                derp: null
+            }
+        };
+
+        // Initialize Socket.IO
+        const socket = io();
+
+        // Update metrics display
+        function updateMetrics(data) {
+            // Update connection status
+            const statusEl = document.getElementById('connection-status');
+            const statusIndicator = statusEl.querySelector('.status-indicator');
+            if (data.tailscale.Connected) {
+                statusEl.innerHTML = '<span class="status-indicator status-connected"></span>Connected';
+            } else {
+                statusEl.innerHTML = '<span class="status-indicator status-disconnected"></span>Disconnected';
+            }
+
+            // Update latency
+            const latencyEl = document.getElementById('latency');
+            if (data.tailscale.Latency !== null) {
+                latencyEl.textContent = data.tailscale.Latency.toFixed(1);
+                if (data.tailscale.Latency > config.latencyThreshold) {
+                    latencyEl.style.color = 'var(--warning-color)';
+                } else {
+                    latencyEl.style.color = 'var(--success-color)';
+                }
+            } else {
+                latencyEl.textContent = '--';
+                latencyEl.style.color = 'var(--text-color)';
+            }
+
+            // Update DERP status
+            const derpEl = document.getElementById('derp-status');
+            derpEl.textContent = data.tailscale.UsingDERP ? 'Active' : 'Inactive';
+            derpEl.style.color = data.tailscale.UsingDERP ? 'var(--warning-color)' : 'var(--success-color)';
+
+            // Update system metrics
+            document.getElementById('cpu-usage').textContent = `${data.system.cpu_percent.toFixed(1)}%`;
+            document.getElementById('memory-usage').textContent = `${data.system.memory_percent.toFixed(1)}%`;
+            document.getElementById('disk-usage').textContent = `${data.system.disk_percent.toFixed(1)}%`;
+            document.getElementById('memory-available').textContent = `${data.system.memory_available.toFixed(1)} GB`;
+
+            // Update last update time
+            document.getElementById('last-update').textContent = `Last update: ${new Date(data.timestamp).toLocaleTimeString()}`;
+        }
+
+        // Initialize charts
+        function initCharts() {
+            // Latency chart
+            config.charts.latency = Plotly.newPlot('latency-chart', [{
+                y: [],
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Latency',
+                line: { color: 'var(--accent-color)' }
+            }], {
+                margin: { t: 30, r: 20, b: 40, l: 40 },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: 'var(--text-color)' },
+                xaxis: { 
+                    title: 'Time',
+                    gridcolor: 'rgba(255,255,255,0.1)'
+                },
+                yaxis: { 
+                    title: 'Latency (ms)',
+                    gridcolor: 'rgba(255,255,255,0.1)'
+                }
+            });
+
+            // Status chart
+            config.charts.status = Plotly.newPlot('status-chart', [{
+                y: [],
+                type: 'scatter',
+                mode: 'lines+markers',
+                name: 'Connection Status',
+                line: { color: 'var(--success-color)' }
+            }], {
+                margin: { t: 30, r: 20, b: 40, l: 40 },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: 'var(--text-color)' },
+                xaxis: { 
+                    title: 'Time',
+                    gridcolor: 'rgba(255,255,255,0.1)'
+                },
+                yaxis: { 
+                    title: 'Status',
+                    gridcolor: 'rgba(255,255,255,0.1)',
+                    range: [-0.1, 1.1]
+                }
+            });
+        }
+
+        // Update charts with new data
+        function updateCharts(data) {
+            // Update latency chart
+            Plotly.extendTraces('latency-chart', {
+                y: [[data.tailscale.Latency]],
+                x: [[new Date(data.timestamp)]]
+            }, [0]);
+
+            // Update status chart
+            Plotly.extendTraces('status-chart', {
+                y: [[data.tailscale.Connected ? 1 : 0]],
+                x: [[new Date(data.timestamp)]]
+            }, [0]);
+
+            // Keep only last 100 points
+            const maxPoints = 100;
+            Plotly.relayout('latency-chart', {
+                xaxis: {
+                    range: [
+                        new Date(Date.now() - config.refreshInterval * maxPoints),
+                        new Date()
+                    ]
+                }
+            });
+            Plotly.relayout('status-chart', {
+                xaxis: {
+                    range: [
+                        new Date(Date.now() - config.refreshInterval * maxPoints),
+                        new Date()
+                    ]
+                }
+            });
+        }
+
+        // Socket.IO event handlers
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+
+        socket.on('metrics_update', (data) => {
+            updateMetrics(data);
+            updateCharts(data);
+        });
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            initCharts();
+            
+            // Fetch initial data
+            fetch('/api/metrics/current')
+                .then(response => response.json())
+                .then(data => {
+                    updateMetrics(data);
+                    updateCharts(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching initial data:', error);
+                    document.getElementById('last-error').textContent = 'Failed to load data';
+                });
+        });
+    </script>
+</body>
+</html> 

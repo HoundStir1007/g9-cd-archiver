@@ -43,13 +43,36 @@
   - Queue Length: [DISK_QUEUE]
 
 ## Network Performance
-### Tailscale
+### Tailscale Monitoring
+- Monitoring Task Status:
+  - Task State: [RUNNING/STOPPED]
+  - Last Run: [LAST_RUN_TIME]
+  - Last Result: [LAST_RESULT]
+  - Next Run: [NEXT_RUN_TIME]
+- Alert Status:
+  - Last Alert: [LAST_ALERT_TIME]
+  - Alert Type: [ALERT_TYPE]
+  - Alert Resolution: [RESOLUTION]
+- Metrics Collection:
+  - Latest Metrics File: [METRICS_FILE]
+  - Collection Interval: 5 minutes
+  - Data Points (24h): [DATA_POINTS]
+  - Missing Data Points: [MISSING_POINTS]
+- Log Status:
+  - Latest Log: [LATEST_LOG]
+  - Log Size: [LOG_SIZE]
+  - Oldest Log: [OLDEST_LOG]
+  - Log Rotation: [WORKING/NOT_WORKING]
+
+### Tailscale Connection
 - Status: [TAILSCALE_STATUS]
 - Latency: [MS]
 - Bandwidth:
   - In: [TAILSCALE_IN] MB/s
   - Out: [TAILSCALE_OUT] MB/s
 - Active Connections: [TAILSCALE_CONNECTIONS]
+- DERP Usage: [YES/NO]
+- Direct Connection: [YES/NO]
 
 ### ICS (Ethernet 2)
 - Status: [ACTIVE/INACTIVE]
