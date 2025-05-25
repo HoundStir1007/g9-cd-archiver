@@ -1,8 +1,9 @@
 # 📄 Paperless-ngx Quick Setup Guide for G9
 
 **Target System:** GMKtec NucBox G9 (Ubuntu 24.10)  
-**Estimated Setup Time:** 30-45 minutes  
-**Prerequisites:** Docker, Docker Compose, basic Ubuntu familiarity  
+**Storage Strategy:** External drive now → Samsung SSD migration Wednesday  
+**Estimated Setup Time:** 40-50 minutes (including external drive setup)  
+**Prerequisites:** External USB drive (50GB+ free), Docker, Docker Compose  
 
 ---
 
@@ -18,6 +19,49 @@ While your G9 defaults to Windows 11 Pro, Ubuntu is the better choice for Paperl
 ---
 
 ## 🚀 Quick Start (30 minutes to documents!)
+
+### Step 0: External Drive Setup (10 minutes)
+**Using external storage until your Samsung SSD arrives Wednesday!**
+
+```bash
+# First, let's see what drives are available
+lsblk
+sudo fdisk -l
+
+# Look for your external drive (usually /dev/sdb, /dev/sdc, etc.)
+# Choose a drive with at least 50GB free space
+
+# Format the drive (REPLACE /dev/sdX with your actual drive!)
+# ⚠️  WARNING: This will erase the drive! Back up any important data first!
+sudo mkfs.ext4 -L "paperless-storage" /dev/sdX1
+
+# Create mount point
+sudo mkdir -p /media/paperless-storage
+
+# Mount the drive
+sudo mount /dev/sdX1 /media/paperless-storage
+
+# Get the UUID for permanent mounting
+UUID=$(sudo blkid /dev/sdX1 -s UUID -o value)
+echo "Drive UUID: $UUID"
+
+# Add to fstab for automatic mounting
+echo "UUID=$UUID /media/paperless-storage ext4 defaults,noatime,user 0 2" | sudo tee -a /etc/fstab
+
+# Set permissions
+sudo chown -R $USER:$USER /media/paperless-storage
+mkdir -p /media/paperless-storage/paperless/{data,media,postgres,export,consume}
+
+echo "✅ External drive ready at /media/paperless-storage"
+```
+
+**Alternative: Use existing external drive without formatting**
+```bash
+# If you have an existing drive with free space:
+sudo mkdir -p /media/paperless-storage
+sudo mount /dev/sdX1 /media/paperless-storage  # Replace sdX1 with your drive
+mkdir -p /media/paperless-storage/paperless/{data,media,postgres,export,consume}
+```
 
 ### Step 1: Boot into Ubuntu (5 minutes)
 ```bash
@@ -46,7 +90,7 @@ cd ~/paperless-ngx
 
 ### Step 3: Create Docker Compose Configuration (5 minutes)
 ```bash
-# Create the docker-compose.yml file
+# Create the docker-compose.yml file with external storage
 cat > docker-compose.yml << 'EOF'
 version: "3.4"
 services:
@@ -54,13 +98,15 @@ services:
     image: docker.io/library/redis:7
     restart: unless-stopped
     volumes:
+      # Keep Redis on internal storage for speed
       - redisdata:/data
 
   db:
     image: docker.io/library/postgres:15
     restart: unless-stopped
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      # PostgreSQL data on external drive
+      - /media/paperless-storage/paperless/postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: paperless
       POSTGRES_USER: paperless
@@ -75,10 +121,11 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - data:/usr/src/paperless/data
-      - media:/usr/src/paperless/media
-      - ./export:/usr/src/paperless/export
-      - ./consume:/usr/src/paperless/consume
+      # Large data on external drive
+      - /media/paperless-storage/paperless/data:/usr/src/paperless/data
+      - /media/paperless-storage/paperless/media:/usr/src/paperless/media
+      - /media/paperless-storage/paperless/export:/usr/src/paperless/export
+      - /media/paperless-storage/paperless/consume:/usr/src/paperless/consume
     environment:
       PAPERLESS_REDIS: redis://broker:6379
       PAPERLESS_DBHOST: db
@@ -90,6 +137,9 @@ services:
       PAPERLESS_SECRET_KEY: change-me-to-something-secure
       PAPERLESS_URL: http://100.91.157.19:8000
       PAPERLESS_ALLOWED_HOSTS: 100.91.157.19,localhost
+      # Optimize for external storage
+      PAPERLESS_TASK_WORKERS: 1
+      PAPERLESS_THREADS_PER_WORKER: 1
 
   gotenberg:
     image: docker.io/gotenberg/gotenberg:7.10
@@ -104,14 +154,17 @@ services:
     restart: unless-stopped
 
 volumes:
-  data:
-  media:
-  pgdata:
+  # Only Redis stays as Docker volume (on internal storage)
   redisdata:
 EOF
 
-# Create consume directory for document uploads
-mkdir -p consume export
+# Verify external storage is mounted
+if [ ! -d "/media/paperless-storage/paperless" ]; then
+    echo "❌ External storage not found! Please complete Step 0 first."
+    exit 1
+fi
+
+echo "✅ Docker Compose configured for external storage"
 ```
 
 ### Step 4: Start Paperless-ngx (5 minutes)
@@ -279,6 +332,37 @@ docker compose logs
 docker compose down && docker compose up -d
 ```
 
+**External drive not mounted:**
+```bash
+# Check if drive is mounted
+df -h | grep paperless-storage
+
+# Remount if needed
+sudo mount /dev/sdX1 /media/paperless-storage
+
+# Check fstab entry
+grep paperless-storage /etc/fstab
+```
+
+**Permission errors on external drive:**
+```bash
+# Fix ownership
+sudo chown -R $USER:$USER /media/paperless-storage
+
+# Check permissions
+ls -la /media/paperless-storage/paperless/
+```
+
+**Slow performance on external drive:**
+```bash
+# Check drive speed
+sudo hdparm -tT /dev/sdX1
+
+# Optimize mount options
+sudo umount /media/paperless-storage
+sudo mount -o defaults,noatime,data=writeback /dev/sdX1 /media/paperless-storage
+```
+
 **Can't access web interface:**
 ```bash
 # Check if port is open
@@ -308,6 +392,95 @@ docker compose restart tika gotenberg
 #     reservations:
 #       memory: 1G
 ```
+
+---
+
+## 🔄 SSD Migration Guide (For Wednesday!)
+
+When your Samsung 990 EVO arrives, here's how to migrate everything:
+
+### Step 1: Prepare New SSD (10 minutes)
+```bash
+# Stop Paperless services
+cd ~/paperless-ngx
+docker compose down
+
+# Install and format new SSD (assuming it's /dev/nvme0n1)
+sudo mkfs.ext4 -L "paperless-ssd" /dev/nvme0n1p1
+
+# Create new mount point
+sudo mkdir -p /mnt/paperless-ssd
+sudo mount /dev/nvme0n1p1 /mnt/paperless-ssd
+
+# Set permissions
+sudo chown -R $USER:$USER /mnt/paperless-ssd
+mkdir -p /mnt/paperless-ssd/paperless/{data,media,postgres,export,consume}
+```
+
+### Step 2: Migrate Data (15-30 minutes)
+```bash
+# Copy all data to new SSD
+echo "Starting data migration..."
+rsync -av --progress /media/paperless-storage/paperless/ /mnt/paperless-ssd/paperless/
+
+# Verify copy completed successfully
+echo "Verifying migration..."
+diff -r /media/paperless-storage/paperless/ /mnt/paperless-ssd/paperless/
+```
+
+### Step 3: Update Configuration (5 minutes)
+```bash
+# Update docker-compose.yml paths
+sed -i 's|/media/paperless-storage|/mnt/paperless-ssd|g' docker-compose.yml
+
+# Update fstab for permanent mounting
+UUID=$(sudo blkid /dev/nvme0n1p1 -s UUID -o value)
+echo "UUID=$UUID /mnt/paperless-ssd ext4 defaults,noatime 0 2" | sudo tee -a /etc/fstab
+
+# Remove old external drive from fstab (optional)
+sudo sed -i '/paperless-storage/d' /etc/fstab
+```
+
+### Step 4: Test and Cleanup (10 minutes)
+```bash
+# Start services with new storage
+docker compose up -d
+
+# Wait for startup
+sleep 60
+
+# Test access
+curl -f http://100.91.157.19:8000 && echo "✅ Migration successful!"
+
+# Optional: Remove old data after confirming everything works
+# sudo rm -rf /media/paperless-storage/paperless/
+```
+
+**Total Migration Time: ~30-45 minutes with zero data loss!**
+
+---
+
+## 🚀 External Drive Performance Tips
+
+### Recommended External Drives
+- **USB 3.0+ required** (USB 2.0 will be too slow)
+- **SSD external drives** perform much better than HDD
+- **USB-C drives** often have better sustained performance
+
+### Performance Optimization
+```bash
+# Check your drive's performance
+sudo hdparm -tT /dev/sdX1
+
+# For better performance, remount with optimized options
+sudo umount /media/paperless-storage
+sudo mount -o defaults,noatime,data=writeback /dev/sdX1 /media/paperless-storage
+```
+
+### Expected Performance
+- **USB 3.0 HDD:** Document processing ~30-60 seconds
+- **USB 3.0 SSD:** Document processing ~10-20 seconds  
+- **Internal SSD:** Document processing ~5-10 seconds
 
 ---
 
