@@ -1,3 +1,78 @@
+# Baton Entry - 2024-06-07 📡
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we tackled some classic home networking questions:
+
+- Explored whether a 1000 Mbps (Gigabit) Ethernet splitter can be used to connect a printer along a Cat8 cable run 🚫
+- Clarified the difference between passive splitters (even powered ones) and real Ethernet switches
+- Confirmed that splitters (even with USB power) do not allow two devices to share a single gigabit connection—switches are the way to go! 🔀
+- Explained the only real use-case for Ethernet splitters: running two 100 Mbps connections over a single cable with splitters at both ends (not for gigabit!)
+- Provided best-practice advice: always use a small unmanaged switch to connect multiple devices at a network drop
+- Kept the learning fun and frustration-free! 😄
+
+## Key Takeaways
+
+- **Ethernet splitters** (even powered) are not suitable for connecting multiple devices at gigabit speeds.
+- **Ethernet switches** are the correct solution for sharing a network cable among multiple devices.
+- Splitters are only useful for legacy 100 Mbps setups with splitters at both ends of the cable.
+- Cat8 cable is super future-proof, but the device at the end matters most!
+
+## Next Steps
+
+- If needed, pick up a compact gigabit switch for your network expansion.
+- Keep asking questions—networking mastery is just a few good answers away! 🚀
+- Update documentation if any new hardware is added or network topology changes.
+
+*Running on Darwin 24.5.0*
+
+# Baton Entry - 2025-05-23 03:37:23 📜
+
+Version: afe30a48
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-05-23 03:37:19
+- Resolve merge conflict in baton.md
+- Update baton handoff document - 2025-05-23 01:16:48
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   .venv/Lib/site-packages/pandas/tests/indexes/datetimes/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/categorical/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/multi/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/test_any_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexing/multiindex/test_multiindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_set_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_first_valid_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_sort_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reset_index.py: Core application entry point
+
+## Important Reminders
+
+• Currently running on Darwin 24.5.0
+
+
+*Running on Darwin 24.5.0*
+
+---
+
 # Baton Entry - 2025-05-19 21:30:00 📜
 
 Version: [pending commit]
