@@ -1,3 +1,85 @@
+# Baton Entry - 2025-05-19 23:45:00 📡
+
+Version: [pending commit]
+
+## Session Summary
+
+In this session, we completed comprehensive updates to the network documentation and monitoring system:
+
+1. Network Documentation Updates:
+   - Updated network topology to reflect current switch setup
+   - Added detailed physical network layout with cable specifications
+   - Documented rental property constraints and flat cable usage
+   - Added comprehensive network performance monitoring section
+   - Updated switch specifications and device connections
+   - Created new network_performance_monitoring.md guide
+
+2. Monitoring System Implementation:
+   - Created detailed monitoring procedures and schedules
+   - Established performance thresholds for different network segments
+   - Documented monitoring tools and procedures
+   - Set up baseline metrics collection framework
+   - Added future improvement plans
+
+3. Documentation Structure:
+   - Updated network_configuration.md (v1.6)
+   - Created network_performance_monitoring.md (v1.0)
+   - Added cross-references between documents
+   - Updated TODO list with monitoring tasks
+
+## Current Status
+
+- Network Configuration:
+  - Media Center: 8-port gigabit switch installed and operational
+  - Bedroom: Netgear GS305 5-port switch confirmed
+  - All devices properly documented and connected
+  - Flat cable usage documented as temporary solution
+
+- Monitoring System:
+  - Framework established for performance monitoring
+  - Tools and procedures documented
+  - Baseline metrics collection ready to begin
+  - Performance thresholds defined
+
+## Next Steps
+
+1. Immediate Tasks:
+   - Begin collecting baseline performance metrics
+   - Document actual cable routing paths
+   - Complete remaining physical documentation TODOs
+   - Set up automated monitoring tools
+
+2. Short-term Goals:
+   - Implement automated performance testing
+   - Create performance dashboard
+   - Document UPS installation when completed
+   - Complete WiFi extender setup
+
+3. Long-term Planning:
+   - Monitor network performance trends
+   - Plan for permanent installation
+   - Consider 2.5G upgrade if needed
+   - Evaluate additional monitoring tools
+
+## Important Files & Links
+
+* `network_configuration.md`: Complete network setup (v1.6)
+* `network_performance_monitoring.md`: Monitoring procedures (v1.0)
+* `scripts/tailscale_monitoring.ps1`: Existing monitoring script
+* `archive/snapshots/system_state_20250516.md`: Historical reference
+
+## Important Reminders
+
+• Network documentation is current as of 2025-05-19
+• Monitoring system is ready for baseline collection
+• All switches are unmanaged gigabit models
+• Flat cables are temporary solution for rental property
+• Performance thresholds are established but need validation
+
+*Running on Windows 11 Pro (10.0.26100)*
+
+---
+
 # Baton Entry - 2024-06-07 📡
 
 Version: [pending commit]

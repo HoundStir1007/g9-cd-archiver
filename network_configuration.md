@@ -12,13 +12,32 @@
 ## Network Topology
 ```mermaid
 graph TD
+    %% Internet and Router
     A[Internet] --> B[Router 192.168.0.1]
-    B --> C[Primary NIC 192.168.0.178]
-    C --> D[ICS Host]
-    D --> E[Secondary NIC 192.168.137.1]
-    E --> F[Apple TV 192.168.137.2]
-    G[Tailscale Network] --> H[G9 Tailscale 100.122.141.83]
-    H --> I[MacBook Pro Direct Connection]
+    
+    %% Router's Two Ports - Direct to Switches
+    B -->|Port 1| L[Bedroom Switch<br/>Netgear GS305<br/>5-Port Gigabit<br/>Elliot's Room]
+    B -->|Port 2| J[Media Center Switch<br/>8-Port Gigabit<br/>Living Room]
+    
+    %% Media Center Switch (8-Port) Connections
+    J -->|Port 2| M[G9 Server<br/>192.168.0.178]
+    J -->|Port 3| N[Apple TV<br/>192.168.0.x]
+    J -->|Port 4| O[Printer<br/>Not Connected Yet]
+    J -->|Port 5| P[Mac Mini #1<br/>DVD Ripping Station<br/>Planned]
+    J -->|Port 6| Q[Mac Mini #2<br/>Planned]
+    J -->|Port 7| R[Future Expansion]
+    J -->|Port 8| S[Future Expansion]
+    
+    %% Bedroom Switch (5-Port) Connections
+    L -->|Port 1| T[Elliot's Computer]
+    L -->|Port 2| U[Owen's Computer]
+    L -->|Port 3| V[WiFi Extender<br/>Planned]
+    L -->|Port 4| W[Future Expansion]
+    L -->|Port 5| X[Future Expansion]
+    
+    %% Wireless Devices
+    Y[PS5] -.->|WiFi| B
+    Z[Vizio TV] -.->|WiFi| B
 ```
 
 ## Network Interfaces
@@ -100,6 +119,272 @@ graph TD
   - **Primary**: Los Angeles
   - **Latency**: 45.2ms
   - **Status**: Fallback only
+
+## Media Center Network Configuration
+
+### Switch Details
+- **Model**: Unmanaged 8-Port Gigabit Switch
+- **Location**: Living Room/Media Center
+- **Purchase Date**: 2025-05-19
+- **Price**: $25-30 USD
+- **Features**:
+  - 8 Gigabit Ethernet ports
+  - Auto-negotiation
+  - Auto MDI/MDI-X
+  - Non-blocking switching
+  - Plug-and-play operation
+
+### Connected Devices
+- **G9 Server** (Port 2):
+  - **IP**: 192.168.0.178
+  - **Connection Type**: Wired
+  - **Speed**: 1 Gbps
+  - **Status**: Active
+- **Apple TV** (Port 3):
+  - **IP**: 192.168.137.2
+  - **Connection Type**: Wired
+  - **Speed**: 1 Gbps
+  - **Status**: Active
+- **Printer** (Port 4):
+  - **Status**: Not Connected Yet
+  - **Connection Type**: Wired (Planned)
+  - **Speed**: 1 Gbps
+- **Mac Mini #1** (Port 5):
+  - **Status**: Planned
+  - **Purpose**: DVD Ripping Station
+  - **Connection Type**: Wired
+  - **Speed**: 1 Gbps
+- **Mac Mini #2** (Port 6):
+  - **Status**: Planned
+  - **Connection Type**: Wired
+  - **Speed**: 1 Gbps
+- **Ports 7-8**: Reserved for future expansion
+
+### Bedroom Network Configuration
+- **Switch Model**: Netgear GS305
+- **Type**: 5-Port Unmanaged Gigabit Switch
+- **Location**: Elliot's Bedroom
+- **Connection**: Direct connection to Router Port 1
+- **Connected Devices**:
+  - **Elliot's Computer** (Port 1):
+    - **Connection Type**: Wired
+    - **Speed**: 1 Gbps
+    - **Status**: Active
+    - **Cable**: ~15ft CAT7 flat
+  - **Owen's Computer** (Port 2):
+    - **Connection Type**: Wired
+    - **Speed**: 1 Gbps
+    - **Status**: Active
+    - **Cable**: 50ft flat (26AWG OFC+PVC)
+  - **WiFi Extender** (Port 3):
+    - **Model**: TP-Link AC1200
+    - **Status**: Planned
+  - **Ports 4-5**: Reserved for future expansion
+
+### Wireless Devices
+- **PS5**:
+  - **Connection Type**: WiFi
+  - **Status**: Active
+  - **Performance**: Satisfactory
+- **Vizio TV**:
+  - **Connection Type**: WiFi
+  - **Status**: Active
+  - **Note**: No built-in network port, USB adapter available but not purchased
+
+### Network Configuration
+- **Switch Type**: Unmanaged
+- **Network**: 192.168.0.0/24
+- **Uplink**: Single cable to router
+- **Port Status**: 
+  - Ports 1-3: Active
+  - Ports 4-8: Available
+- **Power**: AC adapter
+- **Location**: Media center cabinet
+
+### Benefits
+- Centralized network access for all media devices
+- Reliable wired connections for critical devices
+- Future-proof with available ports for expansion
+- Simplified cable management
+- Improved network performance for media streaming
+
+### Future Considerations
+- Monitor network performance
+- Consider 2.5G upgrade if needed
+- Document any new devices added
+- Regular maintenance checks
+- Evaluate Nintendo Switch network adapter if needed
+- Plan for Mac Mini DVD ripping station setup
+
+### Physical Network Layout
+
+#### Cable Configuration (Rental Property Constraints)
+- **Note**: All long cable runs use flat cables due to rental property constraints
+  - Required for baseboard routing and corner management
+  - Chosen for aesthetic considerations and installation flexibility
+  - Temporary solution until permanent installation is possible
+
+#### Cable Runs
+- **Router to Bedroom Switch**:
+  - **Total Length**: 150ft (100ft + 50ft coupled)
+  - **Type**: Flat cables
+  - **Specifications**:
+    - 2000Mhz
+    - 40Gigabit/s
+    - Gold plated
+    - SFTP (Shielded Foil Twisted Pair)
+  - **Route**: Along baseboards
+  - **Status**: Temporary installation (rental property)
+
+- **Bedroom Switch Connections**:
+  - **To Elliot's Computer**:
+    - **Length**: ~15ft
+    - **Type**: Flat cable
+    - **Specifications**: CAT7
+  - **To Owen's Computer**:
+    - **Length**: 50ft
+    - **Type**: Flat cable
+    - **Specifications**:
+      - Gauge: 26AWG
+      - Material: OFC+PVC (Oxygen-Free Copper + PVC)
+      - Width: 9.0mm
+
+- **Media Center Switch Connections**:
+  - **To G9 Server**:
+    - **Length**: 1ft
+    - **Type**: Patch cable
+    - **Specifications**:
+      - Shielded SFTP
+      - Heavy duty
+      - Gold plated
+  - **To Apple TV**:
+    - **Length**: Short run
+    - **Type**: Standard patch cable
+    - **Status**: Direct connection to switch
+
+#### Network Performance Monitoring
+
+##### Current Performance Metrics
+- **Baseline Measurements** (To be documented):
+  - Router to Bedroom Switch:
+    - Latency: [TODO: Measure]
+    - Throughput: [TODO: Measure]
+  - Bedroom Switch to Computers:
+    - Latency: [TODO: Measure]
+    - Throughput: [TODO: Measure]
+  - Media Center Switch:
+    - Port-to-port latency: [TODO: Measure]
+    - Device throughput: [TODO: Measure]
+
+##### Monitoring Plan
+1. **Daily Checks**:
+   - Basic connectivity tests
+   - Latency measurements to key devices
+   - Bandwidth usage patterns
+
+2. **Weekly Tests**:
+   - Full network throughput test
+   - Device-to-device latency mapping
+   - WiFi signal strength and quality
+
+3. **Monthly Review**:
+   - Performance trend analysis
+   - Identify any degradation
+   - Document any issues
+
+##### Performance Thresholds
+- **Acceptable Ranges**:
+  - Latency: < 5ms (local network)
+  - Throughput: > 800Mbps (wired)
+  - Packet Loss: < 0.1%
+  - WiFi Signal: > -65dBm
+
+##### Monitoring Tools
+- **Built-in Tools**:
+  - Windows Network Diagnostics
+  - Router Admin Interface
+  - Tailscale Metrics
+- **Additional Tools** (To be implemented):
+  - Network speed testing
+  - Latency monitoring
+  - Bandwidth usage tracking
+
+#### Future Considerations
+- **Permanent Installation Planning**:
+  - Document current cable routes for future reference
+  - Plan for proper in-wall cable runs
+  - Consider structured cabling system
+  - Design for standard round cables
+- **Current Setup Notes**:
+  - Temporary solution for rental property
+  - Flat cables used for practical installation
+  - Performance monitoring in place
+  - Ready for upgrade when moving to permanent location
+
+#### Device Locations
+- **Router**:
+  - **Location**: Living Room Shelf
+  - **Mounting**: Shelf-mounted
+  - **Power**: Connected to primary outlet
+
+- **Media Center Equipment** (Secretary Desk):
+  - **Location**: Living Room
+  - **Setup**: Open/well-ventilated
+  - **Devices**:
+    - G9 Server
+    - 8-Port Switch
+    - Mac Mini #1 (Planned)
+    - Mac Mini #2 (Planned)
+  - **Power**: Connected to primary outlet
+
+- **Apple TV**:
+  - **Location**: Master Bedroom (Mark and Devon's)
+  - **Setup**: Dresser-mounted
+  - **Adjacent Device**: Toshiba Amazon FireTV
+  - **Power**: [TODO: Document power source]
+
+#### Switch Locations
+- **Media Center Switch (8-Port)**:
+  - **Location**: Living Room Secretary Desk
+  - **Mounting**: Desktop placement
+  - **Power Source**: Primary outlet (shared with router and G9)
+  - **Cable Management**: [TODO: Document cable routing details]
+
+- **Bedroom Switch (5-Port)**:
+  - **Model**: Netgear GS305
+  - **Location**: Elliot's Bedroom
+  - **Type**: Unmanaged Gigabit Switch
+  - **Mounting**: [TODO: Add specific location in room]
+  - **Power Source**: [TODO: Add power outlet location]
+  - **Cable Management**: [TODO: Add cable routing details]
+
+### Switch Specifications
+
+#### Media Center Switch (8-Port)
+- **Model**: Unmanaged Gigabit Switch
+- **Type**: 8-Port
+- **Speed**: 10/100/1000 Mbps
+- **Features**:
+  - Auto-negotiation
+  - Auto MDI/MDI-X
+  - Non-blocking switching
+  - Plug-and-play operation
+- **Power**: AC adapter
+- **Status**: Active
+- **Location**: Living Room Media Cabinet
+
+#### Bedroom Switch (5-Port)
+- **Model**: Netgear GS305
+- **Type**: 5-Port Unmanaged Gigabit Switch
+- **Speed**: 10/100/1000 Mbps
+- **Features**:
+  - Auto-negotiation
+  - Auto MDI/MDI-X
+  - Non-blocking switching
+  - Plug-and-play operation
+- **Power**: AC adapter
+- **Status**: Active
+- **Location**: Elliot's Bedroom
 
 ## Firewall Configuration
 
@@ -499,16 +784,15 @@ graph TD
   - Tailscale ACLs: Version controlled
 
 ## Last Updated
-- **Date**: 2025-05-16
-- **Time**: 22:38:09
-- **Version**: 1.0
+- **Date**: 2025-05-19
+- **Time**: 23:45:00
+- **Version**: 1.6
 - **Author**: Admin-8vehma
 - **Change Log**:
-  - Initial documentation
-  - Added detailed network interface information
-  - Documented security measures
-  - Added recovery procedures
-  - Included monitoring details
+  - Corrected bedroom switch model to Netgear GS305 (5-port)
+  - Added Elliot's computer cable specifications
+  - Updated switch specifications section
+  - Updated last modified date and version
 
 ## Related Documentation
 - [Windows Security Checklist](windows_security_checklist.md): Security implementation status
@@ -526,26 +810,59 @@ For a complete list of archived documentation and their relationships, see the [
 
 ## Media Center Network Expansion (2025 Update)
 
-To accommodate multiple wired devices in the living room/media center, an unmanaged 8-port gigabit switch will be installed. This will allow the following devices to connect via ethernet:
-- G9 (home server)
-- Smart TV
-- PS5
-- Blu-ray player
-- Occasional laptop
-- (Room for future devices)
+The network expansion has been completed with the following setup:
 
-**Rationale:**
-- A single wall jack will connect to the switch, providing full-speed, reliable wired connections for all devices.
-- All devices will remain on the main network (192.168.0.x), ensuring seamless communication and access to shared resources.
-- 8-port switches are only slightly more expensive than 5-port models and provide future-proofing.
+### Current Configuration
+- **Media Center Switch**:
+  - 8-Port Unmanaged Gigabit Switch
+  - Location: Living Room Secretary Desk
+  - Connected Devices:
+    - G9 Server (Port 2)
+    - Apple TV (Port 3)
+    - Printer (Port 4, planned)
+    - Mac Mini #1 (Port 5, planned)
+    - Mac Mini #2 (Port 6, planned)
+    - Ports 7-8: Reserved for future expansion
 
-**2.5G Switches:**
-- 2.5G switches are being deferred for now, as current devices and internet speeds do not require more than 1G per port.
-- The network can be upgraded to 2.5G in the future if higher speeds or new hardware make it necessary.
+- **Bedroom Network**:
+  - Netgear GS305 5-Port Unmanaged Gigabit Switch
+  - Location: Elliot's Bedroom
+  - Connected Devices:
+    - Elliot's Computer (Port 1)
+    - Owen's Computer (Port 2)
+    - WiFi Extender (Port 3, planned)
+    - Ports 4-5: Reserved for future expansion
 
-**Summary:**
-- This setup maximizes flexibility, reliability, and ease of expansion for the home media center.
+### Benefits Achieved
+- Centralized network access for all media devices
+- Reliable wired connections for critical devices
+- Future-proof with available ports for expansion
+- Simplified cable management
+- Improved network performance for media streaming
+
+### Future Considerations
+- Monitor network performance
+- Consider 2.5G upgrade if needed
+- Document any new devices added
+- Regular maintenance checks
+- Evaluate Nintendo Switch network adapter if needed
+- Plan for Mac Mini DVD ripping station setup
+- Document UPS installation when completed
 
 ---
-*Last updated: 2025-05-16*
-*For historical system state, see [System State Snapshot](archive/snapshots/system_state_20250516.md)* 
+*Last updated: 2025-05-19*
+*For historical system state, see [System State Snapshot](archive/snapshots/system_state_20250516.md)*
+
+## TODO List
+- [ ] Document UPS installation when completed
+- [ ] Document Apple TV power source
+- [ ] Document bedroom switch mounting location
+- [ ] Document bedroom switch power source
+- [ ] Document cable routing paths
+- [ ] Document wall plate/jack locations
+- [ ] Document WiFi extender planned location
+- [ ] Document cable management details
+- [ ] Measure and document network performance metrics
+- [ ] Set up automated performance monitoring
+- [ ] Create performance baseline documentation
+- [ ] Document acceptable performance thresholds 
