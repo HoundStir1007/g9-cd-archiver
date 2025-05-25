@@ -1,3 +1,95 @@
+# Baton Entry - 2025-05-25 11:30:00 🛒
+
+Version: [hardware shopping session complete]
+
+## Session Summary
+
+Completed comprehensive hardware shopping session for homelab expansion:
+- Reviewed complete homelab service requirements beyond Paperless-ngx
+- Analyzed storage needs for full service stack (Pi-hole, wiki, development, media, backups)
+- Compared UPS options: $55 APC BN450M vs $76 Amazon Basics 800VA
+- Evaluated NVMe storage: WD BLACK SN770 vs Samsung 990 EVO 2TB
+- **PURCHASED:** APC BN450M UPS ($55) and Samsung 990 EVO 2TB ($130)
+- Updated storage strategy from consumer-tier to Pro/Black tier based on multi-service workload
+
+**Key Decisions Made:**
+- APC BN450M UPS: Perfect capacity (270W) for G9 power protection at excellent price
+- Samsung 990 EVO 2TB: Double endurance (1,200 TBW) vs WD BLACK (600 TBW) worth $11 premium
+- Single NVMe strategy: One high-performance drive + iCloud backup continuation
+- Total investment: $185 for complete power + storage foundation
+
+**Hardware Delivery Schedule:**
+- UPS: Arrives today (5/25/25) - immediate power protection setup
+- Samsung SSD: Arrives Wednesday (5/28/25) - ready for Ubuntu installation
+
+**Next Steps for Wednesday:**
+1. **Morning:** Install Samsung 990 EVO in G9 NAS bay
+2. **Boot into Ubuntu** and configure new storage
+3. **Begin Paperless-ngx deployment** using existing setup guide
+4. **First document scanning session** - the fun stuff begins!
+
+**Important Files & Links:**
+* `paperless_ngx_setup_guide.md`: Ready-to-go setup instructions
+* Target URL: http://100.91.157.19:8000 (via Tailscale)
+* UPS Model: APC BN450M (270W capacity, perfect for G9's ~25W usage)
+* Storage: Samsung 990 EVO 2TB (PCIe 5.0, 1,200 TBW endurance)
+
+**Important Reminders:**
+• Hardware shopping complete - no more delays!
+• Power protection arriving today for immediate setup
+• Wednesday = Paperless-ngx deployment day
+• iCloud backup strategy continues (no changes needed)
+• Single NVMe provides all performance needed for full homelab stack
+
+*Running on macOS (remote planning session complete)*
+
+---
+
+# Baton Entry - 2025-05-25 03:04:44 📜
+
+Version: c8a05340
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-05-25 03:04:40
+- "Update baton handoff document - 2025-05-25 02:20:18"
+- Update baton handoff document - 2025-05-25 00:56:59
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   .venv/Lib/site-packages/pandas/tests/indexes/datetimes/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/categorical/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/multi/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/test_any_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexing/multiindex/test_multiindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_set_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_first_valid_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_sort_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reset_index.py: Core application entry point
+
+## Important Reminders
+
+• Currently running on Darwin 24.5.0
+
+
+*Running on Darwin 24.5.0*
+
+---
+
 # 🏠 Home Server Project - Baton Handoff Log
 
 **Last Updated:** 2025-05-25 02:52:53 PDT  
