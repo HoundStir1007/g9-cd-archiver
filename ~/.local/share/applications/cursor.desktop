@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Cursor
+Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox
+Icon=cursor
+StartupWMClass=Cursor
+Type=Application
+Categories=Development;IDE;
+MimeType=text/plain;inode/directory;application/x-code-workspace;
+Actions=new-empty-window;
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox %F
+Icon=cursor 

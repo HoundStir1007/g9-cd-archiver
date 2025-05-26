@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cursor IDE
+Comment=AI-first code editor
+Exec=/home/gmk/Cursor-0.50.4-x86_64.AppImage --no-sandbox %F
+Icon=cursor
+Terminal=false
+Categories=Development;TextEditor;IDE;
+MimeType=text/plain;inode/directory;application/x-code-workspace;
+StartupWMClass=Cursor
+StartupNotify=true 

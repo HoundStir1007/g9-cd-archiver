@@ -1,3 +1,55 @@
+# Baton Entry - 2025-05-25 23:30:00 📋
+
+Version: [paperless-ngx configuration complete]
+
+## Session Summary
+
+Completed comprehensive Paperless-ngx configuration and optimization:
+- **PAPERLESS-NGX FULLY OPERATIONAL** at http://100.91.157.19:8000 (Tailscale) and http://192.168.0.178:8000 (local)
+- Successfully configured Django Admin interface for advanced settings
+- Set up filename formatting: `{created_year}-{created_month:02d}-{created_day:02d}_{correspondent}_{title}`
+- Configured consume folder workflow and tested document processing
+- Deployed Swift Paperless mobile app on iPhone (HTTP access working)
+- Resolved Tailscale authentication (Google SSO with msakamoto@gmail.com)
+
+**Configuration Completed:**
+- ✅ Basic document types, correspondents, and tags structure planned
+- ✅ Storage paths configuration guidance provided
+- ✅ Machine learning auto-assignment settings identified
+- ✅ OCR and Tika processing optimized for external storage
+- ✅ Consume folder workflow tested and working
+- ✅ Mobile access via Swift Paperless app configured
+
+**Key Technical Details:**
+- Django Admin: http://100.91.157.19:8000/admin/ (full settings access)
+- Consume folder: `/media/paperless-storage/paperless/consume/` (auto-processing)
+- External storage: 916GB ext4 drive with proper Unix permissions
+- Docker stack: Redis, PostgreSQL, Tika, Gotenberg all healthy
+- Filename format configured in docker-compose.yml environment variables
+
+**Ready for Production Use:**
+- Document upload and processing working
+- Mobile scanning capability via iPhone app
+- Auto-tagging and learning system ready for training
+- Backup strategy: External drive + consume folder workflow
+
+**Next Steps for User:**
+1. **Begin document digitization** - upload first 20-30 documents manually
+2. **Train the system** - manually assign types, correspondents, tags
+3. **Set up storage path rules** in Django Admin as needed
+4. **Configure automated backup** of `/media/paperless-storage/paperless/`
+
+**Important Reminders:**
+• **Tailscale Account:** Uses Google SSO authentication with msakamoto@gmail.com
+• **Admin Access:** Django Admin at /admin/ for all advanced settings
+• **Mobile App:** Swift Paperless app works with HTTP (not HTTPS)
+• **Consume Folder:** Drop files here for automatic processing
+• **Storage:** All data on external 916GB ext4 drive with proper permissions
+
+*Running on Ubuntu 24.10 (G9) - System fully configured and ready for daily use*
+
+---
+
 # Baton Entry - 2025-05-25 13:25:19 📜
 
 Version: 487fb82a
