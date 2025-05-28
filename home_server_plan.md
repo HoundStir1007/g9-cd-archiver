@@ -9,7 +9,8 @@ This document outlines the plan for setting up and maintaining a personal home s
 - ✅ Network configuration completed
 - ✅ Security measures implemented
 - ✅ Remote access configured
-- 🔄 Documentation system established
+- ✅ Documentation system established
+- ✅ **PAPERLESS-NGX FULLY OPERATIONAL** 🎉
 
 ## Implementation Status
 For detailed implementation status, see:
@@ -40,10 +41,10 @@ For detailed implementation status, see:
    - Set up G9 with both OSes
    - Secure both systems (encryption, firewall, updates)
    - Configure Tailscale for remote access
-2. **Document Management**
-   - Install Paperless-ngx (Windows or Ubuntu)
-   - Test scanning, OCR, and remote access
-   - Set up iCloud/other backup for documents
+2. **Document Management** ✅ **COMPLETE**
+   - ✅ Install Paperless-ngx (Ubuntu with external storage)
+   - ✅ Test scanning, OCR, and remote access
+   - ✅ Set up mobile app and consume folder workflow
 3. **Network Services**
    - Install Pi-hole (ad blocking)
    - Set up Samba/NFS for file sharing
@@ -53,10 +54,11 @@ For detailed implementation status, see:
    - Add home inventory, media server, or other services as needed
    - Experiment with local LLMs if hardware allows
 
-## Priorities
-- Start with existing hardware
-- Focus on document management and remote access first
-- Add services only after core is stable
+## Current Priorities (Updated 2025-05-25)
+- ✅ Document management and remote access **COMPLETE**
+- 🎯 **Next Phase:** Network services (Pi-hole, wiki, file sharing)
+- 🔧 **Critical:** Fix Tailscale monitoring system
+- 🚀 **Ready for:** Additional services on stable foundation
 
 ## See Also
 - [G9 Setup Checklist](g9_setup_checklist.md)
@@ -83,5 +85,6 @@ For detailed implementation status, see:
 - [Archive Documentation](archive/README.md): Archived and historical documentation
 
 ---
-*Last updated: 2025-05-16*
-*For current system state, see [System State Snapshot](archive/snapshots/system_state_20250516.md)* 
+*Last updated: 2025-05-25*
+*Major milestone: Paperless-ngx fully operational and production-ready*
+*For current system state, see [Baton Handoff Log](baton.md)* 
