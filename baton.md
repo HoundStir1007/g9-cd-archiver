@@ -1,3 +1,141 @@
+# Baton Entry - 2025-05-28 10:30:00 🔧
+
+Version: [boot-order-bios-fix]
+
+## Session Summary
+
+Successfully resolved Ubuntu boot order issue using BIOS/UEFI configuration:
+- **BOOT ORDER FIXED VIA BIOS** - Ubuntu now boots as primary OS automatically
+- Changed BIOS boot priority: USB → Ubuntu → Windows → Other devices
+- Ubuntu boots directly without manual GRUB menu selection needed
+- Windows remains accessible by changing boot device in BIOS when needed
+
+**What Worked:**
+- ✅ BIOS/UEFI boot order configuration (DEL key during startup)
+- ✅ Set Ubuntu as second priority (after USB for maintenance)
+- ✅ Confirmed os-prober detects Windows: `/dev/nvme0n1p1@/efi/Microsoft/Boot/bootmgfw.efi`
+- ✅ Ubuntu 24.10 boots automatically on power-on/restart
+
+**Pending Issue - GRUB Menu Still Shows:**
+- ❌ GRUB menu still appears for ~3 seconds despite `GRUB_TIMEOUT=0` and `GRUB_TIMEOUT_STYLE=hidden`
+- 📋 **TODO:** Investigate why GRUB menu timeout settings not taking effect
+- 📋 **TODO:** Consider alternative approaches to hide GRUB menu completely
+
+**Current Configuration:**
+- BIOS boot order: USB → Ubuntu → Windows
+- GRUB config: `/etc/default/grub` with `GRUB_TIMEOUT=0` and `GRUB_TIMEOUT_STYLE=hidden`
+- os-prober enabled: `GRUB_DISABLE_OS_PROBER=false`
+
+**User Experience:**
+- **Power on/restart** → Ubuntu boots automatically (with brief GRUB menu flash)
+- **Want Windows?** → Change boot device in BIOS or select from GRUB menu
+- **Want maintenance?** → Boot from USB (highest priority)
+
+**Important Reminders:**
+• BIOS solution is more reliable than GRUB-only configuration
+• System ready for Paperless-ngx and other Ubuntu services
+• GRUB menu hiding issue documented for future resolution
+
+*Running on Ubuntu 24.10 (G9) - Boot order optimized via BIOS configuration*
+
+---
+
+# Baton Entry - 2025-05-27 18:45:00 🖥️
+
+Version: [grub-boot-order-config]
+
+## Session Summary
+
+Successfully configured G9 boot order to make Ubuntu the primary OS:
+- **GRUB BOOT ORDER FIXED** - Ubuntu now boots as default OS after restart/power off
+- Resolved os-prober detection issues in Ubuntu 24.10
+- Configured 10-second boot timeout for OS selection
+- Windows Boot Manager properly detected and added to GRUB menu
+- Simplified approach using built-in os-prober functionality
+
+**Boot Configuration Completed:**
+- ✅ Ubuntu (position 0) - **DEFAULT** - boots automatically after 10 seconds
+- ✅ Advanced options for Ubuntu (submenu)
+- ✅ Windows Boot Manager (position 2) - accessible via boot menu
+- ✅ 10-second timeout configured (`GRUB_TIMEOUT=10`)
+- ✅ os-prober enabled (`GRUB_DISABLE_OS_PROBER=false`)
+
+**Technical Details:**
+- Issue: os-prober disabled by default in Ubuntu 22.04+ for security reasons
+- Solution: Enable os-prober and run manual detection
+- GRUB configuration: `/etc/default/grub` updated with proper settings
+- Boot detection: Windows found at `/dev/nvme0n1p1@/efi/Microsoft/Boot/bootmgfw.efi`
+
+**Current Boot Order:**
+```
+0. Ubuntu (DEFAULT) ← Auto-boots after 10 seconds
+1. Advanced options for Ubuntu
+2. Windows Boot Manager
+```
+
+**User Experience:**
+- **Power on/restart** → Ubuntu boots automatically after 10 seconds
+- **Want Windows?** → Press any key during countdown, select "Windows Boot Manager"
+- **Want Ubuntu immediately?** → Wait 10 seconds or press Enter
+
+**Important Reminders:**
+• G9 now properly configured for Ubuntu-primary dual-boot
+• No more manual GRUB menu selection needed for Ubuntu
+• Windows remains easily accessible when needed
+• Configuration survives reboots and power cycles
+• Paperless-ngx services will auto-start with Ubuntu boot
+
+*Running on Ubuntu 24.10 (G9) - Boot configuration optimized for server use*
+
+---
+
+# Baton Entry - 2025-05-25 20:07:16 📜
+
+Version: 51b0e19e
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-05-25 20:07:14
+- Update Paperless-ngx setup for external drive support - ready for immediate deployment
+- Update baton handoff document - 2025-05-25 13:25:15
+- Update baton handoff document - 2025-05-25 03:04:40
+- "Update baton handoff document - 2025-05-25 02:20:18"
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   web/venv/Lib/site-packages/gunicorn/app/pasterapp.py: Core application entry point
+*   web/venv/Lib/site-packages/gunicorn/app/wsgiapp.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/parcats/dimension/_displayindex.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/parcats/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/pie/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/icicle/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/sankey/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/sunburst/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/funnelarea/_domain.py: Core application entry point
+*   web/venv/Lib/site-packages/plotly/validators/parcoords/_domain.py: Core application entry point
+
+## Important Reminders
+
+• Currently running on Linux 6.14.0-15-generic
+
+
+*Running on Linux 6.14.0-15-generic*
+
+---
+
 # Baton Entry - 2025-05-25 23:30:00 📋
 
 Version: [paperless-ngx configuration complete]
