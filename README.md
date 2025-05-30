@@ -1,110 +1,150 @@
 # Home Server Project 🏠🖥️
 
-This project organizes research, planning, and implementation of a personal home server setup using a GMKtec NucBox G9 mini PC.
+This project documents the successful implementation of a personal home server setup using a GMKtec NucBox G9 mini PC.
 
-## 📋 Project Status (Updated 2025-05-25)
+## 🎉 **PROJECT MILESTONE: DOCUMENT MANAGEMENT COMPLETE!** ✅
 
-### ✅ **MAJOR MILESTONE: PAPERLESS-NGX COMPLETE!** 🎉
+**Status as of 2025-05-30:** Paperless-ngx is fully operational with mobile scanning, remote access, and OCR processing!
 
-### Current Implementation
-- ✅ GMKtec NucBox G9 mini PC purchased and set up
-- ✅ Dual-boot system with Windows 11 Pro and Ubuntu
+## 📋 Project Status
+
+### ✅ **COMPLETED PHASES**
+
+#### Phase 1: Core Infrastructure ✅
+- ✅ GMKtec NucBox G9 mini PC purchased and configured
+- ✅ Dual-boot system with Windows 11 Pro and Ubuntu 24.10
+- ✅ Network infrastructure with UPS protection and switch expansion
 - ✅ Tailscale remote access configured for both operating systems
-- ✅ Basic system security implemented (BitLocker, Windows Defender)
-- ✅ Remote desktop access working from MacBook Pro
-- ✅ **PAPERLESS-NGX FULLY OPERATIONAL** 
-  - ✅ Document processing with OCR and Tika
-  - ✅ Mobile scanning via iPhone app
-  - ✅ Web interface accessible via Tailscale
-  - ✅ External storage with SSD migration path
-  - ✅ Django Admin for advanced configuration
+- ✅ Basic system security implemented (BitLocker, Windows Defender, UFW)
 
-### Next Priority Phase
-- 🎯 Network-wide ad blocking (Pi-hole)
-- 🎯 Personal wiki/knowledge base
-- 🔧 **CRITICAL:** Fix Tailscale monitoring system
-- 🎯 Automated backup strategy
+#### Phase 2: Document Management ✅ 🎉
+- ✅ **PAPERLESS-NGX FULLY OPERATIONAL**
+  - ✅ Document processing with OCR and Tika integration
+  - ✅ Mobile scanning via Swift Paperless iPhone app
+  - ✅ Web interface accessible via both local and Tailscale networks
+  - ✅ External storage configured with SSD migration capability
+  - ✅ Django Admin interface for advanced configuration
+  - ✅ Consume folder workflow for automatic document processing
 
-### Future Expansion
-- 📝 Development environment (code-server)
-- 📝 Home inventory management
-- 📝 File sharing (Samba/NFS)
-- 📝 Optional: Local LLM experimentation
+### 🎯 **CURRENT PRIORITY: Network Services**
+- 🔧 **CRITICAL:** Fix Tailscale monitoring system (power outage alerts)
+- 🛡️ **IMMEDIATE:** Pi-hole setup for network-wide ad blocking
+- 📚 **HIGH:** Personal wiki/knowledge base implementation
+- 🔄 **MEDIUM:** Automated backup strategy development
+
+### 📝 **FUTURE EXPANSION**
+- Development environment (code-server)
+- Home inventory management
+- File sharing (Samba/NFS)
+- Optional: Local LLM experimentation
+
+## 💰 Budget Summary
+- **Total Spent:** ~$450 (87% of maximum budget)
+- **Budget Status:** ✅ Under budget by $76  
+- **Hardware Phase:** ✅ COMPLETE - All planned purchases finished
+- **Value Achievement:** ✅ Professional-grade home server under $500
+
+## 🖥️ System Configuration
+
+### Hardware (Final)
+- **Server:** GMKtec NucBox G9 (Intel Twin Lake N150, 12GB DDR5, 512GB + 2TB NVMe)
+- **Storage:** Samsung 990 EVO 2TB SSD (high endurance)
+- **Power:** APC BN450M UPS (270W protection)
+- **Network:** 8-port switch (media center) + 5-port switch (bedroom)
+
+### Network Access
+- **Local Network:** http://192.168.0.178:8000 (when at home)
+- **Remote Access:** http://100.91.157.19:8000 (via Tailscale from anywhere)
+- **SSH Management:** `ssh gmk@100.91.157.19` (Ubuntu administration)
+- **Mobile Integration:** Swift Paperless app for document scanning
+
+### Operating Systems
+- **Windows 11 Pro:** Tailscale IP 100.122.141.83 (available via dual-boot)
+- **Ubuntu 24.10:** Tailscale IP 100.91.157.19 (primary for services)
 
 ## 🗂️ Project Structure
 
-- `requirements/` - Documentation of needs, use cases, and constraints
-- `research/` - Research on hardware, software, and configurations
-- `comparison/` - Comparison of different solutions
-- `recommendations/` - Final recommendations based on research
-- `Pass_the_Baton/` - Scripts and templates for project handoff documentation
-- `archive/` - Archived documentation (see [Archive README](archive/README.md))
+### Active Documentation
+- [`home_server_plan.md`](home_server_plan.md) - Overall project plan and current status
+- [`budget.md`](budget.md) - Final budget breakdown and purchase summary
+- [`baton.md`](baton.md) - Session-to-session progress tracking
+- [`pihole_setup_guide.md`](pihole_setup_guide.md) - Next phase implementation guide
 
-## 📚 Key Documentation
-
-- [Home Server Plan](home_server_plan.md) - Overall project plan and goals
-- [Network Configuration](network_configuration.md) - Complete network setup and security details
-- [Tailscale Configuration](tailscale_configuration.md) - Remote access setup
-- [Windows Security Checklist](windows_security_checklist.md) - Security implementation status
-- [Budget](budget.md) - Project budget and cost analysis
+### Configuration Files
+- [`network_configuration.md`](network_configuration.md) - Complete network setup details
+- [`tailscale_configuration.md`](tailscale_configuration.md) - Remote access configuration  
+- [`windows_security_checklist.md`](windows_security_checklist.md) - Security implementation status
 
 ### Archived Documentation
-- [G9 Setup Checklist](archive/checklists/g9_setup_checklist.md) - Completed setup checklist
-- [Remote Desktop Testing](archive/checklists/remote_desktop_testing_checklist.md) - Completed RDP testing
-- [Tailscale ACL Configuration](archive/temporary/ACLS.txt) - Tailscale access control settings
+- [`archive/`](archive/README.md) - Completed checklists and obsolete guides
+- [`scripts/`](scripts/) - Automation scripts and utilities
+
+## 🚀 What's Working Right Now
+
+### Document Management (Production Ready)
+- **Document Upload:** Web interface and mobile app
+- **OCR Processing:** Automatic text recognition and searchability
+- **Remote Access:** Secure access from anywhere via Tailscale
+- **Mobile Scanning:** iPhone app integration for document capture
+- **Auto-Processing:** Consume folder for batch document import
+
+### Infrastructure
+- **Power Protection:** UPS provides automatic recovery from outages
+- **Network Coverage:** Comprehensive gigabit ethernet throughout home
+- **Dual Operating Systems:** Windows and Ubuntu available via dual-boot
+- **Remote Management:** SSH access for system administration
 
 ## 📋 Quick Reference
 
-### System Details
-- **Hardware**: Intel NUC 9 Pro (G9)
-- **Operating Systems**:
-- **Windows 11 Pro**: Tailscale IP 100.122.141.83
-- **Ubuntu**: Tailscale IP 100.91.157.19
+### Accessing Your System
+```bash
+# Remote SSH access (Ubuntu)
+ssh gmk@100.91.157.19
 
-Both operating systems can be accessed via:
-- Remote Desktop (Windows)
-- SSH (Ubuntu)
+# Web interfaces
+# Paperless-ngx: http://100.91.157.19:8000 (or http://192.168.0.178:8000)
+# Future Pi-hole: http://100.91.157.19/admin (planned)
 
-## 🚀 Getting Started
+# Check system status
+docker ps                    # Container status
+tailscale status            # Network connectivity
+```
 
-1. Review the [Home Server Plan](home_server_plan.md) to understand project goals
-2. Follow the [Network Configuration](network_configuration.md) guide for detailed network setup
-3. Follow the [Tailscale Configuration](tailscale_configuration.md) guide to set up remote access
-4. Review the [Windows Security Checklist](windows_security_checklist.md) for security status
-
-## 📝 Project Philosophy
-
-- **Start simple**: Begin with existing hardware
-- **Minimal investment**: Avoid unnecessary purchases
-- **Ease of maintenance**: Keep system manageable with minimal time commitment
-- **Expandability**: Design for easy scaling if project proves valuable
-- **Graceful exit**: Ensure data can be easily migrated if project is discontinued
+### Key File Locations
+- **Paperless Data:** External drive `/media/paperless-storage/`
+- **Docker Configs:** `~/paperless-ngx/docker-compose.yml`
+- **Consume Folder:** `/media/paperless-storage/paperless/consume/`
+- **Project Docs:** This repository
 
 ## 🔄 Development Workflow
 
-This project uses a "Pass the Baton" system to track progress between work sessions. Each session is documented in `baton.md` and archived in `baton_archive.md`. The `Pass_the_Baton.py` script automates this process.
+This project uses a "Pass the Baton" system documented in [`baton.md`](baton.md) to track progress between work sessions and maintain continuity across different development phases.
 
 ## 📞 Support & Resources
 
-- [Network Configuration](network_configuration.md): Detailed network setup and security
-- [Tailscale Documentation](https://tailscale.com/kb/)
 - [Paperless-ngx Documentation](https://docs.paperless-ngx.com/)
-- [Pi-hole Documentation](https://docs.pi-hole.net/)
-- [Docker Documentation](https://docs.docker.com/)
-- [Archive Documentation](archive/README.md): Archived and historical documentation
+- [Tailscale Documentation](https://tailscale.com/kb/)
+- [Pi-hole Documentation](https://docs.pi-hole.net/) (next phase)
+- [Archive Documentation](archive/README.md) (completed guides)
 
 ## ⚠️ Important Notes
 
-- The G9 uses a specific USB-C power adapter with non-standard voltage/wattage
-- DO NOT use any other USB-C power adapter with the G9
-- DO NOT use the G9 power adapter with any other USB-C devices
-- The G9 has dual 2.5GbE network ports configured for:
-  - Primary (Ethernet): Internet access (192.168.0.178)
-  - Secondary (Ethernet 2): ICS for Apple TV (192.168.137.1)
-- Only one operating system can be running at a time (dual-boot system, not virtualized)
-- Network configuration is documented in [network_configuration.md](network_configuration.md)
+- **Power:** G9 uses specific USB-C adapter - do not substitute
+- **Dual-Boot:** Only one OS runs at a time (not virtualized)
+- **Network:** Two 2.5GbE ports configured for internet + Apple TV ICS
+- **Storage:** External drive ready for SSD migration when needed
+- **Access:** System accessible remotely via Tailscale from anywhere
+
+## 🎯 Project Success Metrics
+
+✅ **Budget:** Completed under budget (87% of maximum)  
+✅ **Functionality:** 100% of document management goals achieved  
+✅ **Timeline:** Delivered ahead of schedule  
+✅ **Usability:** Daily document scanning and processing operational  
+✅ **Scalability:** Foundation ready for additional services  
 
 ---
 
-*Last updated: 2025-05-25*  
-*🎉 Major milestone achieved: Paperless-ngx fully operational and production-ready!* 
+*Last updated: 2025-05-30*  
+*🎉 Major milestone: Document management phase complete and production-ready!*  
+*Next focus: Network services (Pi-hole, wiki, automated backups)* 
