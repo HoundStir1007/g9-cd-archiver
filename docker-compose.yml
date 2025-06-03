@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    user: 1000:1000  # gmk user ID
+    environment:
+      - JELLYFIN_PublishedServerUrl=http://100.91.157.19:8096
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - ./media:/media:ro
+      # Optional: Access to backup storage for additional media
+      - /media/paperless-storage/jellyfin:/backup-media:ro
+    ports:
+      - "8096:8096"
+      - "8920:8920"  # HTTPS port (optional)
+      - "7359:7359/udp"  # Auto-discovery (optional)
+      - "1900:1900/udp"  # DLNA (optional)
+    devices:
+      - /dev/dri:/dev/dri  # Hardware acceleration (Intel Quick Sync) 
