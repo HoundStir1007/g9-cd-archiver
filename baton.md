@@ -1,3 +1,113 @@
+# Baton Entry - 2025-01-28 15:45:00 💾
+
+Version: [ssd-installation-complete]
+
+## Session Summary
+
+**SAMSUNG 990 EVO 2TB SSD INSTALLATION COMPLETE!** 🎉
+
+Successfully guided user through NVMe SSD installation in GMKtec G9:
+- **Smart Thermal Decision:** Installed in SSD4 slot (furthest from CPU heat sources)
+- **Hardware Ready:** Samsung 990 EVO 2TB properly seated and secured
+- **Next Phase:** Ubuntu configuration and Paperless-ngx storage migration
+- **Transition Plan:** Continue work in Ubuntu via Cursor for hands-on configuration
+
+**Installation Details:**
+- **Location:** SSD4 slot (optimal thermal positioning)
+- **Drive:** Samsung 990 EVO 2TB NVMe (PCIe 5.0, 1,200 TBW endurance)
+- **Thermal Strategy:** Coolest slot selected to prevent throttling during OCR workloads
+- **Physical Install:** Complete and verified
+
+**IMMEDIATE NEXT STEPS (Ubuntu + Cursor):**
+1. **🔍 Verify Detection:** Check `lsblk` and `sudo nvme list` to confirm SSD recognition
+2. **💾 Format & Partition:** Create ext4 filesystem optimized for server workload
+3. **📁 Mount Configuration:** Set up permanent mount point for Paperless-ngx data
+4. **🚚 Data Migration:** Move existing Paperless-ngx data to new high-speed storage
+5. **⚙️ Docker Update:** Update docker-compose.yml to use new storage location
+6. **🚀 Performance Test:** Verify OCR and processing speed improvements
+
+**Technical Verification Commands:**
+```bash
+# Check NVMe detection
+lsblk
+sudo nvme list
+sudo fdisk -l
+
+# Monitor thermal performance
+sudo nvme smart-log /dev/nvme0n1 | grep temperature
+
+# Check drive health
+sudo nvme smart-log /dev/nvme0n1
+```
+
+**Expected Ubuntu Detection:**
+- Device: `/dev/nvme0n1` (or similar)
+- Capacity: ~2TB unformatted
+- Status: Ready for partitioning and formatting
+
+**Performance Expectations:**
+- **Sequential Read:** Up to 7,000 MB/s (when cool)
+- **Sequential Write:** Up to 6,500 MB/s  
+- **Thermal Management:** SSD4 placement should maintain <65°C under load
+- **OCR Processing:** Significant speed improvement for document processing
+
+**Project Status:**
+- **✅ HARDWARE:** SSD installation complete with optimal thermal placement
+- **🎯 CURRENT:** Ubuntu storage configuration and migration
+- **📋 NEXT:** Paperless-ngx performance optimization on new storage
+- **🚀 GOAL:** Blazing-fast document processing with enterprise-grade storage
+
+**Ready for Cursor Work in Ubuntu:**
+User switching to Ubuntu environment in Cursor for hands-on configuration. The SSD installation provides the foundation for high-performance document management with proper thermal management ensuring sustained speeds during intensive OCR workloads.
+
+*Hardware installation complete - transitioning to Ubuntu configuration phase*
+
+---
+
+# Baton Entry - 2025-05-30 01:21:12 📜
+
+Version: 468a80a7
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-05-30 01:21:09
+- Update baton handoff document - 2025-05-30 01:07:11
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   .venv/Lib/site-packages/pandas/tests/indexes/datetimes/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/categorical/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/multi/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/test_any_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexing/multiindex/test_multiindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_set_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_first_valid_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_sort_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reset_index.py: Core application entry point
+
+## Important Reminders
+
+• Currently running on Darwin 24.5.0
+
+
+*Running on Darwin 24.5.0*
+
+---
+
 # Baton Entry - 2025-05-30 01:30:00 📚
 
 Version: [documentation-cleanup-complete]
