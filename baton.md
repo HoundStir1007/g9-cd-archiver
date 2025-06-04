@@ -1,3 +1,268 @@
+# Baton Entry - 2025-06-02 21:55:00 🧹
+
+Version: [archive-cleanup-complete]
+
+## Session Summary
+
+**🧹 COMPREHENSIVE ARCHIVE CLEANUP COMPLETE - WORKSPACE ORGANIZED! ✨**
+
+Successfully completed major cleanup and archival session to organize completed projects and remove temporary files:
+
+### 🗂️ **Archive Organization Completed**
+- **✅ Completed Projects:** Jellyfin setup guides and scripts properly archived
+- **✅ Security Checklists:** Windows security configuration archived as complete
+- **✅ Test Scripts Cleanup:** 8 monitoring test scripts removed after documentation
+- **✅ Temporary Files:** Old logs and cleanup summaries organized
+- **✅ Templates Archived:** Monitoring setup templates no longer needed
+
+### 📁 **Files Successfully Archived**
+```
+archive/completed_guides/
+├── jellyfin_setup_guide.md        ← Complete Jellyfin deployment guide
+├── jellyfin-setup.sh              ← Setup script (deployment complete)
+└── jellyfin-docker-compose.yml    ← Docker configuration reference
+
+archive/checklists/
+└── windows_security_checklist.md  ← Security implementation complete
+
+archive/temporary/
+├── CLEANUP_SUMMARY.md              ← Previous cleanup summary
+├── monitoring_test_scripts_archive.md ← Test scripts reference
+├── maintenance_logs_archive.md     ← Historical maintenance records
+└── cleanup_session_2025-06-02.md  ← Today's cleanup documentation
+
+archive/templates/
+└── monitoring_templates_archive.md ← Setup templates reference
+```
+
+### 🗑️ **Files Removed from Active Workspace**
+- **Root Directory:** `jellyfin_setup_guide.md`, `jellyfin-setup.sh`, `docker-compose.yml`
+- **Scripts:** 8 test scripts (monitoring troubleshooting complete)
+- **Maintenance:** Old maintenance log from May 16th
+- **Templates:** Monitoring setup templates (system operational)
+- **Checklists:** Windows security checklist (implementation complete)
+
+### 🎯 **Current Project Status After Cleanup**
+- **✅ Jellyfin:** COMPLETE - Media server operational with SMB sharing at http://100.91.157.19:8096
+- **✅ Paperless-ngx:** COMPLETE - Document management operational at http://100.91.157.19:8000
+- **✅ Windows Security:** COMPLETE - Enterprise-grade security implementation
+- **✅ Samsung SSD Migration:** COMPLETE - High-performance storage operational
+- **✅ USB Backup System:** COMPLETE - Automated daily backups running
+
+### 🚀 **Active Projects Remaining**
+- **📧 Email Automation:** Future project guides kept active (documented, not implemented)
+- **🛡️ Pi-hole Setup:** Next priority network service deployment
+- **🔧 Monitoring System:** Core scripts maintained (troubleshooting phase complete)
+- **📚 Personal Wiki:** Future priority after Pi-hole
+
+### 🏆 **Cleanup Results Achieved**
+- **📂 Clean Structure:** Root directory focused on current/future work only
+- **🗂️ Organized Archives:** Completed projects properly categorized and preserved
+- **📋 Clear Status:** No confusion between completed vs. in-progress items
+- **🎯 Priority Clarity:** Next steps clearly visible without clutter
+- **📚 Documentation Preserved:** All setup guides and references maintained for troubleshooting
+
+### 📋 **Workspace Now Optimized For**
+1. **🛡️ IMMEDIATE:** Pi-hole deployment (setup guide ready)
+2. **📧 FUTURE:** Email automation implementation (guides documented)
+3. **🔧 ONGOING:** System monitoring and maintenance (core scripts operational)
+4. **📚 FUTURE:** Personal wiki setup after network services complete
+
+**🎉 ARCHIVE CLEANUP MISSION ACCOMPLISHED!**
+
+The workspace transformation from "mixed completed/active projects" to "clean organized structure" enables efficient focus on current priorities while preserving all historical documentation for reference and troubleshooting.
+
+*Running on macOS (workspace organization) - Archive system fully operational*
+
+---
+
+# Baton Entry - 2025-06-02 21:45:00 🎉
+
+Version: [smb-finder-access-success]
+
+## Session Summary
+
+**🎉 SMB FINDER ACCESS SUCCESS - DRAG & DROP MEDIA MANAGEMENT OPERATIONAL! 🚀**
+
+User confirmed SMB file sharing is working perfectly for Jellyfin media management:
+
+### 🌐 **SMB Success Confirmation**
+- **✅ Finder Connection:** Successfully connected to `smb://100.91.157.19` 
+- **✅ Drag & Drop Working:** Direct file management from macOS Finder
+- **✅ Media Directories Access:** Full read/write to all Jellyfin folders
+- **✅ User Experience:** Seamless native macOS file management integration
+
+### 📁 **Operational Media Management**
+```
+jellyfin-media/ (accessible via Finder)
+├── books/          ← Ready for PDF/EPUB uploads! 📚
+├── home-videos/    ← Personal video content
+├── movies/         ← Movie collection  
+├── music/          ← Music library
+└── tv/             ← TV show series
+```
+
+### 🎯 **Workflow Now Operational**
+- **📚 Add Books:** Drag PDFs/EPUBs directly to `books/` folder via Finder
+- **🎬 Upload Movies:** Organize movie files in `movies/` directory
+- **📱 Transfer Home Videos:** Move personal content to `home-videos/`
+- **🎵 Music Collection:** Add music files to `music/` folder
+- **📺 TV Shows:** Organize series in `tv/` directory
+
+### 🏆 **Professional Media Server Achieved**
+**JELLYFIN + SMB + FINDER = COMPLETE SOLUTION:**
+- ⚡ **Enterprise Performance:** Samsung SSD + Intel Quick Sync acceleration
+- 🍎 **Native macOS Integration:** Finder drag-and-drop workflow
+- 🌐 **Universal Access:** Local network + secure Tailscale remote access
+- 📱 **Mobile Ready:** iOS/Android apps for streaming anywhere
+- 🏠 **Family Features:** Multi-user support with parental controls
+- 📺 **Long Video Optimized:** Perfect for home videos and personal content
+
+### 🎉 **PROJECT STATUS: COMPLETE MEDIA MANAGEMENT SOLUTION**
+
+Your home has transformed from "Photos app limitations" to "professional media server" with:
+- **Easy Management:** Native Finder integration for file organization
+- **Instant Streaming:** Hardware transcoding for smooth playback on any device  
+- **Smart Organization:** Automatic metadata and artwork for movies/TV shows
+- **Personal Content:** Optimized handling of home videos and family content
+- **Remote Access:** Stream your content securely from anywhere via Tailscale
+- **Performance:** Enterprise-grade Samsung SSD ensures responsive experience
+
+### 📋 **Ready for Immediate Use**
+1. **📚 IMMEDIATE:** Start adding books to test library functionality
+2. **🎬 IMMEDIATE:** Upload sample movies and verify Jellyfin detection
+3. **📱 TEST:** Upload home videos and test playback on mobile devices
+4. **🎯 ENJOY:** Professional media management with macOS native workflow
+
+**🎬 MISSION ACCOMPLISHED: PROFESSIONAL MEDIA SERVER WITH FINDER INTEGRATION! ✨**
+
+The combination of Jellyfin + SMB + Samsung SSD + Tailscale delivers a professional-grade media management solution that finally handles those long home videos with the convenience of native macOS file management.
+
+*Running on G9 Ubuntu (SMB server) + macOS Finder (client) - Media management workflow operational*
+
+---
+
+# Baton Entry - 2025-06-02 21:30:00 📁
+
+Version: [smb-share-setup-complete]
+
+## Session Summary
+
+**SMB SHARE SETUP COMPLETE - FINDER ACCESS TO JELLYFIN MEDIA! 🎉**
+
+Successfully configured SMB file sharing for drag-and-drop media management:
+
+### 🌐 **SMB Configuration Deployed**
+- **✅ Samba Installed:** Package installed and service running on G9 Ubuntu
+- **✅ Share Configuration:** `jellyfin-media` share created in `/etc/samba/smb.conf`
+- **✅ User Authentication:** Samba password set for `gmk` user
+- **✅ Service Restart:** SMB daemon restarted and configuration applied
+- **✅ Finder Connection:** User successfully connected via `smb://100.91.157.19`
+
+### 📁 **Share Configuration Details**
+```ini
+[jellyfin-media]
+path = /mnt/paperless-ssd/jellyfin/media
+browseable = yes
+writable = yes
+guest ok = no
+valid users = gmk
+create mask = 0755
+directory mask = 0755
+```
+
+### 🎯 **Access Methods Working**
+- **Tailscale SMB:** `smb://100.91.157.19` ✅
+- **Local SMB:** `smb://192.168.0.182` (available when on same network)
+- **Finder Integration:** Direct drag-and-drop file management
+- **Directory Access:** Full read/write to all Jellyfin media folders
+
+### 📚 **Available Media Directories**
+```
+jellyfin-media/
+├── books/          ← Ready for PDFs, EPUBs, comics! 📚
+├── home-videos/    ← Personal video content
+├── movies/         ← Movie collection
+├── music/          ← Music library
+└── tv/             ← TV show series
+```
+
+### 🚀 **User Experience Achieved**
+- **Drag & Drop:** Files from Mac directly to server directories
+- **Organization:** Create subfolders and reorganize as needed
+- **Preview:** View files before uploading
+- **Seamless:** No command line needed for media management
+- **Fast:** Direct network transfer over Tailscale or local network
+
+### 🎉 **Ready for Media Library Management**
+User can now:
+1. **📚 Add Books:** Drag PDFs/EPUBs directly to `books/` folder
+2. **🎬 Upload Movies:** Organize movie files in `movies/` directory
+3. **📱 Transfer Home Videos:** Move personal content to `home-videos/`
+4. **🎵 Music Collection:** Add music files to `music/` folder
+5. **📺 TV Shows:** Organize series in `tv/` directory
+
+### 📋 **Next Steps**
+1. **📚 IMMEDIATE:** Add books to test library functionality
+2. **🎬 IMMEDIATE:** Set up media libraries in Jellyfin web interface
+3. **📱 TEST:** Upload sample content and verify Jellyfin detection
+4. **🎯 ENJOY:** Professional media management with Finder integration
+
+**🎬 JELLYFIN + FINDER INTEGRATION COMPLETE!**
+
+The combination of Jellyfin media server + SMB file sharing provides professional-grade media management with the convenience of native macOS Finder integration. Users can now manage their media library as easily as local files while benefiting from Jellyfin's streaming and organization capabilities.
+
+*Running on G9 Ubuntu (SMB server) + macOS Finder (client) - File sharing operational*
+
+---
+
+# Baton Entry - 2025-06-02 20:54:13 📜
+
+Version: 42b82474
+
+## Session Summary
+
+In this session, we worked on the following changes:
+
+- Update baton handoff document - 2025-06-02 20:54:10
+- Update baton handoff document - 2025-06-02 19:52:09
+- Merge remote changes with local changes - accept archive structure
+- Local changes before GitHub sync
+- Remove virtual environment from git tracking - cleanup for GitHub sync
+
+These changes focused on improving project functionality and structure.
+
+## Next Steps
+
+For the next session, consider the following steps:
+
+- Review and test the recent changes
+- Continue development on core features
+- Add more comprehensive documentation
+- Address any pending TODOs in the codebase
+
+## Important Files & Links
+
+*   .venv/Lib/site-packages/pandas/tests/indexes/datetimes/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/categorical/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/multi/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexes/test_any_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/indexing/multiindex/test_multiindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reindex.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_set_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_first_valid_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_sort_index.py: Core application entry point
+*   .venv/Lib/site-packages/pandas/tests/frame/methods/test_reset_index.py: Core application entry point
+
+## Important Reminders
+
+• Currently running on Darwin 24.5.0
+
+
+*Running on Darwin 24.5.0*
+
+---
+
 # Baton Entry - 2025-06-02 20:50:00 🎬
 
 Version: [jellyfin-deployment-complete]
@@ -1596,3 +1861,89 @@ User corrected MacBook Tailscale configuration:
 - 🔧 **Remote system administration**
 
 *MacBook Tailscale auto-launch enabled - connectivity permanent*
+
+---
+
+# Baton Entry - 2025-06-04 01:15:00 📧
+
+Version: [email-handling-future-project]
+
+## Session Summary
+
+**EMAIL HANDLING PROJECT DOCUMENTED - GMAIL ORGANIZATION PREP PHASE!** 📧✨
+
+Successfully identified and documented comprehensive email handling improvements for Paperless-ngx:
+
+### 🔍 **Issue Identified**
+- **Current Problem:** Valley Veterinary Hospital .eml file failed processing due to Gotenberg API formatting bug
+- **Root Cause:** Paperless-ngx sending incorrect parameter formats (`"8.27in"` vs `8.27`) to Gotenberg
+- **Impact:** Manual email processing required, breaking automation workflow
+
+### 📋 **Solution Framework Created**
+- **✅ Email Processor Script:** `email_processor.py` - converts .eml to PDF avoiding Gotenberg bug
+- **✅ Comprehensive Setup Guide:** `email_setup_guide.md` - multiple email integration approaches
+- **✅ Direct IMAP Integration:** Gmail → Paperless-ngx automatic email processing (recommended)
+- **✅ Mobile Workflow:** iOS shortcuts and forwarding strategies
+
+### 🎯 **Future Project Status**
+**PLANNED IMPLEMENTATION:** Email automation setup documented as future priority
+
+**Phase 1 (IMMEDIATE):** Gmail organization and filter setup
+- Create folder structure: `Paperless/Medical`, `Paperless/Financial`, `Paperless/Personal`
+- Set up Gmail filters for automatic sorting
+- Organize existing important emails into appropriate folders
+
+**Phase 2 (FUTURE):** Paperless-ngx email integration
+- Configure IMAP email accounts in Paperless-ngx admin
+- Set up Gmail app passwords and 2FA
+- Test automated email → document conversion workflow
+- Configure post-processing actions (mark as read, move, archive)
+
+### 📁 **Gmail Organization Prep (User Starting Now)**
+**Immediate Actions:**
+1. **Create Gmail Label Structure:**
+   ```
+   📁 Paperless/
+   ├── 📁 Medical/        ← Valley Veterinary, doctors, prescriptions
+   ├── 📁 Financial/      ← Bills, receipts, banks, insurance
+   ├── 📁 Personal/       ← Legal docs, contracts, important notices
+   ├── 📁 Work/           ← Employment documents, benefits
+   └── 📁 Travel/         ← Tickets, confirmations, itineraries
+   ```
+
+2. **Set Up Gmail Filters:**
+   ```
+   From: *veterinary* OR *doctor* OR *medical*
+   → Apply label: Paperless/Medical
+   
+   From: *billing* OR *invoice* OR *statement* OR *payment*
+   → Apply label: Paperless/Financial
+   
+   From: *confirmation* OR *ticket* OR *reservation*
+   → Apply label: Paperless/Travel
+   ```
+
+3. **Organize Existing Emails:** Move historical important emails into new structure
+
+### 🚀 **Benefits of Future Implementation**
+- **Zero Manual Work:** Emails automatically become searchable documents
+- **Smart Organization:** Auto-tagging based on sender and content
+- **Mobile Integration:** Forward emails from phone for instant processing
+- **Backup Strategy:** All important emails preserved as searchable PDFs
+- **No More .eml Errors:** Bypass Gotenberg formatting issues entirely
+
+### 📋 **Files Created**
+- **`email_processor.py`:** Standalone .eml to PDF converter script
+- **`email_setup_guide.md`:** Comprehensive email integration documentation
+- **Ready for Implementation:** All technical planning complete
+
+### 🎉 **Current Status**
+- **✅ IMMEDIATE:** User organizing Gmail structure (excellent prep work!)
+- **📋 DOCUMENTED:** Complete email automation solution ready for future implementation
+- **🎯 PRIORITY:** After Gmail organization, this becomes high-value automation project
+
+**User taking smart approach:** Gmail organization now sets perfect foundation for seamless Paperless-ngx email integration later!
+
+*Running on macOS (project planning) - Gmail organization in progress*
+
+---

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ARCHIVED - 2025-06-02
+# Status: ✅ COMPLETED - Jellyfin deployment successful
+# Purpose: Historical reference for Jellyfin setup process
+
 echo "🎬 Jellyfin Setup Script for G9 Ubuntu Server"
 echo "=============================================="
 
@@ -33,4 +37,9 @@ sudo chown -R gmk:gmk /media/paperless-storage/jellyfin
 echo "✅ Setup complete! Next steps:"
 echo "1. Copy docker-compose.yml to /mnt/paperless-ssd/jellyfin/"
 echo "2. Run: cd /mnt/paperless-ssd/jellyfin && docker compose up -d"
-echo "3. Access Jellyfin at: http://100.91.157.19:8096" 
+echo "3. Access Jellyfin at: http://100.91.157.19:8096"
+
+# ARCHIVAL NOTE:
+# This script was successfully used for Jellyfin deployment on 2025-06-02
+# Jellyfin is now operational at http://100.91.157.19:8096 with SMB sharing
+# System includes Intel Quick Sync acceleration and Samsung SSD storage 

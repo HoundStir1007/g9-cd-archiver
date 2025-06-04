@@ -1,3 +1,8 @@
+# ARCHIVED - 2025-06-02
+# Status: ✅ COMPLETED - Jellyfin deployment successful
+# Purpose: Historical reference for Jellyfin Docker configuration
+# Current Location: /mnt/paperless-ssd/jellyfin/docker-compose.yml (operational)
+
 version: '3.8'
 
 services:
@@ -20,4 +25,10 @@ services:
       - "7359:7359/udp"  # Auto-discovery (optional)
       - "1900:1900/udp"  # DLNA (optional)
     devices:
-      - /dev/dri:/dev/dri  # Hardware acceleration (Intel Quick Sync) 
+      - /dev/dri:/dev/dri  # Hardware acceleration (Intel Quick Sync)
+
+# ARCHIVAL NOTE:
+# This configuration was successfully deployed to Samsung SSD storage
+# Jellyfin is operational with Intel Quick Sync acceleration
+# SMB file sharing configured for Finder drag-and-drop access
+# Access: http://100.91.157.19:8096 (Tailscale) | http://192.168.0.182:8096 (Local) 
