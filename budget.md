@@ -11,16 +11,17 @@ This file provides the final budget breakdown for the completed home server proj
 | **UPS (Battery Backup)**             | APC BN450M Standby UPS (270W)          | $76            | $55          | ✅ COMPLETE |
 | **8-port Gigabit Switch**            | Media Center network expansion          | $25–$30        | ~$30         | ✅ COMPLETE |
 | **5-port Gigabit Switch**            | Bedroom network expansion               | $25            | ~$25         | ✅ COMPLETE |
+| **PhotoSort App**                     | Mac App Store - Photo/Video organization | $5-10          | $7           | ✅ COMPLETE |
 | **Accessories**                       | Ethernet cables, power strips, misc.   | $20            | TBD          | 📦 As needed |
 
 |                                      |                                          |                |              |
-| **Total Budgeted**                   |                                          | **$306-526**   |              |
-| **Total Actual Spent**               |                                          | **~$450**      |              |
+| **Total Budgeted**                   |                                          | **$311-531**   |              |
+| **Total Actual Spent**               |                                          | **~$457**      |              |
 | **Budget Performance**               |                                          | **14% UNDER** maximum budget | **SUCCESS!** |
 
 ## ✅ PROJECT STATUS: HARDWARE COMPLETE
 
-### What You Got for $450:
+### What You Got for $457:
 - 🖥️ **Complete home server** (dual-boot Windows/Ubuntu)
 - 🔋 **Power protection** (UPS for outage recovery)  
 - 💾 **High-performance storage** (2TB NVMe with excellent endurance)
@@ -28,12 +29,13 @@ This file provides the final budget breakdown for the completed home server proj
 - 📄 **Document management** (Paperless-ngx fully operational)
 - 🔒 **Remote access** (Tailscale on both operating systems)
 - 📱 **Mobile integration** (iPhone scanning and access)
+- 📸 **Photo organization** (PhotoSort app for media workflow optimization)
 
 ### Budget Analysis:
-- ✅ **Under Budget:** Came in $76 under maximum budget ($526)
+- ✅ **Under Budget:** Came in $74 under maximum budget ($531)
 - ✅ **Better Deals:** UPS cost $55 vs budgeted $76 
 - ✅ **Smart Choices:** Samsung SSD provides double endurance vs alternatives
-- ✅ **Complete Solution:** All planned functionality achieved
+- ✅ **Complete Solution:** All planned functionality achieved including media management
 
 ## 🎯 REMAINING PURCHASES (Optional/As-Needed)
 

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  plex:
+    image: plexinc/pms-docker:latest
+    container_name: plex-server
+    restart: unless-stopped
+    ports:
+      - "32400:32400/tcp"
+      - "3005:3005/tcp"
+      - "5353:5353/udp"
+      - "8324:8324/tcp"
+      - "32410:32410/udp"
+      - "32412:32412/udp"
+      - "32413:32413/udp"
+      - "32414:32414/udp"
+      - "32469:32469/tcp"
+    environment:
+      - PLEX_CLAIM=claim-NdWFf4dUmhh76QdoeRMY
+      - PLEX_UID=1000
+      - PLEX_GID=1000
+      - TZ=America/Los_Angeles
+      - ADVERTISE_IP=http://100.91.157.19:32400,http://192.168.0.182:32400
+    volumes:
+      - /home/gmk/plex/config:/config
+      - /home/gmk/plex/cache:/transcode
+      - /home/gmk/plex/logs:/logs
+      - /mnt/paperless-ssd/jellyfin/media:/data
+    devices:
+      - /dev/dri:/dev/dri
+    networks:
+      - plex-network
+
+networks:
+  plex-network:
+    driver: bridge 

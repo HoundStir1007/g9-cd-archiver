@@ -2,12 +2,12 @@
 
 ## System Overview
 - **Hostname**: HOMELAB
-- **Operating System**: Windows 11 Pro (10.0.26100)
-- **Last Configuration Update**: 2025-05-16 22:38:09
-- **Configuration Version**: 1.0
-- **Primary Administrator**: Admin-8vehma
-- **System Role**: Home Server / Document Management
-- **Network Architecture**: Dual-NIC with ICS and Tailscale VPN
+- **Operating System**: Ubuntu 24.10 (Primary Server Platform)
+- **Last Configuration Update**: 2025-06-07 20:20:00
+- **Configuration Version**: 2.0 (Ubuntu-focused architecture)
+- **Primary Administrator**: gmk
+- **System Role**: Home Server / Document & Media Management
+- **Network Architecture**: Ubuntu server with Tailscale VPN and SMB file sharing
 
 ## Network Topology
 ```mermaid
@@ -20,7 +20,7 @@ graph TD
     B -->|Port 2| J[Media Center Switch<br/>8-Port Gigabit<br/>Living Room]
     
     %% Media Center Switch (8-Port) Connections
-    J -->|Port 2| M[G9 Server<br/>192.168.0.178]
+    J -->|Port 2| M[G9 Ubuntu Server<br/>192.168.0.178<br/>Paperless-ngx & Jellyfin]
     J -->|Port 3| N[Apple TV<br/>192.168.0.x]
     J -->|Port 4| O[Printer<br/>Not Connected Yet]
     J -->|Port 5| P[Mac Mini #1<br/>DVD Ripping Station<br/>Planned]
@@ -96,29 +96,55 @@ graph TD
 - **Duplex**: Full
 - **Power Management**: Disabled (Prevent disconnection)
 
-### Tailscale Network
-- **Interface Name**: Tailscale
+### Tailscale Network (Ubuntu Server)
+- **Interface Name**: tailscale0
 - **Type**: Virtual Network Interface
-- **Driver**: Tailscale Virtual Network Adapter
 - **IPv4 Configuration**:
-  - **Address**: 100.122.141.83
+  - **Ubuntu Server Address**: 100.91.157.19
   - **Subnet Mask**: 255.255.255.255
   - **DNS Suffix**: tail43d483.ts.net
-- **IPv6 Configuration**:
-  - **Global Address**: fd7a:115c:a1e0::a901:8d59
-  - **Link-local**: fe80::3f4e:151b:d02e:49f8%36
 - **Status**: Active, Connected
-- **Purpose**: Secure remote access and VPN connectivity
-- **Direct Connections**:
-  - **Device**: MacBook Pro
-  - **Tailscale IP**: 100.73.233.88
-  - **Local IP**: 192.168.0.214
-  - **Latency**: 28.1ms
-  - **Connection Type**: Direct (not DERP)
-- **DERP Configuration**:
-  - **Primary**: Los Angeles
-  - **Latency**: 45.2ms
-  - **Status**: Fallback only
+- **Purpose**: Secure remote access for all server services
+- **Services Available**:
+  - **Paperless-ngx**: http://100.91.157.19:8000
+  - **Jellyfin**: http://100.91.157.19:8096
+  - **SMB File Sharing**: smb://100.91.157.19
+  - **SSH Access**: ssh gmk@100.91.157.19
+- **Client Connections**:
+  - **MacBook Pro**: 100.73.233.88 (management client)
+  - **iPhone**: Dynamic IP (mobile access)
+- **Performance**: 5-10ms latency, direct connections
+
+## Ubuntu Server Services
+
+### Active Services (All on 100.91.157.19)
+- **Paperless-ngx Document Management**:
+  - **Local URL**: http://192.168.0.178:8000
+  - **Tailscale URL**: http://100.91.157.19:8000
+  - **Purpose**: Document scanning, OCR, and management
+  - **Mobile App**: Swift Paperless (iOS)
+  - **Status**: Production operational
+
+- **Jellyfin Media Server**:
+  - **Local URL**: http://192.168.0.178:8096
+  - **Tailscale URL**: http://100.91.157.19:8096
+  - **Purpose**: Media streaming with hardware transcoding
+  - **Features**: Intel Quick Sync acceleration, mobile apps
+  - **Status**: Production operational
+
+- **SMB File Sharing**:
+  - **Access**: smb://100.91.157.19 or smb://192.168.0.178
+  - **Purpose**: Native macOS Finder integration for media management
+  - **Shares**: jellyfin-media (read/write access)
+  - **Authentication**: User: gmk
+  - **Status**: Operational
+
+### System Details
+- **Hardware**: GMKtec NucBox G9 (Intel N150, 12GB RAM)
+- **Storage**: Samsung 990 EVO 2TB NVMe SSD (primary)
+- **Backup**: USB drive automated daily backups
+- **Power**: APC BN450M UPS (tested and verified)
+- **Uptime**: 4+ days (post power outage recovery)
 
 ## Media Center Network Configuration
 
@@ -135,11 +161,13 @@ graph TD
   - Plug-and-play operation
 
 ### Connected Devices
-- **G9 Server** (Port 2):
+- **G9 Ubuntu Server** (Port 2):
   - **IP**: 192.168.0.178
+  - **Tailscale IP**: 100.91.157.19
+  - **Services**: Paperless-ngx, Jellyfin, SMB
   - **Connection Type**: Wired
   - **Speed**: 1 Gbps
-  - **Status**: Active
+  - **Status**: Active (4+ days uptime)
 - **Apple TV** (Port 3):
   - **IP**: 192.168.137.2
   - **Connection Type**: Wired
