@@ -1,0 +1,177 @@
+MUSIC COLLECTION YOUTUBE AVAILABILITY ANALYSIS
+==================================================
+
+Scan Date: 2025-06-07 20:00:10
+Music Folder: /Users/marksakamoto/Music/Music/Media.localized
+
+STATISTICS:
+Total Files Found: 40
+Successfully Processed: 40
+Files with No Metadata: 0
+Found on YouTube: 0
+Not Found on YouTube: 40
+Potentially Rare Tracks: 40
+Processing Errors: 0
+
+POTENTIALLY RARE OR HARD-TO-FIND TRACKS:
+----------------------------------------
+10. La Pobreska - Shots Fired
+  File: 10. La Pobreska - Shots Fired.wav
+  Status: ❌ Not found - likely rare
+
+11. Los Arambula - Con Huevos
+  File: 11. Los Arambula - Con Huevos.wav
+  Status: ❌ Not found - likely rare
+
+12. Libertadores - Combi full of Misfits
+  File: 12. Libertadores - Combi full of Misfits.wav
+  Status: ❌ Not found - likely rare
+
+13. La Muerte - Momentos
+  File: 13. La Muerte - Momentos.wav
+  Status: ❌ Not found - likely rare
+
+14. Mafia Rusa - Preludia al Caos
+  File: 14. Mafia Rusa - Preludia al Caos.wav
+  Status: ❌ Not found - likely rare
+
+15. The Tragedy - Desert Moon
+  File: 15. The Tragedy - Desert Moon.wav
+  Status: ❌ Not found - likely rare
+
+16. Spaztik - Bad Scene and a Yuma Show
+  File: 16. Spaztik - Bad Scene and a Yuma Show.wav
+  Status: ❌ Not found - likely rare
+
+17. Los Brigands - Cold Cold City
+  File: 17. Los Brigands - Cold Cold City.wav
+  Status: ❌ Not found - likely rare
+
+18. The Strep Daughters - Over It
+  File: 18. The Strep Daughters - Over It.wav
+  Status: ❌ Not found - likely rare
+
+19. Dskarados - 8 to 51
+  File: 19. Dskarados -  8 to 51.wav
+  Status: ❌ Not found - likely rare
+
+20. Happy Drunk Cartel - Demons in control Acoustic
+  File: 20. Happy Drunk Cartel -  Demons in control Acoustic.wav
+  Status: ❌ Not found - likely rare
+
+21. Spare Change - Barrio
+  File: 21. Spare Change - Barrio.wav
+  Status: ❌ Not found - likely rare
+
+22. Matamoska - East Los Angeles _ Remix
+  File: 22. Matamoska -  East Los Angeles _ Remix.wav
+  Status: ❌ Not found - likely rare
+
+23. Operation No-One Knows - SimpsonNorm_01-01
+  File: 23. Operation No-One Knows - SimpsonNorm_01-01.wav
+  Status: ❌ Not found - likely rare
+
+24. Maria Blues - What a Crazy Night
+  File: 24. Maria Blues - What a Crazy Night.wav
+  Status: ❌ Not found - likely rare
+
+25. 3rd Rate - Just Gimmie Some Beer
+  File: 25. 3rd Rate - Just Gimmie Some Beer.wav
+  Status: ❌ Not found - likely rare
+
+26. Hari Generasi & Buux Frederiksen - Larry
+  File: 26. Hari Generasi & Buux Frederiksen - Larry.wav
+  Status: ❌ Not found - likely rare
+
+27. Infamous Stiffs - Freak Parade
+  File: 27. Infamous Stiffs - Freak Parade.wav
+  Status: ❌ Not found - likely rare
+
+28. La Onda - Down
+  File: 28. La Onda - Down.wav
+  Status: ❌ Not found - likely rare
+
+29. Hub City Trash - Modern Song One
+  File: 29. Hub City Trash - Modern Song One.wav
+  Status: ❌ Not found - likely rare
+
+3. Tim Timebomb & Friends - 30 Pieces Of Silver (Prince Buste-Norm_01-01
+  File: 3. Tim Timebomb & Friends - 30 Pieces Of Silver (Prince Buste-Norm_01-01.wav
+  Status: ❌ Not found - likely rare
+
+30. 8 Ball Fracture - Matapuerkos
+  File: 30. 8 Ball Fracture - Matapuerkos.wav
+  Status: ❌ Not found - likely rare
+
+31. The Ghetto on Phyre - Tome Con El Diablo
+  File: 31. The Ghetto on Phyre - Tome Con El Diablo.wav
+  Status: ❌ Not found - likely rare
+
+4. Voodoo Glow Skulls - Creep Tonight
+  File: 4. Voodoo Glow Skulls - Creep Tonight.wav
+  Status: ❌ Not found - likely rare
+
+5. Fuska - Pinche Puerco
+  File: 5. Fuska - Pinche Puerco.wav
+  Status: ❌ Not found - likely rare
+
+6. The Independents - Never Let it go
+  File: 6. The Independents - Never Let it go.wav
+  Status: ❌ Not found - likely rare
+
+7. China Wife Motors - Lantana
+  File: 7. China Wife Motors - Lantana.wav
+  Status: ❌ Not found - likely rare
+
+8. Concept 6 - Señora Pesadilla
+  File: 8. Concept 6 - Señora Pesadilla.wav
+  Status: ❌ Not found - likely rare
+
+9. Deseos Primitivos - Triste Canción
+  File: 9. Deseos Primitivos - Triste Canción.wav
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 20140612 124222
+  File: 20140612 124222.m4a
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 20150117 082558
+  File: 20150117 082558.m4a
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 20150117 082953
+  File: 20150117 082953.m4a
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - angry-grunt-103204
+  File: angry-grunt-103204.mp3
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - Tonight You Belong To Me
+  File: Tonight You Belong To Me.mp3
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 00001
+  File: 00001.mp3
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - accompaniment
+  File: accompaniment.wav
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - RADH_80_Am_Cruical_1_Full_Horns_Multi
+  File: RADH_80_Am_Cruical_1_Full_Horns_Multi.wav
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - V15_115_Dm_Joy_Horns_03_Wet
+  File: V15_115_Dm_Joy_Horns_03_Wet.wav
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 1. Left Alone -Mi Barrio
+  File: 1. Left Alone -Mi Barrio.wav
+  Status: ❌ Not found - likely rare
+
+Unknown Artist - 2. Manic HIspanic -Mas Chingones
+  File: 2. Manic HIspanic -Mas Chingones.wav
+  Status: ❌ Not found - likely rare
+

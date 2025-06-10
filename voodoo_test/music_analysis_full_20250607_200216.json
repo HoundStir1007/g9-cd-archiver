@@ -1,0 +1,53 @@
+{
+  "scan_date": "2025-06-07T20:02:16.890568",
+  "music_folder": "test_punk",
+  "statistics": {
+    "total_files": 1,
+    "processed_files": 1,
+    "no_metadata": 0,
+    "youtube_found": 1,
+    "youtube_not_found": 0,
+    "potential_rare": 0,
+    "errors": 0
+  },
+  "results": [
+    {
+      "file_path": "test_punk/4. Voodoo Glow Skulls - Creep Tonight.wav",
+      "filename": "4. Voodoo Glow Skulls - Creep Tonight.wav",
+      "artist": "4. Voodoo Glow Skulls",
+      "title": "Creep Tonight",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 94,
+      "match_quality": "Very good match",
+      "analysis": "✅ Readily available",
+      "youtube_details": [
+        {
+          "title": "Creep Tonight",
+          "channel": "Voodoo Glow Skulls Official",
+          "duration": "3:04",
+          "views": "30K views",
+          "url": "https://www.youtube.com/watch?v=rDB-96RnNGk",
+          "published": null
+        },
+        {
+          "title": "Delinquent Song",
+          "channel": "Voodoo Glow Skulls - Topic",
+          "duration": "3:15",
+          "views": "115K views",
+          "url": "https://www.youtube.com/watch?v=29ItZTEKgbE",
+          "published": null
+        },
+        {
+          "title": "Nada En La Cabeza",
+          "channel": "Voodoo Glow Skulls - Topic",
+          "duration": "2:46",
+          "views": "13K views",
+          "url": "https://www.youtube.com/watch?v=P6iiUZJ8syQ",
+          "published": null
+        }
+      ]
+    }
+  ]
+}
