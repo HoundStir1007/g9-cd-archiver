@@ -2,6 +2,7 @@
 
 # Cross-platform Bash wrapper for Pass_the_Baton
 # For macOS and Linux systems
+# Manages baton.md with 200-line limit and automatic archiving
 
 # Get script directory
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
