@@ -1,0 +1,15 @@
+MUSIC COLLECTION YOUTUBE AVAILABILITY ANALYSIS
+==================================================
+
+Scan Date: 2025-06-07 20:02:16
+Music Folder: test_punk
+
+STATISTICS:
+Total Files Found: 1
+Successfully Processed: 1
+Files with No Metadata: 0
+Found on YouTube: 1
+Not Found on YouTube: 0
+Potentially Rare Tracks: 0
+Processing Errors: 0
+

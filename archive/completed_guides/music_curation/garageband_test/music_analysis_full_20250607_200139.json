@@ -1,0 +1,1355 @@
+{
+  "scan_date": "2025-06-07T20:01:39.601516",
+  "music_folder": "/Users/marksakamoto/Music/GarageBand",
+  "statistics": {
+    "total_files": 44,
+    "processed_files": 44,
+    "no_metadata": 0,
+    "youtube_found": 23,
+    "youtube_not_found": 12,
+    "potential_rare": 21,
+    "errors": 0
+  },
+  "results": [
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Title Card Synth 1.band/Media/Audio Files/Xynthesizr#03.wav",
+      "filename": "Xynthesizr#03.wav",
+      "artist": "Unknown Artist",
+      "title": "Xynthesizr#03",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 63,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Ambient Drone Meditation For Relaxation & Mindfulness | XYNTHESIZR App",
+          "channel": "TAETRO",
+          "duration": "6:48",
+          "views": "4.8K views",
+          "url": "https://www.youtube.com/watch?v=HTZvFPCChW4",
+          "published": "5 years ago"
+        },
+        {
+          "title": "XYNTHESIZR Ambient iPad Music Session | Monday Meditation",
+          "channel": "TAETRO",
+          "duration": "6:02",
+          "views": "10K views",
+          "url": "https://www.youtube.com/watch?v=cDHfCLmit5w",
+          "published": "5 years ago"
+        },
+        {
+          "title": "AMBIENT LIVE & CHILL 👩🏻‍🔬 SP-404 MKII & XYNTHESIZR",
+          "channel": "JAde Wii",
+          "duration": "1:14:33",
+          "views": "770 views",
+          "url": "https://www.youtube.com/watch?v=C3wuFuMUI20",
+          "published": "Streamed 1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Title Card Synth 1.band/Media/Audio Files/Xynthesizr#02.wav",
+      "filename": "Xynthesizr#02.wav",
+      "artist": "Unknown Artist",
+      "title": "Xynthesizr#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 1,
+      "best_match_score": 33,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "Sound on Sound Ambient Looping on an iPad Pro - Ambient iPad Live Jam 74",
+          "channel": "Jonathan Block - The Ambient iPad",
+          "duration": "25:20",
+          "views": "243 views",
+          "url": "https://www.youtube.com/watch?v=0-OW89rCZrM",
+          "published": "2 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Loop 3.band/Media/Audio Files/Rural Acoustic Strum 15.wav",
+      "filename": "Rural Acoustic Strum 15.wav",
+      "artist": "Unknown Artist",
+      "title": "Rural Acoustic Strum 15",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 38,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "How to FAKE guitar skills in 2 SECONDS",
+          "channel": "Orangewood",
+          "duration": "0:29",
+          "views": "1.5M views",
+          "url": "https://www.youtube.com/watch?v=SAtwbIaMgAE",
+          "published": "1 year ago"
+        },
+        {
+          "title": "this capo has a hidden trick... 🎸👀🔥 #guitar #guitargear  #beginnerguitartutorial",
+          "channel": "ChordBank",
+          "duration": "0:20",
+          "views": "3.2M views",
+          "url": "https://www.youtube.com/watch?v=qStpDvJMwKI",
+          "published": "8 months ago"
+        },
+        {
+          "title": "I filled my ukulele with water and it sounds UNREAL",
+          "channel": "Elise Ecklund",
+          "duration": "0:16",
+          "views": "28M views",
+          "url": "https://www.youtube.com/watch?v=BqGBwLmflNo",
+          "published": "1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Loop 5 (ska).band/Media/Audio Files/V12_114_Gm_Elec_Guitar_11.wav",
+      "filename": "V12_114_Gm_Elec_Guitar_11.wav",
+      "artist": "Unknown Artist",
+      "title": "V12_114_Gm_Elec_Guitar_11",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Loop 5 (ska).band/Media/Audio Files/V12_114_Drums_Full merged_18.wav",
+      "filename": "V12_114_Drums_Full merged_18.wav",
+      "artist": "Unknown Artist",
+      "title": "V12_114_Drums_Full merged_18",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Acoustic instrumental 1.band/Media/Audio Files/My Idea 8 merged.wav",
+      "filename": "My Idea 8 merged.wav",
+      "artist": "Unknown Artist",
+      "title": "My Idea 8 merged",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 55,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "I got over it so you will too 🥲 #art #drawing #digitalart #fyp #shorts",
+          "channel": "KO",
+          "duration": "0:07",
+          "views": "10M views",
+          "url": "https://www.youtube.com/watch?v=nNXalaopKkM",
+          "published": "1 year ago"
+        },
+        {
+          "title": "THINGS WE ALL DID AS BEGINNER ARTISTS 🎨🖌",
+          "channel": "Sarah Inoue",
+          "duration": "0:16",
+          "views": "3M views",
+          "url": "https://www.youtube.com/watch?v=-bKufWHTDkE",
+          "published": "2 years ago"
+        },
+        {
+          "title": "Students Draw Their Teacher Part 2 #teacher #school #student #art",
+          "channel": "Mrs. Miller",
+          "duration": "0:23",
+          "views": "8.1M views",
+          "url": "https://www.youtube.com/watch?v=gUv1yBgjhiA",
+          "published": "2 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Acoustic instrumental 1.band/Media/Audio Files/My Idea 8.wav",
+      "filename": "My Idea 8.wav",
+      "artist": "Unknown Artist",
+      "title": "My Idea 8",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 59,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "THINGS WE ALL DID AS BEGINNER ARTISTS 🎨🖌",
+          "channel": "Sarah Inoue",
+          "duration": "0:16",
+          "views": "3M views",
+          "url": "https://www.youtube.com/watch?v=-bKufWHTDkE",
+          "published": "2 years ago"
+        },
+        {
+          "title": "I Found The Scariest Things In Regular Photos | creepy #shorts #scary #horrorstories",
+          "channel": "Mr.MSG01",
+          "duration": "0:20",
+          "views": "2.5M views",
+          "url": "https://www.youtube.com/watch?v=cRwiw7lLfbA",
+          "published": "9 months ago"
+        },
+        {
+          "title": "An-known Dicey & Aroma Music - Mpeke (Official Lyrics Video)",
+          "channel": "An-Known",
+          "duration": "3:44",
+          "views": "985K views",
+          "url": "https://www.youtube.com/watch?v=BngqhdY2zsk",
+          "published": "3 months ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Loop 4.band/Media/Audio Files/DP2_87_Gmin_Gang_Horn2_1.wav",
+      "filename": "DP2_87_Gmin_Gang_Horn2_1.wav",
+      "artist": "Unknown Artist",
+      "title": "DP2_87_Gmin_Gang_Horn2_1",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Loop 4.band/Media/Audio Files/SFHS_88_E_Trumpet_1_2.wav",
+      "filename": "SFHS_88_E_Trumpet_1_2.wav",
+      "artist": "Unknown Artist",
+      "title": "SFHS_88_E_Trumpet_1_2",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Song Verse and Chorus.band/Media/Audio Files/60's Combo#01.wav",
+      "filename": "60's Combo#01.wav",
+      "artist": "Unknown Artist",
+      "title": "60's Combo#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 67,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist (Instrumental) - Graduation Twist - Private Obscure 60's Lo-Fi Garage Rock & Roll",
+          "channel": "SkullValleyRecords",
+          "duration": "3:10",
+          "views": "493 views",
+          "url": "https://www.youtube.com/watch?v=WzIbqBAMkAE",
+          "published": "4 years ago"
+        },
+        {
+          "title": "Lost Rock N roll song by unknown artist #2",
+          "channel": "Mr kapeli",
+          "duration": "2:14",
+          "views": "1.9K views",
+          "url": "https://www.youtube.com/watch?v=gwXGwDRlU0Y",
+          "published": "2 years ago"
+        },
+        {
+          "title": "Unknown Instrumental",
+          "channel": "pvrocker 56",
+          "duration": "2:16",
+          "views": "3.3K views",
+          "url": "https://www.youtube.com/watch?v=PWaIHRw0VCE",
+          "published": "15 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Song Verse and Chorus.band/Media/Audio Files/Brit and Clean#05.wav",
+      "filename": "Brit and Clean#05.wav",
+      "artist": "Unknown Artist",
+      "title": "Brit and Clean#05",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 41,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "WHAT KIDS SEE  vs WHAT PARENTS SEE",
+          "channel": "Jooj Natu ENG",
+          "duration": "0:22",
+          "views": "85M views",
+          "url": "https://www.youtube.com/watch?v=mJF6k0Esa0E",
+          "published": "1 year ago"
+        },
+        {
+          "title": "YouTubers who got killed doing pranks😰 #shorts",
+          "channel": "Kurlyheadmarr",
+          "duration": "0:29",
+          "views": "11M views",
+          "url": "https://www.youtube.com/watch?v=zYSokDkcbOs",
+          "published": "3 years ago"
+        },
+        {
+          "title": "The most hated rappers vs the most loved rappers pt.1 🎤🎵 #rap #juicewrld #shorts",
+          "channel": "Natecaller",
+          "duration": "0:20",
+          "views": "4.5M views",
+          "url": "https://www.youtube.com/watch?v=IvbZuJFrVQI",
+          "published": "1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Song Verse and Chorus.band/Media/Audio Files/Brit and Clean#02.wav",
+      "filename": "Brit and Clean#02.wav",
+      "artist": "Unknown Artist",
+      "title": "Brit and Clean#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 44,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "Nature song just hit half a mil streams luv u ☺︎︎♡︎ #fyp",
+          "channel": "shanin blake",
+          "duration": "0:16",
+          "views": "1.8M views",
+          "url": "https://www.youtube.com/watch?v=WiaV1NOZ6so",
+          "published": "2 years ago"
+        },
+        {
+          "title": "Acoustic Chill • Soft Indie Folk Playlist, Vol 3 (50 tracks) Calm & Soothing",
+          "channel": "Indie Folk Central",
+          "duration": "2:42:57",
+          "views": "1M views",
+          "url": "https://www.youtube.com/watch?v=8UjJBh_GO2k",
+          "published": "1 year ago"
+        },
+        {
+          "title": "I couldn’t pull out 🥵",
+          "channel": "Shangerdanger",
+          "duration": "0:37",
+          "views": "21M views",
+          "url": "https://www.youtube.com/watch?v=KVxCiSIh3A4",
+          "published": "2 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/2 Overkill.band/Media/Audio Files/accompaniment.wav",
+      "filename": "accompaniment.wav",
+      "artist": "Unknown Artist",
+      "title": "accompaniment",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 95,
+      "match_quality": "Excellent match",
+      "analysis": "✅ Readily available",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist – Party Tyme Karaoke   Oldies 1 Instrumental",
+          "channel": "slavprussiaottomanfinlandUSUK",
+          "duration": "25:49",
+          "views": "211 views",
+          "url": "https://www.youtube.com/watch?v=cdu-tbJqM_w",
+          "published": "7 months ago"
+        },
+        {
+          "title": "Unknown artist/Medley with Mandolin/Guitar Accompaniment",
+          "channel": "David Sawyer",
+          "duration": "4:42",
+          "views": "32 views",
+          "url": "https://www.youtube.com/watch?v=P6GieYSC5_k",
+          "published": "5 years ago"
+        },
+        {
+          "title": "Each step I take - Piano accompaniment| Unknown artist",
+          "channel": "Allan Dacera Peterson's World",
+          "duration": "3:45",
+          "views": "24K views",
+          "url": "https://www.youtube.com/watch?v=NS3OrLgd31c",
+          "published": "3 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/2 Overkill.band/Media/Audio Files/Rio (2009 Remaster)_vocals_split_by_lalalai.wav",
+      "filename": "Rio (2009 Remaster)_vocals_split_by_lalalai.wav",
+      "artist": "Unknown Artist",
+      "title": "Rio (2009 Remaster)_vocals_split_by_lalalai",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/2 Overkill.band/Media/Audio Files/Rio (2009 Remaster)_no_vocals_split_by_lalalai.wav",
+      "filename": "Rio (2009 Remaster)_no_vocals_split_by_lalalai.wav",
+      "artist": "Unknown Artist",
+      "title": "Rio (2009 Remaster)_no_vocals_split_by_lalalai",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/32 Enough.band/Media/Audio Files/accompaniment.wav",
+      "filename": "accompaniment.wav",
+      "artist": "Unknown Artist",
+      "title": "accompaniment",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 95,
+      "match_quality": "Excellent match",
+      "analysis": "✅ Readily available",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist – Party Tyme Karaoke   Oldies 1 Instrumental",
+          "channel": "slavprussiaottomanfinlandUSUK",
+          "duration": "25:49",
+          "views": "211 views",
+          "url": "https://www.youtube.com/watch?v=cdu-tbJqM_w",
+          "published": "7 months ago"
+        },
+        {
+          "title": "Unknown artist/Medley with Mandolin/Guitar Accompaniment",
+          "channel": "David Sawyer",
+          "duration": "4:42",
+          "views": "32 views",
+          "url": "https://www.youtube.com/watch?v=P6GieYSC5_k",
+          "published": "5 years ago"
+        },
+        {
+          "title": "Each step I take - Piano accompaniment| Unknown artist",
+          "channel": "Allan Dacera Peterson's World",
+          "duration": "3:45",
+          "views": "24K views",
+          "url": "https://www.youtube.com/watch?v=NS3OrLgd31c",
+          "published": "3 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/32 Enough.band/Media/Audio Files/Rio (2009 Remaster)_vocals_split_by_lalalai.wav",
+      "filename": "Rio (2009 Remaster)_vocals_split_by_lalalai.wav",
+      "artist": "Unknown Artist",
+      "title": "Rio (2009 Remaster)_vocals_split_by_lalalai",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/32 Enough.band/Media/Audio Files/accompaniment_1.wav",
+      "filename": "accompaniment_1.wav",
+      "artist": "Unknown Artist",
+      "title": "accompaniment_1",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 69,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Sigfrid Karg-Elert - Sinfonische Kanzone op.114",
+          "channel": "FOAM Flute Orchestral Accompaniment Mockups",
+          "duration": "8:26",
+          "views": "3.5K views",
+          "url": "https://www.youtube.com/watch?v=mkHa_xy4RiQ",
+          "published": "1 year ago"
+        },
+        {
+          "title": "Hummel - Trumpet Concerto: I. Allegro con Spirito (Accompaniment, Play along, Backing track)",
+          "channel": "Trumpet Records",
+          "duration": "10:08",
+          "views": "146K views",
+          "url": "https://www.youtube.com/watch?v=myLqOv8kT6g",
+          "published": "5 years ago"
+        },
+        {
+          "title": "Alto Saxophone Sonata, Op. 19 (Piano Accompaniment) : I. With vigor",
+          "channel": "Release - Topic",
+          "duration": "4:35",
+          "views": "34K views",
+          "url": "https://www.youtube.com/watch?v=Yb82JiF6RA4",
+          "published": null
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/WillItRio/32 Enough.band/Media/Audio Files/Rio (2009 Remaster)_no_vocals_split_by_lalalai.wav",
+      "filename": "Rio (2009 Remaster)_no_vocals_split_by_lalalai.wav",
+      "artist": "Unknown Artist",
+      "title": "Rio (2009 Remaster)_no_vocals_split_by_lalalai",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Project 2.band/Media/Audio Files/Natural Strum#01.wav",
+      "filename": "Natural Strum#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Natural Strum#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 40,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "GOOD GUITAR isn't IMPRESSIVE",
+          "channel": "Redlight Blue",
+          "duration": "1:45",
+          "views": "883K views",
+          "url": "https://www.youtube.com/watch?v=nJyYEOyjM30",
+          "published": "1 year ago"
+        },
+        {
+          "title": "Making normal chords DREAMY!",
+          "channel": "Sound Guitar Lessons With Jared",
+          "duration": "0:57",
+          "views": "136K views",
+          "url": "https://www.youtube.com/watch?v=csXl4K5oats",
+          "published": "2 years ago"
+        },
+        {
+          "title": "How to FAKE guitar skills in 2 SECONDS",
+          "channel": "Orangewood",
+          "duration": "0:29",
+          "views": "1.5M views",
+          "url": "https://www.youtube.com/watch?v=SAtwbIaMgAE",
+          "published": "1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/LoFi (no loops)/Project1.band/Media/Audio Files/LTHC_81_B_KEYS_RHODES_SOFTY.wav",
+      "filename": "LTHC_81_B_KEYS_RHODES_SOFTY.wav",
+      "artist": "Unknown Artist",
+      "title": "LTHC_81_B_KEYS_RHODES_SOFTY",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Theme Song (using loops).band/Media/Audio Files/Cool Jazz Combo#05.wav",
+      "filename": "Cool Jazz Combo#05.wav",
+      "artist": "Unknown Artist",
+      "title": "Cool Jazz Combo#05",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 44,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "Trio & Trio Jazz Band of Trio Jazz Piano: 2 HOURS of Trio Jazz Music",
+          "channel": "Escape One",
+          "duration": "2:01:07",
+          "views": "315K views",
+          "url": "https://www.youtube.com/watch?v=vFoHuL359F4",
+          "published": "9 years ago"
+        },
+        {
+          "title": "Melissa Aldana Crash Trio: The Checkout Live at Berklee",
+          "channel": "WBGO",
+          "duration": "50:11",
+          "views": "152K views",
+          "url": "https://www.youtube.com/watch?v=cnGVYT3m39o",
+          "published": "11 years ago"
+        },
+        {
+          "title": "Monica Ramey & Beegie Adair - \"Make Someone Happy\" - Nashville Jazz Workshop",
+          "channel": "Nashvillejazz",
+          "duration": "5:25",
+          "views": "405K views",
+          "url": "https://www.youtube.com/watch?v=fEmG6_lNL9A",
+          "published": "13 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Rat Tracks Theme Song.band/Media/Audio Files/Theme Needs Lyrics 2_4#01.wav",
+      "filename": "Theme Needs Lyrics 2_4#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Theme Needs Lyrics 2_4#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Rat Tracks Theme Song.band/Media/Audio Files/Warm British Combo#01.wav",
+      "filename": "Warm British Combo#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Warm British Combo#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 48,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "I Cut A ULTRA RARE Pokémon Card #shorts #pokemon #pokemoncards",
+          "channel": "Brandon’s Randoms",
+          "duration": "0:16",
+          "views": "6.2M views",
+          "url": "https://www.youtube.com/watch?v=S3Z2qfCweEw",
+          "published": "2 years ago"
+        },
+        {
+          "title": "NEVER trusting this lip balm again 💀",
+          "channel": "faeriequeens",
+          "duration": "0:10",
+          "views": "2.3M views",
+          "url": "https://www.youtube.com/watch?v=WrkoDa3Qzh8",
+          "published": "8 months ago"
+        },
+        {
+          "title": "The messy makeup videos are back 😜 #shortsfeed #makeup #extrememakeup",
+          "channel": "SnatchedbyWill",
+          "duration": "0:38",
+          "views": "18M views",
+          "url": "https://www.youtube.com/watch?v=auJWSZTkDtI",
+          "published": "2 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Rat Tracks Theme Song.band/Media/Audio Files/Guitar 2#01.wav",
+      "filename": "Guitar 2#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Guitar 2#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 78,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Track 1 by Unknown Artist",
+          "channel": "Phi Jam",
+          "duration": "4:16",
+          "views": "2K views",
+          "url": "https://www.youtube.com/watch?v=18xKWkC_-JM",
+          "published": "10 years ago"
+        },
+        {
+          "title": "2 Ann Banham & Unknown Artist    Spanish Guitar Tune 2",
+          "channel": "Bugster42",
+          "duration": "0:35",
+          "views": "36 views",
+          "url": "https://www.youtube.com/watch?v=HlmgrRL8-kQ",
+          "published": "6 years ago"
+        },
+        {
+          "title": "Ana Vidovic plays Asturias by Isaac Albéniz on a Jim Redgate classical guitar",
+          "channel": "SiccasGuitars",
+          "duration": "7:15",
+          "views": "48M views",
+          "url": "https://www.youtube.com/watch?v=inBKFMB-yPg",
+          "published": "10 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Rat Tracks Theme Song.band/Media/Audio Files/Theme Needs Lyrics 2_8#09.wav",
+      "filename": "Theme Needs Lyrics 2_8#09.wav",
+      "artist": "Unknown Artist",
+      "title": "Theme Needs Lyrics 2_8#09",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 41,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "simple math",
+          "channel": "Gianna Joyce",
+          "duration": "0:12",
+          "views": "45M views",
+          "url": "https://www.youtube.com/watch?v=85WsCSmW3Xc",
+          "published": "2 years ago"
+        },
+        {
+          "title": "The Most Wholesome Math Equation",
+          "channel": "Surfnboy Shorts",
+          "duration": "0:16",
+          "views": "177M views",
+          "url": "https://www.youtube.com/watch?v=bc-OoJrrMuk",
+          "published": "1 year ago"
+        },
+        {
+          "title": "Awhimai Fraser - Get Lost (from \"Moana 2\") (Lyrics)",
+          "channel": "24am Music",
+          "duration": "3:12",
+          "views": "382K views",
+          "url": "https://www.youtube.com/watch?v=L9f0ii5Qkgo",
+          "published": "6 months ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Rat Tracks Theme Song.band/Media/Audio Files/Clean Studio Stack#02.wav",
+      "filename": "Clean Studio Stack#02.wav",
+      "artist": "Unknown Artist",
+      "title": "Clean Studio Stack#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 43,
+      "match_quality": "Poor match",
+      "analysis": "❓ Poor matches - potentially rare",
+      "youtube_details": [
+        {
+          "title": "Sprinters Fighting For It 😅",
+          "channel": "RunnnSphere",
+          "duration": "0:06",
+          "views": "69M views",
+          "url": "https://www.youtube.com/watch?v=rzyX9cHTV2Y",
+          "published": "2 years ago"
+        },
+        {
+          "title": "How to get clear vocals on bandlab #shorts #bandlab #vocalpreset",
+          "channel": "X2messiah",
+          "duration": "0:20",
+          "views": "382K views",
+          "url": "https://www.youtube.com/watch?v=io9DBy8JMkQ",
+          "published": "1 year ago"
+        },
+        {
+          "title": "Work Offfice Lofi 💳 Deep Focus - Concentration [chill lo-fi hip hop beats]",
+          "channel": "𝗖 𝗛 𝗜 𝗟 𝗟   𝗩 𝗜 𝗟 𝗟 𝗔 𝗚 𝗘",
+          "duration": "24:17:28",
+          "views": "898K views",
+          "url": "https://www.youtube.com/watch?v=guan9sTiXM0",
+          "published": "2 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Marie#01.wav",
+      "filename": "Marie#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Marie#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 77,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown artist on Marie curie beat. Remix ig live",
+          "channel": "Vlo23 -",
+          "duration": "0:34",
+          "views": "426 views",
+          "url": "https://www.youtube.com/watch?v=WND6nyndpkY",
+          "published": "2 years ago"
+        },
+        {
+          "title": "YouTubers who got killed doing pranks😰 #shorts",
+          "channel": "Kurlyheadmarr",
+          "duration": "0:29",
+          "views": "11M views",
+          "url": "https://www.youtube.com/watch?v=zYSokDkcbOs",
+          "published": "3 years ago"
+        },
+        {
+          "title": "Chopin Etude ~ Tristesse (이별의 노래),  Unknown Artist & Marie-Anne Izmajlov ڪے 🌸🍃",
+          "channel": "Cmlavita",
+          "duration": "5:37",
+          "views": "1.6K views",
+          "url": "https://www.youtube.com/watch?v=LOL0ulTaSTQ",
+          "published": "3 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Untitled_1#02.wav",
+      "filename": "Untitled_1#02.wav",
+      "artist": "Unknown Artist",
+      "title": "Untitled_1#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 72,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Untitled (Arktapes 003 B1 - Space Version)",
+          "channel": "Arktapes - Topic",
+          "duration": "6:52",
+          "views": "101 views",
+          "url": "https://www.youtube.com/watch?v=57pJyAlFN-E",
+          "published": null
+        },
+        {
+          "title": "Technosaurus - B2 Untitled",
+          "channel": "Tom Stephenson",
+          "duration": "6:06",
+          "views": "771 views",
+          "url": "https://www.youtube.com/watch?v=vcrXKEnT_Oc",
+          "published": "5 years ago"
+        },
+        {
+          "title": "Leonel Castillo - Untitled_1",
+          "channel": "Gareji",
+          "duration": "7:41",
+          "views": "2.2K views",
+          "url": "https://www.youtube.com/watch?v=yCMHdDcXyzE",
+          "published": "8 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Untitled_1#03.wav",
+      "filename": "Untitled_1#03.wav",
+      "artist": "Unknown Artist",
+      "title": "Untitled_1#03",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 74,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Untitled_1#03.aif",
+          "channel": "Nodrogolaj - Topic",
+          "duration": "14:05",
+          "views": "129 views",
+          "url": "https://www.youtube.com/watch?v=Pm1CaAtN2J4",
+          "published": null
+        },
+        {
+          "title": "Untitled_1#04",
+          "channel": "Release - Topic",
+          "duration": "7:55",
+          "views": "2 views",
+          "url": "https://www.youtube.com/watch?v=6YjVjF-4BiI",
+          "published": null
+        },
+        {
+          "title": "Untitled Session 1",
+          "channel": "3 - Topic",
+          "duration": "2:40",
+          "views": "32 views",
+          "url": "https://www.youtube.com/watch?v=BznOISxTq14",
+          "published": null
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Untitled_1#01.wav",
+      "filename": "Untitled_1#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Untitled_1#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 72,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Untitled_1#04",
+          "channel": "Release - Topic",
+          "duration": "7:55",
+          "views": "2 views",
+          "url": "https://www.youtube.com/watch?v=6YjVjF-4BiI",
+          "published": null
+        },
+        {
+          "title": "Untitled_1#07",
+          "channel": "Release - Topic",
+          "duration": "1:11",
+          "views": "No views",
+          "url": "https://www.youtube.com/watch?v=ge3ocgrDtQo",
+          "published": null
+        },
+        {
+          "title": "Dubby House - Mix 06 [live 25 June 2023]",
+          "channel": "S c i - N i '95 [house & tech]",
+          "duration": "1:35:06",
+          "views": "711 views",
+          "url": "https://www.youtube.com/watch?v=tkxXn9HvxEw",
+          "published": "1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Untitled_1#04.wav",
+      "filename": "Untitled_1#04.wav",
+      "artist": "Unknown Artist",
+      "title": "Untitled_1#04",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 72,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Untitled_1#04",
+          "channel": "Release - Topic",
+          "duration": "7:55",
+          "views": "2 views",
+          "url": "https://www.youtube.com/watch?v=6YjVjF-4BiI",
+          "published": null
+        },
+        {
+          "title": "Untitled (Arktapes 003 B1 - Space Version)",
+          "channel": "Arktapes - Topic",
+          "duration": "6:52",
+          "views": "101 views",
+          "url": "https://www.youtube.com/watch?v=57pJyAlFN-E",
+          "published": null
+        },
+        {
+          "title": "Dubby House - Mix 06 [live 25 June 2023]",
+          "channel": "S c i - N i '95 [house & tech]",
+          "duration": "1:35:06",
+          "views": "711 views",
+          "url": "https://www.youtube.com/watch?v=tkxXn9HvxEw",
+          "published": "1 year ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/🎺#01.wav",
+      "filename": "🎺#01.wav",
+      "artist": "Unknown Artist",
+      "title": "🎺#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 70,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist - Sad Horn [RA01]",
+          "channel": "HATE",
+          "duration": "5:25",
+          "views": "4.8K views",
+          "url": "https://www.youtube.com/watch?v=Otna6NEQvaU",
+          "published": "6 years ago"
+        },
+        {
+          "title": "Unknown Artist - Ijzeren Rots",
+          "channel": "skambas",
+          "duration": "8:47",
+          "views": "181K views",
+          "url": "https://www.youtube.com/watch?v=_YliCdOEXB0",
+          "published": "7 years ago"
+        },
+        {
+          "title": "Unknown Artist - A1 [CREATURES004]",
+          "channel": "trommel",
+          "duration": "6:20",
+          "views": "627K views",
+          "url": "https://www.youtube.com/watch?v=2f6G0qBtNnM",
+          "published": "6 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/🎺#03.wav",
+      "filename": "🎺#03.wav",
+      "artist": "Unknown Artist",
+      "title": "🎺#03",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 70,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist - Untitled 3",
+          "channel": "7296272962",
+          "duration": "7:35",
+          "views": "5.1K views",
+          "url": "https://www.youtube.com/watch?v=D1S1UgFYp28",
+          "published": "6 years ago"
+        },
+        {
+          "title": "Unknown Artist - #A9E4FF B (ODE)",
+          "channel": "h long",
+          "duration": "13:08",
+          "views": "63K views",
+          "url": "https://www.youtube.com/watch?v=aJs9mD4i3zQ",
+          "published": "7 years ago"
+        },
+        {
+          "title": "Unknown Artist - Ijzeren Rots [DIGWAH03]",
+          "channel": "playedby",
+          "duration": "8:47",
+          "views": "2.5M views",
+          "url": "https://www.youtube.com/watch?v=GPksiijRKVw",
+          "published": "7 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/🎺#02.wav",
+      "filename": "🎺#02.wav",
+      "artist": "Unknown Artist",
+      "title": "🎺#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 70,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist - Untitled 02",
+          "channel": "Houseum",
+          "duration": "7:56",
+          "views": "6.8M views",
+          "url": "https://www.youtube.com/watch?v=4ZQ_YXaO3I0",
+          "published": "7 years ago"
+        },
+        {
+          "title": "Unknown Artist ‎– .02",
+          "channel": "Dub Techno TV",
+          "duration": "7:46",
+          "views": "589 views",
+          "url": "https://www.youtube.com/watch?v=bIlN3logdIE",
+          "published": "6 years ago"
+        },
+        {
+          "title": "Untitled 02",
+          "channel": "Release - Topic",
+          "duration": "8:13",
+          "views": "1.1M views",
+          "url": "https://www.youtube.com/watch?v=ji4i_GfQn9g",
+          "published": null
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Nathan#01.wav",
+      "filename": "Nathan#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Nathan#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 66,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "01. That's The Vision Entrance - Unknown Artist",
+          "channel": "John Nathan Junior 84",
+          "duration": "1:22",
+          "views": "5 views",
+          "url": "https://www.youtube.com/watch?v=iSm9sm-HcjY",
+          "published": "11 months ago"
+        },
+        {
+          "title": "THE UNKNOWN ARTIST \"PROMO\"",
+          "channel": "Nathan i",
+          "duration": "0:45",
+          "views": "256 views",
+          "url": "https://www.youtube.com/watch?v=1-VhnY8KP-A",
+          "published": "11 years ago"
+        },
+        {
+          "title": "Unknown Artist 1   Do You Feel Me 1991",
+          "channel": "Stephan Winn",
+          "duration": "4:30",
+          "views": "131 views",
+          "url": "https://www.youtube.com/watch?v=Z8nW8sJGruk",
+          "published": "13 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Nathan#02.wav",
+      "filename": "Nathan#02.wav",
+      "artist": "Unknown Artist",
+      "title": "Nathan#02",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 54,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist -- Dub Chronicles 2 A1",
+          "channel": "kenoba",
+          "duration": "7:30",
+          "views": "5.8K views",
+          "url": "https://www.youtube.com/watch?v=zHuOWShyX08",
+          "published": "13 years ago"
+        },
+        {
+          "title": "THE UNKNOWN ARTIST \"PROMO\"",
+          "channel": "Nathan i",
+          "duration": "0:45",
+          "views": "256 views",
+          "url": "https://www.youtube.com/watch?v=1-VhnY8KP-A",
+          "published": "11 years ago"
+        },
+        {
+          "title": "Unknown Artist - Kcik 20",
+          "channel": "Houseum",
+          "duration": "6:26",
+          "views": "191K views",
+          "url": "https://www.youtube.com/watch?v=u82bMmDBXSw",
+          "published": "4 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Tonight You Belong To Me.wav",
+      "filename": "Tonight You Belong To Me.wav",
+      "artist": "Unknown Artist",
+      "title": "Tonight You Belong To Me",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 100,
+      "match_quality": "Very good match",
+      "analysis": "✅ Readily available",
+      "youtube_details": [
+        {
+          "title": "Tonight you belong to me [ MURDER DRONES ]( short test animation )",
+          "channel": "UNKNOWN",
+          "duration": "0:24",
+          "views": "45K views",
+          "url": "https://www.youtube.com/watch?v=SXolZnkowYU",
+          "published": "6 months ago"
+        },
+        {
+          "title": "\"Tonight You Belong to Me\" ver RafScrap ft. @LaceySqueaks",
+          "channel": "RafScrap",
+          "duration": "1:33",
+          "views": "105K views",
+          "url": "https://www.youtube.com/watch?v=UrdUI6cvoM0",
+          "published": "3 years ago"
+        },
+        {
+          "title": "Patience and Prudence - Tonight You Belong To Me Lyric",
+          "channel": "Veni Manek",
+          "duration": "2:00",
+          "views": "6.1M views",
+          "url": "https://www.youtube.com/watch?v=20In-EWFOhc",
+          "published": "12 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Nathan#03.wav",
+      "filename": "Nathan#03.wav",
+      "artist": "Unknown Artist",
+      "title": "Nathan#03",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 63,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "The UNKNOWN ARTIST (cod2)",
+          "channel": "Nathan i",
+          "duration": "10:01",
+          "views": "304 views",
+          "url": "https://www.youtube.com/watch?v=7mAwxD2o6ts",
+          "published": "11 years ago"
+        },
+        {
+          "title": "Nathan Fake - Unreleased Track 03",
+          "channel": "retardedfolks",
+          "duration": "7:32",
+          "views": "289 views",
+          "url": "https://www.youtube.com/watch?v=0NpKheJZg_o",
+          "published": "8 years ago"
+        },
+        {
+          "title": "The Lion King (Original Motion Picture Soundtrack) El Rey León [LP Full Album]",
+          "channel": "Ed Mycó",
+          "duration": "22:29",
+          "views": "29 views",
+          "url": "https://www.youtube.com/watch?v=rH-JJgmyDRM",
+          "published": "3 months ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Tonight You Belong To Me.band/Media/Audio Files/Navin#01.wav",
+      "filename": "Navin#01.wav",
+      "artist": "Unknown Artist",
+      "title": "Navin#01",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 75,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown artist _English DJ song",
+          "channel": "world beautiful snakes YT",
+          "duration": "3:20",
+          "views": "17 views",
+          "url": "https://www.youtube.com/watch?v=hbdke-dWPOg",
+          "published": "3 years ago"
+        },
+        {
+          "title": "Best motivation short status video | BY UNKNOWN ARTIST  | 2020",
+          "channel": "unknown artist",
+          "duration": "0:21",
+          "views": "293 views",
+          "url": "https://www.youtube.com/watch?v=FiIkmbqgQe0",
+          "published": "4 years ago"
+        },
+        {
+          "title": "Real Makeup Vs. Ghost Makeup 😱😱😳 #shorts #video #viralshorts #makeup #makeuptutorials",
+          "channel": "Quick Makeup Tutorials",
+          "duration": "0:15",
+          "views": "18M views",
+          "url": "https://www.youtube.com/watch?v=ZLvPevfSuEc",
+          "published": "4 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/My Song 9.band/Media/Audio Files/Nice Room#03.wav",
+      "filename": "Nice Room#03.wav",
+      "artist": "Unknown Artist",
+      "title": "Nice Room#03",
+      "album": "",
+      "year": "",
+      "youtube_results": 5,
+      "best_match_score": 70,
+      "match_quality": "Good match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Unknown Artist - B1. Calabi-Yau Room's - Shop EP 03",
+          "channel": "formdata",
+          "duration": "4:50",
+          "views": "382 views",
+          "url": "https://www.youtube.com/watch?v=PdMaUXylLxo",
+          "published": "5 years ago"
+        },
+        {
+          "title": "Room 303 - Unknown Artist",
+          "channel": "brittany darby",
+          "duration": "3:25",
+          "views": "69 views",
+          "url": "https://www.youtube.com/watch?v=qaiY-13lXzE",
+          "published": "14 years ago"
+        },
+        {
+          "title": "Unknown Artist - Psy Visions [NNMS03]",
+          "channel": "Rayzeh",
+          "duration": "8:40",
+          "views": "262K views",
+          "url": "https://www.youtube.com/watch?v=ILTY-pDhlOI",
+          "published": "5 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/CW Theme Loop - 6:28:21.mp3",
+      "filename": "CW Theme Loop - 6:28:21.mp3",
+      "artist": "CW Theme Loop",
+      "title": "6:28:21",
+      "album": "",
+      "year": "",
+      "youtube_results": 1,
+      "best_match_score": 52,
+      "match_quality": "Possible match",
+      "analysis": "⚠️  Available but might be different version",
+      "youtube_details": [
+        {
+          "title": "Friday Weather Forecast - Mar. 26, 2021",
+          "channel": "CBS News Sacramento",
+          "duration": "0:59",
+          "views": "333 views",
+          "url": "https://www.youtube.com/watch?v=lIcpNZmaB0M",
+          "published": "4 years ago"
+        }
+      ]
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Podcast Defaults - Pilot 6-4-21 - Kenny.m4a",
+      "filename": "Podcast Defaults - Pilot 6-4-21 - Kenny.m4a",
+      "artist": "Podcast Defaults",
+      "title": "Pilot 6-4-21 - Kenny",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    },
+    {
+      "file_path": "/Users/marksakamoto/Music/GarageBand/Podcast Defaults - Pilot 6-4-21 - Mark.m4a",
+      "filename": "Podcast Defaults - Pilot 6-4-21 - Mark.m4a",
+      "artist": "Podcast Defaults",
+      "title": "Pilot 6-4-21 - Mark",
+      "album": "",
+      "year": "",
+      "youtube_results": 0,
+      "best_match_score": 0,
+      "match_quality": "No results",
+      "analysis": "❌ Not found - likely rare",
+      "youtube_details": []
+    }
+  ]
+}
