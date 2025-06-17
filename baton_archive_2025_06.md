@@ -116,4 +116,51 @@ For the next session, consider the following steps:
 
 # Baton Entry - 2025-06-09 20:45:42 📜
 
-[Previous entries moved to archive] 
+[Previous entries moved to archive]
+
+## Baton Entry - 2025-06-12 18:20:00 💾
+
+Version: [backup-drive-mounted-success]
+
+### Session Summary
+
+**USB BACKUP DRIVE SUCCESSFULLY MOUNTED!** 🎉
+
+Successfully mounted the Seagate Backup Plus Slim 1TB drive on Ubuntu:
+- **✅ DETECTED:** System properly recognizes drive as `/dev/sda1`
+- **✅ MOUNTED:** Accessible at `/media/gmk/seagate`
+- **✅ SPACE:** 869GB free out of 916GB total
+- **✅ PERMISSIONS:** Full read/write access confirmed
+
+### Current Drive Contents
+**Existing Backup Structure:**
+```
+/media/gmk/seagate/
+├── database_backup_* (June 2-6 backups)
+├── jellyfin/
+├── paperless/
+└── lost+found/
+```
+
+### Drive Details
+- **Model:** Seagate Backup Plus Slim Portable Drive 1TB
+- **Device:** `/dev/sda1` (931.5GB partition)
+- **Mount Point:** `/media/gmk/seagate`
+- **Filesystem:** Auto-detected and mounted successfully
+- **Access:** Full read/write permissions for user 'gmk'
+
+### Mount Command Used
+```bash
+sudo mkdir -p /media/gmk/seagate
+sudo mount /dev/sda1 /media/gmk/seagate
+```
+
+### Next Steps
+1. **🔄 IMMEDIATE:** Consider setting up automatic mounting via `/etc/fstab`
+2. **📋 PLANNED:** Organize backup directories structure
+3. **🔧 FUTURE:** Implement backup scripts and schedules
+4. **📊 MONITOR:** Track backup sizes and space usage
+
+*Running on Ubuntu - USB drive successfully mounted and operational*
+
+--- 

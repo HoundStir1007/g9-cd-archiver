@@ -881,16 +881,25 @@ The network expansion has been completed with the following setup:
 *Last updated: 2025-05-19*
 *For historical system state, see [System State Snapshot](archive/snapshots/system_state_20250516.md)*
 
-## TODO List
-- [ ] Document UPS installation when completed
-- [ ] Document Apple TV power source
-- [ ] Document bedroom switch mounting location
-- [ ] Document bedroom switch power source
-- [ ] Document cable routing paths
-- [ ] Document wall plate/jack locations
-- [ ] Document WiFi extender planned location
-- [ ] Document cable management details
+## TODO List (Updated 2025-12-27)
+- [x] ✅ **Network Infrastructure Documented** - Comprehensive documentation complete
+- [x] ✅ **Active Services Documented** - Paperless-ngx and Jellyfin operational status confirmed
+- [x] ✅ **Switch Configurations Documented** - Both 8-port and 5-port switches fully documented
+- [x] ✅ **Tailscale Network Documented** - Complete VPN setup and access methods documented
+
+### Physical Installation Details (For Future Reference)
+- [ ] Document UPS installation when completed (APC BN450M - purchased and tested)
+- [ ] Document Apple TV power source (currently via ICS from G9 Ethernet 2)
+- [ ] Document bedroom switch mounting location (Elliot's room)
+- [ ] Document bedroom switch power source  
+- [ ] Document cable routing paths through rental property
+- [ ] Document wall plate/jack locations (rental constraints)
+- [ ] Document WiFi extender planned location (bedroom switch port 3)
+
+### Performance Monitoring (Future Enhancement)
 - [ ] Measure and document network performance metrics
-- [ ] Set up automated performance monitoring
+- [ ] Set up automated performance monitoring (integration with Tailscale monitoring)
 - [ ] Create performance baseline documentation
-- [ ] Document acceptable performance thresholds 
+- [ ] Document acceptable performance thresholds
+
+**NOTE:** Primary network infrastructure documentation is **COMPLETE** for operational purposes. Remaining items are physical details and performance monitoring enhancements. 
