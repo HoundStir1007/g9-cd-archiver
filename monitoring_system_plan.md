@@ -93,7 +93,7 @@ The current monitoring system failed to notify about server downtime due to:
   - [ ] Slack webhook (optional)
 
 ### 6. 🔄 Automation & Scheduling
-- [ ] Create systemd service for monitoring
+- [x] ✅ Create systemd service for monitoring
   ```bash
   # /etc/systemd/system/server-monitoring.service
   [Unit]
@@ -101,16 +101,15 @@ The current monitoring system failed to notify about server downtime due to:
   After=network.target
 
   [Service]
-  Type=simple
+  Type=oneshot
   User=gmk
-  ExecStart=/usr/bin/python3 /opt/monitoring/monitor.py
-  Restart=always
-  RestartSec=5
+  ExecStart=/opt/monitoring/venv/bin/python /opt/monitoring/monitor.py
+  RemainAfterExit=no
 
   [Install]
   WantedBy=multi-user.target
   ```
-- [ ] Create systemd timer for regular checks
+- [x] ✅ Create systemd timer for regular checks
   ```bash
   # /etc/systemd/system/server-monitoring.timer
   [Unit]
@@ -124,7 +123,7 @@ The current monitoring system failed to notify about server downtime due to:
   [Install]
   WantedBy=timers.target
   ```
-- [ ] Set up log rotation
+- [x] ✅ Set up log rotation
   ```bash
   # /etc/logrotate.d/server-monitoring
   /var/log/monitoring/*.log {

@@ -8,15 +8,23 @@ This guide explains how to set up the monitoring system as a systemd service on 
 2. Required Python packages:
    ```bash
    sudo apt update
-   sudo apt install python3-pip
-   pip3 install requests psutil
+   sudo apt install python3-pip python3-venv
+   ```
+
+3. Create virtual environment:
+   ```bash
+   sudo mkdir -p /opt/monitoring
+   cd /opt/monitoring
+   sudo python3 -m venv venv
+   sudo ./venv/bin/pip install requests psutil
    ```
 
 ## 📁 File Setup
 
-1. Create the monitoring directory:
+1. Create the monitoring directory structure:
    ```bash
    sudo mkdir -p /opt/monitoring/secrets
+   sudo mkdir -p /var/log/monitoring
    ```
 
 2. Copy the monitoring script:
@@ -29,11 +37,6 @@ This guide explains how to set up the monitoring system as a systemd service on 
    ```bash
    echo "your-email-password" | sudo tee /opt/monitoring/secrets/smtp_password.txt
    sudo chmod 600 /opt/monitoring/secrets/smtp_password.txt
-   ```
-
-4. Create log directory:
-   ```bash
-   sudo mkdir -p /var/log/monitoring
    ```
 
 ## ⚙️ SystemD Service Setup
@@ -50,11 +53,10 @@ This guide explains how to set up the monitoring system as a systemd service on 
    After=network.target
 
    [Service]
-   Type=simple
-   User=root
-   ExecStart=/usr/bin/python3 /opt/monitoring/monitor.py
-   Restart=always
-   RestartSec=5
+   Type=oneshot
+   User=gmk
+   ExecStart=/opt/monitoring/venv/bin/python /opt/monitoring/monitor.py
+   RemainAfterExit=no
 
    [Install]
    WantedBy=multi-user.target
@@ -93,7 +95,7 @@ This guide explains how to set up the monitoring system as a systemd service on 
        delaycompress
        missingok
        notifempty
-       create 0640 root root
+       create 0640 gmk gmk
    }
    ```
 
@@ -119,7 +121,7 @@ This guide explains how to set up the monitoring system as a systemd service on 
    sudo systemctl status server-monitoring.timer
    ```
 
-5. Run the service once manually to test:
+5. Test the service manually:
    ```bash
    sudo systemctl start server-monitoring.service
    ```
@@ -145,7 +147,7 @@ If you encounter issues:
 
 3. Common issues:
    - **Permission denied**: Check file permissions on script and log directory
-   - **Import error**: Ensure all required Python packages are installed
+   - **Import error**: Ensure all required Python packages are installed in the virtual environment
    - **Email errors**: Verify SMTP settings and password file
    - **Uptime Kuma errors**: Confirm Uptime Kuma is running and push URLs are correct
 
@@ -185,12 +187,15 @@ If you need to update the configuration:
    sudo nano /opt/monitoring/monitor.py
    ```
 
-2. Restart the service:
-   ```bash
-   sudo systemctl restart server-monitoring.service
-   ```
+2. The timer will automatically run the updated script on the next scheduled execution
 
 3. Check the logs to confirm changes:
    ```bash
    sudo tail -f /var/log/monitoring/server_monitor.log
-   ``` 
+   ```
+
+## ⚠️ Important Notes
+
+- **Service Type**: Uses `Type=oneshot` because it's triggered by a timer, not a long-running service
+- **No Restart Policy**: The timer handles scheduling; the service should complete and exit
+- **Virtual Environment**: Uses dedicated Python virtual environment for isolated dependencies 

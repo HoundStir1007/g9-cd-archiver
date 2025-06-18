@@ -1,0 +1,12 @@
+[Unit]
+Description=Server Monitoring Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=gmk
+ExecStart=/opt/monitoring/venv/bin/python /opt/monitoring/monitor.py
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target 
