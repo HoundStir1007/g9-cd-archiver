@@ -17,7 +17,7 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'America/Los_Angeles'
-      WEBPASSWORD: 'changeme'  # You should change this after first login
+      WEBPASSWORD: '${PIHOLE_PASSWORD:-changeme}'  # Set via PIHOLE_PASSWORD env var
       FTLCONF_LOCAL_IPV4: '100.91.157.19'  # Your Tailscale IP
     volumes:
       - './etc-pihole:/etc/pihole'
@@ -35,10 +35,12 @@ docker compose up -d
 echo "Waiting for Pi-hole to start..."
 sleep 30
 
-# Show the admin password
+# Show the admin password info
 echo "Pi-hole is now running!"
 echo "Web interface: http://100.91.157.19/admin"
-echo "Default password: changeme"
+echo "Password is set via PIHOLE_PASSWORD environment variable in .env file"
 echo ""
-echo "To change the password, run:"
-echo "docker exec -it pihole pihole -a -p NEWPASSWORD" 
+echo "To change the password:"
+echo "1. Edit pihole/.env and update PIHOLE_PASSWORD"
+echo "2. Restart with: docker-compose down && docker-compose up -d"
+echo "Or manually: docker exec -it pihole pihole -a -p NEWPASSWORD" 

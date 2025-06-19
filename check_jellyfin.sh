@@ -2,7 +2,7 @@
 
 # Configuration
 JELLYFIN_URLS=(
-    "http://192.168.0.182:8096/health"  # Local network
+    "http://192.168.0.178:8096/health"  # Local network
     "http://100.91.157.19:8096/health"  # Tailscale
 )
 UPTIME_KUMA_PUSH_URL="http://100.91.157.19:3001/api/push/FsDZQkf7na"

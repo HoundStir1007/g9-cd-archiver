@@ -46,7 +46,7 @@ The current monitoring system failed to notify about server downtime due to:
 
 ### 3. 📡 Service-Specific Monitoring
 - [ ] Configure Jellyfin monitoring
-  - [ ] Health check endpoint: `http://192.168.0.182:8096/health`
+  - [ ] Health check endpoint: `http://192.168.0.178:8096/health`
   - [ ] Tailscale endpoint: `http://100.91.157.19:8096/health`
   - [ ] Set appropriate timeout and retry parameters
   - [ ] Implement content validation for responses

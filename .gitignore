@@ -1,0 +1,8 @@
+# Environment files (contain secrets)
+.env
+pihole/.env
+*/.env
+
+# Allow .env.template files (these are safe to commit)
+!*.env.template
+!*/.env.template

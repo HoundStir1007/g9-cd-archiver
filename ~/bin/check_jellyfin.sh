@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-JELLYFIN_HEALTH_URL="http://192.168.0.182:8096/health"
+JELLYFIN_HEALTH_URL="http://192.168.0.178:8096/health"
 UPTIME_KUMA_PUSH_URL="http://100.91.157.19:3001/api/push/FsDZQkf7na"
 TIMEOUT=5
 MAX_RETRIES=2

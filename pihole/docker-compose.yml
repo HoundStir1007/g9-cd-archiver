@@ -10,7 +10,7 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'America/Los_Angeles'
-      WEBPASSWORD: 'changeme'  # You should change this after first login
+      WEBPASSWORD: '${PIHOLE_PASSWORD:-changeme}'  # Set via PIHOLE_PASSWORD env var
       FTLCONF_LOCAL_IPV4: '100.91.157.19'  # Your Tailscale IP
     volumes:
       - './etc-pihole:/etc/pihole'

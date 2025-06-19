@@ -23,7 +23,7 @@ CONFIG = {
     "services": [
         {
             "name": "Jellyfin",
-            "local_url": "http://192.168.0.182:8096/health",
+            "local_url": "http://192.168.0.178:8096/health",
             "tailscale_url": "http://100.91.157.19:8096/health",
             "expected_content": "Healthy",
             "timeout": 5,
@@ -77,7 +77,7 @@ CONFIG = {
         "smtp_server": "smtp.gmail.com",
         "smtp_port": 587,
         "username": "msakamoto+homelab@gmail.com",
-        "password_file": "/opt/monitoring/secrets/smtp_password.txt",
+        "password_env": "SMTP_PASSWORD",  # Use environment variable instead of file
         "from_address": "msakamoto+homelab@gmail.com",
         "to_address": "msakamoto+alerts@gmail.com",
         "subject_prefix": "[Server Alert]"
