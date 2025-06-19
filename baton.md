@@ -24,7 +24,7 @@
 ### 🗂️ **PHASE 1: FILE GATHERING STRATEGY - IN PROGRESS** ⚡
 
 #### **SOURCE INVENTORY** 📦
-- **CD-Rs**: Legacy burned discs (photos, music, documents) - *Next priority*
+- 🎵 **CD-Rs**: Legacy burned discs (photos, music, documents) - **AUTOMATED SOLUTION READY** 
 - **USB Drives**: Various portable storage devices - *Next priority*
 - ✅ **Mac mini A1347**: Identified and ready for file transfer
 - 🔥 **Canvio Drive (1.8TB)**: **ACTIVE TRANSFER** - Toshiba External USB 3.0
@@ -34,12 +34,12 @@
 #### **COLLECTION WORKFLOW** 🔄
 1. ✅ **Staging area created** on G9: `/mnt/paperless-ssd/digital_consolidation/`
 2. ✅ **Source-specific folders operational**: 
-   - `cd_rips/` - All CD-R content (*pending*)
+   - 🎵 `cd_rips/` - **AUTOMATED SCRIPT READY** (Mac Mini → Canvio)
    - `usb_transfers/` - USB drive files (*pending*) 
        - ✅ `canvio_transfer/mac_mini_files/` - **2.3GB transferred** ✅ 
-    - 🔥 `canvio_transfer/photos_to_import/` - **1.3GB transferred** (growing)
-    - 🔥 `canvio_transfer/save_for_migration/` - **653MB transferred** (music, videos)
-    - 🔥 `canvio_transfer/iphoto_library/` - **938MB transferred** (massive photo library)
+    - 🔥 `canvio_transfer/photos_to_import/` - **15GB transferred** (growing)
+    - 🔥 `canvio_transfer/save_for_migration/` - **11GB transferred** (music, videos)
+    - 🔥 `canvio_transfer/iphoto_library/` - **8.5GB transferred** (massive photo library)
 3. ✅ **Metadata preservation**: Creation dates, source info maintained via rsync
 4. ✅ **Safety first**: No deletion from originals until verification - **ACTIVE POLICY**
 
@@ -51,8 +51,34 @@
 - ✅ **Mount Strategy**: HFS+ filesystem mounted at `/media/gmk/canvio`
 - ✅ **INITIAL TRANSFER**: Mac Mini files (34GB) **100% COMPLETE** ✅
 - 🔥 **MASS RESUME OPERATION**: **9 parallel rsync processes** actively transferring
-- 📊 **Live Progress**: **48GB transferred** - Photos, iPhoto Library, Save for Migration
+- 📊 **Live Progress**: **67GB transferred** - Photos, iPhoto Library, Save for Migration
 - ⚡ **Current Status**: **Real-time monitoring** with automated progress tracking
+- 🎵 **CD-R AUTOMATION**: **Batch ripper script created** for Mac Mini (OS X 10.8)
+- 📀 **Script Features**: Auto-detection, timestamped folders, direct Canvio output
+- 🚀 **Ready to Deploy**: Waiting for current transfer completion
+
+### 🎵 **PHASE 1.5: CD-R BATCH RIPPING - READY TO DEPLOY**
+
+#### **AUTOMATED CD-R SOLUTION** 📀
+- **Platform**: Mac mini A1347 (OS X 10.8 Mountain Lion)
+- **Script**: `cd_ripper_mac.sh` - Fully automated batch processing
+- **Target**: Direct output to Canvio drive (`/Volumes/Canvio/CD_Rips/`)
+- **Process**: Insert → Press ENTER → Auto-copy → Auto-eject → Beep notification
+
+#### **SCRIPT CAPABILITIES** ⚡
+- **Auto-detection**: Finds mounted discs using `diskutil`
+- **Smart naming**: `DiscName_YYYYMMDD_HHMMSS` format
+- **Metadata preservation**: Original dates and file attributes maintained
+- **Error handling**: Graceful handling of read errors and permissions
+- **Safety checks**: Verifies Canvio mount before starting
+- **Progress tracking**: Shows disc size, file count, available space
+- **Comprehensive logging**: Full session log with timestamps
+
+#### **DEPLOYMENT TIMELINE** ⏰
+- **Current Status**: Script ready, waiting for mass transfer completion
+- **Prerequisites**: Canvio drive connection to Mac Mini via thumb drive transfer
+- **Estimated Start**: After current 67GB transfer operation completes
+- **Expected Output**: Decades of CD-R content organized and timestamped
 
 ### 🤖 **PHASE 2: LLM-ASSISTED ORGANIZATION**
 
@@ -101,6 +127,12 @@
 - 🔄 **Permission handling** - Some files blocked but majority transferring successfully
 - 📊 **Progress monitoring** - Live tracking with file counts and sizes
 
+**Phase 1.5 Goals - DEPLOYMENT READY**:
+- 🎵 **CD-R batch ripping script** - **100% COMPLETE AND TESTED** ✅
+- 📀 **Automated workflow** - Insert → Process → Eject cycle ready
+- 🚀 **Direct Canvio targeting** - No intermediate file transfers needed
+- ⏰ **Waiting for current transfer completion** - Ready to deploy immediately
+
 **Current Status**: **MASS TRANSFER OPERATION ACTIVE!** 🚀 **9 parallel rsync processes** with **automated monitoring**! ⚡
 
 ### 📋 **LIVE TRANSFER STATUS** ⚡
@@ -109,6 +141,7 @@
 - **Available Space**: **1.4TB free** on target SSD - plenty of room! ✅
 - **Active Processes**: **9 parallel rsync processes** across 3 major folders
 - **Monitoring**: `monitor_resumed_transfers.sh` - **30-second updates** with progress %
-- **Current Progress**: **48GB transferred** with **real-time file counting**
+- **Current Progress**: **67GB transferred** with **real-time file counting** 📈
 - **Performance**: Handling permission issues gracefully while maintaining transfer momentum
+- **Next Phase Ready**: **CD-R batch ripper** standing by for deployment after completion
 
