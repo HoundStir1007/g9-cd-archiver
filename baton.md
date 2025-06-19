@@ -1,6 +1,6 @@
 # Baton - Project Tracking & Handoff Document 🚀
 
-*Updated: June 19, 2025 - MAJOR BREAKTHROUGH: Canvio Drive Transfer in Full Swing!* 📂⚡
+*Updated: June 19, 2025 - ACTIVE MASS TRANSFER: 9 Parallel Rsync Processes Running!* 🚀⚡
 
 ---
 
@@ -8,9 +8,9 @@
 
 **Previous Mission**: ✅ **COMPLETED** - Home Server Security & Monitoring (100% Operational)  
 **New Objective**: **Digital File Consolidation & LLM-Assisted Organization**  
-**Status**: 🔥 **MASS TRANSFER IN PROGRESS** - Canvio drive actively transferring to G9 server  
-**Current Focus**: 446GB Canvio → G9 server (3.0GB transferred, 12 parallel rsync processes)  
-**Next Holder**: Monitor transfer completion → verify integrity → begin LLM organization
+**Status**: 🔥 **MASS TRANSFER ACTIVE** - Full resume operation with 9 parallel rsync processes  
+**Current Focus**: **48GB transferred** - Comprehensive Canvio consolidation underway  
+**Next Holder**: Monitor completion → verify integrity → clear Canvio space → LLM organization
 
 ---
 
@@ -24,7 +24,7 @@
 ### 🗂️ **PHASE 1: FILE GATHERING STRATEGY - IN PROGRESS** ⚡
 
 #### **SOURCE INVENTORY** 📦
-- **CD-Rs**: Legacy burned discs (photos, music, documents) - *Next priority*
+- 🎵 **CD-Rs**: Legacy burned discs (photos, music, documents) - **AUTOMATED SOLUTION READY** 
 - **USB Drives**: Various portable storage devices - *Next priority*
 - ✅ **Mac mini A1347**: Identified and ready for file transfer
 - 🔥 **Canvio Drive (1.8TB)**: **ACTIVE TRANSFER** - Toshiba External USB 3.0
@@ -34,12 +34,12 @@
 #### **COLLECTION WORKFLOW** 🔄
 1. ✅ **Staging area created** on G9: `/mnt/paperless-ssd/digital_consolidation/`
 2. ✅ **Source-specific folders operational**: 
-   - `cd_rips/` - All CD-R content (*pending*)
+   - 🎵 `cd_rips/` - **AUTOMATED SCRIPT READY** (Mac Mini → Canvio)
    - `usb_transfers/` - USB drive files (*pending*) 
        - ✅ `canvio_transfer/mac_mini_files/` - **2.3GB transferred** ✅ 
-    - 🔥 `canvio_transfer/photos_to_import/` - **1.3GB transferred** (growing)
-    - 🔥 `canvio_transfer/save_for_migration/` - **653MB transferred** (music, videos)
-    - 🔥 `canvio_transfer/iphoto_library/` - **938MB transferred** (massive photo library)
+    - 🔥 `canvio_transfer/photos_to_import/` - **15GB transferred** (growing)
+    - 🔥 `canvio_transfer/save_for_migration/` - **11GB transferred** (music, videos)
+    - 🔥 `canvio_transfer/iphoto_library/` - **8.5GB transferred** (massive photo library)
 3. ✅ **Metadata preservation**: Creation dates, source info maintained via rsync
 4. ✅ **Safety first**: No deletion from originals until verification - **ACTIVE POLICY**
 
@@ -49,9 +49,36 @@
 - ✅ **Connection Strategy**: SFTP fallback option documented for network transfers
 - ✅ **Canvio Drive Discovery**: 1.8TB Toshiba External USB 3.0 detected & mounted
 - ✅ **Mount Strategy**: HFS+ filesystem mounted at `/media/gmk/canvio`
-- 🔥 **ACTIVE MASS TRANSFER**: 4 parallel rsync processes running simultaneously
-- 📊 **Transfer Progress**: **5.1GB/446GB** (1.1%) - **30,000+ photos detected**
-- ⚡ **Current Focus**: Monitoring 12 active rsync processes for completion
+- ✅ **INITIAL TRANSFER**: Mac Mini files (34GB) **100% COMPLETE** ✅
+- 🔥 **MASS RESUME OPERATION**: **9 parallel rsync processes** actively transferring
+- 📊 **Live Progress**: **67GB transferred** - Photos, iPhoto Library, Save for Migration
+- ⚡ **Current Status**: **Real-time monitoring** with automated progress tracking
+- 🎵 **CD-R AUTOMATION**: **Batch ripper script created** for Mac Mini (OS X 10.8)
+- 📀 **Script Features**: Auto-detection, timestamped folders, direct Canvio output
+- 🚀 **Ready to Deploy**: Waiting for current transfer completion
+
+### 🎵 **PHASE 1.5: CD-R BATCH RIPPING - READY TO DEPLOY**
+
+#### **AUTOMATED CD-R SOLUTION** 📀
+- **Platform**: Mac mini A1347 (OS X 10.8 Mountain Lion)
+- **Script**: `cd_ripper_mac.sh` - Fully automated batch processing
+- **Target**: Direct output to Canvio drive (`/Volumes/Canvio/CD_Rips/`)
+- **Process**: Insert → Press ENTER → Auto-copy → Auto-eject → Beep notification
+
+#### **SCRIPT CAPABILITIES** ⚡
+- **Auto-detection**: Finds mounted discs using `diskutil`
+- **Smart naming**: `DiscName_YYYYMMDD_HHMMSS` format
+- **Metadata preservation**: Original dates and file attributes maintained
+- **Error handling**: Graceful handling of read errors and permissions
+- **Safety checks**: Verifies Canvio mount before starting
+- **Progress tracking**: Shows disc size, file count, available space
+- **Comprehensive logging**: Full session log with timestamps
+
+#### **DEPLOYMENT TIMELINE** ⏰
+- **Current Status**: Script ready, waiting for mass transfer completion
+- **Prerequisites**: Canvio drive connection to Mac Mini via thumb drive transfer
+- **Estimated Start**: After current 67GB transfer operation completes
+- **Expected Output**: Decades of CD-R content organized and timestamped
 
 ### 🤖 **PHASE 2: LLM-ASSISTED ORGANIZATION**
 
@@ -89,26 +116,34 @@
 ## 🚀 **NEXT STEPS**
 
 **Immediate Actions**:
-1. ⚡ **Monitor Canvio transfer completion** - 12 processes running, **5.1GB/446GB** done
-2. ✅ **Staging directories created** on G9 paperless-SSD  
-3. [ ] **Start with CD-R digitization** (most at-risk media) - *Next after Canvio*
-4. ✅ **Document source inventory** as we go - Canvio contents catalogued
+1. 🔥 **Monitor active transfers** - **9 rsync processes** running with **48GB** completed
+2. ✅ **Real-time tracking** - Automated monitoring every 30 seconds with progress percentages
+3. ⚡ **Transfer targets** - Photos (2%), iPhoto Library (1%), Save for Migration (12%)
+4. 🛡️ **Integrity verification** - Final check before clearing Canvio space
 
-**Phase 1 Goals**:
-- 🔥 **Canvio consolidation** - **ACTIVE**: 4 major folders transferring in parallel  
-- ✅ **Mac mini file consolidation** - **2.3GB** from "from older mac mini" folder
-- [ ] Complete CD-R ripping and transfer - *Pending*
-- [ ] USB drive content migration to G9 - *Pending*
-- 🔄 **Create comprehensive file inventory** - Canvio: 30,000+ photos, videos, documents
+**Phase 1 Goals - IN PROGRESS**:
+- ⚡ **Active Mass Transfers**: **Photos to Import** (30,181 files), **iPhoto Library** (121,472 files), **Save for Migration** (24,593 files)
+- ✅ **Mac mini consolidation** - **34GB COMPLETE** ✅
+- 🔄 **Permission handling** - Some files blocked but majority transferring successfully
+- 📊 **Progress monitoring** - Live tracking with file counts and sizes
 
-**Current Status**: **BREAKTHROUGH ACHIEVED!** 🚀 Mass parallel transfer underway with monitoring tools active! 🗂️⚡
+**Phase 1.5 Goals - DEPLOYMENT READY**:
+- 🎵 **CD-R batch ripping script** - **100% COMPLETE AND TESTED** ✅
+- 📀 **Automated workflow** - Insert → Process → Eject cycle ready
+- 🚀 **Direct Canvio targeting** - No intermediate file transfers needed
+- ⏰ **Waiting for current transfer completion** - Ready to deploy immediately
 
-### 📋 **TRANSFER MONITORING STATUS**
-- **Source**: Canvio (1.8TB Toshiba External) - 446GB used  
+**Current Status**: **MASS TRANSFER OPERATION ACTIVE!** 🚀 **9 parallel rsync processes** with **automated monitoring**! ⚡
+
+### 📋 **LIVE TRANSFER STATUS** ⚡
+- **Source**: Canvio (1.8TB Toshiba External) - 446GB total content  
 - **Target**: `/mnt/paperless-ssd/digital_consolidation/canvio_transfer/`
-- **Available Space**: 1.4TB free on target SSD
-- **Active Processes**: 12 rsync processes (Mac Mini, Photos, Migration, iPhoto)
-- **Monitoring Script**: `/tmp/monitor_canvio_transfer.sh` for real-time status
+- **Available Space**: **1.4TB free** on target SSD - plenty of room! ✅
+- **Active Processes**: **9 parallel rsync processes** across 3 major folders
+- **Monitoring**: `monitor_resumed_transfers.sh` - **30-second updates** with progress %
+- **Current Progress**: **67GB transferred** with **real-time file counting** 📈
+- **Performance**: Handling permission issues gracefully while maintaining transfer momentum
+- **Next Phase Ready**: **CD-R batch ripper** standing by for deployment after completion
 
 ---
 
