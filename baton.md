@@ -110,3 +110,42 @@
 - **Active Processes**: 12 rsync processes (Mac Mini, Photos, Migration, iPhoto)
 - **Monitoring Script**: `/tmp/monitor_canvio_transfer.sh` for real-time status
 
+---
+
+## 🔗 **MAC MINI HUB STRATEGY** ✅ **UPDATED APPROACH**
+
+### **🎯 SIMPLIFIED TRANSFER METHOD** 🔄
+**Decision**: Direct drive-to-drive transfers using Mac mini as hub - **MUCH MORE RELIABLE!**
+
+**Why This Works Better**:
+- ✅ **No network compatibility issues** - bypasses SMB/legacy protocol headaches
+- ✅ **Mac mini accepts legacy connectors** - perfect intermediary for old drives  
+- ✅ **Full transfer control** - visual progress, no dropped connections
+- ✅ **Batch organization** - can sort files during transfer process
+
+### **🔌 HARDWARE SETUP** 📦
+- **Mac mini A1347**: Hub machine (macOS 10.5.8) at `192.168.0.187`
+- **Source Drive**: Seagate 2TB with "boxy connector" (legacy interface)
+- **Target Drive**: USB 2/3 external drive (portable to G9 server)
+- **G9 Ubuntu Server**: Final destination at `192.168.0.182`
+
+### **📋 TRANSFER WORKFLOW** 🚀
+**Phase 1**: Mac Mini Hub Transfers
+1. **Connect both drives** to Mac mini simultaneously
+2. **Create organized folder structure** on USB target drive
+3. **Transfer in priority batches** (photos → documents → media → misc)
+4. **Document transfer inventory** for each batch
+
+**Phase 2**: USB Drive → G9 Server  
+1. **Physical USB drive transfer** to G9 server
+2. **Mount and copy** to `/mnt/paperless-ssd/digital_consolidation/`
+3. **Verify transfer integrity** before organizing
+4. **Continue with LLM-assisted organization** phase
+
+### **🎯 CURRENT STATUS**
+- ✅ **Canvio Transfer**: Still in progress (5.1GB/446GB transferred)
+- 🔄 **New Priority**: Seagate 2TB → USB drive transfer via Mac mini
+- ✅ **Strategy Confirmed**: External-to-external method chosen for reliability
+
+**Next Actions**: Set up Mac mini with both drives and begin systematic transfer! 📂⚡
+
