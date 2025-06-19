@@ -1,6 +1,6 @@
 # Baton - Project Tracking & Handoff Document 🚀
 
-*Updated: June 19, 2025 - MAJOR BREAKTHROUGH: Canvio Drive Transfer in Full Swing!* 📂⚡
+*Updated: June 19, 2025 - ACTIVE MASS TRANSFER: 9 Parallel Rsync Processes Running!* 🚀⚡
 
 ---
 
@@ -8,9 +8,9 @@
 
 **Previous Mission**: ✅ **COMPLETED** - Home Server Security & Monitoring (100% Operational)  
 **New Objective**: **Digital File Consolidation & LLM-Assisted Organization**  
-**Status**: 🔥 **MASS TRANSFER IN PROGRESS** - Canvio drive actively transferring to G9 server  
-**Current Focus**: 446GB Canvio → G9 server (3.0GB transferred, 12 parallel rsync processes)  
-**Next Holder**: Monitor transfer completion → verify integrity → begin LLM organization
+**Status**: 🔥 **MASS TRANSFER ACTIVE** - Full resume operation with 9 parallel rsync processes  
+**Current Focus**: **48GB transferred** - Comprehensive Canvio consolidation underway  
+**Next Holder**: Monitor completion → verify integrity → clear Canvio space → LLM organization
 
 ---
 
@@ -49,9 +49,10 @@
 - ✅ **Connection Strategy**: SFTP fallback option documented for network transfers
 - ✅ **Canvio Drive Discovery**: 1.8TB Toshiba External USB 3.0 detected & mounted
 - ✅ **Mount Strategy**: HFS+ filesystem mounted at `/media/gmk/canvio`
-- 🔥 **ACTIVE MASS TRANSFER**: 4 parallel rsync processes running simultaneously
-- 📊 **Transfer Progress**: **5.1GB/446GB** (1.1%) - **30,000+ photos detected**
-- ⚡ **Current Focus**: Monitoring 12 active rsync processes for completion
+- ✅ **INITIAL TRANSFER**: Mac Mini files (34GB) **100% COMPLETE** ✅
+- 🔥 **MASS RESUME OPERATION**: **9 parallel rsync processes** actively transferring
+- 📊 **Live Progress**: **48GB transferred** - Photos, iPhoto Library, Save for Migration
+- ⚡ **Current Status**: **Real-time monitoring** with automated progress tracking
 
 ### 🤖 **PHASE 2: LLM-ASSISTED ORGANIZATION**
 
@@ -89,24 +90,25 @@
 ## 🚀 **NEXT STEPS**
 
 **Immediate Actions**:
-1. ⚡ **Monitor Canvio transfer completion** - 12 processes running, **5.1GB/446GB** done
-2. ✅ **Staging directories created** on G9 paperless-SSD  
-3. [ ] **Start with CD-R digitization** (most at-risk media) - *Next after Canvio*
-4. ✅ **Document source inventory** as we go - Canvio contents catalogued
+1. 🔥 **Monitor active transfers** - **9 rsync processes** running with **48GB** completed
+2. ✅ **Real-time tracking** - Automated monitoring every 30 seconds with progress percentages
+3. ⚡ **Transfer targets** - Photos (2%), iPhoto Library (1%), Save for Migration (12%)
+4. 🛡️ **Integrity verification** - Final check before clearing Canvio space
 
-**Phase 1 Goals**:
-- 🔥 **Canvio consolidation** - **ACTIVE**: 4 major folders transferring in parallel  
-- ✅ **Mac mini file consolidation** - **2.3GB** from "from older mac mini" folder
-- [ ] Complete CD-R ripping and transfer - *Pending*
-- [ ] USB drive content migration to G9 - *Pending*
-- 🔄 **Create comprehensive file inventory** - Canvio: 30,000+ photos, videos, documents
+**Phase 1 Goals - IN PROGRESS**:
+- ⚡ **Active Mass Transfers**: **Photos to Import** (30,181 files), **iPhoto Library** (121,472 files), **Save for Migration** (24,593 files)
+- ✅ **Mac mini consolidation** - **34GB COMPLETE** ✅
+- 🔄 **Permission handling** - Some files blocked but majority transferring successfully
+- 📊 **Progress monitoring** - Live tracking with file counts and sizes
 
-**Current Status**: **BREAKTHROUGH ACHIEVED!** 🚀 Mass parallel transfer underway with monitoring tools active! 🗂️⚡
+**Current Status**: **MASS TRANSFER OPERATION ACTIVE!** 🚀 **9 parallel rsync processes** with **automated monitoring**! ⚡
 
-### 📋 **TRANSFER MONITORING STATUS**
-- **Source**: Canvio (1.8TB Toshiba External) - 446GB used  
+### 📋 **LIVE TRANSFER STATUS** ⚡
+- **Source**: Canvio (1.8TB Toshiba External) - 446GB total content  
 - **Target**: `/mnt/paperless-ssd/digital_consolidation/canvio_transfer/`
-- **Available Space**: 1.4TB free on target SSD
-- **Active Processes**: 12 rsync processes (Mac Mini, Photos, Migration, iPhoto)
-- **Monitoring Script**: `/tmp/monitor_canvio_transfer.sh` for real-time status
+- **Available Space**: **1.4TB free** on target SSD - plenty of room! ✅
+- **Active Processes**: **9 parallel rsync processes** across 3 major folders
+- **Monitoring**: `monitor_resumed_transfers.sh` - **30-second updates** with progress %
+- **Current Progress**: **48GB transferred** with **real-time file counting**
+- **Performance**: Handling permission issues gracefully while maintaining transfer momentum
 
