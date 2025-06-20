@@ -1,6 +1,6 @@
 # Baton - Project Tracking & Handoff Document 🚀
 
-*Updated: June 19, 2025 - ACTIVE MASS TRANSFER: 9 Parallel Rsync Processes Running!* 🚀⚡
+*Updated: June 19, 2025 - MAJOR HARDWARE UPGRADE: 4TB M.2 SSD Ordered + Active Transfers at 121GB!* 🚀💾
 
 ---
 
@@ -8,9 +8,9 @@
 
 **Previous Mission**: ✅ **COMPLETED** - Home Server Security & Monitoring (100% Operational)  
 **New Objective**: **Digital File Consolidation & LLM-Assisted Organization**  
-**Status**: 🔥 **MASS TRANSFER ACTIVE** - Full resume operation with 9 parallel rsync processes  
-**Current Focus**: **48GB transferred** - Comprehensive Canvio consolidation underway  
-**Next Holder**: Monitor completion → verify integrity → clear Canvio space → LLM organization
+**Status**: 🚀 **HARDWARE UPGRADE INCOMING** - 4TB M.2 SSD arriving Saturday + active transfers  
+**Current Focus**: **121GB transferred** - Major progress on Canvio consolidation + storage expansion  
+**Next Holder**: Install 4TB drive → migrate to internal storage → retire external drives → LLM organization
 
 ---
 
@@ -50,12 +50,14 @@
 - ✅ **Canvio Drive Discovery**: 1.8TB Toshiba External USB 3.0 detected & mounted
 - ✅ **Mount Strategy**: HFS+ filesystem mounted at `/media/gmk/canvio`
 - ✅ **INITIAL TRANSFER**: Mac Mini files (34GB) **100% COMPLETE** ✅
-- 🔥 **MASS RESUME OPERATION**: **9 parallel rsync processes** actively transferring
-- 📊 **Live Progress**: **67GB transferred** - Photos, iPhoto Library, Save for Migration
-- ⚡ **Current Status**: **Real-time monitoring** with automated progress tracking
-- 🎵 **CD-R AUTOMATION**: **Batch ripper script created** for Mac Mini (OS X 10.8)
-- 📀 **Script Features**: Auto-detection, timestamped folders, direct Canvio output
-- 🚀 **Ready to Deploy**: Waiting for current transfer completion
+- ✅ **SAVE FOR MIGRATION**: (13GB) **100% COMPLETE** ✅
+- 🔥 **ACTIVE TRANSFERS**: **6 rsync processes** - Photos to Import (52GB), iPhoto Library (22GB)
+- 📊 **Major Progress**: **121GB transferred** (+54GB growth!) - 27% complete
+- 💾 **HARDWARE BREAKTHROUGH**: **4TB M.2 PCIe Gen4 SSD ordered** - $212.15 (incredible deal!)
+- 📦 **Delivery**: **Saturday arrival** - Perfect timing for storage expansion
+- 🎯 **Storage Strategy**: 6TB total M.2 (2TB existing + 4TB new) = retire external drives
+- 🎵 **CD-R AUTOMATION**: **Batch ripper script ready** for Mac Mini deployment
+- 🚀 **Next Phase**: Install 4TB → internal consolidation → external drive liberation
 
 ### 🎵 **PHASE 1.5: CD-R BATCH RIPPING - READY TO DEPLOY**
 
@@ -115,35 +117,37 @@
 
 ## 🚀 **NEXT STEPS**
 
-**Immediate Actions**:
-1. 🔥 **Monitor active transfers** - **9 rsync processes** running with **48GB** completed
-2. ✅ **Real-time tracking** - Automated monitoring every 30 seconds with progress percentages
-3. ⚡ **Transfer targets** - Photos (2%), iPhoto Library (1%), Save for Migration (12%)
-4. 🛡️ **Integrity verification** - Final check before clearing Canvio space
+**Immediate Actions (This Week)**:
+1. 🔥 **Monitor active transfers** - **6 rsync processes** running with **121GB** completed (27% done!)
+2. 📦 **Saturday Hardware Install** - 4TB M.2 SSD arriving for storage expansion
+3. ⚡ **Current targets** - Photos to Import (52GB growing), iPhoto Library (22GB growing)
+4. 🛡️ **Transfer completion** - Let current Canvio transfers finish naturally
 
-**Phase 1 Goals - IN PROGRESS**:
-- ⚡ **Active Mass Transfers**: **Photos to Import** (30,181 files), **iPhoto Library** (121,472 files), **Save for Migration** (24,593 files)
-- ✅ **Mac mini consolidation** - **34GB COMPLETE** ✅
-- 🔄 **Permission handling** - Some files blocked but majority transferring successfully
-- 📊 **Progress monitoring** - Live tracking with file counts and sizes
+**Phase 1.5 Goals - HARDWARE UPGRADE WEEKEND**:
+- 💾 **Saturday Install**: 4TB M.2 PCIe Gen4 SSD installation in G9 server
+- 🔧 **Drive Setup**: Format, mount, and configure new storage partition
+- 📂 **Internal Migration**: Move completed transfers to new 4TB drive
+- 🆓 **External Drive Liberation**: Retire 1TB USB backup drive permanently
+- 🎯 **Storage Optimization**: 6TB total M.2 storage (2TB system + 4TB digital archaeology)
 
-**Phase 1.5 Goals - DEPLOYMENT READY**:
-- 🎵 **CD-R batch ripping script** - **100% COMPLETE AND TESTED** ✅
-- 📀 **Automated workflow** - Insert → Process → Eject cycle ready
-- 🚀 **Direct Canvio targeting** - No intermediate file transfers needed
-- ⏰ **Waiting for current transfer completion** - Ready to deploy immediately
+**Phase 2 Goals - POST-HARDWARE**:
+- 🎵 **CD-R batch ripping** - Deploy Mac Mini automation to new 4TB storage
+- 📀 **Thunderbolt 2TB migration** - Mac Mini → Canvio → 4TB internal transfer
+- 🚀 **Complete external retirement** - Both USB drives freed for other uses
+- 🤖 **LLM organization prep** - Begin inventory and categorization planning
 
-**Current Status**: **MASS TRANSFER OPERATION ACTIVE!** 🚀 **9 parallel rsync processes** with **automated monitoring**! ⚡
+**Current Status**: **HARDWARE BREAKTHROUGH ACHIEVED!** 💾 **4TB M.2 arriving Saturday** + **active 121GB transfers**! 🚀
 
 ### 📋 **LIVE TRANSFER STATUS** ⚡
 - **Source**: Canvio (1.8TB Toshiba External) - 446GB total content  
 - **Target**: `/mnt/paperless-ssd/digital_consolidation/canvio_transfer/`
-- **Available Space**: **1.4TB free** on target SSD - plenty of room! ✅
-- **Active Processes**: **9 parallel rsync processes** across 3 major folders
-- **Monitoring**: `monitor_resumed_transfers.sh` - **30-second updates** with progress %
-- **Current Progress**: **67GB transferred** with **real-time file counting** 📈
-- **Performance**: Handling permission issues gracefully while maintaining transfer momentum
-- **Next Phase Ready**: **CD-R batch ripper** standing by for deployment after completion
+- **Available Space**: **1.3TB free** on target SSD - plenty of room! ✅
+- **Active Processes**: **6 rsync processes** - Photos to Import + iPhoto Library
+- **Current Progress**: **121GB transferred** (+54GB growth!) - **27% complete** 📈
+- **Completed Folders**: Mac Mini (34GB) ✅, Save for Migration (13GB) ✅
+- **Active Folders**: Photos to Import (52GB growing), iPhoto Library (22GB growing)
+- **Hardware Upgrade**: **4TB M.2 SSD arriving Saturday** - $212.15 incredible deal! 💾
+- **Next Phase Ready**: **Storage expansion** → **external drive retirement** → **CD-R batch processing**
 
 ---
 
