@@ -1,157 +1,121 @@
 # Baton - Project Tracking & Handoff Document 🚀
 
-*Updated: June 19, 2025 - THUNDERBOLT TRANSFER ACCELERATING: 62GB Progress + Documentation Cleanup Complete!* 🚀💾📋
+*Updated: June 21, 2025 - WEEKEND HARDWARE UPGRADE READY! 4TB SSD + Roofull DVD Drive Incoming!* 🎯💾📀
 
 ---
 
 ## 🎯 **CURRENT BATON STATUS**
 
-**Previous Mission**: ✅ **COMPLETED** - Canvio Digital Archaeology (320GB transferred successfully)  
-**New Objective**: **THUNDERBOLT 2TB TRANSFER** - 997GB overnight mission accelerating!  
-**Status**: 🚀 **EXCELLENT PROGRESS** - 62GB transferred, 2 active rsync processes, strong overnight performance  
-**Current Focus**: **Documentation cleanup complete** + **4TB SSD weekend installation ready**  
-**Next Holder**: **Saturday Hardware Upgrade** → **Internal Storage Migration** → **External Drive Liberation**
+**Mission**: **WEEKEND HARDWARE UPGRADE** - 4TB SSD installation + Direct CD-R automation setup  
+**Status**: **READY FOR EXECUTION** - All hardware arriving Friday/Saturday  
+**Previous Success**: ✅ **1.315TB Digital Archaeology COMPLETE** (995GB + 320GB rescued)  
+**Current Focus**: **Saturday hardware installation** + **Direct optical processing setup**  
+**Next Holder**: **Weekend Hardware Specialist** → **CD-R Automation Engineer**
 
 ---
 
-## 📋 **THUNDERBOLT TRANSFER MISSION - ACTIVE** ⚡
+## 📦 **HARDWARE ARRIVALS**
 
-### 🎯 **TRANSFER OVERVIEW**
-**Source**: Mac mini (192.168.0.188) - Thunderbolt Seagate 2TB "onpointeight20121202"  
-**Target**: G9 Server (192.168.0.182) - `/mnt/paperless-ssd/digital_consolidation/thunderbolt_transfer/`  
-**Data Size**: **997GB of 2012-era digital content**  
-**Method**: Direct rsync over ethernet (Mac mini → G9)
+### **FRIDAY** 📀
+- **✅ Roofull USB DVD Drive** ($22.99) - Ubuntu compatible, direct G9 connection
 
-### 🚀 **LIVE TRANSFER STATUS** 
-- **✅ Transfer Method**: Running perfectly from Mac mini directly (not MacBook)
-- **📊 Current Progress**: **62GB transferred** (6.2% of 997GB) - significant acceleration!
-- **⚡ Transfer Performance**: **2 active rsync processes** - multi-threaded optimization working
-- **⏰ Progress Rate**: **15GB in ~40 minutes** - excellent overnight performance
-- **💾 G9 Space Available**: **1.1TB free** (713GB used total) - plenty of room remaining
-- **🌙 Strategy**: **HANDS-FREE OVERNIGHT COMPLETION** - on track for morning success
+### **SATURDAY** 💾  
+- **✅ 4TB M.2 PCIe Gen4 SSD** ($212.15) - G9 server expansion
 
-### 📈 **PROGRESS TIMELINE**
-- **6:00 PM**: Transfer initiated from Mac mini
-- **6:30 PM**: 584MB initial confirmation  
-- **9:00 PM**: **62GB milestone** - transfer accelerating strongly
-- **Expected Completion**: **~3:00 AM** (Friday morning) - ahead of schedule!
-- **Saturday**: **4TB SSD installation** + **internal migration** + **external drive retirement**
+### **TOTAL INVESTMENT**: **$235.14** 💰
 
 ---
 
-## 🏆 **COMPLETED MISSIONS** ✅
+## 🚀 **SATURDAY INSTALLATION WORKFLOW**
 
-### **Canvio Drive Consolidation - 100% SUCCESS**
-- ✅ **320GB transferred** successfully to G9 server
-- ✅ **All accessible data rescued** from 1.8TB Canvio drive
-- ✅ **Transfer method perfected** - drive bonding with G9 confirmed
-- ✅ **Storage strategy validated** - external → internal migration proven
+### **🔧 Phase 1: Hardware Installation**
+1. **Install 4TB M.2 SSD** in G9 server expansion slot
+2. **Connect Roofull USB DVD** drive to G9 server
+3. **Format and mount** new 4TB storage
+4. **Verify** Ubuntu recognizes optical drive (`lsblk`, `dmesg`)
 
-### **Hardware Crisis Management - RESOLVED**
-- ✅ **Mac mini A1347 hardware issues** bypassed with newer Mac mini strategy
-- ✅ **Canvio "failure" crisis** resolved (was Mac compatibility, not drive failure)
-- ✅ **Network transfer protocols** established and tested
+### **📂 Phase 2: Data Migration**
+1. **Move 1.315TB** consolidated data from `/mnt/paperless-ssd/digital_consolidation/` to new 4TB internal
+2. **Verify transfer integrity** 
+3. **Update mount points** and paths
+4. **Retire external drives** permanently
 
----
-
-## 🚀 **UPCOMING: 4TB SSD WEEKEND UPGRADE**
-
-### 💾 **HARDWARE ARRIVAL: SATURDAY**
-- **4TB M.2 PCIe Gen4 SSD** arriving Saturday ($212.15 incredible deal!)
-- **Installation Target**: G9 server expansion slot
-- **Total M.2 Storage**: **6TB** (2TB existing + 4TB new)
-- **Mission**: **Retire ALL external drives** permanently
-
-### 📋 **SATURDAY INSTALLATION WORKFLOW**
-1. **🔧 Hardware Install**: 4TB M.2 SSD in G9 server
-2. **💿 Drive Setup**: Format, partition, and mount new storage
-3. **📂 Internal Migration**: Move 320GB Canvio + 997GB Thunderbolt to internal storage
-4. **🆓 External Liberation**: Retire Canvio + USB backup drives permanently
-5. **🎯 Storage Optimization**: Pure internal M.2 storage architecture
-
-### 🎵 **PHASE 2: CD-R BATCH AUTOMATION**
-- **Platform**: Mac mini A1347 (once external drives freed up)
-- **Script**: `cd_ripper_mac.sh` - ready for deployment
-- **Target**: Direct rip to **4TB internal storage** via network
-- **Capacity**: Decades of CD-R content with automated organization
+### **📀 Phase 3: CD-R Automation Setup**
+1. **Test Roofull drive** with sample CD
+2. **Convert/create Ubuntu CD-R ripping script** (from existing `cd_ripper_mac.sh`)
+3. **Setup automated workflow** for batch CD processing
+4. **Test direct-to-internal-storage** pipeline
 
 ---
 
-## 📊 **DIGITAL ARCHAEOLOGY PROGRESS**
+## 🎵 **CD-R AUTOMATION STRATEGY**
 
-### **📦 SUCCESSFULLY CONSOLIDATED**
-- **🎯 Canvio Transfer**: **320GB** ✅
-- **⚡ Thunderbolt Transfer**: **62GB of 997GB** (6.2% complete, accelerating overnight)
-- **💾 Total Rescued**: **~382GB** of legacy digital content (growing overnight)
-- **🏆 Success Rate**: **100%** of accessible data transferred
-- **📋 Documentation**: **Comprehensive cleanup complete** - workspace organized
+### **NEW APPROACH: DIRECT G9 PROCESSING**
+- **Platform**: G9 Ubuntu Server (no Mac mini needed!)
+- **Hardware**: Roofull USB DVD Drive (Ubuntu compatible)
+- **Storage**: Direct to 4TB internal M.2 SSD
+- **Workflow**: CD → Roofull → Ubuntu → 4TB internal (maximum efficiency)
 
-### **🔍 CONTENT DISCOVERY**
-- **📸 Photo Libraries**: Massive iPhoto collections (114GB+ recovered)
-- **🎵 Music Archives**: Legacy BEARDLIP collections and more
-- **📄 Document Vaults**: Devon Documents and business files
-- **💿 Physical Media**: CD-R batch processing ready
-- **🗃️ Legacy Systems**: 2012-era Mac archives and backups
-
-### **🤖 PHASE 3: LLM ORGANIZATION (POST-4TB)**
-- **Inventory Generation**: Automated file cataloging
-- **Duplicate Detection**: Hash-based deduplication 
-- **Content Categorization**: Photos, docs, music, video organization
-- **Quality Assessment**: Keep highest quality versions
-- **Structure Creation**: Logical folder hierarchies
+### **SCRIPT CONVERSION NEEDED**
+- **Source**: `cd_ripper_mac.sh` (Mac mini script)
+- **Target**: Ubuntu batch processing script
+- **Tools**: `cdparanoia`, `lame`, `flac` (Ubuntu packages)
+- **Output**: Organized music library on 4TB internal
 
 ---
 
-## ⚡ **IMMEDIATE NEXT STEPS**
+## 📊 **CURRENT SYSTEM STATUS**
 
-**Tonight (Hands-Free)** 🌙:
-1. **🔄 Monitor Transfer**: Let 997GB Thunderbolt transfer complete (ahead of schedule!)
-2. **📊 Expected Completion**: ~3:00 AM Friday morning (62GB→997GB remaining)
-3. **✅ Verification**: Confirm 997GB successfully transferred to G9
+### **✅ COMPLETED**
+- **Digital Archaeology**: 1.315TB rescued (Thunderbolt 995GB + Canvio 320GB)
+- **Data Location**: `/mnt/paperless-ssd/digital_consolidation/` on G9 server
+- **Hardware Ordered**: 4TB SSD + Roofull DVD drive
+- **Documentation**: All guides updated and ready
 
-**Friday** 📋:
-- **✅ Transfer Verification**: Confirm Thunderbolt mission success (935GB remaining)
-- **📦 4TB SSD Tracking**: Monitor Saturday delivery status
-- **🛠️ Installation Prep**: Review G9 hardware documentation
-- **📋 Documentation**: ✅ **COMPLETE** - Workspace cleanup and archival finished
+### **🔄 THIS WEEKEND**
+- **Hardware Installation**: 4TB M.2 + USB optical drive
+- **Data Migration**: Move 1.315TB to internal storage
+- **External Drive Retirement**: Free up 3 external drives
+- **CD-R Automation**: Setup direct optical processing
 
-**Saturday - 4TB UPGRADE DAY** 💾:
-- **🔧 Hardware Installation**: 4TB M.2 SSD in G9 server
-- **📂 Internal Migration**: Move 320GB Canvio + 997GB Thunderbolt to internal storage
-- **🆓 External Retirement**: Free up Canvio + USB drives permanently
-- **🎵 CD-R Automation**: Deploy batch ripping to internal storage
-- **🛡️ Pi-hole Deployment**: Network-wide ad blocking (ready-to-deploy guide complete)
-
-**Sunday - LIBERATION CELEBRATION** 🎉:
-- **🏆 Mission Complete**: All external drives retired
-- **🤖 LLM Organization**: Begin automated content organization
-- **📊 Success Report**: Document total data rescued and organized
-- **🔧 Next Services**: Begin Pi-hole network infrastructure deployment
+### **📅 NEXT WEEK**
+- **CD-R Batch Processing**: Begin decades of CD content digitization
+- **LLM Content Organization**: Automated categorization of 1.315TB
+- **Pi-hole Deployment**: Network-wide ad blocking (guide ready)
+- **⚠️ Windows Connection Fix**: Need to restore Windows app connection to Ubuntu after hardware changes
 
 ---
 
-## 💰 **PROJECT ECONOMICS**
+## 🎯 **IMMEDIATE NEXT STEPS - CONTINUE IN CURSOR ON G9**
 
-**Hardware Investment**: **$212.15** (4TB M.2 SSD)  
-**Storage Capacity Added**: **4TB internal** (2x storage expansion)  
-**External Drives Retired**: **3 drives** (Canvio + 2 USB backup drives)  
-**Total Digital Archaeology**: **~1.3TB** rescued and organized  
-**ROI**: **Massive** - decades of content preserved + storage simplified
+### **✅ COMPLETED**
+- **4TB M.2 SSD installed** with heat sink
+- **Hardware detected** as `nvme1n1` (3.7TB)
+- **System booted** successfully after fsck repair
+- **Scripts prepared** for final formatting
 
----
+### **📋 NEXT: FORMAT & SETUP (In Cursor on G9)**
+1. **Open this repo in Cursor** on G9 Ubuntu
+2. **Run setup_4tb_ssd.sh** - format and mount 4TB drive
+3. **Migrate 1.315TB data** from external drives to `/mnt/4tb-internal`
+4. **Update baton** with success status
 
-## 🎯 **SUCCESS METRICS TRACKING**
-
-- **✅ Files Consolidated**: 382GB+ rescued from legacy storage (62GB + 320GB)
-- **🔄 Files In Progress**: 935GB additional content transferring overnight
-- **✅ Hardware Upgrades**: 4TB M.2 expansion (300% storage increase) - Saturday ready
-- **✅ External Drive Elimination**: 3 drives retirement planned (weekend execution)  
-- **✅ Automation Deployed**: CD-R batch processing ready
-- **✅ Documentation Cleanup**: ✅ **COMPLETE** - Workspace organized and archived
-- **✅ Network Services**: Pi-hole deployment guide ready
-- **🔄 Organization Phase**: LLM-assisted categorization (post-4TB installation)
+### **📄 SCRIPTS READY**
+- **setup_4tb_ssd.sh** - Format and mount 4TB SSD
+- **verify_new_ssd.sh** - Verify installation
+- **All scripts in project root** ready for execution
 
 ---
 
-**Current Status**: 🚀 **ACCELERATING THUNDERBOLT TRANSFER** - 62GB of 997GB complete, documentation cleanup finished, 4TB weekend upgrade ready! ⚡💾📋
+## 🏆 **SUCCESS METRICS**
+
+- **Storage Expansion**: 2TB → 6TB internal (300% increase)
+- **External Drives Eliminated**: 3 drives retired
+- **Processing Efficiency**: Direct optical-to-SSD (no network transfers)
+- **Content Digitization**: Ready for decades of CD-R processing
+- **Total Investment**: $235.14 for complete upgrade
+
+---
+
+**Current Status**: 🔧 **4TB SSD INSTALLED & DETECTED** - Hardware installed successfully, nvme1n1 (3.7TB) ready for formatting! Scripts prepared for final setup! 🚀💾
 

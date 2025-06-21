@@ -1,5 +1,13 @@
 # CD-R Batch Ripper Instructions 📀
 
+## ✅ **UPDATED POST-DIGITAL ARCHAEOLOGY** - 4TB Internal Storage Ready!
+
+**Status**: Canvio drive **liberated** after successful 320GB transfer to G9 server  
+**New Target**: Direct network transfer to **4TB M.2 internal storage** (post-Saturday installation)  
+**Platform**: Mac mini A1347 (now freed from transfer duties for CD-R automation)
+
+---
+
 ## Setup on Mac Mini (OS X 10.8)
 
 ### 1. Transfer Files
@@ -42,20 +50,21 @@ Copy these files to your Mac Mini via thumb drive:
    - Play beep sounds when done
 4. **Repeat** for next disc
 
-### Output Location
-- All ripped files go to: `/Volumes/Canvio/CD_Rips/`
-- Each disc gets its own timestamped folder
-- Log file created: `/Volumes/Canvio/CD_Rips/ripping_log.txt`
-- **Requires Canvio drive to be connected and mounted**
+### 🔄 **NEW: Network Storage Strategy**
+- **Pre-4TB Installation**: Local staging to Mac mini internal drive
+- **Post-4TB Installation**: Direct network transfer to G9 server 4TB M.2 storage
+- **Target Path**: `/mnt/paperless-ssd/digital_consolidation/cd_rips/` (4TB internal)
+- **Integration**: Seamless addition to **1.315TB digital archaeology collection**
 
 ### Folder Structure Example
 ```
-/Volumes/Canvio/CD_Rips/
-├── Family_Photos_2003_20250619_143022/
+# Post-4TB Installation (Network Target):
+/mnt/paperless-ssd/digital_consolidation/cd_rips/
+├── Family_Photos_2003_20250622_143022/
 │   ├── _DISC_INFO.txt
 │   ├── IMG_001.jpg
 │   └── IMG_002.jpg
-├── Music_Mix_20250619_143156/
+├── Music_Mix_20250622_143156/
 │   ├── _DISC_INFO.txt
 │   ├── track01.mp3
 │   └── track02.mp3
@@ -71,6 +80,7 @@ Copy these files to your Mac Mini via thumb drive:
 - **Audio feedback** - Beeps when each disc is complete
 - **Error handling** - Gracefully handles read errors
 - **Unique naming** - Timestamp prevents folder conflicts
+- **🆕 Network Integration** - Direct transfer to 4TB internal storage
 
 ## Tips 💡
 
@@ -79,6 +89,7 @@ Copy these files to your Mac Mini via thumb drive:
 3. **Large discs**: Progress is shown, be patient for full CDs
 4. **Read errors**: Script continues copying what it can
 5. **Quit anytime**: Type `quit`, `exit`, or `q` to stop
+6. **🆕 Network Storage**: Wait for 4TB installation for optimal workflow
 
 ## Troubleshooting 🔧
 
@@ -87,10 +98,10 @@ Copy these files to your Mac Mini via thumb drive:
 chmod +x cd_ripper_mac.sh
 ```
 
-### Canvio drive not detected:
-- Ensure Canvio drive is connected via USB
-- Check if it appears in Finder under "Devices"
-- May need to manually mount: Go to Disk Utility
+### ~~Canvio drive not detected~~ ✅ **RESOLVED**: 
+- **Canvio Status**: **Successfully transferred** to G9 server (320GB rescued)
+- **New Strategy**: Direct network storage to 4TB M.2 internal drive
+- **Platform**: Mac mini now dedicated to CD-R batch processing
 
 ### No disc detected:
 - Wait a moment after inserting disc
@@ -101,20 +112,30 @@ chmod +x cd_ripper_mac.sh
 - Some discs may have read-only files - this is normal
 - Script will copy what it can and continue
 
-## After Ripping 📦
+## 🎯 **Integration with Completed Digital Archaeology Project**
 
-Once you've ripped all your CD-Rs:
-1. **Copy results** to thumb drive
-2. **Transfer to G9 server** via your existing workflow
-3. **Add to digital consolidation project** 
-4. Files will be ready for **LLM-assisted organization**!
+### **Perfect Timing** ⚡
+- **Canvio Drive**: ✅ **320GB transferred** to G9 server - drive now available
+- **Thunderbolt Drive**: ✅ **995GB transferred** to G9 server - total **1.315TB rescued**
+- **Mac mini A1347**: **Freed from transfer duties** - ready for CD-R automation
+- **4TB M.2 SSD**: **Saturday installation** - unlimited storage capacity
 
-## Integration with Digital Archaeology Project 🏛️
+### **Seamless Integration** 🔗
+- CD-R content will join **1.315TB digital archaeology collection**
+- All content consolidated on **4TB internal M.2 storage** 
+- **LLM-assisted organization** of combined digital archives
+- **Pure internal storage architecture** - no external drives needed
 
-This perfectly fits your current consolidation effort:
-- Output format matches your existing `cd_rips/` staging area
-- Timestamps and metadata support organization phase
-- Ready for bulk transfer to G9 server
-- Prepared for LLM duplicate detection and sorting
+### **Deployment Readiness** 🚀
+- **Platform Ready**: Mac mini liberated for CD-R duties
+- **Storage Ready**: 4TB M.2 installation Saturday
+- **Workflow Tested**: Transfer protocols proven with 1.315TB success
+- **Organization Ready**: LLM categorization system prepared
 
-Happy ripping! 🎵 
+---
+
+**🎉 Status**: Ready for deployment post-4TB installation!  
+**🎯 Capacity**: Decades of CD-R content with automated organization  
+**🏆 Integration**: Perfect addition to 1.315TB digital archaeology success!
+
+Happy ripping! 🎵💾 
