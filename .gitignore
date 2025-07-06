@@ -6,3 +6,4 @@ pihole/.env
 # Allow .env.template files (these are safe to commit)
 !*.env.template
 !*/.env.template
+ubuntu-24.04.2-desktop-amd64.iso
