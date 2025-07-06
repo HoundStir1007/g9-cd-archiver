@@ -3,10 +3,11 @@
 # CD-R Batch Ripper for Mac OS X 10.8
 # Automates the process of ripping multiple CD-Rs with proper naming and organization
 # Compatible with OS X 10.8 Mountain Lion
+# Updated: USB Optical Drive support for aging Mac mini A1347 hardware
 
-# Configuration - Target Canvio Drive
-CANVIO_MOUNT="/Volumes/Canvio"
-OUTPUT_DIR="$CANVIO_MOUNT/CD_Rips"
+# Configuration - Updated for G9-Reborn destination
+# Note: Script updated for USB optical drive compatibility due to Mac mini A1347 aging hardware
+OUTPUT_DIR="/Users/$(whoami)/Desktop/CD_Rips"  # Local staging before network transfer
 LOG_FILE="$OUTPUT_DIR/ripping_log.txt"
 
 # Colors for terminal output
@@ -16,29 +17,26 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Check if Canvio drive is mounted
-if [ ! -d "$CANVIO_MOUNT" ]; then
-    echo -e "${RED}❌ Canvio drive not found at $CANVIO_MOUNT${NC}"
-    echo -e "${YELLOW}💡 Please ensure the Canvio drive is connected and mounted${NC}"
-    echo -e "${BLUE}🔍 Available volumes:${NC}"
-    ls -la /Volumes/ 2>/dev/null || echo "Could not list volumes"
-    exit 1
-fi
+echo -e "${BLUE}🎵 CD-R Batch Ripper v2.0 - USB Optical Drive Compatible${NC}"
+echo -e "${YELLOW}Hardware: Mac mini A1347 + USB Optical Drive (addressing internal drive reliability)${NC}"
+echo -e "${YELLOW}Destination: Local staging for G9-Reborn network transfer${NC}"
+echo ""
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
 
 # Initialize log file
 echo "CD-R Ripping Session Started: $(date)" >> "$LOG_FILE"
+echo "Platform: Mac mini A1347 with USB Optical Drive" >> "$LOG_FILE"
+echo "Target: G9-Reborn 4TB M.2 storage via network transfer" >> "$LOG_FILE"
 
-echo -e "${BLUE}🎵 CD-R Batch Ripper Initialized${NC}"
-echo -e "${GREEN}✅ Canvio drive detected: $CANVIO_MOUNT${NC}"
-echo -e "${YELLOW}Output Directory: $OUTPUT_DIR${NC}"
+echo -e "${GREEN}✅ Output directory ready: $OUTPUT_DIR${NC}"
 echo -e "${YELLOW}Log File: $LOG_FILE${NC}"
 
-# Check available space on Canvio
-CANVIO_SPACE=$(df -h "$CANVIO_MOUNT" 2>/dev/null | tail -1 | awk '{print $4}' || echo "Unknown")
-echo -e "${BLUE}💽 Available space on Canvio: $CANVIO_SPACE${NC}"
+# Check available space on local drive
+LOCAL_SPACE=$(df -h "$HOME" 2>/dev/null | tail -1 | awk '{print $4}' || echo "Unknown")
+echo -e "${BLUE}💽 Available local space: $LOCAL_SPACE${NC}"
+echo -e "${YELLOW}💡 Note: Files will transfer to G9-Reborn 4TB M.2 after ripping${NC}"
 echo ""
 
 # Function to get disc info
