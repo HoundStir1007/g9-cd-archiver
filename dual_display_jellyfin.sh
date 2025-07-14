@@ -58,17 +58,17 @@ setup_displays() {
 launch_jellyfin_tv() {
     echo "🎬 Launching Jellyfin on TV display..."
     
-    # Kill existing Firefox
-    pkill firefox 2>/dev/null
+    # Kill existing Chrome
+    pkill google-chrome 2>/dev/null
     sleep 2
     
-    # Launch Firefox fullscreen on the TV display
+    # Launch Chrome fullscreen on the TV display
     if [[ "$JELLYFIN_DISPLAY" == "HDMI-2" ]]; then
-        echo "📺 Opening Firefox on TV (HDMI-2)..."
+        echo "📺 Opening Chrome on TV (HDMI-2)..."
         
-        # Set display environment and launch Firefox with specific geometry
+        # Set display environment and launch Chrome with specific geometry
         # TV is at position 0,0 with 1920x1080 resolution
-        DISPLAY=:0.0 firefox \
+        DISPLAY=:0.0 google-chrome \
           --new-window \
           --kiosk \
           --no-first-run \
@@ -80,21 +80,21 @@ launch_jellyfin_tv() {
           --window-size=1920,1080 \
           "http://localhost:8096/web/#/home.html" &
           
-        # Wait for Firefox to start, then ensure it's on the TV
+        # Wait for Chrome to start, then ensure it's on the TV
         sleep 4
         
         # Force window to TV display using xdotool (more reliable than wmctrl)
         if command -v xdotool >/dev/null 2>&1; then
-            # Move Firefox window to TV coordinates (0,0)
+            # Move Chrome window to TV coordinates (0,0)
             xdotool search --name "Jellyfin" windowmove 0 0 2>/dev/null || true
             xdotool search --name "Jellyfin" windowsize 1920 1080 2>/dev/null || true
-            echo "  ✅ Firefox positioned on TV using xdotool"
+            echo "  ✅ Chrome positioned on TV using xdotool"
         elif command -v wmctrl >/dev/null 2>&1; then
             # Fallback to wmctrl if xdotool not available
             wmctrl -r "Jellyfin" -e 0,0,0,1920,1080 2>/dev/null || true
-            echo "  ✅ Firefox positioned on TV using wmctrl"
+            echo "  ✅ Chrome positioned on TV using wmctrl"
         else
-            echo "  ⚠️ Window positioning tools not available - Firefox may open on wrong display"
+            echo "  ⚠️ Window positioning tools not available - Chrome may open on wrong display"
         fi
     fi
 }
@@ -116,4 +116,4 @@ echo "   - Switch Vizio TV to HDMI input to view Jellyfin"
 echo "   - Use local monitor for any server maintenance"
 echo "   - Control Jellyfin from your phone/iPad"
 echo ""
-echo "🛑 **To exit**: Alt+F4 on TV or run: pkill firefox" 
+echo "🛑 **To exit**: Alt+F4 on TV or run: pkill google-chrome" 
