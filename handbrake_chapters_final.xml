@@ -1,0 +1,238 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Chapters
+  SYSTEM 'matroskachapters.dtd'>
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:01:52.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Marty DiBergi</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:01:52.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:04:08.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Spinal Tap&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:04:08.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:06:27.034000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Dust For Vomit?</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:06:27.034000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:08:19.534000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Bobbi Flekman</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:08:19.534000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:02.368000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Yes I Can!&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:02.368000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:02.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Big Bottom&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:02.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:50.867000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Shit Sandwich&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:50.867000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:16:50.200000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Sexist Or Sexy?</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:16:50.200000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:18:43.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Squatney Memories</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:18:43.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:20:24.633000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Little Sandwiches</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:20:24.633000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:23:50.766000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;It's One Louder, Isn't It?&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:23:50.766000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:26:51.932000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Clever Or Stupid?</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:26:51.932000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:27:50.965000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Ian Faith, Manager</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:27:50.965000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:29:59.332000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Where Are They Now?&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:29:59.332000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:31:18.965000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Since My Baby Left Me&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:31:18.965000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:33:19.998000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;(Listen To The) Flower People&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:33:19.998000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:39:30.832000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;None More Black&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:39:30.832000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:41:28.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Jeanine Is Brutally Frank</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:41:28.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:42:35.633000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Lick My Love Pump&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:42:35.633000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:45:19.166000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Airport Security</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:45:19.166000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:47:34.633000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;I'm Your Promo Man!&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:47:34.633000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:49:44.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Hello, Cleveland!&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:49:44.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:52:47.533000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Heavy Metal In Dobly?</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:52:47.533000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:53:46.533000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Trademark Solos</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:53:46.533000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:57:30.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>18&quot; High</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:57:30.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:02:03.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Gonna Do Stonehenge?&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:02:03.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:03:56.266000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Fire And Ice</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:03:56.266000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:08:23.266000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Tap Into The Military</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:08:23.266000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:11.599000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>PUPPET SHOW AND SPINAL TAP</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:10:11.599000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:12:04.199000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Saucy Jack&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:12:04.199000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:17:28.365000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Together Again!</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:17:28.365000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:22:41.965000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End Interviews/Credits</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:22:41.965000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:22:42.465000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter 33</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
