@@ -8,7 +8,7 @@
 # Version 1.5: Speed Mode with Safe Mode fallback for data copying
 
 # Configuration
-CD_DEVICE="/dev/sr0"
+CD_DEVICE="/dev/sr1"
 BASE_OUTPUT_DIR="/mnt/storage/digital_consolidation"
 AUDIO_OUTPUT_DIR="$BASE_OUTPUT_DIR/cd_rips/audio"
 DATA_OUTPUT_DIR="$BASE_OUTPUT_DIR/cd_rips/data"
