@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Jellyfin TV Mode Startup
+Comment=Restores TV mode settings for Jellyfin entertainment system
+Exec=/home/mark/Desktop/home_server_research/jellyfin_tv_startup.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+StartupNotify=false 

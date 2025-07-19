@@ -1,0 +1,14 @@
+[Unit]
+Description=Force Monitor as Primary Display
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=oneshot
+User=mark
+Environment=DISPLAY=:0
+ExecStart=/home/mark/Desktop/home_server_research/force_monitor_primary.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical-session.target 

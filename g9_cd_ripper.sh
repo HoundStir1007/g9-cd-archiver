@@ -9,7 +9,7 @@
 
 # Configuration
 CD_DEVICE="/dev/sr0"
-BASE_OUTPUT_DIR="/mnt/data/digital_consolidation"
+BASE_OUTPUT_DIR="/mnt/storage/digital_consolidation"
 AUDIO_OUTPUT_DIR="$BASE_OUTPUT_DIR/cd_rips/audio"
 DATA_OUTPUT_DIR="$BASE_OUTPUT_DIR/cd_rips/data"
 LOG_FILE="$BASE_OUTPUT_DIR/cd_rips/ripping_log.txt"
@@ -57,7 +57,7 @@ check_requirements() {
     done
     
     # Check storage space
-    local available_space=$(df -h /mnt/data | tail -1 | awk '{print $4}')
+    local available_space=$(df -h /mnt/storage | tail -1 | awk '{print $4}')
     echo -e "${GREEN}✅ Storage available: $available_space${NC}"
     echo -e "${GREEN}✅ USB optical drive detected: $CD_DEVICE${NC}"
     echo -e "${GREEN}✅ All ripping tools installed${NC}"

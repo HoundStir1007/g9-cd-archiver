@@ -131,17 +131,17 @@ echo "📋 Creating Quick Access shortcuts..."
 
 # Quick Access to Important URLs
 create_shortcut "Jellyfin Web" \
-    "google-chrome http://localhost:8096" \
+    "google-chrome http://100.100.71.107:8096" \
     "video" \
     "Open Jellyfin web interface"
 
 create_shortcut "Pi-hole Admin" \
-    "google-chrome http://localhost:8080" \
+    "google-chrome http://100.100.71.107:8080" \
     "network-server" \
     "Open Pi-hole admin interface"
 
 create_shortcut "Uptime Kuma" \
-    "google-chrome http://localhost:3001" \
+    "google-chrome http://100.100.71.107:3001" \
     "utilities-system-monitor" \
     "Open Uptime Kuma monitoring"
 

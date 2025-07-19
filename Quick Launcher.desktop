@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Quick Launcher
+Comment=Quick access to all G9 Media Center functions
+Exec=/home/mark/Desktop/home_server_research/quick_launcher.sh
+Icon=applications-system
+Terminal=true
+Categories=System;Utility; 
