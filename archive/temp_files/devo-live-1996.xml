@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:02:36.033000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Lolla Theme</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:02:36.033000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:05:27.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Whip It</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:27.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:08:48.233000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Girl U Want</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:08:48.233000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:37.633000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>(I Can't Get No) Satisfaction</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:37.633000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:16:18.467000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Uncontrollable Urge</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:16:18.467000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:19:43.834000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Blockhead</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:19:43.834000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:24:23.067000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Mongoloid</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:24:23.067000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:30:25.801000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Jocko Homo</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:30:25.801000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:37:23.867000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Smart Patrol/Mr. DNA</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:37:23.867000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:42:10.933000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Gut Feeling/(Slap Your Mammy)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:42:10.933000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:47:06.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Gates of Steel</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:47:06.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:54:14.600000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Come Back Jonee</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:54:14.600000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:54:15.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter 13</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
