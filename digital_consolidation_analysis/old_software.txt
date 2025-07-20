@@ -1,0 +1,98 @@
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/8a48d8db4dbaa9fe3c3d35/mrtstub.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/QuEnc/QuEnc.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/stcapt10/STOIK_Capturer.msi
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/Indeo/iv5setup.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/DirectX/dxsetup.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/DirectX/mdxredist.msi
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/Chinese/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/Japanese/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/Spanish/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/WMFDist.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/SChinese/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/German/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/Italian/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/French/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/Korean/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/Drivers/WindowsMediaFormat/English/WMEncoder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/My_Disc_20250709_125848/1118041228-DVD-RBv093Free/Rebuilder.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/PHOTOS_20250708_221644/walgreens.exe
+/media/mark/paperless-ssd/digital_consolidation/cd_rips/data/PHOTOS_20250708_211805/walgreens.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Roblox.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Minecraft.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/webplayer-mini.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/webplayer-mini (1).dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Silverlight.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/adobe_flashplayer_e2c7b_Setup-1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/steam.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/FlashCS5_Update.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Silverlight-2.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/OS_X_Server_3_0_1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/EpocCamViewerPro.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/adobe_flashplayer_e2c7b_Setup.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/EpocCamViewerPro-1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/MacOSXUpd10.6.8.dmg.download/MacOSXUpd10.6.8.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Roblox.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/yomac_setup/YoWindow.pkg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/citrixreceiver.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/MacOSXUpd10.6.8.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/MacOSXUpd10-1.6.8.dmg.download/MacOSXUpd10.6.8.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/EpocCam.pkg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/citrixreceiver-1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/Silverlight-1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Downloads/webplayer-mini-1.dmg
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/AlbumArtScreensaver.msi
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/statxl95v215.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/ledheadwin32setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/desktop cleanup 5-29-06/desktop cleanup/zsnesw142/zsnesw.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/desktop cleanup 5-29-06/desktop cleanup/qbasic_bm/BarMonkey.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/MDMessageEditor.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/BTsetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/tontie1_0_j_win.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/desktop cleanup etc/SFTPMSI.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/metro/PocketPC/Setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/Decode.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/AGPalmClientSetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/Sketchy151.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/mark/Hi-CE/Sketchy/uninst.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/gecko.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/Salvaged from Sakamoto Computer/ol/My Pictures/P2K/Presenter2000.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/laptop docs/desktop/pbob11/pbobble.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/youtube to dvd/Ares_Tube_Setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DVD Copying/SlySoft_AnyDVD_and_AnyDVD_HD_v6.3.1.7_Final_by_TSRh/Slysoft AnyDVD & AnyDVD HD 6.3.1.7 Final/SetupAnyDVD6317.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DVD Copying/clonedvd2454.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DVD Copying/SetupCloneDVD2919Slysoft.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DVD Copying/SlySoft_AnyDVD_HD_v6.4.6.9_Final_by_Jannik_93/Patch.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DVD Copying/HandBrake-0.9.2-Win32_GUI.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/Spanish 1&2/2000/setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/Spanish 1&2/Support/AR32.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/Spanish 1&2/Support/QT32.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/Spanish 1&2/Classic/setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/9-7-07/install_flash_player.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/GoogleSketchUpWEN.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/mark/Install_AIM.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/QuickVCD.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/CDRToolsSetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/Install_AIM.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/ecdc_v5.3.2.34_plt_enu.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/MusicWildFireSetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/Nero55917.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/gltron-0.61-win32.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/MP3ext34b21.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/moviedb_1_3_1_0_setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/moviedb_1_3_5_3.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/DNBsetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/e Drive/Installs/ie6setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DX-WC100_Drivers/Dynex_DX-WC100_DX-WC101_drivers/DX-WC101/Setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/DX-WC100_Drivers/Dynex_DX-WC100_DX-WC101_drivers/DX-WC100/Setup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/WIAdriverLiDE2030/SetupWIA.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/was on thumb/Games/Clash/Medieval Clash.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/was on thumb/Games/anagramarama/ag.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/was on thumb/MAME/Mame32.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/mark docs/desktop/msgrplus.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/podutilsetup.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/USB 2.0 Sim Card Reader/SimCardRead.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/wmpfirefoxplugin.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/ipod2comp_std.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/AutoUnpack444.exe
+/media/mark/paperless-ssd/digital_consolidation/canvio_transfer/mac_mini_files/Documents/Mark/Desktop/desktop cleanup/Mackie Tracktion/TracktionSetup.exe
