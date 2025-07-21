@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:02:57.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Way Normal Life</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:02:57.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:07:21.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>As If</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:07:21.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:04.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chuckleheads</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:04.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:20:35.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Powers of Persuasion</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:20:35.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:26:15.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Adorably Clueless</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:26:15.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:31:24.368000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Makeover</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:31:24.368000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:39:31.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Rolling with the Homies</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:39:31.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:44:57.101000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Turn Away</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:44:57.101000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:51:02.368000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Calorie Fest</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:51:02.368000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:00:58.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Down Girl</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:58.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:11:03.869000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Cake Boy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:11:03.869000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:19:51.169000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Majorly, Totally, Butt Crazy in Love</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:19:51.169000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:26:38.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Do-Gooder</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:26:38.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:32:33.001000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Puppy Love</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:32:33.001000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:37:06.334000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End Credits</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
