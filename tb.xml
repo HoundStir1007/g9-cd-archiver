@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:05:26.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>School Daze (Main Titles)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:26.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:59.834000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Sandusky, Ohio</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:59.834000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:15:23.001000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>A Perfect 10</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:15:23.001000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:18:18.835000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Cow Tipping</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:18:18.835000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:21:09.335000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Wonder Boy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:21:09.335000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:27:32.168000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Luckiest Man in the World</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:27:32.168000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:30:26.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Playing with Your Dinghy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:30:26.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:33:00.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Future of Callahan</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:33:00.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:36:38.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>On the Road</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:36:38.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:39:06.834000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Whadya Do?</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:39:06.834000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:41:22.167000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Bad Mommy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:41:22.167000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:46:14.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Road Kill</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:46:14.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:49:11.534000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Fat Guy in a Little Coat</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:49:11.534000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:52:22.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Oh, Baby</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:52:22.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:55:40.034000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>A Pretty New Pet</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:55:40.034000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:59:05.501000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Guarantee</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:59:05.501000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:02:09.001000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Spanky</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:02:09.001000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:06:24.700000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>On the Road to Success</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:06:24.700000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:19.333000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Heading Home</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:10:19.333000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:12:39.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Killer Bees</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:12:39.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:17:29.999000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Fly Boys</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:17:29.999000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:23:47.132000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Zalinsky Auto Parts</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:23:47.132000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:30:09.333000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>I&apos;ve Got A Plan</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:30:09.333000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:36:56.134000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The New President (End Credits)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
