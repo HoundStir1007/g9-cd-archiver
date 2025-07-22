@@ -10,7 +10,7 @@ echo "🎬 Movie Extras Organization Script"
 echo "=================================="
 
 # Define source and destination
-SOURCE="/media/mark/paperless-ssd1/jellyfin/media/movies"
+SOURCE="/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb1/jellyfin/media/movies"
 DEST="/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb1/jellyfin/media/movies"
 
 # Create destination directory
