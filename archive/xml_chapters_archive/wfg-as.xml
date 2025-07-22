@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:00:34.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Sperm whale</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:34.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:02:37.533000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Pearlman interview</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:02:37.533000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:05:25.533000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Baseball</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:25.533000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:09:56.233000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Libby audition</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:09:56.233000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:45.733000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Savage dinner</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:45.733000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:15:12.166000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Good news</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:15:12.166000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:18:25.066000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Blaine</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:18:25.066000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:19:28.866000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Hunting</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:19:28.866000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:20:48.366000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Ron and Sheila - alternate epilogue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:20:48.366000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:21:35.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Towels</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:21:35.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:22:57.999000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>White House</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:22:57.999000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:23:28.366000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Shirley Temple</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:23:28.366000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:27:31.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Miami</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:27:31.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:33:53.166000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Bulging river</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

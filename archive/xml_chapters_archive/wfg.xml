@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:02:03.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Sesquicentennial plans</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:02:03.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:05:27.633000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Blaine, Missouri</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:27.633000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:09:03.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Red, White &amp; Blaine</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:09:03.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:53.299000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Dr. Pearl</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:53.299000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:17:03.166000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Ron Albertson</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:17:03.166000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:19:54.966000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Libby Mae Brown</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:19:54.966000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:22:41.333000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Johnny Savage</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:22:41.333000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:24:58.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Clifford Wooley</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:24:58.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:28:54.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Auditions</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:28:54.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:31:31.467000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Rehearsals begin</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:31:31.467000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:35:29.967000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Costume fitting</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:35:29.967000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:37:56.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Dress rehearsal</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:37:56.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:42:00.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Opening night</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:42:00.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:44:36.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Show time</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:44:36.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:46:15.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Intermission</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:46:15.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:49:24.467000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Act Two</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:49:24.467000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:52:17.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Finale</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:52:17.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:54:59.966000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Curtain call</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:54:59.966000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:58:10.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>After party</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:58:10.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:00:23.299000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Reviews</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:23.299000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:02:01.799000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Guffman arrives</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:02:01.799000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:05:07.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Backstage meeting</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:05:07.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:07:23.966000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Guffman&apos;s feedback</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:07:23.966000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:09:05.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Cast reaction</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:09:05.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:12:25.966000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Blaine celebration</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:12:25.966000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:15:24.466000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Epilogue</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:15:24.466000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:17:15.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End credits</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:17:15.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:23:38.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Bonus features</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
