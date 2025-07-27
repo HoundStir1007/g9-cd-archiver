@@ -14,7 +14,7 @@ services:
       # Paperless-ssd for documents and scans only
       - /media/mark/paperless-ssd1:/paperless-ssd:ro
       # Large drive for all Jellyfin media
-      - /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb1:/storage-drive:ro
+      - /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2:/storage-drive:ro
     ports:
       - "8096:8096"
       - "8920:8920"  # HTTPS port (optional)

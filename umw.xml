@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:00.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Police - Driven to Tears</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:00.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:20:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Wall of Voodoo - Back in Flesh</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:20:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:30:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Toyah - Danced</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:30:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:40:00.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Orchestral Manoeuvres in the Dark - Enola Gay</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:40:00.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:50:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Oingo Boingo - Ain&apos;t This the Life</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:50:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:00:00.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>XTC - Respectable Street</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:00.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Members - Offshore Banking Business</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:10:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:20:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Go-Go&apos;s - We Got the Beat</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:20:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:30:00.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Klaus Nomi - Total Eclipse</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:30:00.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:40:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Athletico Spizz &apos;80 - Where&apos;s Captain Kirk</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:40:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:50:00.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Alley Cats - Nothing Means Nothing Anymore</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:50:00.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>02:00:00.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Jools Holland - Foolish I Know</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>02:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>02:00:40.767000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Steel Pulse - Ku Klux Klan</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

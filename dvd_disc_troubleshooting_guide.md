@@ -1,4 +1,4 @@
-# 🔧 DVD Disc Reading Troubleshooting Guide
+# DVD Disc Reading Troubleshooting Guide
 
 ## 🎯 **ISSUE**: DVD spins but doesn't appear in desktop sidebar
 
@@ -187,16 +187,66 @@ If the disc contains irreplaceable content:
 
 ---
 
+## 📝 **LEGACY DISC COMPATIBILITY ISSUES** 🎭
+
+### **🎮 Sony Proprietary Era (Early 2000s)**
+**Problem**: Sony DVDs that only work in PS2/Sony players
+**Cause**: Sony used proprietary formatting and copy protection:
+- HDCP early implementation
+- Sony-specific disc mastering
+- Deliberate incompatibility with non-Sony drives
+
+**Solutions**:
+- **Best**: Use original PS2 or Sony standalone player
+- **Alternative**: Xbox (original) sometimes works
+- **Modern**: Try different external DVD drives (Pioneer, LG recommended)
+
+### **💿 Bootleg/Homemade DVD-R Problems**
+**Common Issues**:
+- ❌ **Poor finalization** - disc not properly "closed"
+- ❌ **Cheap media** - degrades over time
+- ❌ **Burning speed** - too fast = compatibility problems
+- ❌ **Brand conflicts** - some drives hate certain disc brands
+- ❌ **Non-standard formatting** - bootlegs use odd settings
+
+**Symptoms**: 
+- Kernel reports "Incompatible medium installed"
+- Drive detects size but can't read content
+- HandBrake, VLC, and all tools fail with I/O errors
+
+**Solutions**:
+1. **Try different drives** - Pioneer drives excel at problem discs
+2. **Use original hardware** - DVD players from the disc's era
+3. **Professional recovery** - for irreplaceable content only
+4. **Accept limitations** - some discs are simply unreadable on modern systems
+
+### **🔍 Drive Compatibility Matrix**
+**Best for Legacy Discs**:
+- **Pioneer** drives (excellent DVD-R compatibility)
+- **LG GP60NB60** (modern, good legacy support)
+- **Original PS2** (for Sony proprietary discs)
+- **2000-2005 era standalone players**
+
+**Modern Drives Often Fail With**:
+- Early DVD-R/+R burned discs
+- Sony proprietary formats
+- Poor finalization
+- Cheap media brands
+
+---
+
 ## 📝 **NEXT STEPS**
 
 1. **Start with Step 1 diagnostics** above
 2. **Try the manual mount** in Step 2  
 3. **Use your existing g9_dvd_ripper.sh** - it has good error handling
 4. **If still failing**, try the salvage script approach
+5. **For legacy discs**, consider hardware alternatives
 
 **Report back with**:
 - Output from `lsblk | grep sr0`
 - Any error messages from mount attempts
 - Whether other discs work in the same drive
+- If disc works in other players/devices
 
 This should help identify whether it's a disc problem, format issue, or drive compatibility problem! 🔍✨ 

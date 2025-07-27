@@ -131,6 +131,32 @@ URL: `http://100.100.71.107:8096`
 2. **Verify host paths exist**: `ls -la /media/mark/paperless-ssd/`
 3. **Check permissions**: Files should be owned by `mark:mark` (user ID 1000)
 
+### **🚨 CRITICAL: Mount Path Issues** ⭐ **COMMON PROBLEM**
+**Symptom**: `Library folder /storage-drive/jellyfin/media/movies is inaccessible or empty, skipping`
+
+**Root Cause**: Docker compose mount path typos or incorrect drive names
+
+**Diagnosis**:
+```bash
+# Check what container can actually see:
+docker exec jellyfin ls /storage-drive/jellyfin/media/movies/
+
+# If "No such file or directory" → mount path is wrong
+```
+
+**Fix**:
+1. **Verify correct host path**: `ls /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/jellyfin/media/movies/`
+2. **Check docker-compose.yml mount path**:
+   ```yaml
+   # ❌ WRONG (common typo):
+   - /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb1:/storage-drive:ro
+   
+   # ✅ CORRECT:
+   - /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2:/storage-drive:ro
+   ```
+3. **Restart container**: `docker-compose down && docker-compose up -d`
+4. **Verify fix**: `docker exec jellyfin ls /storage-drive/jellyfin/media/movies/`
+
 ### **If Media Files Not Visible**
 1. **Verify on host**: `ls -la /media/mark/paperless-ssd/jellyfin/media/music/`
 2. **Check inside container**: `docker exec jellyfin ls -la /paperless-ssd/jellyfin/media/music/`

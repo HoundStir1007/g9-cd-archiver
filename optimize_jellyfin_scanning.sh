@@ -50,9 +50,13 @@ echo ""
 
 # Check current library status
 echo "📊 CURRENT LIBRARY STATUS:"
-echo "   Movies: $(find /media/mark/paperless-ssd/jellyfin/media/movies -name "*.mp4" | wc -l) files"
-echo "   Home Videos: $(find /media/mark/paperless-ssd/jellyfin/media/home-videos -name "*.mp4" | wc -l) files"
-echo "   Music: $(find /media/mark/paperless-ssd/jellyfin/media/music -name "*.mp3" -o -name "*.m4a" | wc -l) files"
+echo "   Movies: $(find /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/jellyfin/media/movies -name "*.mp4" | wc -l) files"
+echo "   Home Videos: $(find /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/jellyfin/media/home-videos -name "*.mp4" | wc -l) files"
+echo "   Music: $(find /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/jellyfin/media/music -name "*.mp3" -o -name "*.m4a" | wc -l) files"
+echo ""
+echo "🚨 CRITICAL CHECK: Mount Path Verification"
+echo "   Container can see movies: $(docker exec jellyfin ls /storage-drive/jellyfin/media/movies/ 2>/dev/null | wc -l) directories"
+echo "   (If 0, check mount path in docker-compose.yml - common fcb1 vs fcb2 typo)"
 echo ""
 
 echo "🚀 RECOMMENDED SCANNING ORDER:"

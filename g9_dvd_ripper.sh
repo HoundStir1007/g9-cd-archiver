@@ -5,7 +5,7 @@
 # Author: G9-REBORN Media Processing Station
 
 # Configuration
-DVD_DEVICE="/dev/sr1"
+DVD_DEVICE="/dev/sr0"
 OUTPUT_DIR="/mnt/storage/digital_consolidation/dvd_rips"
 LOG_FILE="$OUTPUT_DIR/dvd_ripping_log.txt"
 

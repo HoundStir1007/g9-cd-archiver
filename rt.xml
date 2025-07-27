@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:06:42.667000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Prologue: Family of Geniuses</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:06:42.667000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:07:50.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Cast of Characters: The Players</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:07:50.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:16:29.367000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter One: 22 Years Later</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:16:29.367000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:26:52.834000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Two: Reunion of the Tenenbaum Children</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:26:52.834000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:35:00.834000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Three: A Pretty Bad Case of Cancer</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:35:00.834000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:41:57.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Maddox Hill Cemetery: The Salt of the Earth</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:41:57.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:54:33.535000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Four: Royal&apos;s Encyclopedias Are Placed in Storage</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:54:33.535000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:05:20.702000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Five: An Obsolete Vernacular</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:05:20.702000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:21:18.968000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Six: Between the Buttons</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:21:18.968000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:30:19.702000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Seven: Mordecai Comes Back</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:30:19.702000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:41:11.902000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Chapter Eight: Etheline and Henry&apos;s Wedding</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:41:11.902000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:49:37.602000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Epilogue: BB Gun Salute</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:49:37.602000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:49:38.102000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End Credits</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>
