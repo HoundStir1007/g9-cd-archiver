@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:03:06.066000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Steinbloom saga</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:03:06.066000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:06:08.433000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Folksmen (Old Joe&apos;s Place)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:06:08.433000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:07:57.599000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Main Street origins (The Good Book Song)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:07:57.599000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:07.566000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Mitch &amp; Mickey (When You&apos;re Next to Me, A Kiss at the End of the Rainbow)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:07.566000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:15:01.400000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The New Main Street Singers (Just That Kinda Day)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:15:01.400000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:18:39.733000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Mitch arrives</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:18:39.733000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:21:55.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Beginnings</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:21:55.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:25:15.934000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>First rehearsal</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:25:15.934000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:27:18.601000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Sissy Knox</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:27:18.601000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:29:24.234000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Hi-Class Management</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:29:24.234000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:31:33.434000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Lars and Jonathan</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:31:33.434000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:35:58.067000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Tuning up (Skeletons of Quinto)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:35:58.067000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:39:21.901000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Witches</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:39:21.901000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:42:10.434000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Moby Dick (Loco Man, Fare Away, A Kiss at the End of the Rainbow)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:42:10.434000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:45:04.567000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>We&apos;re professionals</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:45:04.567000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:48:05.434000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Flashbacks</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:48:05.434000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:49:52.734000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The toast</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:49:52.734000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:53:54.767000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Concert day</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:53:54.767000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:57:43.267000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Before showtime</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:57:43.267000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:02:43.767000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Wanderin&apos; (Never Did No Wanderin&apos;)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:02:43.767000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:05:22.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Potato&apos;s in the Paddy Wagon</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:05:22.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:08:19.266000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Missing (Eat at Joe&apos;s)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:08:19.266000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:12:13.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Where&apos;s Mitch (Barnyard Symphony)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:12:13.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:17:35.433000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>A Kiss at the End of the Rainbow</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:17:35.433000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:20:25.066000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>A Mighty Wind</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:20:25.066000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:22:10.599000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Supreme Folk</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:22:10.599000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:24:35.099000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>I&apos;m a musician again (The Catheter Song)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:24:35.099000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:31:47.099000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End Credits (Old Joe&apos;s Place, When You&apos;re Next to Me, The Good Book Song)</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

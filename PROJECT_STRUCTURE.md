@@ -12,6 +12,7 @@
 - `budget.md` - Financial tracking
 - `network_configuration.md` - Current network setup
 - `tailscale_configuration.md` - VPN configuration
+- `MEDIA_CONSOLIDATION_ARCHIVE_RETRIEVAL.md` - 🎬 Media gap filling and archive retrieval strategies
 
 ### **🎯 Active Projects** (`active_projects/`)
 **Currently being worked on:**

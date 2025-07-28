@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:01:47.800000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Start</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:01:47.800000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:05:21.634000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Ronna</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:05:21.634000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:08:19.034000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Pre-party favors</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:08:19.034000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:12:14.134000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Todd Gaines</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:12:14.134000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:13:09.601000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Collateral</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:13:09.601000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:18:36.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>No deal</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:18:36.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:26:18.368000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Macarena&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:26:18.368000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:31:35.868000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Placebos</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:31:35.868000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:35:08.435000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Hit &amp; run</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:35:08.435000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:43:09.601000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Simon</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:43:09.601000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:47:07.034000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Becky &amp; Rebecca</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:47:07.034000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:48:46.934000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Stolen car &amp; gun</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:48:46.934000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:55:45.801000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Noelle &amp; Holly</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:55:45.801000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:58:13.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Checking out</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:58:13.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:00:52.801000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Magic Carpet Ride&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:52.801000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:04:50.701000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Alley escape</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:04:50.701000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:09:18.334000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Adam &amp; Zack</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:09:18.334000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:13:29.134000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Burke&apos;s law</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:13:29.134000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:15:13.934000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Open to new things?&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:15:13.934000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:18:00.534000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Confederated products</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:18:00.534000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:20:44.301000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Cheaters</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:20:44.301000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:21:23.101000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Jimmy</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:21:23.101000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:22:25.835000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Running into Ronna</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:22:25.835000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:25:26.101000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Plus &amp; minus</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:25:26.101000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:29:53.434000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The right thing</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:29:53.434000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:34:07.368000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Breakfast with Claire</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:34:07.368000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:36:30.268000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Justice</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:36:30.268000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:41:49.002000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Where&apos;s Mannie?&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

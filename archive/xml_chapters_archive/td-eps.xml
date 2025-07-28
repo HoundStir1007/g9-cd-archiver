@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:10:34.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Search for Inspirado</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:10:34.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:22:04.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Angel in Disguise</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:22:04.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:34:31.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Death of a Dream</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:34:31.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:44:03.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Greatest Song in the World</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:44:03.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:56:26.100000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Fan</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:56:26.100000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:31.600000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Road Gig</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:10:31.600000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:32.033000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

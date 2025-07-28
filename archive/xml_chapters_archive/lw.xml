@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Chapters SYSTEM "matroskachapters.dtd">
+<Chapters>
+  <EditionEntry>
+    <ChapterAtom>
+      <ChapterTimeStart>00:00:00.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:03:17.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Start</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:03:17.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:04:52.666000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Concord, Massachusetts</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:04:52.666000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:14:25.400000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Christmas Eve</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:14:25.400000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:23:17.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Laurie &amp; Jo</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:23:17.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:27:38.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;Teacher struck me.&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:27:38.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:33:19.899000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Amateur theatrics</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:33:19.899000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:35:08.766000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The missing manuscript</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:35:08.766000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:37:47.999000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The ice on Walden Pond</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:37:47.999000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:40:43.466000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Preparing for the ball</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:40:43.466000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:48:51.333000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The coming-out party</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:48:51.333000000</ChapterTimeStart>
+      <ChapterTimeEnd>00:50:35.233000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>The Hummels</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>00:50:35.233000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:00:54.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Professional author</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:00:54.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:02:47.533000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Father returns</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:02:47.533000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:04:19.733000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Four years later</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:04:19.733000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:10:47.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Laurie proposes</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:10:47.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:18:36.033000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>New York</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:18:36.033000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:19:47.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Debating the vote</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:19:47.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:24:26.133000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Two stories published</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:24:26.133000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:27:03.333000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Amy &amp; Laurie in France</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:27:03.333000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:30:52.067000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>&quot;I find you changed.&quot;</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:30:52.067000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:32:14.967000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>An honest opinion</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:32:14.967000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:33:31.534000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Telegram</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:33:31.534000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:41:35.700000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>With Beth</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:41:35.700000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:43:30.833000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Beth&apos;s trunk</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:43:30.833000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:45:47.500000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>Writing what she knows</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:45:47.500000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:50:27.900000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>A daughter &amp; a son</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:50:27.900000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:54:48.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>LITTLE WOMEN</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+    <ChapterAtom>
+      <ChapterTimeStart>01:54:48.000000000</ChapterTimeStart>
+      <ChapterTimeEnd>01:58:22.000000000</ChapterTimeEnd>
+      <ChapterDisplay>
+        <ChapterString>End Credits</ChapterString>
+      </ChapterDisplay>
+    </ChapterAtom>
+  </EditionEntry>
+</Chapters>

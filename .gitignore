@@ -6,4 +6,14 @@ pihole/.env
 # Allow .env.template files (these are safe to commit)
 !*.env.template
 !*/.env.template
+
+# Ubuntu installation files
 ubuntu-24.04.2-desktop-amd64.iso
+
+# Pi-hole runtime files (root-owned, don't track)
+pihole/etc-pihole/logrotate
+pihole/etc-pihole/*.db
+pihole/etc-pihole/dhcp.leases
+
+# Large video files (keep local only)
+*.mp4

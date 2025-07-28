@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    user: 1000:1000  # mark user ID
+    environment:
+      - JELLYFIN_PublishedServerUrl=http://100.100.71.107:8096
+    volumes:
+      - /mnt/data/jellyfin/config:/config
+      - /mnt/data/jellyfin/cache:/cache
+      # Paperless-ssd for documents and scans only
+      - /media/mark/paperless-ssd1:/paperless-ssd:ro
+      # Large drive for all Jellyfin media
+      - /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2:/storage-drive:ro
+    ports:
+      - "8096:8096"
+      - "8920:8920"  # HTTPS port (optional)
+      - "7359:7359/udp"  # Auto-discovery (optional)
+      - "1900:1900/udp"  # DLNA (optional)
+    devices:
+      - /dev/dri:/dev/dri  # Hardware acceleration (Intel Quick Sync) 

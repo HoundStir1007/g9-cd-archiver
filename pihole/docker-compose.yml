@@ -11,7 +11,7 @@ services:
     environment:
       TZ: 'America/Los_Angeles'
       WEBPASSWORD: '${PIHOLE_PASSWORD:-changeme}'  # Set via PIHOLE_PASSWORD env var
-      FTLCONF_LOCAL_IPV4: '100.91.157.19'  # Your Tailscale IP
+      FTLCONF_LOCAL_IPV4: '100.100.71.107'  # Your Tailscale IP
     volumes:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'

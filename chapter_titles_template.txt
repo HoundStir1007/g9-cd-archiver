@@ -1,0 +1,57 @@
+# Chapter Titles Template
+# Please fill in the chapter titles from your screenshots
+# Keep all punctuation, quotation marks, and original capitalization
+# Don't include the "1. 2. 3. 4." numbering - just the title text
+
+# Screenshot 1 (Screenshot from 2025-07-12 13-24-34.png):
+CHAPTER_01="Marty DiBergi"
+CHAPTER_02="\"Spinal Tap\""
+CHAPTER_03="Dust For Vomit?"
+CHAPTER_04="Bobbi Flekman"
+
+# Screenshot 2 (Screenshot from 2025-07-12 13-24-49.png):
+CHAPTER_05="\"Yes I Can!\""
+CHAPTER_06="\"Big Bottom\""
+CHAPTER_07="\"Shit Sandwich\""
+CHAPTER_08="Sexist Or Sexy?"
+
+# Screenshot 3 (Screenshot from 2025-07-12 13-25-04.png):
+CHAPTER_09="Squatney Memories"
+CHAPTER_10="Little Sandwiches"
+CHAPTER_11="\"It's One Louder, Isn't It?\""
+CHAPTER_12="Clever Or Stupid?"
+
+# Screenshot 4 (Screenshot from 2025-07-12 13-25-18.png):
+CHAPTER_13="Ian Faith, Manager"
+CHAPTER_14="\"Where Are They Now?\""
+CHAPTER_15="\"Since My Baby Left Me\""
+CHAPTER_16="\"(Listen To The) Flower People\""
+
+# Screenshot 5 (Screenshot from 2025-07-12 13-25-38.png):
+CHAPTER_17="\"None More Black\""
+CHAPTER_18="Jeanine Is Brutally Frank"
+CHAPTER_19="\"Lick My Love Pump\""
+CHAPTER_20="Airport Security"
+
+# Screenshot 6 (Screenshot from 2025-07-12 13-25-50.png):
+CHAPTER_21="\"I'm Your Promo Man!\""
+CHAPTER_22="\"Hello, Cleveland!\""
+CHAPTER_23="Heavy Metal In Dobly?"
+CHAPTER_24="Trademark Solos"
+
+# Screenshot 7 (Screenshot from 2025-07-12 13-26-05.png):
+CHAPTER_25="18\" High"
+CHAPTER_26="\"Gonna Do Stonehenge?\""
+CHAPTER_27="Fire And Ice"
+CHAPTER_28="Tap Into The Military"
+
+# Screenshot 8 (Screenshot from 2025-07-12 13-26-21.png):
+CHAPTER_29="PUPPET SHOW AND SPINAL TAP"
+CHAPTER_30="\"Saucy Jack\""
+CHAPTER_31="Together Again!"
+CHAPTER_32="End Interviews/Credits"
+
+# Example format:
+# CHAPTER_01="The Opening"
+# CHAPTER_02="A \"Memorable\" Scene"
+# CHAPTER_03="Action, Drama & Comedy" 
