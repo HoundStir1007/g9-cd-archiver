@@ -17,3 +17,35 @@ pihole/etc-pihole/dhcp.leases
 
 # Large video files (keep local only)
 *.mp4
+
+# Large log files
+*.log
+logs/
+archive/logs/
+
+# Media files
+*.wav
+*.mp3
+*.avi
+*.mkv
+*.iso
+
+# Analysis files (large JSON/data files)
+*_analysis_*.json
+*_analysis_*.txt
+*_full_*.json
+
+# Temporary and cache files
+*.tmp
+*.temp
+.cache/
+temp/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Archive large files
+archive/completed_guides/music_curation/*/music_analysis_*.json
+archive/completed_guides/music_curation/*/test_*/*.wav
+digital_consolidation_analysis/*.txt
