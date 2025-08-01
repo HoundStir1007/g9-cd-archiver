@@ -1,0 +1,132 @@
+2025-07-27 14:24:14 - SUCCESS: Protected: media/ (768G)
+2025-07-27 14:24:14 - SUCCESS: Protected: home_server_research/ (1.6G)
+2025-07-27 14:24:14 - SUCCESS: Protected: vm-images/ (13G)
+2025-07-27 14:24:14 - SUCCESS: Protected: jellyfin/ (2.2G)
+2025-07-27 14:24:14 - SUCCESS: Protected: logs/ (400M)
+2025-07-27 14:24:14 - SUCCESS: Protected: cache/ (146M)
+2025-07-27 14:24:14 - SUCCESS: Protected: backups/ (16K)
+2025-07-27 14:24:14 - SUCCESS: Protected: archives/ (8.0K)
+2025-07-27 14:24:14 - SUCCESS: Protected: digital_consolidation/ (308K)
+2025-07-27 14:24:14 - SUCCESS: User content verification passed
+2025-07-27 14:24:15 - Will remove: usr/ (2.6G)
+2025-07-27 14:24:15 - Will remove: var/ (1.6G)
+2025-07-27 14:24:15 - Will remove: boot/ (8.9M)
+2025-07-27 14:24:15 - Will remove: etc/ (11M)
+2025-07-27 14:24:15 - Will remove: dev/ (12K)
+2025-07-27 14:24:15 - Will remove: run/ (144K)
+2025-07-27 14:24:15 - Will remove: snap/ (84K)
+2025-07-27 14:24:15 - Will remove: cdrom/ (4.0K)
+2025-07-27 14:24:16 - Will remove: proc/ (4.0K)
+2025-07-27 14:24:16 - Will remove: sys/ (4.0K)
+2025-07-27 14:24:16 - Will remove: tmp/ (4.0K)
+2025-07-27 14:24:16 - Will remove: home/ (4.0K)
+2025-07-27 14:24:16 - Will remove: mnt/ (4.0K)
+2025-07-27 14:24:16 - Will remove: opt/ (4.0K)
+2025-07-27 14:24:16 - Will remove: srv/ (4.0K)
+2025-07-27 14:24:16 - Will remove: root/ (4.0K)
+2025-07-27 14:24:16 - Will remove: bin.usr-is-merged/ (4.0K)
+2025-07-27 14:24:16 - Will remove: lib.usr-is-merged/ (4.0K)
+2025-07-27 14:24:16 - Will remove: sbin.usr-is-merged/ (4.0K)
+2025-07-27 14:24:16 - Will remove symlink: bin → usr/bin
+2025-07-27 14:24:16 - Will remove symlink: lib → usr/lib
+2025-07-27 14:24:16 - Will remove symlink: lib64 → usr/lib64
+2025-07-27 14:24:16 - Will remove symlink: sbin → usr/sbin
+2025-07-27 14:24:16 - WARNING: Estimated space recovery: ~3.87GB
+2025-07-27 14:29:28 - SUCCESS: User confirmed bootable cleanup
+2025-07-27 14:29:29 - SUCCESS: Backup created at: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/home_server_research/archive/bootable_cleanup_backup_20250727_142928
+2025-07-27 14:29:29 - WARNING: Removing usr/...
+2025-07-27 14:29:31 - SUCCESS: Removed usr/
+2025-07-27 14:29:31 - WARNING: Removing var/...
+2025-07-27 14:29:32 - SUCCESS: Removed var/
+2025-07-27 14:29:32 - WARNING: Removing boot/...
+2025-07-27 14:29:32 - SUCCESS: Removed boot/
+2025-07-27 14:29:32 - WARNING: Removing etc/...
+2025-07-27 14:29:32 - SUCCESS: Removed etc/
+2025-07-27 14:29:32 - WARNING: Removing dev/...
+2025-07-27 14:29:32 - SUCCESS: Removed dev/
+2025-07-27 14:29:32 - WARNING: Removing run/...
+2025-07-27 14:29:32 - SUCCESS: Removed run/
+2025-07-27 14:29:32 - WARNING: Removing snap/...
+2025-07-27 14:29:32 - SUCCESS: Removed snap/
+2025-07-27 14:29:32 - WARNING: Removing cdrom/...
+2025-07-27 14:29:32 - SUCCESS: Removed cdrom/
+2025-07-27 14:29:32 - WARNING: Removing proc/...
+2025-07-27 14:29:32 - SUCCESS: Removed proc/
+2025-07-27 14:29:32 - WARNING: Removing sys/...
+2025-07-27 14:29:32 - SUCCESS: Removed sys/
+2025-07-27 14:29:32 - WARNING: Removing tmp/...
+2025-07-27 14:29:32 - SUCCESS: Removed tmp/
+2025-07-27 14:29:32 - WARNING: Removing home/...
+2025-07-27 14:29:32 - SUCCESS: Removed home/
+2025-07-27 14:29:32 - WARNING: Removing mnt/...
+2025-07-27 14:29:33 - SUCCESS: Removed mnt/
+2025-07-27 14:29:33 - WARNING: Removing opt/...
+2025-07-27 14:29:33 - SUCCESS: Removed opt/
+2025-07-27 14:29:33 - WARNING: Removing srv/...
+2025-07-27 14:29:33 - SUCCESS: Removed srv/
+2025-07-27 14:29:33 - WARNING: Removing root/...
+2025-07-27 14:29:33 - SUCCESS: Removed root/
+2025-07-27 14:29:33 - WARNING: Removing bin.usr-is-merged/...
+2025-07-27 14:29:33 - SUCCESS: Removed bin.usr-is-merged/
+2025-07-27 14:29:33 - WARNING: Removing lib.usr-is-merged/...
+2025-07-27 14:29:33 - SUCCESS: Removed lib.usr-is-merged/
+2025-07-27 14:29:33 - WARNING: Removing sbin.usr-is-merged/...
+2025-07-27 14:29:33 - SUCCESS: Removed sbin.usr-is-merged/
+2025-07-27 14:29:33 - WARNING: Removing symlink bin...
+2025-07-27 14:29:33 - SUCCESS: Removed symlink bin
+2025-07-27 14:29:33 - WARNING: Removing symlink lib...
+2025-07-27 14:29:33 - SUCCESS: Removed symlink lib
+2025-07-27 14:29:33 - WARNING: Removing symlink lib64...
+2025-07-27 14:29:33 - SUCCESS: Removed symlink lib64
+2025-07-27 14:29:33 - WARNING: Removing symlink sbin...
+2025-07-27 14:29:33 - SUCCESS: Removed symlink sbin
+2025-07-27 14:29:33 - SUCCESS: System directory cleanup completed
+=== BOOTABLE CLEANUP SUMMARY ===
+Date: Sun Jul 27 02:29:33 PM PDT 2025
+
+✅ Removed Linux system directories:
+   - usr/
+   - var/
+   - boot/
+   - etc/
+   - dev/
+   - run/
+   - snap/
+   - cdrom/
+   - proc/
+   - sys/
+   - tmp/
+   - home/
+   - mnt/
+   - opt/
+   - srv/
+   - root/
+   - bin.usr-is-merged/
+   - lib.usr-is-merged/
+   - sbin.usr-is-merged/
+
+✅ Removed system symlinks:
+   - bin
+   - lib
+   - lib64
+   - sbin
+
+💾 Final disk usage:
+   - Used: 791G
+   - Free: 2.8T
+
+📁 Preserved user content:
+   ✅ media/ (768G)
+   ✅ home_server_research/ (1.6G)
+   ✅ vm-images/ (13G)
+   ✅ jellyfin/ (2.2G)
+   ✅ logs/ (400M)
+   ✅ cache/ (146M)
+   ✅ backups/ (16K)
+   ✅ archives/ (8.0K)
+   ✅ digital_consolidation/ (308K)
+
+📁 Backup location: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/home_server_research/archive/bootable_cleanup_backup_20250727_142928
+📝 Full log: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/home_server_research/bootable_cleanup_20250727_142413.log
+2025-07-27 14:29:34 - SUCCESS: Bootable cleanup completed successfully!
+2025-07-27 14:29:34 - SUCCESS: 🎉 Bootable cleanup completed! Drive optimized for data-only use!

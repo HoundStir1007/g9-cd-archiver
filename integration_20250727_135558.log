@@ -1,0 +1,14 @@
+2025-07-27 13:55:58 - Available space on paperless drive: 1802276160KB
+2025-07-27 13:55:58 - VM files size: 19021244KB
+2025-07-27 13:55:58 - SUCCESS: Pre-flight checks passed
+2025-07-27 13:55:58 - SUCCESS: Backup created at: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/home_server_research/archive/integration_backup_20250727_135558
+2025-07-27 13:55:58 - Created new rips directory: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/media/music/CD_Rips_20250727
+2025-07-27 13:55:58 - WARNING: Moving audio CD rips...
+2025-07-27 13:55:58 - SUCCESS: Audio CD rips moved successfully
+2025-07-27 13:55:58 - WARNING: Moving data CD rips...
+2025-07-27 13:55:59 - SUCCESS: Data CD rips moved successfully
+2025-07-27 13:55:59 - SUCCESS: Ripping log copied
+2025-07-27 13:55:59 - Integrated CD rips - Audio: 2.8G, Data: 15G
+2025-07-27 13:55:59 - SUCCESS: CD rips integration completed
+2025-07-27 13:55:59 - WARNING: Moving Windows11.iso (5.5GB)...
+2025-07-27 13:56:06 - ERROR: Failed to move Windows11.iso

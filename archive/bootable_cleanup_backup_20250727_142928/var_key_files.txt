@@ -1,0 +1,2 @@
+/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/var/cache/dictionaries-common/ispell-dicts-list.txt
+/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/var/lib/ucf/cache/:etc:rsyslog.d:50-default.conf

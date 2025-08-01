@@ -1,0 +1,37 @@
+total 5683248
+drwxr-xr-x   31 root         root       4096 Jul 27 14:11 .
+drwxr-x---+   9 root         root       4096 Jul 27 12:57 ..
+drwxr-xr-x    3 mark         mark       4096 Jul 27 14:11 archives
+drwxr-xr-x    5 mark         mark       4096 Jul 19 19:09 backups
+lrwxrwxrwx    1 root         root          7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x    2 root         root       4096 Feb 26  2024 bin.usr-is-merged
+drwxr-xr-x    5 root         root       4096 Jul  3 11:53 boot
+drwxr-xr-x    3 mark         mark       4096 Jul 19 19:09 cache
+dr-xr-xr-x    2 root         root       4096 Feb 15 01:13 cdrom
+drwxr-xr-x    4 root         root       4096 Feb 15 00:09 dev
+drwxr-xr-x    3 mark         mark       4096 Jul  9 13:49 digital_consolidation
+drwxr-xr-x  136 root         root      12288 Jul  3 20:24 etc
+drwxr-xr-x    2 root         root       4096 Apr 22  2024 home
+drwxrwxr-x   17 mark         mark      12288 Jul 27 14:24 home_server_research
+drwxr-xr-x    3 mark         mark       4096 Jul 27 14:16 jellyfin
+lrwxrwxrwx    1 root         root          7 Apr 22  2024 lib -> usr/lib
+lrwxrwxrwx    1 root         root          9 Apr 22  2024 lib64 -> usr/lib64
+drwxr-xr-x    2 root         root       4096 Apr  8  2024 lib.usr-is-merged
+drwxr-xr-x    3 mark         mark       4096 Jul 19 19:09 logs
+drwx------    2 root         root      16384 Jul  2 23:19 lost+found
+drwxr-xr-x   21 mark         mark       4096 Jul 27 12:44 media
+drwxr-xr-x    2 root         root       4096 Feb 15 00:09 mnt
+drwxr-xr-x    2 root         root       4096 Feb 15 00:09 opt
+drwxr-xr-x    2 root         root       4096 Apr 22  2024 proc
+drwx------    4 root         root       4096 Jul  3 13:50 root
+drwxr-xr-x   20 root         root       4096 Jul  3 13:47 run
+lrwxrwxrwx    1 root         root          8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x    2 root         root       4096 Mar 31  2024 sbin.usr-is-merged
+drwxr-xr-x   12 root         root       4096 Feb 15 00:15 snap
+drwxr-xr-x    2 root         root       4096 Feb 15 00:09 srv
+drwxr-xr-x    2 root         root       4096 Apr 22  2024 sys
+drwxrwxrwt    2 root         root       4096 Jul  4 09:25 tmp
+drwxr-xr-x   12 root         root       4096 Feb 15 00:09 usr
+drwxr-xr-x   14 root         root       4096 Feb 15 00:12 var
+drwxr-xr-x    2 mark         mark       4096 Jul  6 16:51 vm-images
+-rw-r--r--    1 libvirt-qemu kvm  5819484160 Jul  6 16:42 Windows11.iso

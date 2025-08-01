@@ -1,0 +1,2 @@
+/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/boot/grub/grub.cfg
+/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/boot/grub/x86_64-efi/load.cfg

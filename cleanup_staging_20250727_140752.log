@@ -1,0 +1,10 @@
+2025-07-27 14:07:52 - SUCCESS: Found Time Machine staging indicator in thunderbolt_transfer
+2025-07-27 14:07:52 - SUCCESS: Found old Plex Server structure (staging)
+2025-07-27 14:07:52 - SUCCESS: Thunderbolt staging is older than organized media
+2025-07-27 14:07:52 - SUCCESS: Found 'save_for_migration' staging directory
+2025-07-27 14:07:52 - SUCCESS: Found 'photos_to_import' staging directory
+2025-07-27 14:07:52 - SUCCESS: Staging directory verification passed
+2025-07-27 14:07:56 - Thunderbolt transfer size: 701G
+2025-07-27 14:07:58 - Canvio transfer size: 312G
+2025-07-27 14:07:58 - WARNING: This will permanently delete the above directories!
+2025-07-27 14:10:31 - SUCCESS: User confirmed deletion
