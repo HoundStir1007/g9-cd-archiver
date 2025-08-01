@@ -1,0 +1,73 @@
+🧠 Smart Migration Started: Sun Jul 27 02:21:04 AM PDT 2025
+=================================================================
+
+📦 Starting migration of 'home-videos' at Sun Jul 27 02:21:04 AM PDT 2025
+📊 Directory size: 62G
+🚀 Moving home-videos using mv (same filesystem)...
+✅ Successfully moved home-videos at Sun Jul 27 02:21:04 AM PDT 2025
+
+📦 Starting migration of 'movies' at Sun Jul 27 02:21:06 AM PDT 2025
+📊 Directory size: 296G
+🚀 Moving movies using mv (same filesystem)...
+✅ Successfully moved movies at Sun Jul 27 02:21:06 AM PDT 2025
+
+📦 Starting migration of 'music' at Sun Jul 27 02:21:08 AM PDT 2025
+📊 Directory size: 39G
+🚀 Moving music using mv (same filesystem)...
+✅ Successfully moved music at Sun Jul 27 02:21:09 AM PDT 2025
+
+📦 Starting migration of 'music_archive_common' at Sun Jul 27 02:21:11 AM PDT 2025
+📊 Directory size: 116G
+🚀 Moving music_archive_common using mv (same filesystem)...
+✅ Successfully moved music_archive_common at Sun Jul 27 02:21:11 AM PDT 2025
+
+📦 Starting migration of 'music_quarantine' at Sun Jul 27 02:21:13 AM PDT 2025
+📊 Directory size: 93M
+🚀 Moving music_quarantine using mv (same filesystem)...
+✅ Successfully moved music_quarantine at Sun Jul 27 02:21:14 AM PDT 2025
+
+📦 Starting migration of 'music_rare_collection' at Sun Jul 27 02:21:16 AM PDT 2025
+📊 Directory size: 40K
+🚀 Moving music_rare_collection using mv (same filesystem)...
+✅ Successfully moved music_rare_collection at Sun Jul 27 02:21:16 AM PDT 2025
+
+📦 Starting migration of 'Riffing' at Sun Jul 27 02:21:18 AM PDT 2025
+📊 Directory size: 11G
+🚀 Moving Riffing using mv (same filesystem)...
+✅ Successfully moved Riffing at Sun Jul 27 02:21:18 AM PDT 2025
+
+📦 Starting migration of 'Stand-Up' at Sun Jul 27 02:21:20 AM PDT 2025
+📊 Directory size: 2.7G
+🚀 Moving Stand-Up using mv (same filesystem)...
+✅ Successfully moved Stand-Up at Sun Jul 27 02:21:20 AM PDT 2025
+
+📦 Starting migration of 'tv' at Sun Jul 27 02:21:22 AM PDT 2025
+📊 Directory size: 46G
+🚀 Moving tv using mv (same filesystem)...
+✅ Successfully moved tv at Sun Jul 27 02:21:22 AM PDT 2025
+
+🎉 Smart migration completed at Sun Jul 27 02:21:24 AM PDT 2025
+📊 Final structure:
+total 108
+drwxr-xr-x  19 mark mark  4096 Jul 27 02:21 .
+drwxr-xr-x  35 root root  4096 Jul 21 22:26 ..
+drwxr-xr-x   3 mark mark  4096 Jun 13 00:36 AtmosFX
+drwxrwxr-x   4 mark mark  4096 Jul 22 23:54 audiobooks
+drwxrwxr-x   3 mark mark  4096 Jul 22 23:54 books
+drwxrwxr-x   4 mark mark  4096 Jul 19 12:52 cd_rips
+drwxrwxr-x   6 mark mark  4096 Jul 22 00:16 comedy
+drwxr-xr-x   2 mark mark  4096 Jul 19 19:09 dvd_rips
+drwxrwxr-x   9 mark mark  4096 Jul 27 02:21 home-videos
+drwxr-xr-x   2 mark mark  4096 Jul 19 19:09 home_videos
+drwxr-xr-x   2 mark mark  4096 Jul 19 19:09 jellyfin
+drwxrwxr-x 187 mark mark 12288 Jul 27 02:21 movies
+drwxrwxr-x 678 mark mark 28672 Jul 27 02:21 music
+drwxrwxr-x   4 mark mark  4096 Jul 27 02:21 music_archive_common
+drwxrwxr-x   4 mark mark  4096 Jul 27 02:21 music_quarantine
+drwxrwxr-x   5 mark mark  4096 Jul 27 02:21 music_rare_collection
+drwxrwxr-x   2 mark mark  4096 Jul 27 02:21 Riffing
+drwxrwxr-x   4 mark mark  4096 Jul 27 02:21 Stand-Up
+drwxrwxr-x  20 mark mark  4096 Jul 27 02:21 tv
+
+🎄 NEXT: Move 'Music Videos and Concerts' after Christmas ripping
+   mv '/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/jellyfin/media/Music Videos and Concerts' '/media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/media/'

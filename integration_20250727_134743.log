@@ -1,0 +1,9 @@
+2025-07-27 13:47:43 - Available space on paperless drive: 1802276160KB
+2025-07-27 13:47:43 - VM files size: 19021244KB
+2025-07-27 13:47:43 - SUCCESS: Pre-flight checks passed
+2025-07-27 13:47:43 - SUCCESS: Backup created at: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/home_server_research/archive/integration_backup_20250727_134743
+2025-07-27 13:47:43 - Created new rips directory: /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/media/music/CD_Rips_20250727
+2025-07-27 13:47:43 - WARNING: Moving audio CD rips...
+2025-07-27 13:47:59 - SUCCESS: Audio CD rips moved successfully
+2025-07-27 13:47:59 - WARNING: Moving data CD rips...
+2025-07-27 13:49:04 - ERROR: Failed to move data CD rips

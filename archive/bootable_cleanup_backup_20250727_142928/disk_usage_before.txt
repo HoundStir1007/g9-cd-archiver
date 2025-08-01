@@ -1,0 +1,12 @@
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.2G  5.8M  1.2G   1% /run
+/dev/mmcblk0p2   56G   36G   18G  68% /
+tmpfs           5.8G   33M  5.7G   1% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+efivarfs        192K  113K   75K  61% /sys/firmware/efi/efivars
+tmpfs           5.8G     0  5.8G   0% /run/qemu
+/dev/mmcblk0p1  1.1G  6.2M  1.1G   1% /boot/efi
+/dev/nvme2n1p1  1.8T  3.8G  1.7T   1% /media/mark/paperless-ssd2
+/dev/nvme1n1p2  3.7T  795G  2.8T  23% /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2
+tmpfs           1.2G  184K  1.2G   1% /run/user/1000
+/dev/sr0        7.9G  7.9G     0 100% /media/mark/EDWARD

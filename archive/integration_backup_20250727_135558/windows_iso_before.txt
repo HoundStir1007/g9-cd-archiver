@@ -1,0 +1,1 @@
+-rw-r--r-- 1 libvirt-qemu kvm 5819484160 Jul  6 16:42 /media/mark/3c5d26b1-5918-4bb2-8930-fe6fa0447fcb2/Windows11.iso

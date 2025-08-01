@@ -1,0 +1,4 @@
+total 13338152
+drwxr-xr-x  2 mark         mark         4096 Jul  6 16:51 .
+drwxr-xr-x 35 root         root         4096 Jul 21 22:26 ..
+-rw-------  1 libvirt-qemu kvm  107390828544 Jul  7 19:52 windows11.qcow2
